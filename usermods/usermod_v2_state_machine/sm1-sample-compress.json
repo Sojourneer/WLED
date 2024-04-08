@@ -1,0 +1,1 @@
+{"states": [{"id": 1, "name": "off"}, {"id": 2, "name": "on"}], "transitions": {"1": [{"to": 2, "event": "up", "actions": ["push-state", "wled", "<some old style action string>"]}], "2": [{"to": 1, "event": "down", "actions": ["pop-state"]}]}, "name": "test"}

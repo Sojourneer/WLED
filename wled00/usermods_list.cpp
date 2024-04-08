@@ -14,6 +14,10 @@
 #include "../usermods/usermod_v2_state_machine/usermod_v2_state_machine.h"
 #endif
 
+#ifdef USERMOD_POLAR_MAPPING
+#include "../usermods/usermod_v2_polar_mapping/usermod_v2_polar_mapping.h"
+#endif
+
 #ifdef USERMOD_BATTERY
   #include "../usermods/Battery/usermod_v2_Battery.h"
 #endif
@@ -218,7 +222,11 @@ void registerUsermods()
   //usermods.add(new MyExampleUsermod());
 
   #ifdef USERMOD_STATE_MACHINE
-  usermods.add(new State_Machine());
+  usermods.add(new State_Machine()); 
+  #endif
+
+  #ifdef USERMOD_POLAR_MAPPING
+  usermods.add(new PolarMapping());
   #endif
 
   #ifdef USERMOD_BATTERY
