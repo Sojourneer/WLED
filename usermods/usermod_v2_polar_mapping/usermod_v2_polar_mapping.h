@@ -2,6 +2,11 @@
 
 #include "wled.h"
 
+/*TODO
+  Radial_Chase: sliderbar for choosing speed of paletter change for Bg, and also for Fg
+                slidebar for radial dimming (+/-) of Bg
+                Reverse chase direction
+*/
 void dumpJsonObject(JsonObject obj);
 
 class PolarMapping;
@@ -197,7 +202,12 @@ uint16_t polar_angular_chase(uint32_t color1, uint32_t color2) { // chase theta
   if(SEGENV.call == 0)
     SEGENV.aux0 = 0; 
 
+  // Bg
   for (int i = 0; i < SEGLEN; i++) {
+    uint8_t r;
+    uint16_t a;
+    _mapper->IndexToPolar(i, r, a);
+    if (usePalette) color2 = SEGMENT.color_from_palette(r, true, PALETTE_SOLID_WRAP, 2);
     SEGMENT.setPixelColor(i,color2);
   }
 
@@ -205,10 +215,9 @@ uint16_t polar_angular_chase(uint32_t color1, uint32_t color2) { // chase theta
   int maxRing = _mapper->_maxRing;
   
 
+  if (usePalette) color1 = SEGMENT.color_from_palette(SEGENV.aux0, true, PALETTE_SOLID_WRAP, 2);
   for (uint8_t r = 0; r <= maxRing; r++) {
-    int i;
-    if (usePalette) color1 = SEGMENT.color_from_palette(r, true, PALETTE_SOLID_WRAP, 0);
-    i = _mapper->PolarToIndex(r, SEGENV.aux0 /*, result*/);
+    int i = _mapper->PolarToIndex(r, SEGENV.aux0 /*, result*/);
 
     if(i >= 0 && i < SEGLEN) {
       SEGMENT.setPixelColor(i,color1);
@@ -240,8 +249,8 @@ uint16_t polar_radial_chase(uint32_t color1, uint32_t color2) { // chase r
     _mapper->IndexToPolar(i, r, a);
     //uint16_t pcolor = SEGENV.aux1;
     uint16_t pcolor = a; 
-    //uint16_t pcolor = (uint16_t)(a/30); 
-    if (usePalette) color2 = SEGMENT.color_from_palette(pcolor, true, PALETTE_SOLID_WRAP, 2);
+    //uint16_t pcolor = (uint16_t)(a/2); 
+    if (usePalette) color2 = SEGMENT.color_from_palette(pcolor, true, PALETTE_SOLID_WRAP, 2, (uint8_t)(255/(r+2)));
     SEGMENT.setPixelColor(i,color2);
   }
 
