@@ -92,7 +92,7 @@
         }
     },
     "\n\t\t\tConnect the module to your local WiFi here!": {
-        "ここでモジュールをローカル WiFi に接続します。": {
+        "ここでモジュールをローカル WiFi に接続してください": {
             "wled00/data/welcome.htm": [
                 5
             ]
@@ -1156,7 +1156,7 @@
         }
     },
     "\nEnable instance list: ": {
-        "インスタンス リストを有効にする:": {
+        "インスタンスリストを有効にする:": {
             "wled00/data/settings_sync.htm": [
                 26
             ]
@@ -2127,7 +2127,7 @@
         }
     },
     "CA-Saskatchewan": {
-        "カリフォルニア州サスカチュワン州": {
+        "カリフォルニア州-サスカチュワン州": {
             "wled00/data/settings_time.htm": [
                 23
             ]
@@ -2965,7 +2965,7 @@
         }
     },
     "Led setup:": {
-        "LEDのセットアップ:": {
+        "LEDのセットアップ：": {
             "wled00/data/pixart/pixart.htm": [
                 4
             ]
@@ -3784,13 +3784,6 @@
         "送信：": {
             "wled00/data/settings_sync.htm": [
                 9
-            ]
-        }
-    },
-    "Serg74-ETH32": {
-        "彼は「4-yaa'a」と言うでしょう": {
-            "wled00/data/settings_wifi.htm": [
-                49
             ]
         }
     },
