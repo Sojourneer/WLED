@@ -1,8 +1,18 @@
 from bs4 import BeautifulSoup, Comment, Declaration
 import sys
+import shutil
+import os
 import re
 import json
 
+
+if(os.path.isdir("wled00/I18N/src/original")):
+    print("Original directory exists. It will be used as the input")
+    useSaved = True
+else:
+    print("Original directory will be created from wled00/data")
+    os.makedirs("wled00/I18N/src/original", exist_ok=False)
+    useSaved = False
 
 with open('wled00/I18N/src/list.json', 'r') as file:
     sourceFiles = json.load(file)
@@ -44,8 +54,8 @@ def I18N_YN(str, default="yes"):
         else:
             sys.stdout.write("Please respond with 'yes' or 'no' " "(or 'y' or 'n').\n")
 
-def processFile(fn,outfn):
-    json_section = i18n[fn] = {}
+def processFile(fn,tagfn,outfn):
+    json_section = i18n[tagfn] = {}
     with open(fn) as html_file:
         #soup = BeautifulSoup(html_file.read(), features='html.parser')
         soup = BeautifulSoup(html_file.read(), features='html.parser')
@@ -86,15 +96,25 @@ def processFile(fn,outfn):
         #new_text = soup.prettify()
         new_text = str(soup)
 
-    # Write new contents to test.html
+    # Write parameterized version
     with open(outfn, mode='w') as new_html_file:
         new_html_file.write(new_text)
 
 for infn in sourceFiles:
-    print("PROCESSING",infn)
-    outfn = "wled00/I18N/src/data" + infn[len("wled00/data"):]
-    #print(infn, outfn)
-    processFile(infn,outfn)
+    if useSaved:
+        srcfn =   "wled00/I18N/src/original" + infn[len("wled00/data"):]
+        savefn = None        
+    else:
+        srcfn = infn
+        savefn = "wled00/I18N/src/original" + infn[len("wled00/data"):]
+        os.makedirs(os.path.dirname(savefn), exist_ok=True)
+        shutil.copyfile(infn, savefn)
+
+    print("PROCESSING",srcfn)
+    templatefn = "wled00/I18N/src/data" + infn[len("wled00/data"):]
+    os.makedirs(os.path.dirname(templatefn), exist_ok=True)
+
+    processFile(srcfn,infn,templatefn)
 
     # temporarily output after each file
     with open('wled00/I18N/scripts/data.json','w') as f:
