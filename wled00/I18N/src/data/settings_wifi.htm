@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>${1:WiFi Settings}</title>
+<script>
+		var d = document;
+		var loc = false, locip, locproto = "http:";
+		var scanLoops = 0, preScanSSID = "";
+
+		function gId(e) { return d.getElementById(e); }
+		function cE(e) { return d.createElement(e); }
+		function H(){window.open("https://kno.wled.ge/features/settings/#wifi-settings");}
+		function B(){window.open(getURL("/settings"),"_self");}
+		function N() {
+			const button = gId("scan");
+			button.disabled = true;
+			button.textContent = "Scanning...";
+
+			fetch(getURL("/json/net")).then((response) => {
+				return response.json();
+			}).then((json) => {
+				// Get the list of networks only, defaulting to an empty array.
+				return Object.assign(
+					{},
+					{"networks": []},
+					json,
+				).networks.sort(
+					// Sort by signal strength, descending.
+					(a, b) => b.rssi - a.rssi
+				).reduce(
+					// Filter out duplicate SSIDs. Since it is sorted by signal
+					// strength, the strongest signal will be kept in the
+					// order it as originally appeared in the array.
+					(unique, other) => {
+						if(!unique.some(obj => obj.ssid === other.ssid)) {
+							unique.push(other);
+						}
+						return unique;
+					},
+					[],
+				);
+			}).then((networks) => {
+				// If there are no networks, fetch it again in a second.
+				// but only do this a few times.
+				if (networks.length === 0 && scanLoops < 10) {
+					scanLoops++;
+					setTimeout(N, 1000);
+					return;
+				}
+				scanLoops = 0;
+
+				let cs = gId("CS");
+				if (cs) {
+					let select = cE("select");
+					select.setAttribute("id", "CS");
+					select.setAttribute("name", "CS");
+					select.setAttribute("onchange", "T()");
+					preScanSSID = cs.value;
+
+					for (let i = 0; i < select.children.length; i++) {
+						select.removeChild(select.children[i]);
+					}
+
+					for (let i = 0; i < networks.length; i++) {
+						const option = cE("option");
+
+						option.setAttribute("value", networks[i].ssid);
+						option.textContent = `${networks[i].ssid} (${networks[i].rssi} dBm)`;
+
+						if (networks[i].ssid === cs.value) {
+							option.setAttribute("selected", "selected");
+						}
+
+						select.appendChild(option);
+					}
+					const option = cE("option");
+
+					option.setAttribute("value", "!Cs");
+					option.textContent = `Other network...`;
+					select.appendChild(option);
+
+					cs.replaceWith(select);
+				}
+
+				button.disabled = false;
+				button.textContent = "Scan";
+			});
+		}
+		// replace WiFi select with custom SSID input field again
+		function T() {
+			let cs = gId("CS");
+			if (!cs || cs.value != "!Cs") return;
+			let input = cE("input");
+			input.type = "text";
+			input.id = "CS";
+			input.name ="CS";
+			input.setAttribute("maxlength",32);
+			input.value = preScanSSID;
+			cs.replaceWith(input);
+		}
+		// https://www.educative.io/edpresso/how-to-dynamically-load-a-js-file-in-javascript
+		function loadJS(FILE_URL, async = true) {
+			let scE = cE("script");
+			scE.setAttribute("src", FILE_URL);
+			scE.setAttribute("type", "text/javascript");
+			scE.setAttribute("async", async);
+			d.body.appendChild(scE);
+			// success event
+			scE.addEventListener("load", () => {
+				//console.log("File loaded");
+				GetV();
+			});
+			// error event
+			scE.addEventListener("error", (ev) => {
+				console.log("Error on loading file", ev);
+				alert("Loading of configuration script failed.\nIncomplete page data!");
+			});
+		}
+		function S() {
+			let l = window.location;
+			if (l.protocol == "file:") {
+				loc = true;
+				locip = localStorage.getItem('locIp');
+				if (!locip) {
+					locip = prompt("File Mode. Please enter WLED IP!");
+					localStorage.setItem('locIp', locip);
+				}
+			} else {
+				// detect reverse proxy
+				let path = l.pathname;
+				let paths = path.slice(1,path.endsWith('/')?-1:undefined).split("/");
+				if (paths.length > 2) {
+					locproto = l.protocol;
+					loc = true;
+					locip = l.hostname + (l.port ? ":" + l.port : "") + "/" + paths[0];
+				}
+			}
+			loadJS(getURL('/settings/s.js?p=1'), false);	// If we set async false, file is loaded and executed, then next statement is processed
+			if (loc) d.Sf.action = getURL('/settings/wifi');
+		}
+		function getURL(path) {
+			return (loc ? locproto + "//" + locip : "") + path;
+		}
+	</script>
+<style>@import url("style.css");</style>
+</head>
+<body onload="S()">
+<form id="form_s" method="post" name="Sf">
+<div class="toprow">
+<div class="helpB"><button onclick="H()" type="button">?</button></div>
+<button onclick="B()" type="button">${2:Back}</button><button type="submit">${3:Save &amp; Connect}</button><hr/>
+</div>
+<h2>${4:WiFi setup}</h2>
+<h3>${5:Connect to existing network}</h3>
+<button id="scan" onclick="N()" type="button">${6:Scan}</button><br/>${7:
+		Network name (SSID, empty to not connect):}<br/>
+<input id="CS" maxlength="32" name="CS" type="text"/><br/>${8:
+		Network password: }<br/> <input maxlength="63" name="CP" type="password"/><br/>${9:
+		Static IP (leave at 0.0.0.0 for DHCP):}<br/>
+<input class="s" max="255" min="0" name="I0" required="" type="number"/> .
+		<input class="s" max="255" min="0" name="I1" required="" type="number"/> .
+		<input class="s" max="255" min="0" name="I2" required="" type="number"/> .
+		<input class="s" max="255" min="0" name="I3" required="" type="number"/><br/>${10:
+		Static gateway:}<br/>
+<input class="s" max="255" min="0" name="G0" required="" type="number"/> .
+		<input class="s" max="255" min="0" name="G1" required="" type="number"/> .
+		<input class="s" max="255" min="0" name="G2" required="" type="number"/> .
+		<input class="s" max="255" min="0" name="G3" required="" type="number"/><br/>${11:
+		Static subnet mask:}<br/>
+<input class="s" max="255" min="0" name="S0" required="" type="number"/> .
+		<input class="s" max="255" min="0" name="S1" required="" type="number"/> .
+		<input class="s" max="255" min="0" name="S2" required="" type="number"/> .
+		<input class="s" max="255" min="0" name="S3" required="" type="number"/><br/>${12:
+		mDNS address (leave empty for no mDNS):}<br/>${13:
+		http:// }<input maxlength="32" name="CM" type="text"/>${14: .local}<br/>${15:
+		Client IP: }<span class="sip">${16: Not connected }</span> <br/>
+<h3>${17:Configure Access Point}</h3>${18:
+		AP SSID (leave empty for no AP):}<br/> <input maxlength="32" name="AS" type="text"/><br/>${19:
+		Hide AP name: }<input name="AH" type="checkbox"/><br/>${20:
+		AP password (leave empty for open):}<br/> <input maxlength="63" name="AP" pattern="(.{8,63})|()" title="${55:Empty or min. 8 characters}" type="password"/><br/>${21:
+		Access Point WiFi channel: }<input class="xs" max="13" min="1" name="AC" required="" type="number"/><br/>${22:
+		AP opens:
+		}<select name="AB">
+<option value="0">${23:No connection after boot}</option>
+<option value="1">${24:Disconnected}</option>
+<option value="2">${25:Always}</option>
+<option value="3">${26:Never (not recommended)}</option></select><br/>${27:
+		AP IP: }<span class="sip">${28: Not active }</span><br/>
+<h3>${29:Experimental}</h3>${30:
+		Force 802.11g mode (ESP8266 only): }<input name="FG" type="checkbox"/><br/>${31:
+		Disable WiFi sleep: }<input name="WS" type="checkbox"/><br/>
+<i>${32:Can help with connectivity issues.}<br/>${33:
+		Do not enable if WiFi is working correctly, increases power consumption.}</i>
+<div id="remd">
+<h3>${34:Wireless Remote}</h3>
+<i>${35:Listen for events over ESP-NOW}<br/>${36:
+			Keep disabled if not using a remote, increases power consumption.}<br/></i>${37:
+		
+			Enable Remote: }<input name="RE" type="checkbox"/><br/>${38:
+			Hardware MAC: }<input name="RMAC" type="text"/><br/>${39:
+			Last Seen: }<span class="rlid">${40:None}</span> <br/>
+</div>
+<div id="ethd">
+<h3>${41:Ethernet Type}</h3>
+<select name="ETH">
+<option value="0">${42:None}</option>
+<option value="9">${43:ABC! WLED V43 &amp; compatible}</option>
+<option value="2">${44:ESP32-POE}</option>
+<option value="6">${45:ESP32Deux}</option>
+<option value="7">${46:KIT-VE}</option>
+<option value="8">${47:QuinLED-Dig-Octa &amp; T-ETH-POE}</option>
+<option value="4">${48:QuinLED-ESP32}</option>
+<option value="10">${49:Serg74-ETH32}</option>
+<option value="5">${50:TwilightLord-ESP32}</option>
+<option value="3">${51:WESP32}</option>
+<option value="1">${52:WT32-ETH01}</option>
+</select><br/><br/>
+</div>
+<hr/>
+<button onclick="B()" type="button">${53:Back}</button><button type="submit">${54:Save &amp; Connect}</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,4713 @@
+{
+    "\n\t\t\t\t\t\t\t\tLoading...\n\t\t\t\t\t\t\t": {
+        "読み込み中...": {
+            "wled00/data/index.htm": [
+                24,
+                26
+            ]
+        }
+    },
+    "\n\t\t\t\tTo improve the safety of your setup,": {
+        "セットアップの安全性を向上させるには、": {
+            "wled00/data/settings_leds.htm": [
+                11
+            ]
+        }
+    },
+    "\n\t\t\t\tWARNING: You may need to update each panel parameters after they are generated.": {
+        "警告: 各パネルのパラメータは、生成後に更新する必要がある場合があります。": {
+            "wled00/data/settings_2D.htm": [
+                28
+            ]
+        }
+    },
+    "\n\t\t\t\tmultiple power injection points and a fuse!": {
+        "複数の電力注入ポイントとヒューズ!": {
+            "wled00/data/settings_leds.htm": [
+                13
+            ]
+        }
+    },
+    "\n\t\t\t\tplease use thick cables,": {
+        "太いケーブルを使用してください。": {
+            "wled00/data/settings_leds.htm": [
+                12
+            ]
+        }
+    },
+    "\n\t\t\t\t⚠ Your power supply provides high current.": {
+        "⚠ 電源装置は大電流を供給します。": {
+            "wled00/data/settings_leds.htm": [
+                10
+            ]
+        }
+    },
+    "\n\t\t\t(Current estimated usage: ": {
+        "(現在の推定使用量:": {
+            "wled00/data/settings_leds.htm": [
+                17
+            ]
+        }
+    },
+    "\n\t\t\t1": {
+        "1": {
+            "wled00/data/settings_2D.htm": [
+                13
+            ]
+        }
+    },
+    "\n\t\t\t12h LED: ": {
+        "12時間LED:": {
+            "wled00/data/settings_time.htm": [
+                47
+            ]
+        }
+    },
+    "\n\t\t\tA value of -1 means that pixel at that position is missing, a value of 0 means never paint that pixel, and 1 means regular pixel.": {
+        "値 -1 はその位置のピクセルが欠落していることを意味し、値 0 はそのピクセルを決してペイントしないことを意味し、1 は通常のピクセルを意味します。": {
+            "wled00/data/settings_2D.htm": [
+                40
+            ]
+        }
+    },
+    "\n\t\t\tCCT additive blending: ": {
+        "CCT添加剤配合：": {
+            "wled00/data/settings_leds.htm": [
+                98
+            ]
+        }
+    },
+    "\n\t\t\tCalculate CCT from RGB: ": {
+        "RGB から CCT を計算します。": {
+            "wled00/data/settings_leds.htm": [
+                97
+            ]
+        }
+    },
+    "\n\t\t\tColor Order Override:\n\t\t\t": {
+        "色の順序の上書き:": {
+            "wled00/data/settings_leds.htm": [
+                39
+            ]
+        }
+    },
+    "\n\t\t\tConnect the module to your local WiFi here!": {
+        "ここでモジュールをローカル WiFi に接続します。": {
+            "wled00/data/welcome.htm": [
+                5
+            ]
+        }
+    },
+    "\n\t\t\tFirst LED: ": {
+        "最初の LED:": {
+            "wled00/data/settings_time.htm": [
+                45
+            ]
+        }
+    },
+    "\n\t\t\tGlobal override for Auto-calculate white:": {
+        "自動計算白のグローバル オーバーライド:": {
+            "wled00/data/settings_leds.htm": [
+                90
+            ]
+        }
+    },
+    "\n\t\t\tHardware MAC: ": {
+        "ハードウェアMAC:": {
+            "wled00/data/settings_wifi.htm": [
+                38
+            ]
+        }
+    },
+    "\n\t\t\tHorizontal panels: ": {
+        "水平パネル:": {
+            "wled00/data/settings_2D.htm": [
+                11
+            ]
+        }
+    },
+    "\n\t\t\tIf you are using an external power supply, enter its rating.": {
+        "外部電源を使用している場合は、その定格を入力します。": {
+            "wled00/data/settings_leds.htm": [
+                16
+            ]
+        }
+    },
+    "\n\t\t\tKeep at <1A if powering LEDs directly from the ESP 5V pin!": {
+        "ESP 5V ピンから LED に直接電力を供給する場合は、1A 未満に抑えてください。": {
+            "wled00/data/settings_leds.htm": [
+                15
+            ]
+        }
+    },
+    "\n\t\t\tKeep disabled if not using a remote, increases power consumption.": {
+        "リモコンを使用しない場合は無効のままにすると、電力消費が増加します。": {
+            "wled00/data/settings_wifi.htm": [
+                36
+            ]
+        }
+    },
+    "\n\t\t\tLED voltage (Max. current for a single LED):": {
+        "LED 電圧 (単一 LED の最大電流):": {
+            "wled00/data/settings_leds.htm": [
+                19
+            ]
+        }
+    },
+    "\n\t\t\tLast Seen: ": {
+        "最後に見た場所:": {
+            "wled00/data/settings_wifi.htm": [
+                39
+            ]
+        }
+    },
+    "\n\t\t\tLoading...\n\t\t": {
+        "読み込み中...": {
+            "wled00/data/index.htm": [
+                35
+            ]
+        }
+    },
+    "\n\t\t\tMaximum Current: ": {
+        "最大電流:": {
+            "wled00/data/settings_leds.htm": [
+                8
+            ]
+        }
+    },
+    "\n\t\t\tOrientation: ": {
+        "向き:": {
+            "wled00/data/settings_2D.htm": [
+                20
+            ]
+        }
+    },
+    "\n\t\t\tPanel dimensions (WxH): ": {
+        "パネル寸法 (幅×高さ):": {
+            "wled00/data/settings_2D.htm": [
+                9
+            ]
+        }
+    },
+    "\n\t\t\tSeconds (as trail): ": {
+        "秒数 (証跡として):": {
+            "wled00/data/settings_time.htm": [
+                49
+            ]
+        }
+    },
+    "\n\t\t\tSerpentine: ": {
+        "サーペンタイン:": {
+            "wled00/data/settings_2D.htm": [
+                23
+            ]
+        }
+    },
+    "\n\t\t\tShow 5min marks: ": {
+        "5分マークを表示:": {
+            "wled00/data/settings_time.htm": [
+                48
+            ]
+        }
+    },
+    "\n\t\t\tUse less than ": {
+        "以下の値を使用してください": {
+            "wled00/data/settings_leds.htm": [
+                33
+            ]
+        }
+    },
+    "\n\t\t\tVertical panels: ": {
+        "垂直パネル:": {
+            "wled00/data/settings_2D.htm": [
+                12
+            ]
+        }
+    },
+    "\n\t\t\t⚠ You might run into stability or lag issues.": {
+        "⚠ 安定性や遅延の問題が発生する可能性があります。": {
+            "wled00/data/settings_leds.htm": [
+                32
+            ]
+        }
+    },
+    "\n\t\t\n\t\t\tEnable Remote: ": {
+        "リモートを有効にする:": {
+            "wled00/data/settings_wifi.htm": [
+                37
+            ]
+        }
+    },
+    "\n\t\t(c) 2016-2023 Christian Schwinne ": {
+        "(c) 2016-2023 クリスチャン・シュウィン": {
+            "wled00/data/settings_sec.htm": [
+                35
+            ]
+        }
+    },
+    "\n\t\tA huge thank you to everyone who helped me create WLED!": {
+        "WLED の作成に協力してくれた皆さんに心から感謝します。": {
+            "wled00/data/settings_sec.htm": [
+                34
+            ]
+        }
+    },
+    "\n\t\tAP IP: ": {
+        "あなた：": {
+            "wled00/data/settings_wifi.htm": [
+                27
+            ]
+        }
+    },
+    "\n\t\tAP SSID (leave empty for no AP):": {
+        "AP SSID (AP がない場合は空のままにします):": {
+            "wled00/data/settings_wifi.htm": [
+                18
+            ]
+        }
+    },
+    "\n\t\tAP opens:\n\t\t": {
+        "AP が開きます:": {
+            "wled00/data/settings_wifi.htm": [
+                22
+            ]
+        }
+    },
+    "\n\t\tAP password (leave empty for open):": {
+        "AP パスワード (オープンする場合は空のままにしておきます):": {
+            "wled00/data/settings_wifi.htm": [
+                20
+            ]
+        }
+    },
+    "\n\t\tAccess Point WiFi channel: ": {
+        "アクセスポイントのWiFiチャネル:": {
+            "wled00/data/settings_wifi.htm": [
+                21
+            ]
+        }
+    },
+    "\n\t\tAlexa On/Off Preset: ": {
+        "Alexa オン/オフ プリセット:": {
+            "wled00/data/settings_time.htm": [
+                59
+            ]
+        }
+    },
+    "\n\t\tAll settings and presets will be erased.": {
+        "すべての設定とプリセットが消去されます。": {
+            "wled00/data/settings_sec.htm": [
+                15
+            ]
+        }
+    },
+    "\n\t\tAnalog Clock overlay: ": {
+        "アナログ時計オーバーレイ:": {
+            "wled00/data/settings_time.htm": [
+                44
+            ]
+        }
+    },
+    "\n\t\tApply IR change to main segment only: ": {
+        "IR 変更をメインセグメントのみに適用します。": {
+            "wled00/data/settings_leds.htm": [
+                52
+            ]
+        }
+    },
+    "\n\t\tApply preset ": {
+        "プリセットを適用する": {
+            "wled00/data/settings_leds.htm": [
+                62
+            ]
+        }
+    },
+    "\n\t\tBrightness factor: ": {
+        "明るさ係数:": {
+            "wled00/data/settings_leds.htm": [
+                69
+            ]
+        }
+    },
+    "\n\t\tClient IP: ": {
+        "クライアントIP:": {
+            "wled00/data/settings_wifi.htm": [
+                15
+            ]
+        }
+    },
+    "\n\t\tCountdown Goal:": {
+        "カウントダウン目標:": {
+            "wled00/data/settings_time.htm": [
+                51
+            ]
+        }
+    },
+    "\n\t\tCountdown Mode: ": {
+        "カウントダウンモード:": {
+            "wled00/data/settings_time.htm": [
+                50
+            ]
+        }
+    },
+    "\n\t\tCountdown-Over Preset: ": {
+        "カウントダウンオーバープリセット:": {
+            "wled00/data/settings_time.htm": [
+                60
+            ]
+        }
+    },
+    "\n\t\tCrossfade: ": {
+        "クロスフェード:": {
+            "wled00/data/settings_leds.htm": [
+                71
+            ]
+        }
+    },
+    "\n\t\tCurrent local time is ": {
+        "現在の現地時間は": {
+            "wled00/data/settings_time.htm": [
+                33
+            ]
+        }
+    },
+    "\n\t\tCustom bus start indices: ": {
+        "カスタム バス開始インデックス:": {
+            "wled00/data/settings_leds.htm": [
+                37
+            ]
+        }
+    },
+    "\n\t\tDate: ": {
+        "日付： ": {
+            "wled00/data/settings_time.htm": [
+                52
+            ]
+        }
+    },
+    "\n\t\tDefault Duration: ": {
+        "デフォルトの期間:": {
+            "wled00/data/settings_leds.htm": [
+                80
+            ]
+        }
+    },
+    "\n\t\tDefault Target brightness: ": {
+        "デフォルトのターゲットの明るさ:": {
+            "wled00/data/settings_leds.htm": [
+                82
+            ]
+        }
+    },
+    "\n\t\tDefault brightness: ": {
+        "デフォルトの明るさ:": {
+            "wled00/data/settings_leds.htm": [
+                60
+            ]
+        }
+    },
+    "\n\t\tDeny access to WiFi settings if locked: ": {
+        "ロックされている場合は WiFi 設定へのアクセスを拒否します。": {
+            "wled00/data/settings_sec.htm": [
+                13
+            ]
+        }
+    },
+    "\n\t\tDisable WiFi sleep: ": {
+        "WiFi スリープを無効にする:": {
+            "wled00/data/settings_wifi.htm": [
+                31
+            ]
+        }
+    },
+    "\n\t\tDisable internal pull-up/down: ": {
+        "内部プルアップ/ダウンを無効にします。": {
+            "wled00/data/settings_leds.htm": [
+                40
+            ]
+        }
+    },
+    "\n\t\tDo not enable if WiFi is working correctly, increases power consumption.": {
+        "WiFi が正常に動作している場合は有効にしないでください。電力消費が増加します。": {
+            "wled00/data/settings_wifi.htm": [
+                33
+            ]
+        }
+    },
+    "\n\t\tDownload the latest binary: ": {
+        "最新のバイナリをダウンロードします。": {
+            "wled00/data/update.htm": [
+                5
+            ]
+        }
+    },
+    "\n\t\tEach panel can be of different size and/or have different LED orientation and/or starting point and/or layout.": {
+        "各パネルは、異なるサイズ、および/または異なる LED の方向、および/または開始点、および/またはレイアウトを持つことができます。": {
+            "wled00/data/settings_2D.htm": [
+                33
+            ]
+        }
+    },
+    "\n\t\tEffect blending: ": {
+        "エフェクトのブレンド:": {
+            "wled00/data/settings_leds.htm": [
+                72
+            ]
+        }
+    },
+    "\n\t\tEnable ArduinoOTA: ": {
+        "ArduinoOTA を有効にする:": {
+            "wled00/data/settings_sec.htm": [
+                19
+            ]
+        }
+    },
+    "\n\t\tEnable Palette transitions: ": {
+        "パレットのトランジションを有効にする:": {
+            "wled00/data/settings_leds.htm": [
+                75
+            ]
+        }
+    },
+    "\n\t\tEnable automatic brightness limiter: ": {
+        "自動輝度リミッターを有効にする:": {
+            "wled00/data/settings_leds.htm": [
+                7
+            ]
+        }
+    },
+    "\n\t\tFactory reset: ": {
+        "工場出荷時設定にリセット:": {
+            "wled00/data/settings_sec.htm": [
+                14
+            ]
+        }
+    },
+    "\n\t\tFor security reasons, passwords are not backed up.\n\t\t": {
+        "セキュリティ上の理由から、パスワードはバックアップされません。": {
+            "wled00/data/settings_sec.htm": [
+                29
+            ]
+        }
+    },
+    "\n\t\tForce 802.11g mode (ESP8266 only): ": {
+        "802.11g モードを強制する (ESP8266 のみ):": {
+            "wled00/data/settings_wifi.htm": [
+                30
+            ]
+        }
+    },
+    "\n\t\tGet time from NTP server: ": {
+        "NTP サーバーから時刻を取得します。": {
+            "wled00/data/settings_time.htm": [
+                5
+            ]
+        }
+    },
+    "\n\t\tGlobal I": {
+        "グローバルI": {
+            "wled00/data/settings_um.htm": [
+                7
+            ]
+        }
+    },
+    "\n\t\tGlobal SPI GPIOs (HW)": {
+        "グローバル SPI GPIO (HW)": {
+            "wled00/data/settings_um.htm": [
+                12
+            ]
+        }
+    },
+    "\n\t\tHide AP name: ": {
+        "AP 名を非表示にする:": {
+            "wled00/data/settings_wifi.htm": [
+                19
+            ]
+        }
+    },
+    "\n\t\tI hate dark mode: ": {
+        "私はダークモードが嫌いです:": {
+            "wled00/data/settings_ui.htm": [
+                16
+            ]
+        }
+    },
+    "\n\t\tIR GPIO: ": {
+        "IR GPIO:": {
+            "wled00/data/settings_leds.htm": [
+                42
+            ]
+        }
+    },
+    "\n\t\tIncorrect configuration may require a factory reset or re-flashing of your ESP.": {
+        "構成が正しくない場合は、ESP を工場出荷時設定にリセットするか、再フラッシュする必要がある場合があります。": {
+            "wled00/data/settings_sec.htm": [
+                28
+            ]
+        }
+    },
+    "\n\t\tInstalled version: ": {
+        "インストールされているバージョン:": {
+            "wled00/data/update.htm": [
+                3
+            ]
+        }
+    },
+    "\n\t\tJust enter the preset ID below!": {
+        "以下にプリセット ID を入力するだけです。": {
+            "wled00/data/settings_time.htm": [
+                57
+            ]
+        }
+    },
+    "\n\t\tLED Memory Usage: ": {
+        "LED メモリ使用量:": {
+            "wled00/data/settings_leds.htm": [
+                30
+            ]
+        }
+    },
+    "\n\t\tLatitude: ": {
+        "緯度：": {
+            "wled00/data/settings_time.htm": [
+                35
+            ]
+        }
+    },
+    "\n\t\tLock wireless (OTA) software update: ": {
+        "ロック ワイヤレス (OTA) ソフトウェア アップデート:": {
+            "wled00/data/settings_sec.htm": [
+                7
+            ]
+        }
+    },
+    "\n\t\tLongitude: ": {
+        "経度：": {
+            "wled00/data/settings_time.htm": [
+                38
+            ]
+        }
+    },
+    "\n\t\tMISO:": {
+        "味噌：": {
+            "wled00/data/settings_um.htm": [
+                15
+            ]
+        }
+    },
+    "\n\t\tMOSI:": {
+        "煙：": {
+            "wled00/data/settings_um.htm": [
+                14
+            ]
+        }
+    },
+    "\n\t\tMake a segment for each output: ": {
+        "出力ごとにセグメントを作成します。": {
+            "wled00/data/settings_leds.htm": [
+                36
+            ]
+        }
+    },
+    "\n\t\tMode:\n\t\t": {
+        "モード：": {
+            "wled00/data/settings_leds.htm": [
+                83
+            ]
+        }
+    },
+    "\n\t\tNetwork name (SSID, empty to not connect):": {
+        "ネットワーク名 (SSID、接続しない場合は空です):": {
+            "wled00/data/settings_wifi.htm": [
+                7
+            ]
+        }
+    },
+    "\n\t\tNetwork password: ": {
+        "ネットワークパスワード:": {
+            "wled00/data/settings_wifi.htm": [
+                8
+            ]
+        }
+    },
+    "\n\t\tNumber of panels: ": {
+        "パネルの数:": {
+            "wled00/data/settings_2D.htm": [
+                31
+            ]
+        }
+    },
+    "\n\t\tPalette blending:\n\t\t": {
+        "パレットのブレンド:": {
+            "wled00/data/settings_leds.htm": [
+                100
+            ]
+        }
+    },
+    "\n\t\tPassphrase: ": {
+        "パスフレーズ:": {
+            "wled00/data/settings_sec.htm": [
+                8
+            ]
+        }
+    },
+    "\n\t\tReboot after save? ": {
+        "保存後に再起動しますか?": {
+            "wled00/data/settings_um.htm": [
+                17
+            ]
+        }
+    },
+    "\n\t\tRefresh the main UI to apply changes.": {
+        "メイン UI を更新して変更を適用します。": {
+            "wled00/data/settings_ui.htm": [
+                13
+            ]
+        }
+    },
+    "\n\t\tRelay GPIO: ": {
+        "リレー GPIO:": {
+            "wled00/data/settings_leds.htm": [
+                56
+            ]
+        }
+    },
+    "\n\t\tSCL:": {
+        "SCL:": {
+            "wled00/data/settings_um.htm": [
+                11
+            ]
+        }
+    },
+    "\n\t\tSCLK:": {
+        "SCLK:": {
+            "wled00/data/settings_um.htm": [
+                16
+            ]
+        }
+    },
+    "\n\t\tSDA:": {
+        "SDA:": {
+            "wled00/data/settings_um.htm": [
+                10
+            ]
+        }
+    },
+    "\n\t\tServer description: ": {
+        "サーバーの説明:": {
+            "wled00/data/settings_ui.htm": [
+                7
+            ]
+        }
+    },
+    "\n\t\tServer message: ": {
+        "サーバーメッセージ:": {
+            "wled00/data/settings_sec.htm": [
+                38
+            ]
+        }
+    },
+    "\n\t\tSettings PIN: ": {
+        "設定PIN:": {
+            "wled00/data/settings_sec.htm": [
+                5
+            ]
+        }
+    },
+    "\n\t\tStatic IP (leave at 0.0.0.0 for DHCP):": {
+        "静的 IP (DHCP の場合は 0.0.0.0 のまま):": {
+            "wled00/data/settings_wifi.htm": [
+                9
+            ]
+        }
+    },
+    "\n\t\tStatic gateway:": {
+        "静的ゲートウェイ:": {
+            "wled00/data/settings_wifi.htm": [
+                10
+            ]
+        }
+    },
+    "\n\t\tStatic subnet mask:": {
+        "静的サブネットマスク:": {
+            "wled00/data/settings_wifi.htm": [
+                11
+            ]
+        }
+    },
+    "\n\t\tSync button toggles both send and receive: ": {
+        "同期ボタンは送信と受信の両方を切り替えます。": {
+            "wled00/data/settings_ui.htm": [
+                8
+            ]
+        }
+    },
+    "\n\t\tTarget refresh rate: ": {
+        "目標リフレッシュレート:": {
+            "wled00/data/settings_leds.htm": [
+                105
+            ]
+        }
+    },
+    "\n\t\tThe password should be changed when OTA is enabled.": {
+        "OTA が有効になっている場合は、パスワードを変更する必要があります。": {
+            "wled00/data/settings_sec.htm": [
+                10
+            ]
+        }
+    },
+    "\n\t\tTime zone: \n\t\t": {
+        "タイムゾーン:": {
+            "wled00/data/settings_time.htm": [
+                7
+            ]
+        }
+    },
+    "\n\t\tTime: ": {
+        "時間： ": {
+            "wled00/data/settings_time.htm": [
+                53
+            ]
+        }
+    },
+    "\n\t\tTimed-Light-Over Presets: ": {
+        "タイムライトオーバープリセット:": {
+            "wled00/data/settings_time.htm": [
+                61
+            ]
+        }
+    },
+    "\n\t\tTo enable OTA, for security reasons you need to also enter the correct password!": {
+        "OTA を有効にするには、セキュリティ上の理由から、正しいパスワードも入力する必要があります。": {
+            "wled00/data/settings_sec.htm": [
+                9
+            ]
+        }
+    },
+    "\n\t\tTotal LEDs: ": {
+        "LED の合計:": {
+            "wled00/data/settings_leds.htm": [
+                5
+            ]
+        }
+    },
+    "\n\t\tTouch threshold: ": {
+        "タッチ閾値:": {
+            "wled00/data/settings_leds.htm": [
+                41
+            ]
+        }
+    },
+    "\n\t\tTransition Time: ": {
+        "移行時間:": {
+            "wled00/data/settings_leds.htm": [
+                73
+            ]
+        }
+    },
+    "\n\t\tTurn LEDs on after power up/reset: ": {
+        "電源投入/リセット後に LED を点灯します。": {
+            "wled00/data/settings_leds.htm": [
+                59
+            ]
+        }
+    },
+    "\n\t\tUTC offset: ": {
+        "UTC オフセット:": {
+            "wled00/data/settings_time.htm": [
+                31
+            ]
+        }
+    },
+    "\n\t\tUse 24h format: ": {
+        "24 時間形式を使用します。": {
+            "wled00/data/settings_time.htm": [
+                6
+            ]
+        }
+    },
+    "\n\t\tUse Gamma correction for brightness: ": {
+        "明るさのガンマ補正を使用します。": {
+            "wled00/data/settings_leds.htm": [
+                66
+            ]
+        }
+    },
+    "\n\t\tUse Gamma correction for color: ": {
+        "色にガンマ補正を使用する:": {
+            "wled00/data/settings_leds.htm": [
+                64
+            ]
+        }
+    },
+    "\n\t\tUse Gamma value: ": {
+        "ガンマ値を使用します:": {
+            "wled00/data/settings_leds.htm": [
+                68
+            ]
+        }
+    },
+    "\n\t\tUse global LED buffer: ": {
+        "グローバル LED バッファを使用します。": {
+            "wled00/data/settings_leds.htm": [
+                38
+            ]
+        }
+    },
+    "\n\t\tWhite Balance correction: ": {
+        "ホワイトバランス補正：": {
+            "wled00/data/settings_leds.htm": [
+                89
+            ]
+        }
+    },
+    "\n\t\tYou will need to set them again if using a different browser, device or WLED IP address.": {
+        "別のブラウザ、デバイス、または WLED IP アドレスを使用する場合は、再度設定する必要があります。": {
+            "wled00/data/settings_ui.htm": [
+                12
+            ]
+        }
+    },
+    "\n\t\thttp:// ": {
+        "http://": {
+            "wled00/data/settings_wifi.htm": [
+                13
+            ]
+        }
+    },
+    "\n\t\tmDNS address (leave empty for no mDNS):": {
+        "mDNS アドレス (mDNS を使用しない場合は空のままにします):": {
+            "wled00/data/settings_wifi.htm": [
+                12
+            ]
+        }
+    },
+    "\n\tSample Detail.\n": {
+        "サンプルの詳細。": {
+            "wled00/data/msg.htm": [
+                3
+            ]
+        }
+    },
+    "\n\tStrip or panel:\n\t": {
+        "ストリップまたはパネル:": {
+            "wled00/data/settings_2D.htm": [
+                5
+            ]
+        }
+    },
+    "\n\tTo use built-in effects, use an override button below.": {
+        "内蔵エフェクトを使用するには、下のオーバーライド ボタンを使用します。": {
+            "wled00/data/index.htm": [
+                57
+            ]
+        }
+    },
+    "\n\tYou can return to realtime mode by pressing the star in the top left corner.": {
+        "左上隅の星を押すと、リアルタイム モードに戻ることができます。": {
+            "wled00/data/index.htm": [
+                58
+            ]
+        }
+    },
+    "\n\nChannels per fixture (15 max): ": {
+        "器具あたりのチャンネル数 (最大 15):": {
+            "wled00/data/settings_dmx.htm": [
+                9
+            ]
+        }
+    },
+    "\n\nProxy Universe ": {
+        "プロキシ ユニバース": {
+            "wled00/data/settings_dmx.htm": [
+                5
+            ]
+        }
+    },
+    "\n                    Range\n                  ": {
+        "範囲": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                8
+            ]
+        }
+    },
+    "\n                    Segment 0\n                  ": {
+        "セグメント0": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                18
+            ]
+        }
+    },
+    "\n                    upload\n                  ": {
+        "アップロード": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                35
+            ]
+        }
+    },
+    "\n                    Scale image\n                ": {
+        " スケールイメージ": {
+            "wled00/data/pixart/pixart.htm": [
+                26
+            ]
+        }
+    },
+    "\n                  Copy to Clipboard\n                ": {
+        "クリップボードにコピー": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                39
+            ]
+        }
+    },
+    "\n                  Download\n                ": {
+        "ダウンロード": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                41
+            ]
+        }
+    },
+    "\n                  Simulate\n                ": {
+        "シミュレートする": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                42
+            ]
+        }
+    },
+    "\n                Click to select a file\n            ": {
+        "クリックしてファイルを選択します": {
+            "wled00/data/pixart/pixart.htm": [
+                31
+            ]
+        }
+    },
+    "\n                Color that will replace the\n                ": {
+        "に代わる色": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                31
+            ]
+        }
+    },
+    "\n                Generate\n              ": {
+        "生成する": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                38
+            ]
+        }
+    },
+    "\n              Drag and drop a file here or click to select a local file\n            ": {
+        "ここにファイルをドラッグ アンド ドロップするか、クリックしてローカル ファイルを選択します": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                37
+            ]
+        }
+    },
+    "\n            WLED Pixel Art Converter\n          ": {
+        "WLED ピクセル アート コンバーター": {
+            "wled00/data/pixart/pixart.htm": [
+                2
+            ]
+        }
+    },
+    "\n          Available static palettes\n        ": {
+        "利用可能な静的パレット": {
+            "wled00/data/cpal/cpal.htm": [
+                5
+            ]
+        }
+    },
+    "\n          Currently in use custom palettes\n        ": {
+        "現在使用中のカスタムパレット": {
+            "wled00/data/cpal/cpal.htm": [
+                3
+            ]
+        }
+    },
+    "\n          Github © Pixel Magic Tool\n        ": {
+        "Github © Pixel Magic Tool": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                43
+            ]
+        }
+    },
+    "\n      Click on the gradient editor to add new color slider, then the colored box below the slider to change its color. \n      Click the red box below indicator (and confirm) to delete. \n      Once finished, click the arrow icon to upload into the desired slot. \n      To edit existing palette, click the pencil icon.\n    ": {
+        "グラデーション エディターをクリックして新しいカラー スライダーを追加し、スライダーの下にあるカラー ボックスをクリックして色を変更します。 \n      削除するには、インジケーターの下の赤いボックスをクリックして (確認して) ください。 \n      完了したら、矢印アイコンをクリックして目的のスロットにアップロードします。 \n      既存のパレットを編集するには、鉛筆アイコンをクリックします。": {
+            "wled00/data/cpal/cpal.htm": [
+                4
+            ]
+        }
+    },
+    "\n(alternatively, connect a second ESP to them and use the UDP sync)\n": {
+        "(または、2 番目の ESP を接続し、UDP 同期を使用します)": {
+            "wled00/data/settings_sync.htm": [
+                73
+            ]
+        }
+    },
+    "\n(when first connecting)": {
+        "（初回接続時）": {
+            "wled00/data/settings_sync.htm": [
+                102
+            ]
+        }
+    },
+    "\n2nd Port: ": {
+        "2番目のポート:": {
+            "wled00/data/settings_sync.htm": [
+                7
+            ]
+        }
+    },
+    "\nAlexa invocation name: ": {
+        "Alexa 呼び出し名:": {
+            "wled00/data/settings_sync.htm": [
+                67
+            ]
+        }
+    },
+    "\nAlso emulate devices to call the first ": {
+        "最初に呼び出すデバイスもエミュレートします": {
+            "wled00/data/settings_sync.htm": [
+                68
+            ]
+        }
+    },
+    "\nBaud rate:\n": {
+        "ボーレート：": {
+            "wled00/data/settings_sync.htm": [
+                106
+            ]
+        }
+    },
+    "\nBroker: ": {
+        "ブローカ：": {
+            "wled00/data/settings_sync.htm": [
+                77
+            ]
+        }
+    },
+    "\nClient ID: ": {
+        "クライアントID:": {
+            "wled00/data/settings_sync.htm": [
+                83
+            ]
+        }
+    },
+    "\nDMX fixtures start LED: ": {
+        "DMX フィクスチャの開始 LED:": {
+            "wled00/data/settings_dmx.htm": [
+                16
+            ]
+        }
+    },
+    "\nDMX mode:\n": {
+        "DMXモード:": {
+            "wled00/data/settings_sync.htm": [
+                46
+            ]
+        }
+    },
+    "\nDMX segment spacing: ": {
+        "DMX セグメントの間隔:": {
+            "wled00/data/settings_sync.htm": [
+                44
+            ]
+        }
+    },
+    "\nDMX start address: ": {
+        "DMX 開始アドレス:": {
+            "wled00/data/settings_sync.htm": [
+                43
+            ]
+        }
+    },
+    "\nDevice Topic: ": {
+        "デバイスのトピック:": {
+            "wled00/data/settings_sync.htm": [
+                84
+            ]
+        }
+    },
+    "\nDisable realtime gamma correction: ": {
+        "リアルタイム ガンマ補正を無効にします。": {
+            "wled00/data/settings_sync.htm": [
+                62
+            ]
+        }
+    },
+    "\nE1.31 port priority: ": {
+        "E1.31 ポート優先度:": {
+            "wled00/data/settings_sync.htm": [
+                45
+            ]
+        }
+    },
+    "\nEmulate Alexa device: ": {
+        "Alexa デバイスをエミュレートします。": {
+            "wled00/data/settings_sync.htm": [
+                66
+            ]
+        }
+    },
+    "\nEnable MQTT: ": {
+        "MQTT を有効にする:": {
+            "wled00/data/settings_sync.htm": [
+                76
+            ]
+        }
+    },
+    "\nEnable instance list: ": {
+        "インスタンス リストを有効にする:": {
+            "wled00/data/settings_sync.htm": [
+                26
+            ]
+        }
+    },
+    "\nFor best results, only use one of these services at a time.": {
+        "最良の結果を得るには、一度にこれらのサービスのうち 1 つだけを使用してください。": {
+            "wled00/data/settings_sync.htm": [
+                72
+            ]
+        }
+    },
+    "\nForce max brightness: ": {
+        "強制最大輝度:": {
+            "wled00/data/settings_sync.htm": [
+                61
+            ]
+        }
+    },
+    "\nGroup Topic: ": {
+        "グループトピック:": {
+            "wled00/data/settings_sync.htm": [
+                85
+            ]
+        }
+    },
+    "\nHue Bridge IP:": {
+        "色相ブリッジIP:": {
+            "wled00/data/settings_sync.htm": [
+                100
+            ]
+        }
+    },
+    "\nHue status: ": {
+        "色相ステータス:": {
+            "wled00/data/settings_sync.htm": [
+                103
+            ]
+        }
+    },
+    "\nMake this instance discoverable: ": {
+        "このインスタンスを検出可能にします。": {
+            "wled00/data/settings_sync.htm": [
+                27
+            ]
+        }
+    },
+    "\nMulticast: ": {
+        "マルチキャスト:": {
+            "wled00/data/settings_sync.htm": [
+                37
+            ]
+        }
+    },
+    "\nNever use the MQTT password for another service!": {
+        "MQTT パスワードを別のサービスに使用しないでください。": {
+            "wled00/data/settings_sync.htm": [
+                80
+            ]
+        }
+    },
+    "\nPassword: ": {
+        "パスワード：": {
+            "wled00/data/settings_sync.htm": [
+                82
+            ]
+        }
+    },
+    "\nPoll Hue light ": {
+        "ポーリングヒューライト": {
+            "wled00/data/settings_sync.htm": [
+                93
+            ]
+        }
+    },
+    "\nPort: ": {
+        "ポート：": {
+            "wled00/data/settings_sync.htm": [
+                78
+            ]
+        }
+    },
+    "\nPublish on button press: ": {
+        "ボタンを押すと公開:": {
+            "wled00/data/settings_sync.htm": [
+                86
+            ]
+        }
+    },
+    "\nRealtime LED offset: ": {
+        "リアルタイム LED オフセット:": {
+            "wled00/data/settings_sync.htm": [
+                63
+            ]
+        }
+    },
+    "\nReceive UDP realtime: ": {
+        "UDP リアルタイム受信:": {
+            "wled00/data/settings_sync.htm": [
+                29
+            ]
+        }
+    },
+    "\nReceive: ": {
+        "受け取る：": {
+            "wled00/data/settings_sync.htm": [
+                11
+            ]
+        }
+    },
+    "\nRetain brightness & color messages: ": {
+        "明るさと色のメッセージを保持:": {
+            "wled00/data/settings_sync.htm": [
+                87
+            ]
+        }
+    },
+    "\nSend Alexa notifications: ": {
+        "Alexa 通知を送信します。": {
+            "wled00/data/settings_sync.htm": [
+                20
+            ]
+        }
+    },
+    "\nSend Macro notifications: ": {
+        "マクロ通知を送信します。": {
+            "wled00/data/settings_sync.htm": [
+                22
+            ]
+        }
+    },
+    "\nSend Philips Hue change notifications: ": {
+        "Philips Hue 変更通知を送信します。": {
+            "wled00/data/settings_sync.htm": [
+                21
+            ]
+        }
+    },
+    "\nSend notifications on button press or IR: ": {
+        "ボタンを押すか IR で通知を送信します。": {
+            "wled00/data/settings_sync.htm": [
+                19
+            ]
+        }
+    },
+    "\nSend notifications on direct change: ": {
+        "直接変更に関する通知を送信します。": {
+            "wled00/data/settings_sync.htm": [
+                18
+            ]
+        }
+    },
+    "\nSkip out-of-sequence packets: ": {
+        "シーケンス外のパケットをスキップします。": {
+            "wled00/data/settings_sync.htm": [
+                42
+            ]
+        }
+    },
+    "\nSpacing between start channels: ": {
+        "開始チャンネル間の間隔:": {
+            "wled00/data/settings_dmx.htm": [
+                11
+            ]
+        }
+    },
+    "\nStart channel: ": {
+        "開始チャンネル:": {
+            "wled00/data/settings_dmx.htm": [
+                10
+            ]
+        }
+    },
+    "\nStart universe: ": {
+        "ユニバースを開始します:": {
+            "wled00/data/settings_sync.htm": [
+                38
+            ]
+        }
+    },
+    "\nThen, receive ": {
+        "次に、受け取ります": {
+            "wled00/data/settings_sync.htm": [
+                96
+            ]
+        }
+    },
+    "\nThis may impact the responsiveness of WLED.": {
+        "これは、WLED の応答性に影響を与える可能性があります。": {
+            "wled00/data/settings_sync.htm": [
+                71
+            ]
+        }
+    },
+    "\nTimeout: ": {
+        "タイムアウト：": {
+            "wled00/data/settings_sync.htm": [
+                59
+            ]
+        }
+    },
+    "\nType:\n": {
+        "タイプ：": {
+            "wled00/data/settings_sync.htm": [
+                32
+            ]
+        }
+    },
+    "\nUDP Port: ": {
+        "UDP ポート:": {
+            "wled00/data/settings_sync.htm": [
+                6
+            ]
+        }
+    },
+    "\nUDP packet retransmissions: ": {
+        "UDP パケットの再送信:": {
+            "wled00/data/settings_sync.htm": [
+                23
+            ]
+        }
+    },
+    "\nUse main segment only: ": {
+        "メインセグメントのみを使用します:": {
+            "wled00/data/settings_sync.htm": [
+                30
+            ]
+        }
+    },
+    "\nUsername: ": {
+        "ユーザー名:": {
+            "wled00/data/settings_sync.htm": [
+                81
+            ]
+        }
+    },
+    "    \n                Drop image here ": {
+        "ここに画像をドロップ": {
+            "wled00/data/pixart/pixart.htm": [
+                29
+            ]
+        }
+    },
+    " (0-255)": {
+        "(0-255)": {
+            "wled00/data/settings_leds.htm": [
+                61
+            ]
+        }
+    },
+    " (not recommended)": {
+        "(推奨されません)": {
+            "wled00/data/settings_leds.htm": [
+                67
+            ]
+        }
+    },
+    " (strongly recommended)": {
+        "(強くお勧めします)": {
+            "wled00/data/settings_leds.htm": [
+                65
+            ]
+        }
+    },
+    " .local": {
+        "。地元": {
+            "wled00/data/settings_wifi.htm": [
+                14
+            ]
+        }
+    },
+    " B": {
+        "B": {
+            "wled00/data/settings_leds.htm": [
+                31
+            ]
+        }
+    },
+    " Brightness, and ": {
+        "明るさと、": {
+            "wled00/data/settings_sync.htm": [
+                98
+            ]
+        }
+    },
+    " Check out ": {
+        "チェックアウト": {
+            "wled00/data/settings_sync.htm": [
+                40
+            ]
+        }
+    },
+    " Color": {
+        "色": {
+            "wled00/data/settings_sync.htm": [
+                99
+            ]
+        }
+    },
+    " Color palette": {
+        "カラーパレット": {
+            "wled00/data/index.htm": [
+                23
+            ]
+        }
+    },
+    " Disabled in this build ": {
+        "このビルドでは無効になっています": {
+            "wled00/data/settings_sync.htm": [
+                104
+            ]
+        }
+    },
+    " FPS\n\t\t": {
+        "FPS": {
+            "wled00/data/settings_leds.htm": [
+                106
+            ]
+        }
+    },
+    " Invert ": {
+        "反転": {
+            "wled00/data/settings_leds.htm": [
+                57
+            ]
+        }
+    },
+    " Last LED: ": {
+        "最後の LED:": {
+            "wled00/data/settings_time.htm": [
+                46
+            ]
+        }
+    },
+    " Not active ": {
+        "アクティブではありません": {
+            "wled00/data/settings_wifi.htm": [
+                28
+            ]
+        }
+    },
+    " Not connected ": {
+        "接続されていません": {
+            "wled00/data/settings_wifi.htm": [
+                16
+            ]
+        }
+    },
+    " On/Off, ": {
+        "オン/オフ、": {
+            "wled00/data/settings_sync.htm": [
+                97
+            ]
+        }
+    },
+    " Palette Time: ": {
+        "パレット時間:": {
+            "wled00/data/settings_leds.htm": [
+                77
+            ]
+        }
+    },
+    " Response error! ": {
+        "応答エラーです!": {
+            "wled00/data/settings_sec.htm": [
+                39
+            ]
+        }
+    },
+    " Segment options, ": {
+        "セグメントオプション、": {
+            "wled00/data/settings_sync.htm": [
+                16
+            ]
+        }
+    },
+    " Solid": {
+        "固体": {
+            "wled00/data/simple.htm": [
+                19
+            ]
+        }
+    },
+    " affect final layout.": {
+        "最終的なレイアウトに影響します。": {
+            "wled00/data/settings_2D.htm": [
+                27
+            ]
+        }
+    },
+    " at boot (0 uses defaults)\n\t\t": {
+        "起動時 (0 はデフォルトを使用)": {
+            "wled00/data/settings_leds.htm": [
+                63
+            ]
+        }
+    },
+    " bounds": {
+        "境界": {
+            "wled00/data/settings_sync.htm": [
+                17
+            ]
+        }
+    },
+    " by Aircoookie and the ": {
+        "by エアクッキーと": {
+            "wled00/data/index.htm": [
+                51
+            ],
+            "wled00/data/simple.htm": [
+                29
+            ]
+        }
+    },
+    " every ": {
+        "毎": {
+            "wled00/data/settings_sync.htm": [
+                94
+            ]
+        }
+    },
+    " file containing an array with number of elements equal to the matrix size.": {
+        "行列サイズと同じ数の要素を持つ配列を含むファイル。": {
+            "wled00/data/settings_2D.htm": [
+                39
+            ]
+        }
+    },
+    " for the best experience!": {
+        "最高の体験のために！": {
+            "wled00/data/settings_leds.htm": [
+                35
+            ]
+        }
+    },
+    " from E1.31 to DMX (0=disabled)": {
+        "E1.31 から DMX (0=無効)": {
+            "wled00/data/settings_dmx.htm": [
+                6
+            ]
+        }
+    },
+    " in the image\n              ": {
+        "画像の中で": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                33
+            ]
+        }
+    },
+    " mA": {
+        "ミリアンペア": {
+            "wled00/data/settings_leds.htm": [
+                9,
+                26
+            ]
+        }
+    },
+    " min": {
+        "分": {
+            "wled00/data/settings_leds.htm": [
+                81
+            ]
+        }
+    },
+    " ms": {
+        "MS": {
+            "wled00/data/settings_leds.htm": [
+                74
+            ],
+            "wled00/data/settings_sync.htm": [
+                60
+            ]
+        }
+    },
+    " ms: ": {
+        "MS：": {
+            "wled00/data/settings_sync.htm": [
+                95
+            ]
+        }
+    },
+    " panel: ": {
+        "パネル：": {
+            "wled00/data/settings_2D.htm": [
+                15
+            ]
+        }
+    },
+    " presets": {
+        "プリセット": {
+            "wled00/data/settings_sync.htm": [
+                69
+            ]
+        }
+    },
+    " s": {
+        "s": {
+            "wled00/data/settings_leds.htm": [
+                78
+            ]
+        }
+    },
+    " seconds (max. 18 hours)": {
+        "秒（最大18時間）": {
+            "wled00/data/settings_time.htm": [
+                32
+            ]
+        }
+    },
+    " version ##VERSION##": {
+        "バージョン ##VERSION##": {
+            "wled00/data/settings_sec.htm": [
+                32
+            ]
+        }
+    },
+    " x ": {
+        "×": {
+            "wled00/data/settings_2D.htm": [
+                10
+            ]
+        }
+    },
+    "##VERSION##": {
+        "##バージョン##": {
+            "wled00/data/update.htm": [
+                4
+            ]
+        }
+    },
+    "(change requires reboot!)": {
+        "(変更には再起動が必要です!)": {
+            "wled00/data/settings_um.htm": [
+                9
+            ]
+        }
+    },
+    "(only changable on ESP32, change requires reboot!)": {
+        "(ESP32 でのみ変更可能、変更には再起動が必要です!)": {
+            "wled00/data/settings_um.htm": [
+                13
+            ]
+        }
+    },
+    "(opens new tab, only works in browser)": {
+        "(新しいタブが開きます。ブラウザでのみ機能します)": {
+            "wled00/data/settings_time.htm": [
+                42
+            ]
+        }
+    },
+    ".json": {
+        ".json": {
+            "wled00/data/settings_2D.htm": [
+                38
+            ]
+        }
+    },
+    "12V (30mA)": {
+        "12V(30mA)": {
+            "wled00/data/settings_leds.htm": [
+                22
+            ]
+        }
+    },
+    "1D Strip": {
+        "1D ストリップ": {
+            "wled00/data/settings_2D.htm": [
+                6
+            ]
+        }
+    },
+    "21-key RGB": {
+        "21キーRGB": {
+            "wled00/data/settings_leds.htm": [
+                48
+            ]
+        }
+    },
+    "24-key RGB": {
+        "24キーRGB": {
+            "wled00/data/settings_leds.htm": [
+                44
+            ]
+        }
+    },
+    "24-key with CT": {
+        "24キーCT付": {
+            "wled00/data/settings_leds.htm": [
+                45
+            ]
+        }
+    },
+    "2D Configuration": {
+        "2D構成": {
+            "wled00/data/settings.htm": [
+                5
+            ]
+        }
+    },
+    "2D Matrix": {
+        "2D マトリックス": {
+            "wled00/data/pixart/pixart.htm": [
+                5
+            ],
+            "wled00/data/settings_2D.htm": [
+                7
+            ]
+        }
+    },
+    "2D Set-up": {
+        "2Dセットアップ": {
+            "wled00/data/settings_2D.htm": [
+                1
+            ]
+        }
+    },
+    "2D setup": {
+        "2Dセットアップ": {
+            "wled00/data/settings_2D.htm": [
+                4
+            ]
+        }
+    },
+    "40-key blue": {
+        "40鍵ブルー": {
+            "wled00/data/settings_leds.htm": [
+                46
+            ]
+        }
+    },
+    "404 Not Found": {
+        "404 見つかりません": {
+            "wled00/data/404.htm": [
+                2
+            ]
+        }
+    },
+    "44-key RGB": {
+        "44キーRGB": {
+            "wled00/data/settings_leds.htm": [
+                47
+            ]
+        }
+    },
+    "5V default (55mA)": {
+        "5V デフォルト (55mA)": {
+            "wled00/data/settings_leds.htm": [
+                20
+            ]
+        }
+    },
+    "5V efficient (35mA)": {
+        "5V効率(35mA)": {
+            "wled00/data/settings_leds.htm": [
+                21
+            ]
+        }
+    },
+    "6-key black": {
+        "6キーブラック": {
+            "wled00/data/settings_leds.htm": [
+                49
+            ]
+        }
+    },
+    "800 LEDs per output": {
+        "出力ごとに 800 個の LED": {
+            "wled00/data/settings_leds.htm": [
+                34
+            ]
+        }
+    },
+    "9-key red": {
+        "9キー赤": {
+            "wled00/data/settings_leds.htm": [
+                50
+            ]
+        }
+    },
+    "A matrix is made of 1 or more physical LED panels.": {
+        "マトリックスは 1 つ以上の物理 LED パネルで構成されます。": {
+            "wled00/data/settings_2D.htm": [
+                32
+            ]
+        }
+    },
+    "ABC! WLED V43 & compatible": {
+        "ABC! WLED V43 と互換性あり": {
+            "wled00/data/settings_wifi.htm": [
+                43
+            ]
+        }
+    },
+    "ACST": {
+        "ACST": {
+            "wled00/data/settings_time.htm": [
+                24
+            ]
+        }
+    },
+    "ACST/ACDT": {
+        "ACST/ACDT": {
+            "wled00/data/settings_time.htm": [
+                25
+            ]
+        }
+    },
+    "AEST/AEDT": {
+        "AEST/AEDT": {
+            "wled00/data/settings_time.htm": [
+                19
+            ]
+        }
+    },
+    "AKST/AKDT (Anchorage)": {
+        "AKST/AKDT (アンカレッジ)": {
+            "wled00/data/settings_time.htm": [
+                28
+            ]
+        }
+    },
+    "About": {
+        "について": {
+            "wled00/data/settings_sec.htm": [
+                30
+            ]
+        }
+    },
+    "Accurate": {
+        "正確な": {
+            "wled00/data/settings_leds.htm": [
+                94
+            ]
+        }
+    },
+    "Addressing:": {
+        "アドレッシング：": {
+            "wled00/data/pixart/pixart.htm": [
+                15
+            ]
+        }
+    },
+    "Advanced": {
+        "高度な": {
+            "wled00/data/settings_leds.htm": [
+                99
+            ]
+        }
+    },
+    "Akemi does not know where you are headed...": {
+        "アケミはあなたがどこに向かっているのか知りません...": {
+            "wled00/data/404.htm": [
+                3
+            ]
+        }
+    },
+    "Alexa Voice Assistant": {
+        "アレクサ音声アシスタント": {
+            "wled00/data/settings_sync.htm": [
+                64
+            ]
+        }
+    },
+    "Always": {
+        "いつも": {
+            "wled00/data/settings_wifi.htm": [
+                25
+            ]
+        }
+    },
+    "Analog Button setup": {
+        "アナログボタンの設定": {
+            "wled00/data/settings_time.htm": [
+                71
+            ]
+        }
+    },
+    "Animation": {
+        "アニメーション": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                20
+            ]
+        }
+    },
+    "Apply": {
+        "適用する": {
+            "wled00/data/settings_leds.htm": [
+                108
+            ]
+        }
+    },
+    "Art-Net": {
+        "アートネット": {
+            "wled00/data/settings_sync.htm": [
+                34
+            ]
+        }
+    },
+    "Automatically limits brightness to stay close to the limit.": {
+        "明るさを限界近くに保つように自動的に制限します。": {
+            "wled00/data/settings_leds.htm": [
+                14
+            ]
+        }
+    },
+    "BG image URL": {
+        "BG画像URL": {
+            "wled00/data/settings_ui.htm": [
+                18
+            ]
+        }
+    },
+    "Back": {
+        "戻る": {
+            "wled00/data/settings.htm": [
+                2
+            ],
+            "wled00/data/settings_wifi.htm": [
+                2,
+                53
+            ],
+            "wled00/data/settings_leds.htm": [
+                2,
+                109
+            ],
+            "wled00/data/settings_dmx.htm": [
+                2,
+                18
+            ],
+            "wled00/data/settings_ui.htm": [
+                2,
+                23
+            ],
+            "wled00/data/settings_sync.htm": [
+                2,
+                108
+            ],
+            "wled00/data/settings_time.htm": [
+                2,
+                73
+            ],
+            "wled00/data/settings_sec.htm": [
+                2,
+                40
+            ],
+            "wled00/data/settings_um.htm": [
+                2,
+                19
+            ],
+            "wled00/data/settings_2D.htm": [
+                2,
+                41
+            ],
+            "wled00/data/settings_pin.htm": [
+                3
+            ],
+            "wled00/data/update.htm": [
+                7
+            ]
+        }
+    },
+    "Back to controls": {
+        "コントロールに戻る": {
+            "wled00/data/404.htm": [
+                4
+            ]
+        }
+    },
+    "Backup & Restore": {
+        "バックアップと復元": {
+            "wled00/data/settings_sec.htm": [
+                20
+            ]
+        }
+    },
+    "Backup configuration": {
+        "バックアップ構成": {
+            "wled00/data/settings_sec.htm": [
+                24
+            ]
+        }
+    },
+    "Backup presets": {
+        "バックアッププリセット": {
+            "wled00/data/settings_sec.htm": [
+                21
+            ]
+        }
+    },
+    "Black": {
+        "黒": {
+            "wled00/data/index.htm": [
+                67
+            ],
+            "wled00/data/simple.htm": [
+                40
+            ]
+        }
+    },
+    "Blue": {
+        "青": {
+            "wled00/data/index.htm": [
+                69
+            ],
+            "wled00/data/simple.htm": [
+                42
+            ]
+        }
+    },
+    "Blue channel": {
+        "ブルーチャンネル": {
+            "wled00/data/index.htm": [
+                19
+            ]
+        }
+    },
+    "Bottom": {
+        "底": {
+            "wled00/data/settings_2D.htm": [
+                17
+            ]
+        }
+    },
+    "Brighter": {
+        "より明るく": {
+            "wled00/data/settings_leds.htm": [
+                93
+            ]
+        }
+    },
+    "Brightness": {
+        "輝度": {
+            "wled00/data/index.htm": [
+                12
+            ],
+            "wled00/data/pxmagic/pxmagic.htm": [
+                19
+            ]
+        }
+    },
+    "Brightness,": {
+        "輝度、": {
+            "wled00/data/settings_sync.htm": [
+                12
+            ]
+        }
+    },
+    "Brightness:": {
+        "輝度：": {
+            "wled00/data/pixart/pixart.htm": [
+                19
+            ]
+        }
+    },
+    "Button actions": {
+        "ボタンのアクション": {
+            "wled00/data/settings_time.htm": [
+                62
+            ]
+        }
+    },
+    "C GPIOs (HW)": {
+        "C GPIO (ハードウェア)": {
+            "wled00/data/settings_um.htm": [
+                8
+            ]
+        }
+    },
+    "CA-Saskatchewan": {
+        "カリフォルニア州サスカチュワン州": {
+            "wled00/data/settings_time.htm": [
+                23
+            ]
+        }
+    },
+    "CET/CEST": {
+        "CET/CEST": {
+            "wled00/data/settings_time.htm": [
+                10
+            ]
+        }
+    },
+    "CST (AWST, PHST)": {
+        "CST (8 月、PHST)": {
+            "wled00/data/settings_time.htm": [
+                17
+            ]
+        }
+    },
+    "CURL": {
+        "カール": {
+            "wled00/data/pixart/pixart.htm": [
+                10
+            ],
+            "wled00/data/pxmagic/pxmagic.htm": [
+                13
+            ]
+        }
+    },
+    "Can help with connectivity issues.": {
+        "接続の問題の解決に役立ちます。": {
+            "wled00/data/settings_wifi.htm": [
+                32
+            ]
+        }
+    },
+    "Channel functions": {
+        "チャネル機能": {
+            "wled00/data/settings_dmx.htm": [
+                17
+            ]
+        }
+    },
+    "Check 1": {
+        "チェック1": {
+            "wled00/data/index.htm": [
+                32
+            ]
+        }
+    },
+    "Check 2": {
+        "チェック2": {
+            "wled00/data/index.htm": [
+                33
+            ]
+        }
+    },
+    "Check 3": {
+        "チェック3": {
+            "wled00/data/index.htm": [
+                34
+            ]
+        }
+    },
+    "Choose a color": {
+        "色を選択してください": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                30
+            ]
+        }
+    },
+    "Clear local storage": {
+        "ローカルストレージをクリアする": {
+            "wled00/data/settings_ui.htm": [
+                22
+            ]
+        }
+    },
+    "Clock": {
+        "クロック": {
+            "wled00/data/settings_time.htm": [
+                43
+            ]
+        }
+    },
+    "Close Info": {
+        "情報を閉じる": {
+            "wled00/data/simple.htm": [
+                25
+            ]
+        }
+    },
+    "Close list": {
+        "リストを閉じる": {
+            "wled00/data/simple.htm": [
+                34
+            ]
+        }
+    },
+    "Color code format:": {
+        "カラーコード形式:": {
+            "wled00/data/pixart/pixart.htm": [
+                12
+            ]
+        }
+    },
+    "Color slots": {
+        "カラースロット": {
+            "wled00/data/simple.htm": [
+                16
+            ]
+        }
+    },
+    "Color,": {
+        "色、": {
+            "wled00/data/settings_sync.htm": [
+                13
+            ]
+        }
+    },
+    "Colors": {
+        "色": {
+            "wled00/data/index.htm": [
+                41
+            ]
+        }
+    },
+    "Config": {
+        "構成": {
+            "wled00/data/index.htm": [
+                10
+            ],
+            "wled00/data/simple.htm": [
+                7
+            ]
+        }
+    },
+    "Config template: ": {
+        "構成テンプレート:": {
+            "wled00/data/settings_leds.htm": [
+                107
+            ]
+        }
+    },
+    "Configure Access Point": {
+        "アクセスポイントの設定": {
+            "wled00/data/settings_wifi.htm": [
+                17
+            ]
+        }
+    },
+    "Connect to existing network": {
+        "既存のネットワークに接続する": {
+            "wled00/data/settings_wifi.htm": [
+                5
+            ]
+        }
+    },
+    "Contributors, dependencies and special thanks": {
+        "貢献者、依存関係、特別な感謝": {
+            "wled00/data/settings_sec.htm": [
+                33
+            ]
+        }
+    },
+    "Convert image to WLED JSON (pixel art on WLED matrix)": {
+        "画像を WLED JSON に変換 (WLED マトリックスのピクセル アート)": {
+            "wled00/data/pixart/pixart.htm": [
+                3
+            ]
+        }
+    },
+    "Custom": {
+        "カスタム": {
+            "wled00/data/settings_leds.htm": [
+                24
+            ]
+        }
+    },
+    "Custom 1": {
+        "カスタム1": {
+            "wled00/data/index.htm": [
+                29
+            ]
+        }
+    },
+    "Custom 2": {
+        "カスタム2": {
+            "wled00/data/index.htm": [
+                30
+            ]
+        }
+    },
+    "Custom 3": {
+        "カスタム3": {
+            "wled00/data/index.htm": [
+                31
+            ]
+        }
+    },
+    "Custom CSS: ": {
+        "カスタムCSS:": {
+            "wled00/data/settings_ui.htm": [
+                20
+            ]
+        }
+    },
+    "Custom max. current per LED: ": {
+        "カスタム最大値LEDごとの電流:": {
+            "wled00/data/settings_leds.htm": [
+                25
+            ]
+        }
+    },
+    "Custom port": {
+        "カスタムポート": {
+            "wled00/data/settings_sync.htm": [
+                35
+            ]
+        }
+    },
+    "Cyan": {
+        "シアン": {
+            "wled00/data/index.htm": [
+                70
+            ],
+            "wled00/data/simple.htm": [
+                43
+            ]
+        }
+    },
+    "DEC (244,244,244)": {
+        "12 月 (244,244,244)": {
+            "wled00/data/pixart/pixart.htm": [
+                14
+            ]
+        }
+    },
+    "DMX Map": {
+        "DMXマップ": {
+            "wled00/data/settings_dmx.htm": [
+                15
+            ],
+            "wled00/data/dmxmap.htm": [
+                1
+            ]
+        }
+    },
+    "DMX Output": {
+        "DMX出力": {
+            "wled00/data/settings.htm": [
+                7
+            ]
+        }
+    },
+    "DMX Settings": {
+        "DMX設定": {
+            "wled00/data/settings_dmx.htm": [
+                1
+            ]
+        }
+    },
+    "Default": {
+        "デフォルト": {
+            "wled00/data/simple.htm": [
+                20,
+                22
+            ]
+        }
+    },
+    "Defaults": {
+        "デフォルト": {
+            "wled00/data/settings_leds.htm": [
+                58
+            ]
+        }
+    },
+    "Device": {
+        "デバイス": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                14
+            ]
+        }
+    },
+    "Device IP/host name:": {
+        "デバイスのIP/ホスト名:": {
+            "wled00/data/pixart/pixart.htm": [
+                24
+            ]
+        }
+    },
+    "Dimmer + Multi RGB": {
+        "ディマー+マルチRGB": {
+            "wled00/data/settings_sync.htm": [
+                55
+            ]
+        }
+    },
+    "Disable OTA when not in use, otherwise an attacker can reflash device software!": {
+        "使用していないときは OTA を無効にします。無効にしないと、攻撃者がデバイス ソフトウェアを再フラッシュする可能性があります。": {
+            "wled00/data/settings_sec.htm": [
+                11
+            ]
+        }
+    },
+    "Disabled": {
+        "無効": {
+            "wled00/data/settings_leds.htm": [
+                91
+            ],
+            "wled00/data/settings_sync.htm": [
+                47
+            ]
+        }
+    },
+    "Disconnected": {
+        "切断されました": {
+            "wled00/data/settings_wifi.htm": [
+                24
+            ]
+        }
+    },
+    "Dual": {
+        "デュアル": {
+            "wled00/data/settings_leds.htm": [
+                95
+            ]
+        }
+    },
+    "Duration": {
+        "間隔": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                26
+            ]
+        }
+    },
+    "E": {
+        "そして": {
+            "wled00/data/settings_time.htm": [
+                39
+            ]
+        }
+    },
+    "E1.31 (sACN)": {
+        "E1.31 (sACN)": {
+            "wled00/data/settings_sync.htm": [
+                33
+            ]
+        }
+    },
+    "E1.31 info": {
+        "E1.31情報": {
+            "wled00/data/settings_sync.htm": [
+                58
+            ]
+        }
+    },
+    "EET/EEST": {
+        "EET/フォー": {
+            "wled00/data/settings_time.htm": [
+                11
+            ]
+        }
+    },
+    "ESP32-POE": {
+        "ESP32-POE": {
+            "wled00/data/settings_wifi.htm": [
+                44
+            ]
+        }
+    },
+    "ESP32Deux": {
+        "ESP322": {
+            "wled00/data/settings_wifi.htm": [
+                45
+            ]
+        }
+    },
+    "Effect": {
+        "効果": {
+            "wled00/data/simple.htm": [
+                18
+            ],
+            "wled00/data/settings_sync.htm": [
+                50
+            ]
+        }
+    },
+    "Effect + White": {
+        "エフェクト+ホワイト": {
+            "wled00/data/settings_sync.htm": [
+                51
+            ]
+        }
+    },
+    "Effect Segment": {
+        "エフェクトセグメント": {
+            "wled00/data/settings_sync.htm": [
+                52
+            ]
+        }
+    },
+    "Effect Segment + White": {
+        "エフェクトセグメント+白": {
+            "wled00/data/settings_sync.htm": [
+                53
+            ]
+        }
+    },
+    "Effect intensity": {
+        "効果の強さ": {
+            "wled00/data/index.htm": [
+                28
+            ],
+            "wled00/data/simple.htm": [
+                47
+            ]
+        }
+    },
+    "Effect mode": {
+        "エフェクトモード": {
+            "wled00/data/index.htm": [
+                25
+            ]
+        }
+    },
+    "Effect speed": {
+        "効果速度": {
+            "wled00/data/index.htm": [
+                27
+            ],
+            "wled00/data/simple.htm": [
+                46
+            ]
+        }
+    },
+    "Effects": {
+        "効果": {
+            "wled00/data/index.htm": [
+                42
+            ],
+            "wled00/data/settings_sync.htm": [
+                15
+            ]
+        }
+    },
+    "Empty or min. 8 characters": {
+        "空または分。 8文字": {
+            "wled00/data/settings_wifi.htm": [
+                55
+            ]
+        }
+    },
+    "Enable simplified UI: ": {
+        "簡素化された UI を有効にします。": {
+            "wled00/data/settings_ui.htm": [
+                10
+            ]
+        }
+    },
+    "Ethernet Type": {
+        "イーサネットの種類": {
+            "wled00/data/settings_wifi.htm": [
+                41
+            ]
+        }
+    },
+    "Expand": {
+        "拡大する": {
+            "wled00/data/simple.htm": [
+                8
+            ]
+        }
+    },
+    "Experimental": {
+        "実験的": {
+            "wled00/data/settings_wifi.htm": [
+                29
+            ]
+        }
+    },
+    "Fade": {
+        "フェード": {
+            "wled00/data/settings_leds.htm": [
+                85
+            ]
+        }
+    },
+    "Fade Color": {
+        "フェードカラー": {
+            "wled00/data/settings_leds.htm": [
+                86
+            ]
+        }
+    },
+    "For best performance, it is recommended to turn off the streaming source when not in use.": {
+        "最高のパフォーマンスを得るには、使用しないときはストリーミング ソースをオフにすることをお勧めします。": {
+            "wled00/data/index.htm": [
+                61
+            ]
+        }
+    },
+    "Frames": {
+        "フレーム": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                25
+            ]
+        }
+    },
+    "Friendly Name": {
+        "フレンドリーネーム": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                16
+            ]
+        }
+    },
+    "GMT(UTC)": {
+        "GMT(協定世界時)": {
+            "wled00/data/settings_time.htm": [
+                8
+            ]
+        }
+    },
+    "GMT/BST": {
+        "GMT/BST": {
+            "wled00/data/settings_time.htm": [
+                9
+            ]
+        }
+    },
+    "Gap file: ": {
+        "ギャップファイル:": {
+            "wled00/data/settings_2D.htm": [
+                35
+            ]
+        }
+    },
+    "Get location": {
+        "位置情報を取得": {
+            "wled00/data/settings_time.htm": [
+                41
+            ]
+        }
+    },
+    "Global brightness": {
+        "全球の明るさ": {
+            "wled00/data/simple.htm": [
+                9
+            ]
+        }
+    },
+    "Green": {
+        "緑": {
+            "wled00/data/index.htm": [
+                71
+            ],
+            "wled00/data/simple.htm": [
+                44
+            ]
+        }
+    },
+    "Green channel": {
+        "グリーンチャンネル": {
+            "wled00/data/index.htm": [
+                18
+            ]
+        }
+    },
+    "H : ": {
+        "ひ:": {
+            "wled00/data/pixart/pixart.htm": [
+                28
+            ]
+        }
+    },
+    "HA Device ID:": {
+        "HA デバイス ID:": {
+            "wled00/data/pixart/pixart.htm": [
+                21
+            ]
+        }
+    },
+    "HA Device Name:": {
+        "HA デバイス名:": {
+            "wled00/data/pixart/pixart.htm": [
+                23
+            ]
+        }
+    },
+    "HA Device Unique ID:": {
+        "HA デバイスの一意の ID:": {
+            "wled00/data/pixart/pixart.htm": [
+                22
+            ]
+        }
+    },
+    "HEX (\"f4f4f4\")": {
+        "16 進数 (\"f4f4f4\")": {
+            "wled00/data/pixart/pixart.htm": [
+                13
+            ]
+        }
+    },
+    "HST (Hawaii)": {
+        "HST (ハワイ)": {
+            "wled00/data/settings_time.htm": [
+                26
+            ]
+        }
+    },
+    "Hardware setup": {
+        "ハードウェアのセットアップ": {
+            "wled00/data/settings_leds.htm": [
+                28
+            ]
+        }
+    },
+    "Height": {
+        "身長": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                24
+            ]
+        }
+    },
+    "Help/About": {
+        "ヘルプ/概要": {
+            "wled00/data/pixart/pixart.htm": [
+                33
+            ]
+        }
+    },
+    "Holidays: ": {
+        "休日:": {
+            "wled00/data/settings_ui.htm": [
+                21
+            ]
+        }
+    },
+    "Home Assistant": {
+        "ホームアシスタント": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                12
+            ]
+        }
+    },
+    "Home Assistant YAML": {
+        "ホームアシスタントYAML": {
+            "wled00/data/pixart/pixart.htm": [
+                11
+            ]
+        }
+    },
+    "Horizontal": {
+        "水平": {
+            "wled00/data/settings_2D.htm": [
+                21
+            ]
+        }
+    },
+    "Hostname": {
+        "ホスト名": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                2
+            ]
+        }
+    },
+    "Hue": {
+        "色相": {
+            "wled00/data/index.htm": [
+                13
+            ]
+        }
+    },
+    "Hybrid (\"f0f0f0\",10, 17, \"f4f4f4\")": {
+        "ハイブリッド (\"f0f0f0\"、10、17、\"f4f4f4\")": {
+            "wled00/data/pixart/pixart.htm": [
+                16
+            ]
+        }
+    },
+    "IR info": {
+        "GO情報": {
+            "wled00/data/settings_leds.htm": [
+                55
+            ]
+        }
+    },
+    "IST (India)": {
+        "IS (インド)": {
+            "wled00/data/settings_time.htm": [
+                22
+            ]
+        }
+    },
+    "Images upload to WLED": {
+        "WLED への画像のアップロード": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                34
+            ]
+        }
+    },
+    "Imma firin ma lazer (if it has DMX support)": {
+        "Imma firin mah lazer (DMX サポートがある場合)": {
+            "wled00/data/settings_dmx.htm": [
+                4
+            ]
+        }
+    },
+    "Index": {
+        "索引": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                7
+            ]
+        }
+    },
+    "Individual": {
+        "個人": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                6
+            ]
+        }
+    },
+    "Info": {
+        "情報": {
+            "wled00/data/index.htm": [
+                8
+            ],
+            "wled00/data/simple.htm": [
+                5
+            ]
+        }
+    },
+    "Instance List": {
+        "インスタンスリスト": {
+            "wled00/data/index.htm": [
+                47
+            ],
+            "wled00/data/simple.htm": [
+                26
+            ],
+            "wled00/data/settings_sync.htm": [
+                25
+            ]
+        }
+    },
+    "JSON file: ": {
+        "JSONファイル:": {
+            "wled00/data/settings_leds.htm": [
+                53
+            ]
+        }
+    },
+    "JSON remote": {
+        "JSONリモート": {
+            "wled00/data/settings_leds.htm": [
+                51
+            ]
+        }
+    },
+    "JST (KST)": {
+        "日本標準時 (韓国標準時)": {
+            "wled00/data/settings_time.htm": [
+                18
+            ]
+        }
+    },
+    "Just trying this out in AP mode?": {
+        "AP モードで試してみるだけですか?": {
+            "wled00/data/welcome.htm": [
+                7
+            ]
+        }
+    },
+    "KIT-VE": {
+        "キット-VE": {
+            "wled00/data/settings_wifi.htm": [
+                46
+            ]
+        }
+    },
+    "Keep at 115200 to use Improv. Some boards may not support high rates.": {
+        "Improvを使用するには115200を維持してください。ボードによっては高速レートをサポートしていない場合があります。": {
+            "wled00/data/settings_sync.htm": [
+                107
+            ]
+        }
+    },
+    "Keep at default if you are unsure about your type of LEDs.": {
+        "LED のタイプが不明な場合は、デフォルトのままにしてください。": {
+            "wled00/data/settings_leds.htm": [
+                27
+            ]
+        }
+    },
+    "Kelvin/Temperature": {
+        "ケルビン/温度": {
+            "wled00/data/index.htm": [
+                16
+            ]
+        }
+    },
+    "LED & Hardware setup": {
+        "LEDとハードウェアのセットアップ": {
+            "wled00/data/settings_leds.htm": [
+                4
+            ]
+        }
+    },
+    "LED Preferences": {
+        "LED の設定": {
+            "wled00/data/settings.htm": [
+                4
+            ]
+        }
+    },
+    "LED Settings": {
+        "LED設定": {
+            "wled00/data/settings_leds.htm": [
+                1
+            ]
+        }
+    },
+    "LED outputs:": {
+        "LED出力:": {
+            "wled00/data/settings_leds.htm": [
+                29
+            ]
+        }
+    },
+    "LED panel layout": {
+        "LEDパネルレイアウト": {
+            "wled00/data/settings_2D.htm": [
+                34
+            ]
+        }
+    },
+    "Led setup:": {
+        "LEDのセットアップ:": {
+            "wled00/data/pixart/pixart.htm": [
+                4
+            ]
+        }
+    },
+    "LedFx": {
+        "LEDFX": {
+            "wled00/data/settings_sync.htm": [
+                41
+            ]
+        }
+    },
+    "Left": {
+        "左": {
+            "wled00/data/settings_2D.htm": [
+                18
+            ]
+        }
+    },
+    "Licensed under the ": {
+        "に基づいてライセンスされています": {
+            "wled00/data/settings_sec.htm": [
+                36
+            ]
+        }
+    },
+    "Linear (always wrap)": {
+        "リニア (常にラップ)": {
+            "wled00/data/settings_leds.htm": [
+                102
+            ]
+        }
+    },
+    "Linear (never wrap)": {
+        "リニア (決して折り返さない)": {
+            "wled00/data/settings_leds.htm": [
+                103
+            ]
+        }
+    },
+    "Linear (wrap if moving)": {
+        "リニア（移動する場合は折り返す）": {
+            "wled00/data/settings_leds.htm": [
+                101
+            ]
+        }
+    },
+    "Listen for events over ESP-NOW": {
+        "ESP-NOW 経由でイベントをリッスンする": {
+            "wled00/data/settings_wifi.htm": [
+                35
+            ]
+        }
+    },
+    "Loading WLED UI...": {
+        "WLED UI を読み込み中...": {
+            "wled00/data/index.htm": [
+                2
+            ],
+            "wled00/data/simple.htm": [
+                2
+            ]
+        }
+    },
+    "Loading settings...": {
+        "設定を読み込んでいます...": {
+            "wled00/data/settings_ui.htm": [
+                14
+            ],
+            "wled00/data/settings_um.htm": [
+                18
+            ]
+        }
+    },
+    "Loading...": {
+        "読み込み中...": {
+            "wled00/data/index.htm": [
+                40,
+                45,
+                54,
+                56
+            ],
+            "wled00/data/simple.htm": [
+                23,
+                32
+            ]
+        }
+    },
+    "MIT license": {
+        "私のライセンス": {
+            "wled00/data/settings_sec.htm": [
+                37
+            ]
+        }
+    },
+    "MQTT": {
+        "MQTT": {
+            "wled00/data/settings_sync.htm": [
+                74
+            ]
+        }
+    },
+    "MQTT and Hue sync all connect to external hosts!": {
+        "MQTT と Hue 同期はすべて外部ホストに接続します。": {
+            "wled00/data/settings_sync.htm": [
+                70
+            ]
+        }
+    },
+    "MQTT info": {
+        "MQTT 情報": {
+            "wled00/data/settings_sync.htm": [
+                89
+            ]
+        }
+    },
+    "MX-CST": {
+        "MX-CST": {
+            "wled00/data/settings_time.htm": [
+                29
+            ]
+        }
+    },
+    "Macro presets": {
+        "マクロプリセット": {
+            "wled00/data/settings_time.htm": [
+                54
+            ]
+        }
+    },
+    "Macros have moved!": {
+        "マクロが移動しました！": {
+            "wled00/data/settings_time.htm": [
+                55
+            ]
+        }
+    },
+    "Made with ": {
+        "で作られました": {
+            "wled00/data/index.htm": [
+                50
+            ],
+            "wled00/data/simple.htm": [
+                28
+            ]
+        }
+    },
+    "Manual OTA Update": {
+        "手動 OTA アップデート": {
+            "wled00/data/settings_sec.htm": [
+                18
+            ]
+        }
+    },
+    "Matrix Generator ": {
+        "マトリックスジェネレーター": {
+            "wled00/data/settings_2D.htm": [
+                8
+            ]
+        }
+    },
+    "Max": {
+        "マックス": {
+            "wled00/data/settings_leds.htm": [
+                96
+            ]
+        }
+    },
+    "Max no of colors/JSON:": {
+        "最大色数/JSON:": {
+            "wled00/data/pixart/pixart.htm": [
+                20
+            ]
+        }
+    },
+    "Misc Settings": {
+        "その他の設定": {
+            "wled00/data/settings_sec.htm": [
+                1
+            ]
+        }
+    },
+    "Multi RGB": {
+        "マルチRGB": {
+            "wled00/data/settings_sync.htm": [
+                54
+            ]
+        }
+    },
+    "Multi RGBW": {
+        "マルチRGBW": {
+            "wled00/data/settings_sync.htm": [
+                56
+            ]
+        }
+    },
+    "N": {
+        "N": {
+            "wled00/data/settings_time.htm": [
+                36
+            ]
+        }
+    },
+    "N/A": {
+        "該当なし": {
+            "wled00/data/settings_time.htm": [
+                70
+            ]
+        }
+    },
+    "NOVT (Novosibirsk)": {
+        "NOVT (ノヴォシビルスク)": {
+            "wled00/data/settings_time.htm": [
+                27
+            ]
+        }
+    },
+    "NZST/NZDT": {
+        "NZST/NZDT": {
+            "wled00/data/settings_time.htm": [
+                20
+            ]
+        }
+    },
+    "Network DMX input": {
+        "ネットワークDMX入力": {
+            "wled00/data/settings_sync.htm": [
+                31
+            ]
+        }
+    },
+    "Never (not recommended)": {
+        "決してしない（推奨されません）": {
+            "wled00/data/settings_wifi.htm": [
+                26
+            ]
+        }
+    },
+    "Next steps:": {
+        "次のステップ:": {
+            "wled00/data/welcome.htm": [
+                4
+            ]
+        }
+    },
+    "No connection after boot": {
+        "起動後に接続がありません": {
+            "wled00/data/settings_wifi.htm": [
+                23
+            ]
+        }
+    },
+    "No usermod custom web page set.": {
+        "usermod カスタム Web ページが設定されていません。": {
+            "wled00/data/usermod.htm": [
+                1
+            ]
+        }
+    },
+    "Nodes": {
+        "ノード": {
+            "wled00/data/index.htm": [
+                9
+            ],
+            "wled00/data/simple.htm": [
+                6
+            ]
+        }
+    },
+    "None": {
+        "なし": {
+            "wled00/data/settings_wifi.htm": [
+                40,
+                42
+            ],
+            "wled00/data/settings_leds.htm": [
+                92
+            ]
+        }
+    },
+    "None (not recommended)": {
+        "なし (推奨されません)": {
+            "wled00/data/settings_leds.htm": [
+                104
+            ]
+        }
+    },
+    "North Korea": {
+        "北朝鮮": {
+            "wled00/data/settings_time.htm": [
+                21
+            ]
+        }
+    },
+    "Not found": {
+        "見つかりません": {
+            "wled00/data/404.htm": [
+                1
+            ]
+        }
+    },
+    "Note: Gap file is a ": {
+        "注: ギャップ ファイルは": {
+            "wled00/data/settings_2D.htm": [
+                37
+            ]
+        }
+    },
+    "Number of fixtures is taken from LED config page": {
+        "器具の数は LED 設定ページから取得されます": {
+            "wled00/data/settings_dmx.htm": [
+                8
+            ]
+        }
+    },
+    "Orange": {
+        "オレンジ": {
+            "wled00/data/index.htm": [
+                63
+            ],
+            "wled00/data/simple.htm": [
+                36
+            ]
+        }
+    },
+    "Output": {
+        "出力": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                9
+            ]
+        }
+    },
+    "Output format:": {
+        "出力形式:": {
+            "wled00/data/pixart/pixart.htm": [
+                8
+            ]
+        }
+    },
+    "Override once": {
+        "一度上書きする": {
+            "wled00/data/index.htm": [
+                59
+            ]
+        }
+    },
+    "Override until reboot": {
+        "再起動するまで上書きする": {
+            "wled00/data/index.htm": [
+                60
+            ]
+        }
+    },
+    "PC Mode": {
+        "PCモード": {
+            "wled00/data/index.htm": [
+                11
+            ]
+        }
+    },
+    "PIN required": {
+        "PIN が必要です": {
+            "wled00/data/settings_pin.htm": [
+                1
+            ]
+        }
+    },
+    "PKT (Pakistan)": {
+        "PKT (パキスタン)": {
+            "wled00/data/settings_time.htm": [
+                30
+            ]
+        }
+    },
+    "Panel set-up": {
+        "パネルのセットアップ": {
+            "wled00/data/settings_2D.htm": [
+                30
+            ]
+        }
+    },
+    "Pattern": {
+        "パターン": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                4
+            ]
+        }
+    },
+    "Peek": {
+        "ピーク": {
+            "wled00/data/index.htm": [
+                7
+            ]
+        }
+    },
+    "Philips Hue": {
+        "フィリップス ヒュー": {
+            "wled00/data/settings_sync.htm": [
+                90
+            ]
+        }
+    },
+    "Pink": {
+        "ピンク": {
+            "wled00/data/index.htm": [
+                68
+            ],
+            "wled00/data/simple.htm": [
+                41
+            ]
+        }
+    },
+    "Pixel Magic Tool": {
+        "ピクセルマジックツール": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                1
+            ]
+        }
+    },
+    "Please do not close or refresh the page :)": {
+        "ページを閉じたり更新したりしないでください:)": {
+            "wled00/data/update.htm": [
+                9
+            ]
+        }
+    },
+    "Please enter a 4 digit number": {
+        "4桁の数字を入力してください": {
+            "wled00/data/settings_sec.htm": [
+                42
+            ]
+        }
+    },
+    "Please enter settings PIN code": {
+        "設定PINコードを入力してください": {
+            "wled00/data/settings_pin.htm": [
+                2
+            ]
+        }
+    },
+    "Populate": {
+        "人口を投入する": {
+            "wled00/data/settings_2D.htm": [
+                29
+            ]
+        }
+    },
+    "Port: ": {
+        "ポート：": {
+            "wled00/data/settings_sync.htm": [
+                36
+            ]
+        }
+    },
+    "Power": {
+        "力": {
+            "wled00/data/index.htm": [
+                4
+            ],
+            "wled00/data/simple.htm": [
+                4
+            ]
+        }
+    },
+    "Preset": {
+        "プリセット": {
+            "wled00/data/settings_sync.htm": [
+                57
+            ]
+        }
+    },
+    "Preset Name": {
+        "プリセット名": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                3
+            ]
+        }
+    },
+    "Presets": {
+        "プリセット": {
+            "wled00/data/index.htm": [
+                39,
+                44
+            ],
+            "wled00/data/simple.htm": [
+                17
+            ]
+        }
+    },
+    "Presets now also can be used as macros to save both JSON and HTTP API commands.": {
+        "プリセットをマクロとして使用して、JSON と HTTP API コマンドの両方を保存できるようになりました。": {
+            "wled00/data/settings_time.htm": [
+                56
+            ]
+        }
+    },
+    "Press the pushlink button on the bridge, after that save this page!": {
+        "ブリッジのプッシュリンク ボタンを押して、このページを保存してください。": {
+            "wled00/data/settings_sync.htm": [
+                101
+            ]
+        }
+    },
+    "Pressing Populate will create LED panel layout with pre-arranged matrix.": {
+        "Populate を押すと、事前に配置されたマトリックスを使用して LED パネル レイアウトが作成されます。": {
+            "wled00/data/settings_2D.htm": [
+                24
+            ]
+        }
+    },
+    "Quick Load": {
+        "クイックロード": {
+            "wled00/data/simple.htm": [
+                10
+            ]
+        }
+    },
+    "QuinLED-Dig-Octa & T-ETH-POE": {
+        "QuinLED-Dig-Octa および T-ETH-POE": {
+            "wled00/data/settings_wifi.htm": [
+                47
+            ]
+        }
+    },
+    "QuinLED-ESP32": {
+        "QuinLED-ESP32": {
+            "wled00/data/settings_wifi.htm": [
+                48
+            ]
+        }
+    },
+    "R": {
+        "R": {
+            "wled00/data/index.htm": [
+                22
+            ],
+            "wled00/data/simple.htm": [
+                12
+            ]
+        }
+    },
+    "RGB channels": {
+        "RGBチャンネル": {
+            "wled00/data/simple.htm": [
+                13
+            ]
+        }
+    },
+    "Random": {
+        "ランダム": {
+            "wled00/data/index.htm": [
+                72
+            ],
+            "wled00/data/simple.htm": [
+                45
+            ]
+        }
+    },
+    "Random BG image": {
+        "ランダムBG画像": {
+            "wled00/data/settings_ui.htm": [
+                19
+            ]
+        }
+    },
+    "Random Cycle": {
+        "ランダムサイクル": {
+            "wled00/data/settings_leds.htm": [
+                76
+            ]
+        }
+    },
+    "Range (10, 17, \"f4f4f4\")": {
+        "範囲 (10、17、\"f4f4f4\")": {
+            "wled00/data/pixart/pixart.htm": [
+                17
+            ]
+        }
+    },
+    "Realtime": {
+        "リアルタイム": {
+            "wled00/data/settings_sync.htm": [
+                28
+            ]
+        }
+    },
+    "Reboot WLED": {
+        "WLEDを再起動します": {
+            "wled00/data/index.htm": [
+                49
+            ],
+            "wled00/data/simple.htm": [
+                27
+            ]
+        }
+    },
+    "Reboot required to apply changes. ": {
+        "変更を適用するには再起動が必要です。": {
+            "wled00/data/settings_sync.htm": [
+                24,
+                88
+            ]
+        }
+    },
+    "Reboot required.": {
+        "再起動が必要です。": {
+            "wled00/data/settings_sync.htm": [
+                39
+            ]
+        }
+    },
+    "Receive:": {
+        "受け取る：": {
+            "wled00/data/settings_sync.htm": [
+                10
+            ]
+        }
+    },
+    "Recommended power supply for brightest white:": {
+        "最も明るい白色の推奨電源:": {
+            "wled00/data/settings_leds.htm": [
+                6
+            ]
+        }
+    },
+    "Red": {
+        "赤": {
+            "wled00/data/index.htm": [
+                62
+            ],
+            "wled00/data/simple.htm": [
+                35
+            ]
+        }
+    },
+    "Red channel": {
+        "レッドチャンネル": {
+            "wled00/data/index.htm": [
+                17
+            ]
+        }
+    },
+    "Refresh": {
+        "リフレッシュ": {
+            "wled00/data/index.htm": [
+                46,
+                55
+            ],
+            "wled00/data/simple.htm": [
+                24,
+                33
+            ]
+        }
+    },
+    "Remote disabled": {
+        "リモートが無効になっています": {
+            "wled00/data/settings_leds.htm": [
+                43
+            ]
+        }
+    },
+    "Reset segments": {
+        "セグメントをリセットする": {
+            "wled00/data/index.htm": [
+                36
+            ]
+        }
+    },
+    "Resize Image": {
+        "画像のサイズを変更する": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                22
+            ]
+        }
+    },
+    "Restore configuration": {
+        "構成を復元する": {
+            "wled00/data/settings_sec.htm": [
+                25
+            ]
+        }
+    },
+    "Restore presets": {
+        "プリセットを復元する": {
+            "wled00/data/settings_sec.htm": [
+                22
+            ]
+        }
+    },
+    "Right": {
+        "右": {
+            "wled00/data/settings_2D.htm": [
+                19
+            ]
+        }
+    },
+    "S": {
+        "S": {
+            "wled00/data/settings_time.htm": [
+                37
+            ]
+        }
+    },
+    "Sample Message.": {
+        "サンプルメッセージ。": {
+            "wled00/data/msg.htm": [
+                2
+            ]
+        }
+    },
+    "Saturation": {
+        "飽和": {
+            "wled00/data/index.htm": [
+                14
+            ]
+        }
+    },
+    "Save": {
+        "保存": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                40
+            ],
+            "wled00/data/settings_leds.htm": [
+                3,
+                110
+            ],
+            "wled00/data/settings_dmx.htm": [
+                3,
+                19
+            ],
+            "wled00/data/settings_ui.htm": [
+                3,
+                24
+            ],
+            "wled00/data/settings_sync.htm": [
+                3,
+                109
+            ],
+            "wled00/data/settings_time.htm": [
+                3,
+                74
+            ],
+            "wled00/data/settings_sec.htm": [
+                3,
+                41
+            ],
+            "wled00/data/settings_um.htm": [
+                3,
+                20
+            ],
+            "wled00/data/settings_2D.htm": [
+                3,
+                42
+            ]
+        }
+    },
+    "Save & Connect": {
+        "保存して接続する": {
+            "wled00/data/settings_wifi.htm": [
+                3,
+                54
+            ]
+        }
+    },
+    "Scan": {
+        "スキャン": {
+            "wled00/data/settings_wifi.htm": [
+                6
+            ]
+        }
+    },
+    "Security & Update setup": {
+        "セキュリティとアップデートのセットアップ": {
+            "wled00/data/settings_sec.htm": [
+                4
+            ]
+        }
+    },
+    "Security & Updates": {
+        "セキュリティとアップデート": {
+            "wled00/data/settings.htm": [
+                11
+            ]
+        }
+    },
+    "Segment Id": {
+        "セグメントID": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                17
+            ]
+        }
+    },
+    "Segments": {
+        "セグメント": {
+            "wled00/data/index.htm": [
+                43
+            ]
+        }
+    },
+    "Select a choice": {
+        "選択肢を選択してください": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                5,
+                10
+            ]
+        }
+    },
+    "Select image": {
+        "画像を選択": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                36
+            ]
+        }
+    },
+    "Send:": {
+        "送信：": {
+            "wled00/data/settings_sync.htm": [
+                9
+            ]
+        }
+    },
+    "Serg74-ETH32": {
+        "彼は「4-yaa'a」と言うでしょう": {
+            "wled00/data/settings_wifi.htm": [
+                49
+            ]
+        }
+    },
+    "Serial": {
+        "シリアル": {
+            "wled00/data/settings_sync.htm": [
+                105
+            ]
+        }
+    },
+    "Serpentine, first row left to right ->": {
+        "蛇紋岩、最初の行左から右へ ->": {
+            "wled00/data/pixart/pixart.htm": [
+                7
+            ]
+        }
+    },
+    "Serpentine, first row right to left <-": {
+        "蛇紋岩、最初の行は右から左へ <-": {
+            "wled00/data/pixart/pixart.htm": [
+                6
+            ]
+        }
+    },
+    "Settings on this page are only changable if OTA lock is disabled!": {
+        "このページの設定は、OTA ロックが無効になっている場合にのみ変更できます。": {
+            "wled00/data/settings_sec.htm": [
+                12
+            ]
+        }
+    },
+    "Single (\"f4f4f4\")": {
+        "シングル (「f4f4f4」)": {
+            "wled00/data/pixart/pixart.htm": [
+                18
+            ]
+        }
+    },
+    "Single DRGB": {
+        "単一の DRGB": {
+            "wled00/data/settings_sync.htm": [
+                49
+            ]
+        }
+    },
+    "Single RGB": {
+        "シングルRGB": {
+            "wled00/data/settings_sync.htm": [
+                48
+            ]
+        }
+    },
+    "Software Update": {
+        "ソフトウェアアップデート": {
+            "wled00/data/settings_sec.htm": [
+                17
+            ]
+        }
+    },
+    "Solid": {
+        "固体": {
+            "wled00/data/simple.htm": [
+                21
+            ]
+        }
+    },
+    "Solid color": {
+        "ソリッドカラー": {
+            "wled00/data/simple.htm": [
+                11
+            ]
+        }
+    },
+    "Sorry, WLED UI needs JavaScript!": {
+        "申し訳ありませんが、WLED UI には JavaScript が必要です。": {
+            "wled00/data/index.htm": [
+                3
+            ],
+            "wled00/data/simple.htm": [
+                3
+            ]
+        }
+    },
+    "Submit": {
+        "提出する": {
+            "wled00/data/settings_pin.htm": [
+                4
+            ]
+        }
+    },
+    "Sunrise": {
+        "日の出": {
+            "wled00/data/settings_leds.htm": [
+                87
+            ]
+        }
+    },
+    "Sync": {
+        "同期": {
+            "wled00/data/index.htm": [
+                6
+            ]
+        }
+    },
+    "Sync Interfaces": {
+        "同期インターフェース": {
+            "wled00/data/settings.htm": [
+                8
+            ]
+        }
+    },
+    "Sync Settings": {
+        "同期設定": {
+            "wled00/data/settings_sync.htm": [
+                1
+            ]
+        }
+    },
+    "Sync groups": {
+        "同期グループ": {
+            "wled00/data/settings_sync.htm": [
+                8
+            ]
+        }
+    },
+    "Sync setup": {
+        "同期セットアップ": {
+            "wled00/data/settings_sync.htm": [
+                4
+            ]
+        }
+    },
+    "Target segment id:": {
+        "ターゲットセグメントID:": {
+            "wled00/data/pixart/pixart.htm": [
+                25
+            ]
+        }
+    },
+    "Thank you for installing my application!": {
+        "私のアプリケーションをインストールしていただきありがとうございます!": {
+            "wled00/data/welcome.htm": [
+                3
+            ]
+        }
+    },
+    "The MQTT credentials are sent over an unsecured connection.": {
+        "MQTT 資格情報は、安全でない接続を介して送信されます。": {
+            "wled00/data/settings_sync.htm": [
+                79
+            ]
+        }
+    },
+    "The following UI customization settings are unique both to the WLED device and this browser.": {
+        "次の UI カスタマイズ設定は、WLED デバイスとこのブラウザの両方に固有です。": {
+            "wled00/data/settings_ui.htm": [
+                11
+            ]
+        }
+    },
+    "This firmware build does not include Alexa support.": {
+        "このファームウェア ビルドには Alexa のサポートは含まれていません。": {
+            "wled00/data/settings_sync.htm": [
+                65
+            ]
+        }
+    },
+    "This firmware build does not include MQTT support.": {
+        "このファームウェア ビルドには MQTT サポートは含まれていません。": {
+            "wled00/data/settings_sync.htm": [
+                75
+            ]
+        }
+    },
+    "This firmware build does not include Philips Hue support.": {
+        "このファームウェア ビルドには、Philips Hue サポートは含まれていません。": {
+            "wled00/data/settings_sync.htm": [
+                91
+            ]
+        }
+    },
+    "This firmware build does not include simplified UI support.": {
+        "このファームウェア ビルドには、簡素化された UI サポートは含まれていません。": {
+            "wled00/data/settings_ui.htm": [
+                9
+            ]
+        }
+    },
+    "This will cause overlap.": {
+        "これにより重複が発生します。": {
+            "wled00/data/settings_dmx.htm": [
+                14
+            ]
+        }
+    },
+    "This will disable the LED data output to DMX configurable below": {
+        "これにより、以下で設定可能な DMX への LED データ出力が無効になります。": {
+            "wled00/data/settings_dmx.htm": [
+                7
+            ]
+        }
+    },
+    "Time & Macros": {
+        "時間とマクロ": {
+            "wled00/data/settings.htm": [
+                9
+            ]
+        }
+    },
+    "Time Settings": {
+        "時間設定": {
+            "wled00/data/settings_time.htm": [
+                1
+            ]
+        }
+    },
+    "Time setup": {
+        "時間設定": {
+            "wled00/data/settings_time.htm": [
+                4
+            ]
+        }
+    },
+    "Time-controlled presets": {
+        "時間制御のプリセット": {
+            "wled00/data/settings_time.htm": [
+                72
+            ]
+        }
+    },
+    "Timed light": {
+        "タイミングライト": {
+            "wled00/data/settings_leds.htm": [
+                79
+            ]
+        }
+    },
+    "Timer": {
+        "タイマー": {
+            "wled00/data/index.htm": [
+                5
+            ]
+        }
+    },
+    "To the controls!": {
+        "コントロールへ！": {
+            "wled00/data/welcome.htm": [
+                8
+            ]
+        }
+    },
+    "Top": {
+        "トップ": {
+            "wled00/data/settings_2D.htm": [
+                16
+            ]
+        }
+    },
+    "Transition": {
+        "遷移": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                28
+            ]
+        }
+    },
+    "Transition: ": {
+        "遷移：": {
+            "wled00/data/index.htm": [
+                37
+            ]
+        }
+    },
+    "Transitions": {
+        "トランジション": {
+            "wled00/data/settings_leds.htm": [
+                70
+            ]
+        }
+    },
+    "Transparent Image": {
+        "透明な画像": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                21
+            ]
+        }
+    },
+    "TwilightLord-ESP32": {
+        "トワイライトロード-ESP32": {
+            "wled00/data/settings_wifi.htm": [
+                50
+            ]
+        }
+    },
+    "UI Appearance": {
+        "UIの外観": {
+            "wled00/data/settings_ui.htm": [
+                15
+            ]
+        }
+    },
+    "UI Settings": {
+        "UI設定": {
+            "wled00/data/settings_ui.htm": [
+                1
+            ]
+        }
+    },
+    "US-AZ": {
+        "米国-アリゾナ州": {
+            "wled00/data/settings_time.htm": [
+                15
+            ]
+        }
+    },
+    "US-CST/CDT": {
+        "米国-CST/CDT": {
+            "wled00/data/settings_time.htm": [
+                13
+            ]
+        }
+    },
+    "US-EST/EDT": {
+        "米国東部/東部夏時間": {
+            "wled00/data/settings_time.htm": [
+                12
+            ]
+        }
+    },
+    "US-MST/MDT": {
+        "米国-MST/MDT": {
+            "wled00/data/settings_time.htm": [
+                14
+            ]
+        }
+    },
+    "US-PST/PDT": {
+        "米国-PST/PDT": {
+            "wled00/data/settings_time.htm": [
+                16
+            ]
+        }
+    },
+    "Unique Id": {
+        "一意の ID": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                15
+            ]
+        }
+    },
+    "Update WLED": {
+        "WLED を更新する": {
+            "wled00/data/index.htm": [
+                48
+            ]
+        }
+    },
+    "Update!": {
+        "アップデート！": {
+            "wled00/data/update.htm": [
+                6
+            ]
+        }
+    },
+    "Updating...": {
+        "更新中...": {
+            "wled00/data/update.htm": [
+                8
+            ]
+        }
+    },
+    "Upload": {
+        "アップロード": {
+            "wled00/data/settings_leds.htm": [
+                54
+            ],
+            "wled00/data/settings_sec.htm": [
+                23,
+                26
+            ],
+            "wled00/data/settings_2D.htm": [
+                36
+            ]
+        }
+    },
+    "Use 0 for the default action instead of a preset": {
+        "デフォルトのアクションには、プリセットの代わりに 0 を使用します。": {
+            "wled00/data/settings_time.htm": [
+                58
+            ]
+        }
+    },
+    "User Interface": {
+        "ユーザーインターフェース": {
+            "wled00/data/settings.htm": [
+                6
+            ]
+        }
+    },
+    "Usermod Settings": {
+        "ユーザーモッド設定": {
+            "wled00/data/settings_um.htm": [
+                1
+            ]
+        }
+    },
+    "Usermod Setup": {
+        "ユーザーモッドのセットアップ": {
+            "wled00/data/settings_um.htm": [
+                6
+            ]
+        }
+    },
+    "Usermods": {
+        "ユーザーモッド": {
+            "wled00/data/settings.htm": [
+                10
+            ]
+        }
+    },
+    "Value/Brightness": {
+        "値/明るさ": {
+            "wled00/data/index.htm": [
+                15
+            ]
+        }
+    },
+    "Values above ": {
+        "上記の値": {
+            "wled00/data/settings_2D.htm": [
+                25
+            ]
+        }
+    },
+    "Version 1.0.8": {
+        "バージョン1.0.8": {
+            "wled00/data/pixart/pixart.htm": [
+                32
+            ]
+        }
+    },
+    "Vertical": {
+        "垂直": {
+            "wled00/data/settings_2D.htm": [
+                22
+            ]
+        }
+    },
+    "W": {
+        "で": {
+            "wled00/data/settings_time.htm": [
+                40
+            ]
+        }
+    },
+    "W : ": {
+        "で ：": {
+            "wled00/data/pixart/pixart.htm": [
+                27
+            ]
+        }
+    },
+    "WARNING: Channel gap is lower than channels per fixture.": {
+        "警告: チャンネルギャップは、器具ごとのチャンネルよりも低くなります。": {
+            "wled00/data/settings_dmx.htm": [
+                13
+            ]
+        }
+    },
+    "WESP32": {
+        "WESP32": {
+            "wled00/data/settings_wifi.htm": [
+                51
+            ]
+        }
+    },
+    "WLED": {
+        "国": {
+            "wled00/data/index.htm": [
+                1
+            ],
+            "wled00/data/simple.htm": [
+                1
+            ],
+            "wled00/data/settings_sec.htm": [
+                31
+            ]
+        }
+    },
+    "WLED Broadcast": {
+        "WLEDブロードキャスト": {
+            "wled00/data/settings_sync.htm": [
+                5
+            ]
+        }
+    },
+    "WLED Custom Palette Editor": {
+        "WLED カスタム パレット エディター": {
+            "wled00/data/cpal/cpal.htm": [
+                1,
+                2
+            ]
+        }
+    },
+    "WLED JSON": {
+        "WLED JSON": {
+            "wled00/data/pixart/pixart.htm": [
+                9
+            ],
+            "wled00/data/pxmagic/pxmagic.htm": [
+                11
+            ]
+        }
+    },
+    "WLED Live Preview": {
+        "WLED ライブ プレビュー": {
+            "wled00/data/liveview.htm": [
+                1
+            ],
+            "wled00/data/liveviewws2D.htm": [
+                1
+            ]
+        }
+    },
+    "WLED Message": {
+        "WLED メッセージ": {
+            "wled00/data/msg.htm": [
+                1
+            ]
+        }
+    },
+    "WLED Pixel Art Converter": {
+        "WLED ピクセル アート コンバーター": {
+            "wled00/data/pixart/pixart.htm": [
+                1
+            ]
+        }
+    },
+    "WLED Settings": {
+        "WLED設定": {
+            "wled00/data/settings.htm": [
+                1
+            ]
+        }
+    },
+    "WLED Software Update": {
+        "WLED ソフトウェア アップデート": {
+            "wled00/data/update.htm": [
+                2
+            ]
+        }
+    },
+    "WLED Update": {
+        "WLED アップデート": {
+            "wled00/data/update.htm": [
+                1
+            ]
+        }
+    },
+    "WLED community": {
+        "WLEDコミュニティ": {
+            "wled00/data/index.htm": [
+                52
+            ],
+            "wled00/data/simple.htm": [
+                30
+            ]
+        }
+    },
+    "WLED instances": {
+        "WLED インスタンス": {
+            "wled00/data/index.htm": [
+                53
+            ],
+            "wled00/data/simple.htm": [
+                31
+            ]
+        }
+    },
+    "WS2815 (12mA)": {
+        "WS2815(12mA)": {
+            "wled00/data/settings_leds.htm": [
+                23
+            ]
+        }
+    },
+    "WT32-ETH01": {
+        "WT32-ETH01": {
+            "wled00/data/settings_wifi.htm": [
+                52
+            ]
+        }
+    },
+    "Wait and set": {
+        "待って設定してください": {
+            "wled00/data/settings_leds.htm": [
+                84
+            ]
+        }
+    },
+    "Warm White": {
+        "ウォームホワイト": {
+            "wled00/data/index.htm": [
+                65
+            ],
+            "wled00/data/simple.htm": [
+                38
+            ]
+        }
+    },
+    "Web Setup": {
+        "ウェブ設定": {
+            "wled00/data/settings_ui.htm": [
+                6
+            ]
+        }
+    },
+    "Welcome to WLED!": {
+        "WLED へようこそ!": {
+            "wled00/data/welcome.htm": [
+                2
+            ]
+        }
+    },
+    "Welcome!": {
+        "いらっしゃいませ！": {
+            "wled00/data/welcome.htm": [
+                1
+            ]
+        }
+    },
+    "White": {
+        "白": {
+            "wled00/data/index.htm": [
+                66
+            ],
+            "wled00/data/simple.htm": [
+                39
+            ]
+        }
+    },
+    "White balance": {
+        "ホワイトバランス": {
+            "wled00/data/index.htm": [
+                21
+            ],
+            "wled00/data/simple.htm": [
+                15
+            ]
+        }
+    },
+    "White channel": {
+        "ホワイトチャンネル": {
+            "wled00/data/index.htm": [
+                20
+            ],
+            "wled00/data/simple.htm": [
+                14
+            ]
+        }
+    },
+    "White management": {
+        "ホワイト経営": {
+            "wled00/data/settings_leds.htm": [
+                88
+            ]
+        }
+    },
+    "Why would you? ": {
+        "なぜそうなるのでしょうか？": {
+            "wled00/data/settings_ui.htm": [
+                17
+            ]
+        }
+    },
+    "WiFi Settings": {
+        "WiFi設定": {
+            "wled00/data/settings_wifi.htm": [
+                1
+            ]
+        }
+    },
+    "WiFi Setup": {
+        "WiFiのセットアップ": {
+            "wled00/data/settings.htm": [
+                3
+            ]
+        }
+    },
+    "WiFi settings": {
+        "WiFi設定": {
+            "wled00/data/welcome.htm": [
+                6
+            ]
+        }
+    },
+    "WiFi setup": {
+        "WiFiのセットアップ": {
+            "wled00/data/settings_wifi.htm": [
+                4
+            ]
+        }
+    },
+    "Width": {
+        "幅": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                23
+            ]
+        }
+    },
+    "Wireless Remote": {
+        "ワイヤレスリモコン": {
+            "wled00/data/settings_wifi.htm": [
+                34
+            ]
+        }
+    },
+    "Yellow": {
+        "黄色": {
+            "wled00/data/index.htm": [
+                64
+            ],
+            "wled00/data/simple.htm": [
+                37
+            ]
+        }
+    },
+    "You can find the bridge IP and the light number in the 'About' section of the hue app.": {
+        "ブリッジ IP とライト番号は、hue アプリの「概要」セクションで確認できます。": {
+            "wled00/data/settings_sync.htm": [
+                92
+            ]
+        }
+    },
+    "['ffffff']": {
+        "['ふふふふ']": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                44
+            ]
+        }
+    },
+    "[0, 'ffffff']": {
+        "[0, 'ffffff']": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                45
+            ]
+        }
+    },
+    "[0, 5, 'ffffff']": {
+        "[0, 5, 'ffffff']": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                46
+            ]
+        }
+    },
+    "and ": {
+        "そして": {
+            "wled00/data/settings_sync.htm": [
+                14
+            ]
+        }
+    },
+    "double": {
+        "ダブル": {
+            "wled00/data/settings_time.htm": [
+                69
+            ]
+        }
+    },
+    "info": {
+        "情報": {
+            "wled00/data/settings_dmx.htm": [
+                12
+            ]
+        }
+    },
+    "long": {
+        "長さ": {
+            "wled00/data/settings_time.htm": [
+                67
+            ]
+        }
+    },
+    "off->on": {
+        "オフ→オン": {
+            "wled00/data/settings_time.htm": [
+                68
+            ]
+        }
+    },
+    "on->off": {
+        "オン→オフ": {
+            "wled00/data/settings_time.htm": [
+                66
+            ]
+        }
+    },
+    "or ": {
+        "または": {
+            "wled00/data/pixart/pixart.htm": [
+                30
+            ]
+        }
+    },
+    "push": {
+        "押す": {
+            "wled00/data/settings_time.htm": [
+                63
+            ]
+        }
+    },
+    "sec": {
+        "秒": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                27,
+                29
+            ]
+        }
+    },
+    "short": {
+        "短い": {
+            "wled00/data/settings_time.htm": [
+                65
+            ]
+        }
+    },
+    "st": {
+        "セント": {
+            "wled00/data/settings_2D.htm": [
+                14
+            ]
+        }
+    },
+    "switch": {
+        "スイッチ": {
+            "wled00/data/settings_time.htm": [
+                64
+            ]
+        }
+    },
+    "transparent pixels": {
+        "透明なピクセル": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                32
+            ]
+        }
+    },
+    "unknown": {
+        "未知": {
+            "wled00/data/settings_leds.htm": [
+                18
+            ],
+            "wled00/data/settings_time.htm": [
+                34
+            ]
+        }
+    },
+    "will not": {
+        "しません": {
+            "wled00/data/settings_2D.htm": [
+                26
+            ]
+        }
+    },
+    " s": {
+        " s": {
+            "wled00/data/index.htm": [
+                38
+            ]
+        }
+    },
+    "⚠ Could not access local storage. Make sure it is enabled in your browser.": {
+        "⚠ ローカルストレージにアクセスできませんでした。ブラウザで有効になっていることを確認してください。": {
+            "wled00/data/settings_ui.htm": [
+                5
+            ]
+        }
+    },
+    "⚠ Could not load configuration.": {
+        "⚠ 設定をロードできませんでした。": {
+            "wled00/data/settings_um.htm": [
+                5
+            ]
+        }
+    },
+    "⚠ Restoring presets/configuration will OVERWRITE your current presets/configuration.": {
+        "⚠ プリセット/構成を復元すると、現在のプリセット/構成が上書きされます。": {
+            "wled00/data/settings_sec.htm": [
+                27
+            ]
+        }
+    },
+    "⚠ Unencrypted transmission. An attacker on the same network can intercept form data!": {
+        "⚠ 暗号化されていない送信。同じネットワーク上の攻撃者がフォーム データを傍受する可能性があります。": {
+            "wled00/data/settings_sec.htm": [
+                16
+            ]
+        }
+    },
+    "⚠ Unencrypted transmission. Be prudent when selecting PIN, do NOT use your banking, door, SIM, etc. pin!": {
+        "⚠ 暗号化されていない送信。 PIN を選択するときは慎重にしてください。銀行、ドア、SIM などの PIN は使用しないでください。": {
+            "wled00/data/settings_sec.htm": [
+                6
+            ]
+        }
+    },
+    "✔ Configuration saved!": {
+        "✔ 設定が保存されました!": {
+            "wled00/data/settings_um.htm": [
+                4
+            ]
+        }
+    },
+    "✔ Local UI settings saved!": {
+        "✔ ローカル UI 設定が保存されました!": {
+            "wled00/data/settings_ui.htm": [
+                4
+            ]
+        }
+    }
+}

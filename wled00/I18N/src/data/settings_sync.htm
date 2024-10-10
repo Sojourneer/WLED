@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<meta charset="utf-8"/>
+<title>${1:Sync Settings}</title>
+<script>var d=document;
+	var loc = false, locip, locproto = "http:";
+	function gId(s){return d.getElementById(s);}
+	function toggle(el){gId(el).classList.toggle("hide"); gId('No'+el).classList.toggle("hide");}
+	function H(){window.open("https://kno.wled.ge/interfaces/udp-notifier/");}
+	function B(){window.open(getURL("/settings"),"_self");}
+	function adj(){if (d.Sf.DI.value == 6454) {if (d.Sf.EU.value == 1) d.Sf.EU.value = 0;}
+					else if (d.Sf.DI.value == 5568) {if (d.Sf.DA.value == 0) d.Sf.DA.value = 1; if (d.Sf.EU.value == 0) d.Sf.EU.value = 1;} }
+	// https://www.educative.io/edpresso/how-to-dynamically-load-a-js-file-in-javascript
+	function loadJS(FILE_URL, async = true) {
+		let scE = d.createElement("script");
+		scE.setAttribute("src", FILE_URL);
+		scE.setAttribute("type", "text/javascript");
+		scE.setAttribute("async", async);
+		d.body.appendChild(scE);
+		// success event 
+		scE.addEventListener("load", () => {
+			//console.log("File loaded");
+			GetV();SetVal();
+		});
+		// error event
+		scE.addEventListener("error", (ev) => {
+			console.log("Error on loading file", ev);
+			alert("Loading of configuration script failed.\nIncomplete page data!");
+		});
+	}
+	function FC()
+	{
+		for(j=0;j<8;j++)
+		{
+			gId("G"+(j+1)).checked=gId("GS").value>>j&1;
+			gId("R"+(j+1)).checked=gId("GR").value>>j&1;
+		}
+	}
+	function GC()
+	{
+		var a=0, b=0;
+
+		var m=1;
+		for(j=0;j<8;j++)
+		{
+			a+=gId("G"+(j+1)).checked*m;
+			b+=gId("R"+(j+1)).checked*m;
+			m*=2;
+		}
+		gId("GS").value=a;
+		gId("GR").value=b;
+	}
+	function SP(){var p = d.Sf.DI.value; gId("xp").style.display = (p > 0)?"none":"block"; if (p > 0) d.Sf.EP.value = p;}
+	function SetVal(){switch(parseInt(d.Sf.EP.value)){case 5568: d.Sf.DI.value = 5568; break; case 6454: d.Sf.DI.value = 6454; break; case 4048: d.Sf.DI.value = 4048; break; }; SP();FC();}
+	function S(){
+		let l = window.location;
+		if (l.protocol == "file:") {
+			loc = true;
+			locip = localStorage.getItem('locIp');
+			if (!locip) {
+				locip = prompt("File Mode. Please enter WLED IP!");
+				localStorage.setItem('locIp', locip);
+			}
+		} else {
+			// detect reverse proxy
+			let paths = l.pathname.slice(1,l.pathname.endsWith('/')?-1:undefined).split("/");
+			if (paths.length > 2) {
+				locproto = l.protocol;
+				loc = true;
+				locip = l.hostname + (l.port ? ":" + l.port : "") + "/" + paths[0];
+			}
+		}
+		loadJS(getURL('/settings/s.js?p=4'), false);	// If we set async false, file is loaded and executed, then next statement is processed
+		if (loc) d.Sf.action = getURL('/settings/sync');
+	}
+	function getURL(path) {
+		return (loc ? locproto + "//" + locip : "") + path;
+	}
+	</script>
+<style>@import url("style.css");</style>
+</head>
+<body onload="S()">
+<form id="form_s" method="post" name="Sf" onsubmit="GC()">
+<div class="toprow">
+<div class="helpB"><button onclick="H()" type="button">?</button></div>
+<button onclick="B()" type="button">${2:Back}</button><button type="submit">${3:Save}</button><hr/>
+</div>
+<h2>${4:Sync setup}</h2>
+<h3>${5:WLED Broadcast}</h3>${6:
+UDP Port: }<input class="d5" max="65535" min="1" name="UP" required="" type="number"/><br/>${7:
+2nd Port: }<input class="d5" max="65535" min="1" name="U2" required="" type="number"/><br/>
+<h3>${8:Sync groups}</h3>
+<input id="GS" name="GS" style="display: none;" type="number"/><!-- hidden inputs for bitwise group checkboxes -->
+<input id="GR" name="GR" style="display: none;" type="number"/>
+<table style="margin: 0 auto;">
+<tr>
+<td></td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+</tr>
+<tr>
+<td>${9:Send:}</td>
+<td><input id="G1" name="G1" type="checkbox"/></td>
+<td><input id="G2" name="G2" type="checkbox"/></td>
+<td><input id="G3" name="G3" type="checkbox"/></td>
+<td><input id="G4" name="G4" type="checkbox"/></td>
+<td><input id="G5" name="G5" type="checkbox"/></td>
+<td><input id="G6" name="G6" type="checkbox"/></td>
+<td><input id="G7" name="G7" type="checkbox"/></td>
+<td><input id="G8" name="G8" type="checkbox"/></td>
+</tr>
+<tr>
+<td>${10:Receive:}</td>
+<td><input id="R1" name="R1" type="checkbox"/></td>
+<td><input id="R2" name="R2" type="checkbox"/></td>
+<td><input id="R3" name="R3" type="checkbox"/></td>
+<td><input id="R4" name="R4" type="checkbox"/></td>
+<td><input id="R5" name="R5" type="checkbox"/></td>
+<td><input id="R6" name="R6" type="checkbox"/></td>
+<td><input id="R7" name="R7" type="checkbox"/></td>
+<td><input id="R8" name="R8" type="checkbox"/></td>
+</tr>
+</table><br/>${11:
+Receive: }<nowrap><input name="RB" type="checkbox"/>${12:Brightness,}</nowrap> <nowrap><input name="RC" type="checkbox"/>${13:Color,}</nowrap> <nowrap>${14:and }<input name="RX" type="checkbox"/>${15:Effects}</nowrap><br/>
+<input name="SO" type="checkbox"/>${16: Segment options, }<input name="SG" type="checkbox"/>${17: bounds}<br/>${18:
+Send notifications on direct change: }<input name="SD" type="checkbox"/><br/>${19:
+Send notifications on button press or IR: }<input name="SB" type="checkbox"/><br/>${20:
+Send Alexa notifications: }<input name="SA" type="checkbox"/><br/>${21:
+Send Philips Hue change notifications: }<input name="SH" type="checkbox"/><br/>${22:
+Send Macro notifications: }<input name="SM" type="checkbox"/><br/>${23:
+UDP packet retransmissions: }<input class="d5" max="30" min="0" name="UR" required="" type="number"/><br/><br/>
+<i>${24:Reboot required to apply changes. }</i>
+<hr class="sml"/>
+<h3>${25:Instance List}</h3>${26:
+Enable instance list: }<input name="NL" type="checkbox"/><br/>${27:
+Make this instance discoverable: }<input name="NB" type="checkbox"/>
+<hr class="sml"/>
+<h3>${28:Realtime}</h3>${29:
+Receive UDP realtime: }<input name="RD" type="checkbox"/><br/>${30:
+Use main segment only: }<input name="MO" type="checkbox"/><br/><br/>
+<i>${31:Network DMX input}</i><br/>${32:
+Type:
+}<select name="DI" onchange="SP(); adj();">
+<option value="5568">${33:E1.31 (sACN)}</option>
+<option value="6454">${34:Art-Net}</option>
+<option selected="" value="0">${35:Custom port}</option>
+</select><br/>
+<div id="xp">${36:Port: }<input class="d5" max="65535" min="1" name="EP" required="" type="number" value="5568"/><br/></div>${37:
+Multicast: }<input name="EM" type="checkbox"/><br/>${38:
+Start universe: }<input max="63999" min="0" name="EU" required="" type="number"/><br/>
+<i>${39:Reboot required.}</i>${40: Check out }<a href="https://github.com/LedFx/LedFx" target="_blank">${41:LedFx}</a>!<br/>${42:
+Skip out-of-sequence packets: }<input name="ES" type="checkbox"/><br/>${43:
+DMX start address: }<input max="510" min="1" name="DA" required="" type="number"/><br/>${44:
+DMX segment spacing: }<input max="150" min="0" name="XX" required="" type="number"/><br/>${45:
+E1.31 port priority: }<input max="200" min="0" name="PY" required="" type="number"/><br/>${46:
+DMX mode:
+}<select name="DM">
+<option value="0">${47:Disabled}</option>
+<option value="1">${48:Single RGB}</option>
+<option value="2">${49:Single DRGB}</option>
+<option value="3">${50:Effect}</option>
+<option value="7">${51:Effect + White}</option>
+<option value="8">${52:Effect Segment}</option>
+<option value="9">${53:Effect Segment + White}</option>
+<option value="4">${54:Multi RGB}</option>
+<option value="5">${55:Dimmer + Multi RGB}</option>
+<option value="6">${56:Multi RGBW}</option>
+<option value="10">${57:Preset}</option>
+</select><br/>
+<a href="https://kno.wled.ge/interfaces/e1.31-dmx/" target="_blank">${58:E1.31 info}</a><br/>${59:
+Timeout: }<input max="65000" min="1" name="ET" required="" type="number"/>${60: ms}<br/>${61:
+Force max brightness: }<input name="FB" type="checkbox"/><br/>${62:
+Disable realtime gamma correction: }<input name="RG" type="checkbox"/><br/>${63:
+Realtime LED offset: }<input max="255" min="-255" name="WO" required="" type="number"/>
+<hr class="sml"/>
+<h3>${64:Alexa Voice Assistant}</h3>
+<div class="hide" id="NoAlexa">
+<i class="warn">${65:This firmware build does not include Alexa support.}<br/></i><br/>
+</div>
+<div id="Alexa">${66:
+Emulate Alexa device: }<input name="AL" type="checkbox"/><br/>${67:
+Alexa invocation name: }<input maxlength="32" name="AI" type="text"/><br/>${68:
+Also emulate devices to call the first }<input class="s" max="9" min="0" name="AP" required="" type="number"/>${69: presets}<br/><br/>
+</div>
+<hr class="sml"/>
+<div class="warn">⚠ <b>${70:MQTT and Hue sync all connect to external hosts!}<br/>${71:
+This may impact the responsiveness of WLED.}</b><br/>
+</div>${72:
+For best results, only use one of these services at a time.}<br/>${73:
+(alternatively, connect a second ESP to them and use the UDP sync)
+}<hr class="sml"/>
+<h3>${74:MQTT}</h3>
+<div class="hide" id="NoMQTT">
+<i class="warn">${75:This firmware build does not include MQTT support.}<br/></i>
+</div>
+<div id="MQTT">${76:
+Enable MQTT: }<input name="MQ" type="checkbox"/><br/>${77:
+Broker: }<input maxlength="32" name="MS" type="text"/>${78:
+Port: }<input class="d5" max="65535" min="1" name="MQPORT" type="number"/><br/>
+<b>${79:The MQTT credentials are sent over an unsecured connection.}<br/>${80:
+Never use the MQTT password for another service!}</b><br/>${81:
+Username: }<input maxlength="40" name="MQUSER" type="text"/><br/>${82:
+Password: }<input maxlength="64" name="MQPASS" type="password"/><br/>${83:
+Client ID: }<input maxlength="40" name="MQCID" type="text"/><br/>${84:
+Device Topic: }<input maxlength="32" name="MD" type="text"/><br/>${85:
+Group Topic: }<input maxlength="32" name="MG" type="text"/><br/>${86:
+Publish on button press: }<input name="BM" type="checkbox"/><br/>${87:
+Retain brightness &amp; color messages: }<input name="RT" type="checkbox"/><br/>
+<i>${88:Reboot required to apply changes. }</i><a href="https://kno.wled.ge/interfaces/mqtt/" target="_blank">${89:MQTT info}</a>
+</div>
+<h3>${90:Philips Hue}</h3>
+<div class="hide" id="NoHue">
+<em class="warn">${91:This firmware build does not include Philips Hue support.}<br/></em>
+</div>
+<div id="Hue">
+<i>${92:You can find the bridge IP and the light number in the 'About' section of the hue app.}</i><br/>${93:
+Poll Hue light }<input max="99" min="1" name="HL" type="number"/>${94: every }<input max="65000" min="100" name="HI" type="number"/>${95: ms: }<input name="HP" type="checkbox"/><br/>${96:
+Then, receive }<input name="HO" type="checkbox"/>${97: On/Off, }<input name="HB" type="checkbox"/>${98: Brightness, and }<input name="HC" type="checkbox"/>${99: Color}<br/>${100:
+Hue Bridge IP:}<br/>
+<input class="s" max="255" min="0" name="H0" type="number"/> .
+<input class="s" max="255" min="0" name="H1" type="number"/> .
+<input class="s" max="255" min="0" name="H2" type="number"/> .
+<input class="s" max="255" min="0" name="H3" type="number"/><br/>
+<b>${101:Press the pushlink button on the bridge, after that save this page!}</b><br/>${102:
+(when first connecting)}<br/>${103:
+Hue status: }<span class="sip">${104: Disabled in this build }</span>
+</div>
+<h3>${105:Serial}</h3>${106:
+Baud rate:
+}<select name="BD">
+<option value="1152">115200</option>
+<option value="2304">230400</option>
+<option value="4608">460800</option>
+<option value="5000">500000</option>
+<option value="5760">576000</option>
+<option value="9216">921600</option>
+<option value="10000">1000000</option>
+<option value="15000">1500000</option>
+</select><br/>
+<i>${107:Keep at 115200 to use Improv. Some boards may not support high rates.}</i>
+<hr/>
+<button onclick="B()" type="button">${108:Back}</button><button type="submit">${109:Save}</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<meta charset="utf-8"/>
+<title>${1:PIN required}</title>
+<script>
+		var d = document;
+		function B() { window.open("../settings","_self"); }
+	</script>
+<style>
+		@import url("style.css");
+	</style>
+</head>
+<body onload="d.getElementsByName('PIN')[0].focus()">
+<form id="form_s" method="post" name="Sf">
+<h2>${2:Please enter settings PIN code}</h2>
+<input autofocus="" inputmode="numeric" maxlength="4" minlength="4" name="PIN" pattern="[0-9]*" size="4" type="password"/>
+<hr/>
+<button onclick="B()" type="button">${3:Back}</button><button type="submit">${4:Submit}</button>
+</form>
+</body>
+</html>

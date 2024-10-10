@@ -1,0 +1,3014 @@
+{
+    "wled00/data/index.htm": {
+        "1": {
+            "content": "WLED",
+            "sourceLine": 9
+        },
+        "2": {
+            "content": "Loading WLED UI...",
+            "sourceLine": 57
+        },
+        "3": {
+            "content": "Sorry, WLED UI needs JavaScript!",
+            "sourceLine": 58
+        },
+        "4": {
+            "content": "Power",
+            "sourceLine": 64
+        },
+        "5": {
+            "content": "Timer",
+            "sourceLine": 65
+        },
+        "6": {
+            "content": "Sync",
+            "sourceLine": 66
+        },
+        "7": {
+            "content": "Peek",
+            "sourceLine": 67
+        },
+        "8": {
+            "content": "Info",
+            "sourceLine": 68
+        },
+        "9": {
+            "content": "Nodes",
+            "sourceLine": 69
+        },
+        "10": {
+            "content": "Config",
+            "sourceLine": 70
+        },
+        "11": {
+            "content": "PC Mode",
+            "sourceLine": 71
+        },
+        "12": {
+            "content": "Brightness",
+            "sourceLine": 74
+        },
+        "13": {
+            "content": "Hue",
+            "sourceLine": 96
+        },
+        "14": {
+            "content": "Saturation",
+            "sourceLine": 103
+        },
+        "15": {
+            "content": "Value/Brightness",
+            "sourceLine": 110
+        },
+        "16": {
+            "content": "Kelvin/Temperature",
+            "sourceLine": 117
+        },
+        "17": {
+            "content": "Red channel",
+            "sourceLine": 126
+        },
+        "18": {
+            "content": "Green channel",
+            "sourceLine": 133
+        },
+        "19": {
+            "content": "Blue channel",
+            "sourceLine": 140
+        },
+        "20": {
+            "content": "White channel",
+            "sourceLine": 149
+        },
+        "21": {
+            "content": "White balance",
+            "sourceLine": 157
+        },
+        "22": {
+            "content": "R",
+            "sourceLine": 170
+        },
+        "23": {
+            "content": " Color palette",
+            "sourceLine": 183
+        },
+        "24": {
+            "content": "\n\t\t\t\t\t\t\t\tLoading...\n\t\t\t\t\t\t\t",
+            "sourceLine": 194
+        },
+        "25": {
+            "content": "Effect mode",
+            "sourceLine": 211
+        },
+        "26": {
+            "content": "\n\t\t\t\t\t\t\t\tLoading...\n\t\t\t\t\t\t\t",
+            "sourceLine": 221
+        },
+        "27": {
+            "content": "Effect speed",
+            "sourceLine": 263
+        },
+        "28": {
+            "content": "Effect intensity",
+            "sourceLine": 272
+        },
+        "29": {
+            "content": "Custom 1",
+            "sourceLine": 281
+        },
+        "30": {
+            "content": "Custom 2",
+            "sourceLine": 290
+        },
+        "31": {
+            "content": "Custom 3",
+            "sourceLine": 299
+        },
+        "32": {
+            "content": "Check 1",
+            "sourceLine": 302
+        },
+        "33": {
+            "content": "Check 2",
+            "sourceLine": 306
+        },
+        "34": {
+            "content": "Check 3",
+            "sourceLine": 310
+        },
+        "35": {
+            "content": "\n\t\t\tLoading...\n\t\t",
+            "sourceLine": 319
+        },
+        "36": {
+            "content": "Reset segments",
+            "sourceLine": 325
+        },
+        "37": {
+            "content": "Transition: ",
+            "sourceLine": 327
+        },
+        "38": {
+            "content": "\u00a0s",
+            "sourceLine": 327
+        },
+        "39": {
+            "content": "Presets",
+            "sourceLine": 334
+        },
+        "40": {
+            "content": "Loading...",
+            "sourceLine": 341
+        },
+        "41": {
+            "content": "Colors",
+            "sourceLine": 349
+        },
+        "42": {
+            "content": "Effects",
+            "sourceLine": 350
+        },
+        "43": {
+            "content": "Segments",
+            "sourceLine": 351
+        },
+        "44": {
+            "content": "Presets",
+            "sourceLine": 352
+        },
+        "45": {
+            "content": "Loading...",
+            "sourceLine": 363
+        },
+        "46": {
+            "content": "Refresh",
+            "sourceLine": 365
+        },
+        "47": {
+            "content": "Instance List",
+            "sourceLine": 366
+        },
+        "48": {
+            "content": "Update WLED",
+            "sourceLine": 367
+        },
+        "49": {
+            "content": "Reboot WLED",
+            "sourceLine": 368
+        },
+        "50": {
+            "content": "Made with ",
+            "sourceLine": 371
+        },
+        "51": {
+            "content": " by Aircoookie and the ",
+            "sourceLine": 371
+        },
+        "52": {
+            "content": "WLED community",
+            "sourceLine": 371
+        },
+        "53": {
+            "content": "WLED instances",
+            "sourceLine": 376
+        },
+        "54": {
+            "content": "Loading...",
+            "sourceLine": 377
+        },
+        "55": {
+            "content": "Refresh",
+            "sourceLine": 379
+        },
+        "56": {
+            "content": "Loading...",
+            "sourceLine": 384
+        },
+        "57": {
+            "content": "\n\tTo use built-in effects, use an override button below.",
+            "sourceLine": 387
+        },
+        "58": {
+            "content": "\n\tYou can return to realtime mode by pressing the star in the top left corner.",
+            "sourceLine": 387
+        },
+        "59": {
+            "content": "Override once",
+            "sourceLine": 392
+        },
+        "60": {
+            "content": "Override until reboot",
+            "sourceLine": 393
+        },
+        "61": {
+            "content": "For best performance, it is recommended to turn off the streaming source when not in use.",
+            "sourceLine": 394
+        },
+        "62": {
+            "title": "Red",
+            "sourceLine": 160
+        },
+        "63": {
+            "title": "Orange",
+            "sourceLine": 161
+        },
+        "64": {
+            "title": "Yellow",
+            "sourceLine": 162
+        },
+        "65": {
+            "title": "Warm White",
+            "sourceLine": 163
+        },
+        "66": {
+            "title": "White",
+            "sourceLine": 164
+        },
+        "67": {
+            "title": "Black",
+            "sourceLine": 165
+        },
+        "68": {
+            "title": "Pink",
+            "sourceLine": 166
+        },
+        "69": {
+            "title": "Blue",
+            "sourceLine": 167
+        },
+        "70": {
+            "title": "Cyan",
+            "sourceLine": 168
+        },
+        "71": {
+            "title": "Green",
+            "sourceLine": 169
+        },
+        "72": {
+            "title": "Random",
+            "sourceLine": 170
+        }
+    },
+    "wled00/data/simple.htm": {
+        "1": {
+            "content": "WLED",
+            "sourceLine": 9
+        },
+        "2": {
+            "content": "Loading WLED UI...",
+            "sourceLine": 57
+        },
+        "3": {
+            "content": "Sorry, WLED UI needs JavaScript!",
+            "sourceLine": 58
+        },
+        "4": {
+            "content": "Power",
+            "sourceLine": 64
+        },
+        "5": {
+            "content": "Info",
+            "sourceLine": 65
+        },
+        "6": {
+            "content": "Nodes",
+            "sourceLine": 66
+        },
+        "7": {
+            "content": "Config",
+            "sourceLine": 67
+        },
+        "8": {
+            "content": "Expand",
+            "sourceLine": 68
+        },
+        "9": {
+            "content": "Global brightness",
+            "sourceLine": 72
+        },
+        "10": {
+            "content": "Quick Load",
+            "sourceLine": 88
+        },
+        "11": {
+            "content": "Solid color",
+            "sourceLine": 93
+        },
+        "12": {
+            "content": "R",
+            "sourceLine": 105
+        },
+        "13": {
+            "content": "RGB channels",
+            "sourceLine": 127
+        },
+        "14": {
+            "content": "White channel",
+            "sourceLine": 148
+        },
+        "15": {
+            "content": "White balance",
+            "sourceLine": 155
+        },
+        "16": {
+            "content": "Color slots",
+            "sourceLine": 164
+        },
+        "17": {
+            "content": "Presets",
+            "sourceLine": 177
+        },
+        "18": {
+            "content": "Effect",
+            "sourceLine": 187
+        },
+        "19": {
+            "content": " Solid",
+            "sourceLine": 205
+        },
+        "20": {
+            "content": "Default",
+            "sourceLine": 206
+        },
+        "21": {
+            "content": "Solid",
+            "sourceLine": 214
+        },
+        "22": {
+            "content": "Default",
+            "sourceLine": 224
+        },
+        "23": {
+            "content": "Loading...",
+            "sourceLine": 241
+        },
+        "24": {
+            "content": "Refresh",
+            "sourceLine": 243
+        },
+        "25": {
+            "content": "Close Info",
+            "sourceLine": 244
+        },
+        "26": {
+            "content": "Instance List",
+            "sourceLine": 245
+        },
+        "27": {
+            "content": "Reboot WLED",
+            "sourceLine": 246
+        },
+        "28": {
+            "content": "Made with ",
+            "sourceLine": 248
+        },
+        "29": {
+            "content": " by Aircoookie and the ",
+            "sourceLine": 248
+        },
+        "30": {
+            "content": "WLED community",
+            "sourceLine": 248
+        },
+        "31": {
+            "content": "WLED instances",
+            "sourceLine": 252
+        },
+        "32": {
+            "content": "Loading...",
+            "sourceLine": 253
+        },
+        "33": {
+            "content": "Refresh",
+            "sourceLine": 255
+        },
+        "34": {
+            "content": "Close list",
+            "sourceLine": 256
+        },
+        "35": {
+            "title": "Red",
+            "sourceLine": 95
+        },
+        "36": {
+            "title": "Orange",
+            "sourceLine": 96
+        },
+        "37": {
+            "title": "Yellow",
+            "sourceLine": 97
+        },
+        "38": {
+            "title": "Warm White",
+            "sourceLine": 98
+        },
+        "39": {
+            "title": "White",
+            "sourceLine": 99
+        },
+        "40": {
+            "title": "Black",
+            "sourceLine": 100
+        },
+        "41": {
+            "title": "Pink",
+            "sourceLine": 101
+        },
+        "42": {
+            "title": "Blue",
+            "sourceLine": 102
+        },
+        "43": {
+            "title": "Cyan",
+            "sourceLine": 103
+        },
+        "44": {
+            "title": "Green",
+            "sourceLine": 104
+        },
+        "45": {
+            "title": "Random",
+            "sourceLine": 105
+        },
+        "46": {
+            "title": "Effect speed",
+            "sourceLine": 188
+        },
+        "47": {
+            "title": "Effect intensity",
+            "sourceLine": 196
+        }
+    },
+    "wled00/data/pixart/pixart.htm": {
+        "1": {
+            "content": "WLED Pixel Art Converter",
+            "sourceLine": 7
+        },
+        "2": {
+            "content": "\n            WLED Pixel Art Converter\n          ",
+            "sourceLine": 20
+        },
+        "3": {
+            "content": "Convert image to WLED JSON (pixel art on WLED matrix)",
+            "sourceLine": 30
+        },
+        "4": {
+            "content": "Led setup:",
+            "sourceLine": 35
+        },
+        "5": {
+            "content": "2D Matrix",
+            "sourceLine": 39
+        },
+        "6": {
+            "content": "Serpentine, first row right to left <-",
+            "sourceLine": 40
+        },
+        "7": {
+            "content": "Serpentine, first row left to right ->",
+            "sourceLine": 41
+        },
+        "8": {
+            "content": "Output format:",
+            "sourceLine": 47
+        },
+        "9": {
+            "content": "WLED JSON",
+            "sourceLine": 51
+        },
+        "10": {
+            "content": "CURL",
+            "sourceLine": 52
+        },
+        "11": {
+            "content": "Home Assistant YAML",
+            "sourceLine": 53
+        },
+        "12": {
+            "content": "Color code format:",
+            "sourceLine": 59
+        },
+        "13": {
+            "content": "HEX (\"f4f4f4\")",
+            "sourceLine": 63
+        },
+        "14": {
+            "content": "DEC (244,244,244)",
+            "sourceLine": 64
+        },
+        "15": {
+            "content": "Addressing:",
+            "sourceLine": 70
+        },
+        "16": {
+            "content": "Hybrid (\"f0f0f0\",10, 17, \"f4f4f4\")",
+            "sourceLine": 74
+        },
+        "17": {
+            "content": "Range (10, 17, \"f4f4f4\")",
+            "sourceLine": 75
+        },
+        "18": {
+            "content": "Single (\"f4f4f4\")",
+            "sourceLine": 76
+        },
+        "19": {
+            "content": "Brightness:",
+            "sourceLine": 82
+        },
+        "20": {
+            "content": "Max no of colors/JSON:",
+            "sourceLine": 91
+        },
+        "21": {
+            "content": "HA Device ID:",
+            "sourceLine": 100
+        },
+        "22": {
+            "content": "HA Device Unique ID:",
+            "sourceLine": 108
+        },
+        "23": {
+            "content": "HA Device Name:",
+            "sourceLine": 116
+        },
+        "24": {
+            "content": "Device IP/host name:",
+            "sourceLine": 124
+        },
+        "25": {
+            "content": "Target segment id:",
+            "sourceLine": 132
+        },
+        "26": {
+            "content": "\n                   \u00a0Scale image\n                ",
+            "sourceLine": 145
+        },
+        "27": {
+            "content": "W : ",
+            "sourceLine": 154
+        },
+        "28": {
+            "content": "H : ",
+            "sourceLine": 156
+        },
+        "29": {
+            "content": "    \n                Drop image here ",
+            "sourceLine": 165
+        },
+        "30": {
+            "content": "or ",
+            "sourceLine": 165
+        },
+        "31": {
+            "content": "\n                Click to select a file\n            ",
+            "sourceLine": 165
+        },
+        "32": {
+            "content": "Version 1.0.8",
+            "sourceLine": 199
+        },
+        "33": {
+            "content": "Help/About",
+            "sourceLine": 199
+        }
+    },
+    "wled00/data/cpal/cpal.htm": {
+        "1": {
+            "content": "WLED Custom Palette Editor",
+            "sourceLine": 8
+        },
+        "2": {
+            "content": "WLED Custom Palette Editor",
+            "sourceLine": 161
+        },
+        "3": {
+            "content": "\n          Currently in use custom palettes\n        ",
+            "sourceLine": 170
+        },
+        "4": {
+            "content": "\n      Click on the gradient editor to add new color slider, then the colored box below the slider to change its color. \n      Click the red box below indicator (and confirm) to delete. \n      Once finished, click the arrow icon to upload into the desired slot. \n      To edit existing palette, click the pencil icon.\n    ",
+            "sourceLine": 177
+        },
+        "5": {
+            "content": "\n          Available static palettes\n        ",
+            "sourceLine": 186
+        }
+    },
+    "wled00/data/pxmagic/pxmagic.htm": {
+        "1": {
+            "content": "Pixel Magic Tool",
+            "sourceLine": 8
+        },
+        "2": {
+            "content": "Hostname",
+            "sourceLine": 568
+        },
+        "3": {
+            "content": "Preset Name",
+            "sourceLine": 572
+        },
+        "4": {
+            "content": "Pattern",
+            "sourceLine": 584
+        },
+        "5": {
+            "content": "Select a choice",
+            "sourceLine": 586
+        },
+        "6": {
+            "content": "Individual",
+            "sourceLine": 587
+        },
+        "7": {
+            "content": "Index",
+            "sourceLine": 588
+        },
+        "8": {
+            "content": "\n                    Range\n                  ",
+            "sourceLine": 589
+        },
+        "9": {
+            "content": "Output",
+            "sourceLine": 597
+        },
+        "10": {
+            "content": "Select a choice",
+            "sourceLine": 599
+        },
+        "11": {
+            "content": "WLED JSON",
+            "sourceLine": 600
+        },
+        "12": {
+            "content": "Home Assistant",
+            "sourceLine": 601
+        },
+        "13": {
+            "content": "CURL",
+            "sourceLine": 602
+        },
+        "14": {
+            "content": "Device",
+            "sourceLine": 609
+        },
+        "15": {
+            "content": "Unique Id",
+            "sourceLine": 613
+        },
+        "16": {
+            "content": "Friendly Name",
+            "sourceLine": 617
+        },
+        "17": {
+            "content": "Segment Id",
+            "sourceLine": 628
+        },
+        "18": {
+            "content": "\n                    Segment 0\n                  ",
+            "sourceLine": 630
+        },
+        "19": {
+            "content": "Brightness",
+            "sourceLine": 637
+        },
+        "20": {
+            "content": "Animation",
+            "sourceLine": 659
+        },
+        "21": {
+            "content": "Transparent Image",
+            "sourceLine": 670
+        },
+        "22": {
+            "content": "Resize Image",
+            "sourceLine": 681
+        },
+        "23": {
+            "content": "Width",
+            "sourceLine": 695
+        },
+        "24": {
+            "content": "Height",
+            "sourceLine": 699
+        },
+        "25": {
+            "content": "Frames",
+            "sourceLine": 705
+        },
+        "26": {
+            "content": "Duration",
+            "sourceLine": 709
+        },
+        "27": {
+            "content": "sec",
+            "sourceLine": 721
+        },
+        "28": {
+            "content": "Transition",
+            "sourceLine": 726
+        },
+        "29": {
+            "content": "sec",
+            "sourceLine": 738
+        },
+        "30": {
+            "content": "Choose a color",
+            "sourceLine": 745
+        },
+        "31": {
+            "content": "\n                Color that will replace the\n                ",
+            "sourceLine": 746
+        },
+        "32": {
+            "content": "transparent pixels",
+            "sourceLine": 748
+        },
+        "33": {
+            "content": " in the image\n              ",
+            "sourceLine": 746
+        },
+        "34": {
+            "content": "Images upload to WLED",
+            "sourceLine": 757
+        },
+        "35": {
+            "content": "\n                    upload\n                  ",
+            "sourceLine": 758
+        },
+        "36": {
+            "content": "Select image",
+            "sourceLine": 763
+        },
+        "37": {
+            "content": "\n              Drag and drop a file here or click to select a local file\n            ",
+            "sourceLine": 769
+        },
+        "38": {
+            "content": "\n                Generate\n              ",
+            "sourceLine": 781
+        },
+        "39": {
+            "content": "\n                  Copy to Clipboard\n                ",
+            "sourceLine": 794
+        },
+        "40": {
+            "content": "Save",
+            "sourceLine": 799
+        },
+        "41": {
+            "content": "\n                  Download\n                ",
+            "sourceLine": 802
+        },
+        "42": {
+            "content": "\n                  Simulate\n                ",
+            "sourceLine": 809
+        },
+        "43": {
+            "content": "\n          Github \u00a9 Pixel Magic Tool\n        ",
+            "sourceLine": 818
+        },
+        "44": {
+            "title": "['ffffff']",
+            "sourceLine": 587
+        },
+        "45": {
+            "title": "[0, 'ffffff']",
+            "sourceLine": 588
+        },
+        "46": {
+            "title": "[0, 5, 'ffffff']",
+            "sourceLine": 589
+        }
+    },
+    "wled00/data/settings.htm": {
+        "1": {
+            "content": "WLED Settings",
+            "sourceLine": 6
+        },
+        "2": {
+            "content": "Back",
+            "sourceLine": 80
+        },
+        "3": {
+            "content": "WiFi Setup",
+            "sourceLine": 81
+        },
+        "4": {
+            "content": "LED Preferences",
+            "sourceLine": 82
+        },
+        "5": {
+            "content": "2D Configuration",
+            "sourceLine": 83
+        },
+        "6": {
+            "content": "User Interface",
+            "sourceLine": 84
+        },
+        "7": {
+            "content": "DMX Output",
+            "sourceLine": 85
+        },
+        "8": {
+            "content": "Sync Interfaces",
+            "sourceLine": 86
+        },
+        "9": {
+            "content": "Time & Macros",
+            "sourceLine": 87
+        },
+        "10": {
+            "content": "Usermods",
+            "sourceLine": 88
+        },
+        "11": {
+            "content": "Security & Updates",
+            "sourceLine": 89
+        }
+    },
+    "wled00/data/settings_wifi.htm": {
+        "1": {
+            "content": "WiFi Settings",
+            "sourceLine": 6
+        },
+        "2": {
+            "content": "Back",
+            "sourceLine": 153
+        },
+        "3": {
+            "content": "Save & Connect",
+            "sourceLine": 153
+        },
+        "4": {
+            "content": "WiFi setup",
+            "sourceLine": 155
+        },
+        "5": {
+            "content": "Connect to existing network",
+            "sourceLine": 156
+        },
+        "6": {
+            "content": "Scan",
+            "sourceLine": 157
+        },
+        "7": {
+            "content": "\n\t\tNetwork name (SSID, empty to not connect):",
+            "sourceLine": 150
+        },
+        "8": {
+            "content": "\n\t\tNetwork password: ",
+            "sourceLine": 150
+        },
+        "9": {
+            "content": "\n\t\tStatic IP (leave at 0.0.0.0 for DHCP):",
+            "sourceLine": 150
+        },
+        "10": {
+            "content": "\n\t\tStatic gateway:",
+            "sourceLine": 150
+        },
+        "11": {
+            "content": "\n\t\tStatic subnet mask:",
+            "sourceLine": 150
+        },
+        "12": {
+            "content": "\n\t\tmDNS address (leave empty for no mDNS):",
+            "sourceLine": 150
+        },
+        "13": {
+            "content": "\n\t\thttp:// ",
+            "sourceLine": 150
+        },
+        "14": {
+            "content": " .local",
+            "sourceLine": 150
+        },
+        "15": {
+            "content": "\n\t\tClient IP: ",
+            "sourceLine": 150
+        },
+        "16": {
+            "content": " Not connected ",
+            "sourceLine": 178
+        },
+        "17": {
+            "content": "Configure Access Point",
+            "sourceLine": 179
+        },
+        "18": {
+            "content": "\n\t\tAP SSID (leave empty for no AP):",
+            "sourceLine": 150
+        },
+        "19": {
+            "content": "\n\t\tHide AP name: ",
+            "sourceLine": 150
+        },
+        "20": {
+            "content": "\n\t\tAP password (leave empty for open):",
+            "sourceLine": 150
+        },
+        "21": {
+            "content": "\n\t\tAccess Point WiFi channel: ",
+            "sourceLine": 150
+        },
+        "22": {
+            "content": "\n\t\tAP opens:\n\t\t",
+            "sourceLine": 150
+        },
+        "23": {
+            "content": "No connection after boot",
+            "sourceLine": 186
+        },
+        "24": {
+            "content": "Disconnected",
+            "sourceLine": 187
+        },
+        "25": {
+            "content": "Always",
+            "sourceLine": 188
+        },
+        "26": {
+            "content": "Never (not recommended)",
+            "sourceLine": 189
+        },
+        "27": {
+            "content": "\n\t\tAP IP: ",
+            "sourceLine": 150
+        },
+        "28": {
+            "content": " Not active ",
+            "sourceLine": 190
+        },
+        "29": {
+            "content": "Experimental",
+            "sourceLine": 191
+        },
+        "30": {
+            "content": "\n\t\tForce 802.11g mode (ESP8266 only): ",
+            "sourceLine": 150
+        },
+        "31": {
+            "content": "\n\t\tDisable WiFi sleep: ",
+            "sourceLine": 150
+        },
+        "32": {
+            "content": "Can help with connectivity issues.",
+            "sourceLine": 194
+        },
+        "33": {
+            "content": "\n\t\tDo not enable if WiFi is working correctly, increases power consumption.",
+            "sourceLine": 194
+        },
+        "34": {
+            "content": "Wireless Remote",
+            "sourceLine": 198
+        },
+        "35": {
+            "content": "Listen for events over ESP-NOW",
+            "sourceLine": 199
+        },
+        "36": {
+            "content": "\n\t\t\tKeep disabled if not using a remote, increases power consumption.",
+            "sourceLine": 199
+        },
+        "37": {
+            "content": "\n\t\t\n\t\t\tEnable Remote: ",
+            "sourceLine": 197
+        },
+        "38": {
+            "content": "\n\t\t\tHardware MAC: ",
+            "sourceLine": 197
+        },
+        "39": {
+            "content": "\n\t\t\tLast Seen: ",
+            "sourceLine": 197
+        },
+        "40": {
+            "content": "None",
+            "sourceLine": 204
+        },
+        "41": {
+            "content": "Ethernet Type",
+            "sourceLine": 208
+        },
+        "42": {
+            "content": "None",
+            "sourceLine": 210
+        },
+        "43": {
+            "content": "ABC! WLED V43 & compatible",
+            "sourceLine": 211
+        },
+        "44": {
+            "content": "ESP32-POE",
+            "sourceLine": 212
+        },
+        "45": {
+            "content": "ESP32Deux",
+            "sourceLine": 213
+        },
+        "46": {
+            "content": "KIT-VE",
+            "sourceLine": 214
+        },
+        "47": {
+            "content": "QuinLED-Dig-Octa & T-ETH-POE",
+            "sourceLine": 215
+        },
+        "48": {
+            "content": "QuinLED-ESP32",
+            "sourceLine": 216
+        },
+        "49": {
+            "content": "Serg74-ETH32",
+            "sourceLine": 217
+        },
+        "50": {
+            "content": "TwilightLord-ESP32",
+            "sourceLine": 218
+        },
+        "51": {
+            "content": "WESP32",
+            "sourceLine": 219
+        },
+        "52": {
+            "content": "WT32-ETH01",
+            "sourceLine": 220
+        },
+        "53": {
+            "content": "Back",
+            "sourceLine": 224
+        },
+        "54": {
+            "content": "Save & Connect",
+            "sourceLine": 224
+        },
+        "55": {
+            "title": "Empty or min. 8 characters",
+            "sourceLine": 182
+        }
+    },
+    "wled00/data/settings_leds.htm": {
+        "1": {
+            "content": "LED Settings",
+            "sourceLine": 6
+        },
+        "2": {
+            "content": "Back",
+            "sourceLine": 690
+        },
+        "3": {
+            "content": "Save",
+            "sourceLine": 690
+        },
+        "4": {
+            "content": "LED & Hardware setup",
+            "sourceLine": 692
+        },
+        "5": {
+            "content": "\n\t\tTotal LEDs: ",
+            "sourceLine": 687
+        },
+        "6": {
+            "content": "Recommended power supply for brightest white:",
+            "sourceLine": 694
+        },
+        "7": {
+            "content": "\n\t\tEnable automatic brightness limiter: ",
+            "sourceLine": 687
+        },
+        "8": {
+            "content": "\n\t\t\tMaximum Current: ",
+            "sourceLine": 699
+        },
+        "9": {
+            "content": " mA",
+            "sourceLine": 699
+        },
+        "10": {
+            "content": "\n\t\t\t\t\u26a0 Your power supply provides high current.",
+            "sourceLine": 701
+        },
+        "11": {
+            "content": "\n\t\t\t\tTo improve the safety of your setup,",
+            "sourceLine": 701
+        },
+        "12": {
+            "content": "\n\t\t\t\tplease use thick cables,",
+            "sourceLine": 701
+        },
+        "13": {
+            "content": "\n\t\t\t\tmultiple power injection points and a fuse!",
+            "sourceLine": 701
+        },
+        "14": {
+            "content": "Automatically limits brightness to stay close to the limit.",
+            "sourceLine": 707
+        },
+        "15": {
+            "content": "\n\t\t\tKeep at <1A if powering LEDs directly from the ESP 5V pin!",
+            "sourceLine": 707
+        },
+        "16": {
+            "content": "\n\t\t\tIf you are using an external power supply, enter its rating.",
+            "sourceLine": 707
+        },
+        "17": {
+            "content": "\n\t\t\t(Current estimated usage: ",
+            "sourceLine": 707
+        },
+        "18": {
+            "content": "unknown",
+            "sourceLine": 710
+        },
+        "19": {
+            "content": "\n\t\t\tLED voltage (Max. current for a single LED):",
+            "sourceLine": 699
+        },
+        "20": {
+            "content": "5V default (55mA)",
+            "sourceLine": 713
+        },
+        "21": {
+            "content": "5V efficient (35mA)",
+            "sourceLine": 714
+        },
+        "22": {
+            "content": "12V (30mA)",
+            "sourceLine": 715
+        },
+        "23": {
+            "content": "WS2815 (12mA)",
+            "sourceLine": 716
+        },
+        "24": {
+            "content": "Custom",
+            "sourceLine": 717
+        },
+        "25": {
+            "content": "Custom max. current per LED: ",
+            "sourceLine": 719
+        },
+        "26": {
+            "content": " mA",
+            "sourceLine": 719
+        },
+        "27": {
+            "content": "Keep at default if you are unsure about your type of LEDs.",
+            "sourceLine": 720
+        },
+        "28": {
+            "content": "Hardware setup",
+            "sourceLine": 722
+        },
+        "29": {
+            "content": "LED outputs:",
+            "sourceLine": 723
+        },
+        "30": {
+            "content": "\n\t\tLED Memory Usage: ",
+            "sourceLine": 687
+        },
+        "31": {
+            "content": " B",
+            "sourceLine": 687
+        },
+        "32": {
+            "content": "\n\t\t\t\u26a0 You might run into stability or lag issues.",
+            "sourceLine": 729
+        },
+        "33": {
+            "content": "\n\t\t\tUse less than ",
+            "sourceLine": 729
+        },
+        "34": {
+            "content": "800 LEDs per output",
+            "sourceLine": 731
+        },
+        "35": {
+            "content": " for the best experience!",
+            "sourceLine": 729
+        },
+        "36": {
+            "content": "\n\t\tMake a segment for each output: ",
+            "sourceLine": 687
+        },
+        "37": {
+            "content": "\n\t\tCustom bus start indices: ",
+            "sourceLine": 687
+        },
+        "38": {
+            "content": "\n\t\tUse global LED buffer: ",
+            "sourceLine": 687
+        },
+        "39": {
+            "content": "\n\t\t\tColor Order Override:\n\t\t\t",
+            "sourceLine": 738
+        },
+        "40": {
+            "content": "\n\t\tDisable internal pull-up/down: ",
+            "sourceLine": 687
+        },
+        "41": {
+            "content": "\n\t\tTouch threshold: ",
+            "sourceLine": 687
+        },
+        "42": {
+            "content": "\n\t\tIR GPIO: ",
+            "sourceLine": 687
+        },
+        "43": {
+            "content": "Remote disabled",
+            "sourceLine": 750
+        },
+        "44": {
+            "content": "24-key RGB",
+            "sourceLine": 751
+        },
+        "45": {
+            "content": "24-key with CT",
+            "sourceLine": 752
+        },
+        "46": {
+            "content": "40-key blue",
+            "sourceLine": 753
+        },
+        "47": {
+            "content": "44-key RGB",
+            "sourceLine": 754
+        },
+        "48": {
+            "content": "21-key RGB",
+            "sourceLine": 755
+        },
+        "49": {
+            "content": "6-key black",
+            "sourceLine": 756
+        },
+        "50": {
+            "content": "9-key red",
+            "sourceLine": 757
+        },
+        "51": {
+            "content": "JSON remote",
+            "sourceLine": 758
+        },
+        "52": {
+            "content": "\n\t\tApply IR change to main segment only: ",
+            "sourceLine": 687
+        },
+        "53": {
+            "content": "JSON file: ",
+            "sourceLine": 761
+        },
+        "54": {
+            "content": "Upload",
+            "sourceLine": 761
+        },
+        "55": {
+            "content": "IR info",
+            "sourceLine": 762
+        },
+        "56": {
+            "content": "\n\t\tRelay GPIO: ",
+            "sourceLine": 687
+        },
+        "57": {
+            "content": " Invert ",
+            "sourceLine": 687
+        },
+        "58": {
+            "content": "Defaults",
+            "sourceLine": 765
+        },
+        "59": {
+            "content": "\n\t\tTurn LEDs on after power up/reset: ",
+            "sourceLine": 687
+        },
+        "60": {
+            "content": "\n\t\tDefault brightness: ",
+            "sourceLine": 687
+        },
+        "61": {
+            "content": " (0-255)",
+            "sourceLine": 687
+        },
+        "62": {
+            "content": "\n\t\tApply preset ",
+            "sourceLine": 687
+        },
+        "63": {
+            "content": " at boot (0 uses defaults)\n\t\t",
+            "sourceLine": 687
+        },
+        "64": {
+            "content": "\n\t\tUse Gamma correction for color: ",
+            "sourceLine": 687
+        },
+        "65": {
+            "content": " (strongly recommended)",
+            "sourceLine": 687
+        },
+        "66": {
+            "content": "\n\t\tUse Gamma correction for brightness: ",
+            "sourceLine": 687
+        },
+        "67": {
+            "content": " (not recommended)",
+            "sourceLine": 687
+        },
+        "68": {
+            "content": "\n\t\tUse Gamma value: ",
+            "sourceLine": 687
+        },
+        "69": {
+            "content": "\n\t\tBrightness factor: ",
+            "sourceLine": 687
+        },
+        "70": {
+            "content": "Transitions",
+            "sourceLine": 774
+        },
+        "71": {
+            "content": "\n\t\tCrossfade: ",
+            "sourceLine": 687
+        },
+        "72": {
+            "content": "\n\t\tEffect blending: ",
+            "sourceLine": 687
+        },
+        "73": {
+            "content": "\n\t\tTransition Time: ",
+            "sourceLine": 687
+        },
+        "74": {
+            "content": " ms",
+            "sourceLine": 687
+        },
+        "75": {
+            "content": "\n\t\tEnable Palette transitions: ",
+            "sourceLine": 687
+        },
+        "76": {
+            "content": "Random Cycle",
+            "sourceLine": 779
+        },
+        "77": {
+            "content": " Palette Time: ",
+            "sourceLine": 687
+        },
+        "78": {
+            "content": " s",
+            "sourceLine": 687
+        },
+        "79": {
+            "content": "Timed light",
+            "sourceLine": 780
+        },
+        "80": {
+            "content": "\n\t\tDefault Duration: ",
+            "sourceLine": 687
+        },
+        "81": {
+            "content": " min",
+            "sourceLine": 687
+        },
+        "82": {
+            "content": "\n\t\tDefault Target brightness: ",
+            "sourceLine": 687
+        },
+        "83": {
+            "content": "\n\t\tMode:\n\t\t",
+            "sourceLine": 687
+        },
+        "84": {
+            "content": "Wait and set",
+            "sourceLine": 785
+        },
+        "85": {
+            "content": "Fade",
+            "sourceLine": 786
+        },
+        "86": {
+            "content": "Fade Color",
+            "sourceLine": 787
+        },
+        "87": {
+            "content": "Sunrise",
+            "sourceLine": 788
+        },
+        "88": {
+            "content": "White management",
+            "sourceLine": 790
+        },
+        "89": {
+            "content": "\n\t\tWhite Balance correction: ",
+            "sourceLine": 687
+        },
+        "90": {
+            "content": "\n\t\t\tGlobal override for Auto-calculate white:",
+            "sourceLine": 792
+        },
+        "91": {
+            "content": "Disabled",
+            "sourceLine": 795
+        },
+        "92": {
+            "content": "None",
+            "sourceLine": 796
+        },
+        "93": {
+            "content": "Brighter",
+            "sourceLine": 797
+        },
+        "94": {
+            "content": "Accurate",
+            "sourceLine": 798
+        },
+        "95": {
+            "content": "Dual",
+            "sourceLine": 799
+        },
+        "96": {
+            "content": "Max",
+            "sourceLine": 800
+        },
+        "97": {
+            "content": "\n\t\t\tCalculate CCT from RGB: ",
+            "sourceLine": 792
+        },
+        "98": {
+            "content": "\n\t\t\tCCT additive blending: ",
+            "sourceLine": 792
+        },
+        "99": {
+            "content": "Advanced",
+            "sourceLine": 806
+        },
+        "100": {
+            "content": "\n\t\tPalette blending:\n\t\t",
+            "sourceLine": 687
+        },
+        "101": {
+            "content": "Linear (wrap if moving)",
+            "sourceLine": 809
+        },
+        "102": {
+            "content": "Linear (always wrap)",
+            "sourceLine": 810
+        },
+        "103": {
+            "content": "Linear (never wrap)",
+            "sourceLine": 811
+        },
+        "104": {
+            "content": "None (not recommended)",
+            "sourceLine": 812
+        },
+        "105": {
+            "content": "\n\t\tTarget refresh rate: ",
+            "sourceLine": 687
+        },
+        "106": {
+            "content": " FPS\n\t\t",
+            "sourceLine": 687
+        },
+        "107": {
+            "content": "Config template: ",
+            "sourceLine": 816
+        },
+        "108": {
+            "content": "Apply",
+            "sourceLine": 816
+        },
+        "109": {
+            "content": "Back",
+            "sourceLine": 818
+        },
+        "110": {
+            "content": "Save",
+            "sourceLine": 818
+        }
+    },
+    "wled00/data/settings_dmx.htm": {
+        "1": {
+            "content": "DMX Settings",
+            "sourceLine": 6
+        },
+        "2": {
+            "content": "Back",
+            "sourceLine": 87
+        },
+        "3": {
+            "content": "Save",
+            "sourceLine": 87
+        },
+        "4": {
+            "content": "Imma firin ma lazer (if it has DMX support)",
+            "sourceLine": 89
+        },
+        "5": {
+            "content": "\n\nProxy Universe ",
+            "sourceLine": 84
+        },
+        "6": {
+            "content": " from E1.31 to DMX (0=disabled)",
+            "sourceLine": 84
+        },
+        "7": {
+            "content": "This will disable the LED data output to DMX configurable below",
+            "sourceLine": 92
+        },
+        "8": {
+            "content": "Number of fixtures is taken from LED config page",
+            "sourceLine": 93
+        },
+        "9": {
+            "content": "\n\nChannels per fixture (15 max): ",
+            "sourceLine": 84
+        },
+        "10": {
+            "content": "\nStart channel: ",
+            "sourceLine": 95
+        },
+        "11": {
+            "content": "\nSpacing between start channels: ",
+            "sourceLine": 96
+        },
+        "12": {
+            "content": "info",
+            "sourceLine": 97
+        },
+        "13": {
+            "content": "WARNING: Channel gap is lower than channels per fixture.",
+            "sourceLine": 98
+        },
+        "14": {
+            "content": "This will cause overlap.",
+            "sourceLine": 98
+        },
+        "15": {
+            "content": "DMX Map",
+            "sourceLine": 99
+        },
+        "16": {
+            "content": "\nDMX fixtures start LED: ",
+            "sourceLine": 96
+        },
+        "17": {
+            "content": "Channel functions",
+            "sourceLine": 101
+        },
+        "18": {
+            "content": "Back",
+            "sourceLine": 103
+        },
+        "19": {
+            "content": "Save",
+            "sourceLine": 103
+        }
+    },
+    "wled00/data/settings_ui.htm": {
+        "1": {
+            "content": "UI Settings",
+            "sourceLine": 6
+        },
+        "2": {
+            "content": "Back",
+            "sourceLine": 257
+        },
+        "3": {
+            "content": "Save",
+            "sourceLine": 257
+        },
+        "4": {
+            "content": "\u2714 Local UI settings saved!",
+            "sourceLine": 258
+        },
+        "5": {
+            "content": "\u26a0 Could not access local storage. Make sure it is enabled in your browser.",
+            "sourceLine": 259
+        },
+        "6": {
+            "content": "Web Setup",
+            "sourceLine": 261
+        },
+        "7": {
+            "content": "\n\t\tServer description: ",
+            "sourceLine": 254
+        },
+        "8": {
+            "content": "\n\t\tSync button toggles both send and receive: ",
+            "sourceLine": 254
+        },
+        "9": {
+            "content": "This firmware build does not include simplified UI support.",
+            "sourceLine": 265
+        },
+        "10": {
+            "content": "Enable simplified UI: ",
+            "sourceLine": 267
+        },
+        "11": {
+            "content": "The following UI customization settings are unique both to the WLED device and this browser.",
+            "sourceLine": 268
+        },
+        "12": {
+            "content": "\n\t\tYou will need to set them again if using a different browser, device or WLED IP address.",
+            "sourceLine": 268
+        },
+        "13": {
+            "content": "\n\t\tRefresh the main UI to apply changes.",
+            "sourceLine": 268
+        },
+        "14": {
+            "content": "Loading settings...",
+            "sourceLine": 272
+        },
+        "15": {
+            "content": "UI Appearance",
+            "sourceLine": 274
+        },
+        "16": {
+            "content": "\n\t\tI hate dark mode: ",
+            "sourceLine": 254
+        },
+        "17": {
+            "content": "Why would you? ",
+            "sourceLine": 284
+        },
+        "18": {
+            "content": "BG image URL",
+            "sourceLine": 288
+        },
+        "19": {
+            "content": "Random BG image",
+            "sourceLine": 289
+        },
+        "20": {
+            "content": "Custom CSS: ",
+            "sourceLine": 292
+        },
+        "21": {
+            "content": "Holidays: ",
+            "sourceLine": 294
+        },
+        "22": {
+            "content": "Clear local storage",
+            "sourceLine": 296
+        },
+        "23": {
+            "content": "Back",
+            "sourceLine": 297
+        },
+        "24": {
+            "content": "Save",
+            "sourceLine": 297
+        }
+    },
+    "wled00/data/settings_sync.htm": {
+        "1": {
+            "content": "Sync Settings",
+            "sourceLine": 6
+        },
+        "2": {
+            "content": "Back",
+            "sourceLine": 88
+        },
+        "3": {
+            "content": "Save",
+            "sourceLine": 88
+        },
+        "4": {
+            "content": "Sync setup",
+            "sourceLine": 90
+        },
+        "5": {
+            "content": "WLED Broadcast",
+            "sourceLine": 91
+        },
+        "6": {
+            "content": "\nUDP Port: ",
+            "sourceLine": 85
+        },
+        "7": {
+            "content": "\n2nd Port: ",
+            "sourceLine": 85
+        },
+        "8": {
+            "content": "Sync groups",
+            "sourceLine": 94
+        },
+        "9": {
+            "content": "Send:",
+            "sourceLine": 110
+        },
+        "10": {
+            "content": "Receive:",
+            "sourceLine": 121
+        },
+        "11": {
+            "content": "\nReceive: ",
+            "sourceLine": 85
+        },
+        "12": {
+            "content": "Brightness,",
+            "sourceLine": 132
+        },
+        "13": {
+            "content": "Color,",
+            "sourceLine": 132
+        },
+        "14": {
+            "content": "and ",
+            "sourceLine": 132
+        },
+        "15": {
+            "content": "Effects",
+            "sourceLine": 132
+        },
+        "16": {
+            "content": " Segment options, ",
+            "sourceLine": 85
+        },
+        "17": {
+            "content": " bounds",
+            "sourceLine": 85
+        },
+        "18": {
+            "content": "\nSend notifications on direct change: ",
+            "sourceLine": 85
+        },
+        "19": {
+            "content": "\nSend notifications on button press or IR: ",
+            "sourceLine": 85
+        },
+        "20": {
+            "content": "\nSend Alexa notifications: ",
+            "sourceLine": 85
+        },
+        "21": {
+            "content": "\nSend Philips Hue change notifications: ",
+            "sourceLine": 85
+        },
+        "22": {
+            "content": "\nSend Macro notifications: ",
+            "sourceLine": 85
+        },
+        "23": {
+            "content": "\nUDP packet retransmissions: ",
+            "sourceLine": 85
+        },
+        "24": {
+            "content": "Reboot required to apply changes. ",
+            "sourceLine": 140
+        },
+        "25": {
+            "content": "Instance List",
+            "sourceLine": 142
+        },
+        "26": {
+            "content": "\nEnable instance list: ",
+            "sourceLine": 85
+        },
+        "27": {
+            "content": "\nMake this instance discoverable: ",
+            "sourceLine": 85
+        },
+        "28": {
+            "content": "Realtime",
+            "sourceLine": 146
+        },
+        "29": {
+            "content": "\nReceive UDP realtime: ",
+            "sourceLine": 85
+        },
+        "30": {
+            "content": "\nUse main segment only: ",
+            "sourceLine": 85
+        },
+        "31": {
+            "content": "Network DMX input",
+            "sourceLine": 149
+        },
+        "32": {
+            "content": "\nType:\n",
+            "sourceLine": 85
+        },
+        "33": {
+            "content": "E1.31 (sACN)",
+            "sourceLine": 152
+        },
+        "34": {
+            "content": "Art-Net",
+            "sourceLine": 153
+        },
+        "35": {
+            "content": "Custom port",
+            "sourceLine": 154
+        },
+        "36": {
+            "content": "Port: ",
+            "sourceLine": 156
+        },
+        "37": {
+            "content": "\nMulticast: ",
+            "sourceLine": 85
+        },
+        "38": {
+            "content": "\nStart universe: ",
+            "sourceLine": 85
+        },
+        "39": {
+            "content": "Reboot required.",
+            "sourceLine": 159
+        },
+        "40": {
+            "content": " Check out ",
+            "sourceLine": 85
+        },
+        "41": {
+            "content": "LedFx",
+            "sourceLine": 159
+        },
+        "42": {
+            "content": "\nSkip out-of-sequence packets: ",
+            "sourceLine": 85
+        },
+        "43": {
+            "content": "\nDMX start address: ",
+            "sourceLine": 85
+        },
+        "44": {
+            "content": "\nDMX segment spacing: ",
+            "sourceLine": 85
+        },
+        "45": {
+            "content": "\nE1.31 port priority: ",
+            "sourceLine": 85
+        },
+        "46": {
+            "content": "\nDMX mode:\n",
+            "sourceLine": 85
+        },
+        "47": {
+            "content": "Disabled",
+            "sourceLine": 166
+        },
+        "48": {
+            "content": "Single RGB",
+            "sourceLine": 167
+        },
+        "49": {
+            "content": "Single DRGB",
+            "sourceLine": 168
+        },
+        "50": {
+            "content": "Effect",
+            "sourceLine": 169
+        },
+        "51": {
+            "content": "Effect + White",
+            "sourceLine": 170
+        },
+        "52": {
+            "content": "Effect Segment",
+            "sourceLine": 171
+        },
+        "53": {
+            "content": "Effect Segment + White",
+            "sourceLine": 172
+        },
+        "54": {
+            "content": "Multi RGB",
+            "sourceLine": 173
+        },
+        "55": {
+            "content": "Dimmer + Multi RGB",
+            "sourceLine": 174
+        },
+        "56": {
+            "content": "Multi RGBW",
+            "sourceLine": 175
+        },
+        "57": {
+            "content": "Preset",
+            "sourceLine": 176
+        },
+        "58": {
+            "content": "E1.31 info",
+            "sourceLine": 178
+        },
+        "59": {
+            "content": "\nTimeout: ",
+            "sourceLine": 85
+        },
+        "60": {
+            "content": " ms",
+            "sourceLine": 85
+        },
+        "61": {
+            "content": "\nForce max brightness: ",
+            "sourceLine": 85
+        },
+        "62": {
+            "content": "\nDisable realtime gamma correction: ",
+            "sourceLine": 85
+        },
+        "63": {
+            "content": "\nRealtime LED offset: ",
+            "sourceLine": 85
+        },
+        "64": {
+            "content": "Alexa Voice Assistant",
+            "sourceLine": 184
+        },
+        "65": {
+            "content": "This firmware build does not include Alexa support.",
+            "sourceLine": 186
+        },
+        "66": {
+            "content": "\nEmulate Alexa device: ",
+            "sourceLine": 188
+        },
+        "67": {
+            "content": "\nAlexa invocation name: ",
+            "sourceLine": 188
+        },
+        "68": {
+            "content": "\nAlso emulate devices to call the first ",
+            "sourceLine": 188
+        },
+        "69": {
+            "content": " presets",
+            "sourceLine": 188
+        },
+        "70": {
+            "content": "MQTT and Hue sync all connect to external hosts!",
+            "sourceLine": 194
+        },
+        "71": {
+            "content": "\nThis may impact the responsiveness of WLED.",
+            "sourceLine": 194
+        },
+        "72": {
+            "content": "\nFor best results, only use one of these services at a time.",
+            "sourceLine": 85
+        },
+        "73": {
+            "content": "\n(alternatively, connect a second ESP to them and use the UDP sync)\n",
+            "sourceLine": 85
+        },
+        "74": {
+            "content": "MQTT",
+            "sourceLine": 200
+        },
+        "75": {
+            "content": "This firmware build does not include MQTT support.",
+            "sourceLine": 202
+        },
+        "76": {
+            "content": "\nEnable MQTT: ",
+            "sourceLine": 204
+        },
+        "77": {
+            "content": "\nBroker: ",
+            "sourceLine": 204
+        },
+        "78": {
+            "content": "\nPort: ",
+            "sourceLine": 204
+        },
+        "79": {
+            "content": "The MQTT credentials are sent over an unsecured connection.",
+            "sourceLine": 208
+        },
+        "80": {
+            "content": "\nNever use the MQTT password for another service!",
+            "sourceLine": 208
+        },
+        "81": {
+            "content": "\nUsername: ",
+            "sourceLine": 204
+        },
+        "82": {
+            "content": "\nPassword: ",
+            "sourceLine": 204
+        },
+        "83": {
+            "content": "\nClient ID: ",
+            "sourceLine": 204
+        },
+        "84": {
+            "content": "\nDevice Topic: ",
+            "sourceLine": 204
+        },
+        "85": {
+            "content": "\nGroup Topic: ",
+            "sourceLine": 204
+        },
+        "86": {
+            "content": "\nPublish on button press: ",
+            "sourceLine": 204
+        },
+        "87": {
+            "content": "\nRetain brightness & color messages: ",
+            "sourceLine": 204
+        },
+        "88": {
+            "content": "Reboot required to apply changes. ",
+            "sourceLine": 217
+        },
+        "89": {
+            "content": "MQTT info",
+            "sourceLine": 217
+        },
+        "90": {
+            "content": "Philips Hue",
+            "sourceLine": 219
+        },
+        "91": {
+            "content": "This firmware build does not include Philips Hue support.",
+            "sourceLine": 221
+        },
+        "92": {
+            "content": "You can find the bridge IP and the light number in the 'About' section of the hue app.",
+            "sourceLine": 224
+        },
+        "93": {
+            "content": "\nPoll Hue light ",
+            "sourceLine": 223
+        },
+        "94": {
+            "content": " every ",
+            "sourceLine": 223
+        },
+        "95": {
+            "content": " ms: ",
+            "sourceLine": 223
+        },
+        "96": {
+            "content": "\nThen, receive ",
+            "sourceLine": 223
+        },
+        "97": {
+            "content": " On/Off, ",
+            "sourceLine": 223
+        },
+        "98": {
+            "content": " Brightness, and ",
+            "sourceLine": 223
+        },
+        "99": {
+            "content": " Color",
+            "sourceLine": 223
+        },
+        "100": {
+            "content": "\nHue Bridge IP:",
+            "sourceLine": 223
+        },
+        "101": {
+            "content": "Press the pushlink button on the bridge, after that save this page!",
+            "sourceLine": 232
+        },
+        "102": {
+            "content": "\n(when first connecting)",
+            "sourceLine": 223
+        },
+        "103": {
+            "content": "\nHue status: ",
+            "sourceLine": 223
+        },
+        "104": {
+            "content": " Disabled in this build ",
+            "sourceLine": 234
+        },
+        "105": {
+            "content": "Serial",
+            "sourceLine": 236
+        },
+        "106": {
+            "content": "\nBaud rate:\n",
+            "sourceLine": 85
+        },
+        "107": {
+            "content": "Keep at 115200 to use Improv. Some boards may not support high rates.",
+            "sourceLine": 248
+        },
+        "108": {
+            "content": "Back",
+            "sourceLine": 250
+        },
+        "109": {
+            "content": "Save",
+            "sourceLine": 250
+        }
+    },
+    "wled00/data/settings_time.htm": {
+        "1": {
+            "content": "Time Settings",
+            "sourceLine": 6
+        },
+        "2": {
+            "content": "Back",
+            "sourceLine": 167
+        },
+        "3": {
+            "content": "Save",
+            "sourceLine": 167
+        },
+        "4": {
+            "content": "Time setup",
+            "sourceLine": 169
+        },
+        "5": {
+            "content": "\n\t\tGet time from NTP server: ",
+            "sourceLine": 164
+        },
+        "6": {
+            "content": "\n\t\tUse 24h format: ",
+            "sourceLine": 164
+        },
+        "7": {
+            "content": "\n\t\tTime zone: \n\t\t",
+            "sourceLine": 164
+        },
+        "8": {
+            "content": "GMT(UTC)",
+            "sourceLine": 175
+        },
+        "9": {
+            "content": "GMT/BST",
+            "sourceLine": 176
+        },
+        "10": {
+            "content": "CET/CEST",
+            "sourceLine": 177
+        },
+        "11": {
+            "content": "EET/EEST",
+            "sourceLine": 178
+        },
+        "12": {
+            "content": "US-EST/EDT",
+            "sourceLine": 179
+        },
+        "13": {
+            "content": "US-CST/CDT",
+            "sourceLine": 180
+        },
+        "14": {
+            "content": "US-MST/MDT",
+            "sourceLine": 181
+        },
+        "15": {
+            "content": "US-AZ",
+            "sourceLine": 182
+        },
+        "16": {
+            "content": "US-PST/PDT",
+            "sourceLine": 183
+        },
+        "17": {
+            "content": "CST (AWST, PHST)",
+            "sourceLine": 184
+        },
+        "18": {
+            "content": "JST (KST)",
+            "sourceLine": 185
+        },
+        "19": {
+            "content": "AEST/AEDT",
+            "sourceLine": 186
+        },
+        "20": {
+            "content": "NZST/NZDT",
+            "sourceLine": 187
+        },
+        "21": {
+            "content": "North Korea",
+            "sourceLine": 188
+        },
+        "22": {
+            "content": "IST (India)",
+            "sourceLine": 189
+        },
+        "23": {
+            "content": "CA-Saskatchewan",
+            "sourceLine": 190
+        },
+        "24": {
+            "content": "ACST",
+            "sourceLine": 191
+        },
+        "25": {
+            "content": "ACST/ACDT",
+            "sourceLine": 192
+        },
+        "26": {
+            "content": "HST (Hawaii)",
+            "sourceLine": 193
+        },
+        "27": {
+            "content": "NOVT (Novosibirsk)",
+            "sourceLine": 194
+        },
+        "28": {
+            "content": "AKST/AKDT (Anchorage)",
+            "sourceLine": 195
+        },
+        "29": {
+            "content": "MX-CST",
+            "sourceLine": 196
+        },
+        "30": {
+            "content": "PKT (Pakistan)",
+            "sourceLine": 197
+        },
+        "31": {
+            "content": "\n\t\tUTC offset: ",
+            "sourceLine": 164
+        },
+        "32": {
+            "content": " seconds (max. 18 hours)",
+            "sourceLine": 164
+        },
+        "33": {
+            "content": "\n\t\tCurrent local time is ",
+            "sourceLine": 164
+        },
+        "34": {
+            "content": "unknown",
+            "sourceLine": 200
+        },
+        "35": {
+            "content": "\n\t\tLatitude: ",
+            "sourceLine": 164
+        },
+        "36": {
+            "content": "N",
+            "sourceLine": 201
+        },
+        "37": {
+            "content": "S",
+            "sourceLine": 201
+        },
+        "38": {
+            "content": "\n\t\tLongitude: ",
+            "sourceLine": 164
+        },
+        "39": {
+            "content": "E",
+            "sourceLine": 202
+        },
+        "40": {
+            "content": "W",
+            "sourceLine": 202
+        },
+        "41": {
+            "content": "Get location",
+            "sourceLine": 203
+        },
+        "42": {
+            "content": "(opens new tab, only works in browser)",
+            "sourceLine": 204
+        },
+        "43": {
+            "content": "Clock",
+            "sourceLine": 206
+        },
+        "44": {
+            "content": "\n\t\tAnalog Clock overlay: ",
+            "sourceLine": 164
+        },
+        "45": {
+            "content": "\n\t\t\tFirst LED: ",
+            "sourceLine": 208
+        },
+        "46": {
+            "content": " Last LED: ",
+            "sourceLine": 208
+        },
+        "47": {
+            "content": "\n\t\t\t12h LED: ",
+            "sourceLine": 208
+        },
+        "48": {
+            "content": "\n\t\t\tShow 5min marks: ",
+            "sourceLine": 208
+        },
+        "49": {
+            "content": "\n\t\t\tSeconds (as trail): ",
+            "sourceLine": 208
+        },
+        "50": {
+            "content": "\n\t\tCountdown Mode: ",
+            "sourceLine": 164
+        },
+        "51": {
+            "content": "\n\t\tCountdown Goal:",
+            "sourceLine": 164
+        },
+        "52": {
+            "content": "\n\t\tDate:\u00a0",
+            "sourceLine": 164
+        },
+        "53": {
+            "content": "\n\t\tTime:\u00a0",
+            "sourceLine": 164
+        },
+        "54": {
+            "content": "Macro presets",
+            "sourceLine": 218
+        },
+        "55": {
+            "content": "Macros have moved!",
+            "sourceLine": 219
+        },
+        "56": {
+            "content": "Presets now also can be used as macros to save both JSON and HTTP API commands.",
+            "sourceLine": 220
+        },
+        "57": {
+            "content": "\n\t\tJust enter the preset ID below!",
+            "sourceLine": 220
+        },
+        "58": {
+            "content": "Use 0 for the default action instead of a preset",
+            "sourceLine": 222
+        },
+        "59": {
+            "content": "\n\t\tAlexa On/Off Preset: ",
+            "sourceLine": 164
+        },
+        "60": {
+            "content": "\n\t\tCountdown-Over Preset: ",
+            "sourceLine": 164
+        },
+        "61": {
+            "content": "\n\t\tTimed-Light-Over Presets: ",
+            "sourceLine": 164
+        },
+        "62": {
+            "content": "Button actions",
+            "sourceLine": 226
+        },
+        "63": {
+            "content": "push",
+            "sourceLine": 230
+        },
+        "64": {
+            "content": "switch",
+            "sourceLine": 230
+        },
+        "65": {
+            "content": "short",
+            "sourceLine": 231
+        },
+        "66": {
+            "content": "on->off",
+            "sourceLine": 231
+        },
+        "67": {
+            "content": "long",
+            "sourceLine": 232
+        },
+        "68": {
+            "content": "off->on",
+            "sourceLine": 232
+        },
+        "69": {
+            "content": "double",
+            "sourceLine": 233
+        },
+        "70": {
+            "content": "N/A",
+            "sourceLine": 233
+        },
+        "71": {
+            "content": "Analog Button setup",
+            "sourceLine": 239
+        },
+        "72": {
+            "content": "Time-controlled presets",
+            "sourceLine": 240
+        },
+        "73": {
+            "content": "Back",
+            "sourceLine": 245
+        },
+        "74": {
+            "content": "Save",
+            "sourceLine": 245
+        }
+    },
+    "wled00/data/settings_sec.htm": {
+        "1": {
+            "content": "Misc Settings",
+            "sourceLine": 6
+        },
+        "2": {
+            "content": "Back",
+            "sourceLine": 104
+        },
+        "3": {
+            "content": "Save",
+            "sourceLine": 104
+        },
+        "4": {
+            "content": "Security & Update setup",
+            "sourceLine": 106
+        },
+        "5": {
+            "content": "\n\t\tSettings PIN: ",
+            "sourceLine": 101
+        },
+        "6": {
+            "content": "\u26a0 Unencrypted transmission. Be prudent when selecting PIN, do NOT use your banking, door, SIM, etc. pin!",
+            "sourceLine": 108
+        },
+        "7": {
+            "content": "\n\t\tLock wireless (OTA) software update: ",
+            "sourceLine": 101
+        },
+        "8": {
+            "content": "\n\t\tPassphrase: ",
+            "sourceLine": 101
+        },
+        "9": {
+            "content": "\n\t\tTo enable OTA, for security reasons you need to also enter the correct password!",
+            "sourceLine": 101
+        },
+        "10": {
+            "content": "\n\t\tThe password should be changed when OTA is enabled.",
+            "sourceLine": 101
+        },
+        "11": {
+            "content": "Disable OTA when not in use, otherwise an attacker can reflash device software!",
+            "sourceLine": 113
+        },
+        "12": {
+            "content": "Settings on this page are only changable if OTA lock is disabled!",
+            "sourceLine": 114
+        },
+        "13": {
+            "content": "\n\t\tDeny access to WiFi settings if locked: ",
+            "sourceLine": 101
+        },
+        "14": {
+            "content": "\n\t\tFactory reset: ",
+            "sourceLine": 101
+        },
+        "15": {
+            "content": "\n\t\tAll settings and presets will be erased.",
+            "sourceLine": 101
+        },
+        "16": {
+            "content": "\u26a0 Unencrypted transmission. An attacker on the same network can intercept form data!",
+            "sourceLine": 118
+        },
+        "17": {
+            "content": "Software Update",
+            "sourceLine": 120
+        },
+        "18": {
+            "content": "Manual OTA Update",
+            "sourceLine": 121
+        },
+        "19": {
+            "content": "\n\t\tEnable ArduinoOTA: ",
+            "sourceLine": 101
+        },
+        "20": {
+            "content": "Backup & Restore",
+            "sourceLine": 124
+        },
+        "21": {
+            "content": "Backup presets",
+            "sourceLine": 125
+        },
+        "22": {
+            "content": "Restore presets",
+            "sourceLine": 126
+        },
+        "23": {
+            "content": "Upload",
+            "sourceLine": 126
+        },
+        "24": {
+            "content": "Backup configuration",
+            "sourceLine": 127
+        },
+        "25": {
+            "content": "Restore configuration",
+            "sourceLine": 128
+        },
+        "26": {
+            "content": "Upload",
+            "sourceLine": 128
+        },
+        "27": {
+            "content": "\u26a0 Restoring presets/configuration will OVERWRITE your current presets/configuration.",
+            "sourceLine": 129
+        },
+        "28": {
+            "content": "\n\t\tIncorrect configuration may require a factory reset or re-flashing of your ESP.",
+            "sourceLine": 129
+        },
+        "29": {
+            "content": "\n\t\tFor security reasons, passwords are not backed up.\n\t\t",
+            "sourceLine": 101
+        },
+        "30": {
+            "content": "About",
+            "sourceLine": 133
+        },
+        "31": {
+            "content": "WLED",
+            "sourceLine": 134
+        },
+        "32": {
+            "content": " version ##VERSION##",
+            "sourceLine": 101
+        },
+        "33": {
+            "content": "Contributors, dependencies and special thanks",
+            "sourceLine": 135
+        },
+        "34": {
+            "content": "\n\t\tA huge thank you to everyone who helped me create WLED!",
+            "sourceLine": 101
+        },
+        "35": {
+            "content": "\n\t\t(c) 2016-2023 Christian Schwinne ",
+            "sourceLine": 101
+        },
+        "36": {
+            "content": "Licensed under the ",
+            "sourceLine": 138
+        },
+        "37": {
+            "content": "MIT license",
+            "sourceLine": 138
+        },
+        "38": {
+            "content": "\n\t\tServer message: ",
+            "sourceLine": 101
+        },
+        "39": {
+            "content": " Response error! ",
+            "sourceLine": 139
+        },
+        "40": {
+            "content": "Back",
+            "sourceLine": 141
+        },
+        "41": {
+            "content": "Save",
+            "sourceLine": 141
+        },
+        "42": {
+            "title": "Please enter a 4 digit number",
+            "sourceLine": 107
+        }
+    },
+    "wled00/data/settings_um.htm": {
+        "1": {
+            "content": "Usermod Settings",
+            "sourceLine": 6
+        },
+        "2": {
+            "content": "Back",
+            "sourceLine": 322
+        },
+        "3": {
+            "content": "Save",
+            "sourceLine": 322
+        },
+        "4": {
+            "content": "\u2714 Configuration saved!",
+            "sourceLine": 323
+        },
+        "5": {
+            "content": "\u26a0 Could not load configuration.",
+            "sourceLine": 324
+        },
+        "6": {
+            "content": "Usermod Setup",
+            "sourceLine": 326
+        },
+        "7": {
+            "content": "\n\t\tGlobal I",
+            "sourceLine": 319
+        },
+        "8": {
+            "content": "C GPIOs (HW)",
+            "sourceLine": 319
+        },
+        "9": {
+            "content": "(change requires reboot!)",
+            "sourceLine": 328
+        },
+        "10": {
+            "content": "\n\t\tSDA:",
+            "sourceLine": 319
+        },
+        "11": {
+            "content": "\n\t\tSCL:",
+            "sourceLine": 319
+        },
+        "12": {
+            "content": "\n\t\tGlobal SPI GPIOs (HW)",
+            "sourceLine": 319
+        },
+        "13": {
+            "content": "(only changable on ESP32, change requires reboot!)",
+            "sourceLine": 333
+        },
+        "14": {
+            "content": "\n\t\tMOSI:",
+            "sourceLine": 319
+        },
+        "15": {
+            "content": "\n\t\tMISO:",
+            "sourceLine": 319
+        },
+        "16": {
+            "content": "\n\t\tSCLK:",
+            "sourceLine": 319
+        },
+        "17": {
+            "content": "\n\t\tReboot after save? ",
+            "sourceLine": 319
+        },
+        "18": {
+            "content": "Loading settings...",
+            "sourceLine": 339
+        },
+        "19": {
+            "content": "Back",
+            "sourceLine": 340
+        },
+        "20": {
+            "content": "Save",
+            "sourceLine": 340
+        }
+    },
+    "wled00/data/settings_2D.htm": {
+        "1": {
+            "content": "2D Set-up",
+            "sourceLine": 6
+        },
+        "2": {
+            "content": "Back",
+            "sourceLine": 310
+        },
+        "3": {
+            "content": "Save",
+            "sourceLine": 310
+        },
+        "4": {
+            "content": "2D setup",
+            "sourceLine": 312
+        },
+        "5": {
+            "content": "\n\tStrip or panel:\n\t",
+            "sourceLine": 307
+        },
+        "6": {
+            "content": "1D Strip",
+            "sourceLine": 315
+        },
+        "7": {
+            "content": "2D Matrix",
+            "sourceLine": 316
+        },
+        "8": {
+            "content": "Matrix Generator ",
+            "sourceLine": 320
+        },
+        "9": {
+            "content": "\n\t\t\tPanel dimensions (WxH): ",
+            "sourceLine": 321
+        },
+        "10": {
+            "content": " x ",
+            "sourceLine": 321
+        },
+        "11": {
+            "content": "\n\t\t\tHorizontal panels: ",
+            "sourceLine": 321
+        },
+        "12": {
+            "content": "\n\t\t\tVertical panels: ",
+            "sourceLine": 321
+        },
+        "13": {
+            "content": "\n\t\t\t1",
+            "sourceLine": 321
+        },
+        "14": {
+            "content": "st",
+            "sourceLine": 325
+        },
+        "15": {
+            "content": " panel: ",
+            "sourceLine": 321
+        },
+        "16": {
+            "content": "Top",
+            "sourceLine": 326
+        },
+        "17": {
+            "content": "Bottom",
+            "sourceLine": 327
+        },
+        "18": {
+            "content": "Left",
+            "sourceLine": 329
+        },
+        "19": {
+            "content": "Right",
+            "sourceLine": 330
+        },
+        "20": {
+            "content": "\n\t\t\tOrientation: ",
+            "sourceLine": 321
+        },
+        "21": {
+            "content": "Horizontal",
+            "sourceLine": 333
+        },
+        "22": {
+            "content": "Vertical",
+            "sourceLine": 334
+        },
+        "23": {
+            "content": "\n\t\t\tSerpentine: ",
+            "sourceLine": 321
+        },
+        "24": {
+            "content": "Pressing Populate will create LED panel layout with pre-arranged matrix.",
+            "sourceLine": 337
+        },
+        "25": {
+            "content": "Values above ",
+            "sourceLine": 337
+        },
+        "26": {
+            "content": "will not",
+            "sourceLine": 337
+        },
+        "27": {
+            "content": " affect final layout.",
+            "sourceLine": 337
+        },
+        "28": {
+            "content": "\n\t\t\t\tWARNING: You may need to update each panel parameters after they are generated.",
+            "sourceLine": 337
+        },
+        "29": {
+            "content": "Populate",
+            "sourceLine": 339
+        },
+        "30": {
+            "content": "Panel set-up",
+            "sourceLine": 342
+        },
+        "31": {
+            "content": "\n\t\tNumber of panels: ",
+            "sourceLine": 318
+        },
+        "32": {
+            "content": "A matrix is made of 1 or more physical LED panels.",
+            "sourceLine": 344
+        },
+        "33": {
+            "content": "\n\t\tEach panel can be of different size and/or have different LED orientation and/or starting point and/or layout.",
+            "sourceLine": 344
+        },
+        "34": {
+            "content": "LED panel layout",
+            "sourceLine": 346
+        },
+        "35": {
+            "content": "Gap file: ",
+            "sourceLine": 352
+        },
+        "36": {
+            "content": "Upload",
+            "sourceLine": 352
+        },
+        "37": {
+            "content": "Note: Gap file is a ",
+            "sourceLine": 353
+        },
+        "38": {
+            "content": ".json",
+            "sourceLine": 353
+        },
+        "39": {
+            "content": " file containing an array with number of elements equal to the matrix size.",
+            "sourceLine": 353
+        },
+        "40": {
+            "content": "\n\t\t\tA value of -1 means that pixel at that position is missing, a value of 0 means never paint that pixel, and 1 means regular pixel.",
+            "sourceLine": 353
+        },
+        "41": {
+            "content": "Back",
+            "sourceLine": 357
+        },
+        "42": {
+            "content": "Save",
+            "sourceLine": 357
+        }
+    },
+    "wled00/data/settings_pin.htm": {
+        "1": {
+            "content": "PIN required",
+            "sourceLine": 6
+        },
+        "2": {
+            "content": "Please enter settings PIN code",
+            "sourceLine": 17
+        },
+        "3": {
+            "content": "Back",
+            "sourceLine": 20
+        },
+        "4": {
+            "content": "Submit",
+            "sourceLine": 20
+        }
+    },
+    "wled00/data/usermod.htm": {
+        "1": {
+            "content": "No usermod custom web page set.",
+            "sourceLine": 4
+        }
+    },
+    "wled00/data/msg.htm": {
+        "1": {
+            "content": "WLED Message",
+            "sourceLine": 6
+        },
+        "2": {
+            "content": "Sample Message.",
+            "sourceLine": 18
+        },
+        "3": {
+            "content": "\n\tSample Detail.\n",
+            "sourceLine": 17
+        }
+    },
+    "wled00/data/dmxmap.htm": {
+        "1": {
+            "content": "DMX Map",
+            "sourceLine": 3
+        }
+    },
+    "wled00/data/update.htm": {
+        "1": {
+            "content": "WLED Update",
+            "sourceLine": 5
+        },
+        "2": {
+            "content": "WLED Software Update",
+            "sourceLine": 17
+        },
+        "3": {
+            "content": "\n\t\tInstalled version: ",
+            "sourceLine": 18
+        },
+        "4": {
+            "content": "##VERSION##",
+            "sourceLine": 19
+        },
+        "5": {
+            "content": "\n\t\tDownload the latest binary: ",
+            "sourceLine": 18
+        },
+        "6": {
+            "content": "Update!",
+            "sourceLine": 23
+        },
+        "7": {
+            "content": "Back",
+            "sourceLine": 24
+        },
+        "8": {
+            "content": "Updating...",
+            "sourceLine": 26
+        },
+        "9": {
+            "content": "Please do not close or refresh the page :)",
+            "sourceLine": 26
+        }
+    },
+    "wled00/data/welcome.htm": {
+        "1": {
+            "content": "Welcome!",
+            "sourceLine": 7
+        },
+        "2": {
+            "content": "Welcome to WLED!",
+            "sourceLine": 54
+        },
+        "3": {
+            "content": "Thank you for installing my application!",
+            "sourceLine": 55
+        },
+        "4": {
+            "content": "Next steps:",
+            "sourceLine": 56
+        },
+        "5": {
+            "content": "\n\t\t\tConnect the module to your local WiFi here!",
+            "sourceLine": 53
+        },
+        "6": {
+            "content": "WiFi settings",
+            "sourceLine": 58
+        },
+        "7": {
+            "content": "Just trying this out in AP mode?",
+            "sourceLine": 59
+        },
+        "8": {
+            "content": "To the controls!",
+            "sourceLine": 60
+        }
+    },
+    "wled00/data/liveview.htm": {
+        "1": {
+            "content": "WLED Live Preview",
+            "sourceLine": 7
+        }
+    },
+    "wled00/data/liveviewws2D.htm": {
+        "1": {
+            "content": "WLED Live Preview",
+            "sourceLine": 7
+        }
+    },
+    "wled00/data/404.htm": {
+        "1": {
+            "content": "Not found",
+            "sourceLine": 7
+        },
+        "2": {
+            "content": "404 Not Found",
+            "sourceLine": 43
+        },
+        "3": {
+            "content": "Akemi does not know where you are headed...",
+            "sourceLine": 44
+        },
+        "4": {
+            "content": "Back to controls",
+            "sourceLine": 45
+        }
+    }
+}

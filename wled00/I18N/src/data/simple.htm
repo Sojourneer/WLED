@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta content="width=device-width, initial-scale=1, minimum-scale=1" name="viewport"/>
+<meta charset="utf-8"/>
+<meta content="#222222" name="theme-color"/>
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAGACGAAAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAAQAAAAEAgGAAAAH/P/YQAAAE1JREFUOI1j/P//PwOxgNGeAUMxE9G6cQCKDWAhpADZ2f8PMjBS3QW08QK20KaZC2gfC9hCnqouoNgARgY7zMxAyNlUdQHlXiAlO2MDAD63EVqNHAe0AAAAAElFTkSuQmCC" rel="shortcut icon"/>
+<title>${1:WLED}</title>
+<script>
+	function feedback(){}
+	// instead of including [script src="iro.js"][/script] and [script src="rangetouch.js"][/script]
+	// (which would be inlined by nodeJS inliner during minimization and compression) we need to load them dynamically
+	// the following is needed to load iro.js and rangetouch.js as consecutive requests to allow ESP8266
+	// to keep up with requests (if requests happent too fast some may not get processed)
+	// it will also call onLoad() after last is loaded (it was removed from [body onload="onLoad()"]).
+	var h  = document.getElementsByTagName('head')[0];
+	var l  = document.createElement('script');
+	l.type = 'application/javascript';
+	l.src = 'iro.js';
+	l.addEventListener('load', (e) => {
+		// after iro is loaded initialize global variable
+		cpick = new iro.ColorPicker("#picker", {
+			width: 260,
+			wheelLightness: false,
+			wheelAngle: 270,
+			wheelDirection: "clockwise",
+			layout: [{
+				component: iro.ui.Wheel,
+				options: {}
+			}]
+		});
+		cpick.on("input:end", () => {setColor(1);});
+		cpick.on("color:change", () => {updatePSliders()});
+		var l  = document.createElement('script');
+		l.type = 'application/javascript';
+		l.src = 'rangetouch.js';
+		l.addEventListener('load', (e) => {
+			// after rangetouch is loaded initialize global variable
+			ranges = RangeTouch.setup('input[type="range"]', {});
+			let stateCheck = setInterval(() => {
+				if (document.readyState === 'complete') {
+					clearInterval(stateCheck);
+					// document ready, start processing UI
+					onLoad();
+				}
+			}, 100);
+		});
+		setTimeout(function(){h.appendChild(l)},50);
+	});
+	setTimeout(function(){h.appendChild(l)},50);
+	</script>
+<link href="simple.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="overlay" id="cv">${2:Loading WLED UI...}</div>
+<noscript><div class="overlay" style="opacity:1;">${3:Sorry, WLED UI needs JavaScript!}</div></noscript>
+<div id="bg"></div>
+<div class="wrapper" id="top">
+<div class="tab top">
+<div class="btnwrap">
+<button id="buttonPower" onclick="togglePower()"><i class="icons"></i><p class="tab-label">${4:Power}</p></button>
+<button id="buttonI" onclick="toggleInfo()"><i class="icons"></i><p class="tab-label">${5:Info}</p></button>
+<button id="buttonNodes" onclick="toggleNodes()"><i class="icons"></i><p class="tab-label">${6:Nodes}</p></button></div>
+<button onclick="window.location.href='/settings';"><i class="icons"></i><p class="tab-label">${7:Config}</p></button>
+<button id="buttonCP" onclick="tglCP()"><i class="icons"></i><p class="tab-label">${8:Expand}</p></button>
+<!--button id="buttonBri" onclick="tglBri()"><i class="icons">&#xe2a6;</i><p class="tab-label">Brightness</p></button-->
+</div>
+<div id="briwrap">
+<p class="label hd">${9:Global brightness}</p>
+<div class="il">
+<i class="icons slider-icon" onclick="tglTheme()"></i>
+<div class="sliderwrap il">
+<input id="sliderBri" max="255" min="1" onchange="setBri()" oninput="updateTrail(this)" type="range" value="128"/>
+<div class="sliderdisplay"></div>
+</div>
+<output class="sliderbubble"></output>
+</div>
+</div>
+</div>
+</body></html>
+<div class="container">
+<div class="tabcontent">
+<div class="center" id="QuickLoad">
+<p class="label h">${10:Quick Load}</p>
+<div id="pql"></div>
+</div>
+<div class="center" id="QCS">
+<p class="label h">${11:Solid color}</p>
+<div class="center" id="qcs-w">
+<div class="qcs" onclick="pC('#ff0000');" style="background-color:#ff0000;" title="${35:Red}"></div>
+<div class="qcs" onclick="pC('#ffa000');" style="background-color:#ffa000;" title="${36:Orange}"></div>
+<div class="qcs" onclick="pC('#ffc800');" style="background-color:#ffc800;" title="${37:Yellow}"></div>
+<div class="qcs" onclick="pC('#ffe0a0');" style="background-color:#ffe0a0;" title="${38:Warm White}"></div>
+<div class="qcs" onclick="pC('#ffffff');" style="background-color:#ffffff;" title="${39:White}"></div>
+<div class="qcs qcsb" onclick="pC('#000000');" style="background-color:#000000;" title="${40:Black}"></div><br/>
+<div class="qcs" onclick="pC('#ff00ff');" style="background-color:#ff00ff;" title="${41:Pink}"></div>
+<div class="qcs" onclick="pC('#0000ff');" style="background-color:#0000ff;" title="${42:Blue}"></div>
+<div class="qcs" onclick="pC('#00ffc8');" style="background-color:#00ffc8;" title="${43:Cyan}"></div>
+<div class="qcs" onclick="pC('#08ff00');" style="background-color:#08ff00;" title="${44:Green}"></div>
+<div class="qcs" onclick="pC('rnd');" style="background:linear-gradient(to right, red, orange, yellow, green, blue, purple);transform: translateY(-11px);" title="${45:Random}">${12:R}</div>
+</div>
+</div>
+<div class="center" id="picker"></div>
+<div class="center" id="Colors">
+<div id="vwrap">
+<!--p class="label h">Value</p-->
+<div class="sliderwrap il">
+<input class="noslide" id="sliderV" max="100" min="0" onchange="setColor(0)" oninput="fromV()" step="any" type="range" value="100"/>
+<div class="sliderdisplay"></div>
+</div><br/>
+</div>
+<div id="kwrap">
+<!--p class="label h">Temperature</p-->
+<div class="sliderwrap il">
+<input class="noslide" id="sliderK" max="10091" min="1900" onchange="setColor(0)" oninput="fromK()" type="range" value="6550"/>
+<div class="sliderdisplay"></div>
+</div>
+</div>
+<div class="center" id="rgbwrap">
+<p class="label h">${13:RGB channels}</p>
+<div class="il" id="rwrap">
+<div class="sliderwrap il">
+<input class="noslide" id="sliderR" max="255" min="0" onchange="fromRgb()" type="range" value="128"/>
+<div class="sliderdisplay"></div>
+</div>
+</div><br/>
+<div class="il" id="gwrap">
+<div class="sliderwrap il">
+<input class="noslide" id="sliderG" max="255" min="0" onchange="fromRgb()" type="range" value="128"/>
+<div class="sliderdisplay"></div>
+</div>
+</div><br/>
+<div class="il" id="bwrap">
+<div class="sliderwrap il">
+<input class="noslide" id="sliderB" max="255" min="0" onchange="fromRgb()" type="range" value="128"/>
+<div class="sliderdisplay"></div>
+</div>
+</div><br/>
+</div>
+<div class="center" id="wwrap">
+<p class="label h">${14:White channel}</p>
+<div class="sliderwrap il">
+<input class="noslide" id="sliderW" max="255" min="0" onchange="setColor(0)" type="range" value="128"/>
+<div class="sliderdisplay"></div>
+</div>
+</div>
+<div id="wbal">
+<p class="label h">${15:White balance}</p>
+<div class="sliderwrap il">
+<input class="noslide" id="sliderA" max="255" min="0" onchange="setBalance(this.value)" type="range" value="128"/>
+<div class="sliderdisplay"></div>
+</div>
+</div>
+</div>
+<div class="center" id="Slots">
+<p class="label h">${16:Color slots}</p>
+<div class="center" id="csl" style="display: none;">
+<button class="xxs btn" onclick="selectSlot(0);">1</button>
+<button class="xxs btn" onclick="selectSlot(1);">2</button>
+<button class="xxs btn" onclick="selectSlot(2);">3</button>
+</div>
+</div>
+<div class="center" id="Segments">
+<div id="segcont"></div>
+</div>
+<div class="center" id="Presets">
+<p class="label h">${17:Presets}</p>
+<div class="fnd">
+<input class="fnd" onfocus="search(this)" oninput="search(this,'pcont')" placeholder="Search" type="text"/>
+<i class="icons clear-icon" onclick="clean(this);"></i>
+<i class="icons search-icon"></i>
+</div>
+<div class="list" id="pcont"></div>
+</div>
+<div class="center" id="Effects">
+<p class="label h">${18:Effect}</p>
+<div title="${46:Effect speed}">
+<i class="icons slider-icon"></i>
+<div class="sliderwrap il">
+<input id="sliderSpeed" max="255" min="0" onchange="setSpeed()" oninput="updateTrail(this)" type="range" value="128"/>
+<div class="sliderdisplay"></div>
+</div>
+<output class="sliderbubble"></output>
+</div>
+<div title="${47:Effect intensity}">
+<i class="icons slider-icon" onclick="tglLabels()"></i>
+<div class="sliderwrap il">
+<input id="sliderIntensity" max="255" min="0" onchange="setIntensity()" oninput="updateTrail(this)" type="range" value="128"/>
+<div class="sliderdisplay"></div>
+</div>
+<output class="sliderbubble"></output>
+</div>
+<div style="padding-bottom:20px;">
+<div class="c btn" id="fxBtn" onclick="tglFxDropdown()"><i class="icons"></i>${19: Solid}</div>
+<div class="c btn" id="palBtn" onclick="tglPalDropdown()"><i class="icons"></i>${20:Default}</div>
+<div class="dd-content" id="fxDropdown">
+<div class="fnd">
+<input class="fnd" onfocus="search(this)" oninput="search(this,'fxlist')" placeholder="Search" type="text"/>
+<i class="icons clear-icon" onclick="clean(this);"></i>
+<i class="icons search-icon"></i>
+</div>
+<div class="list" id="fxlist">
+<div class="lstI" data-id="0" onclick="setEffect(0)"><a href="#0" onclick="setEffect(0)">${21:Solid}</a></div>
+</div>
+</div>
+<div class="dd-content" id="palDropdown">
+<div class="fnd">
+<input class="fnd" onfocus="search(this)" oninput="search(this,'pallist')" placeholder="Search" type="text"/>
+<i class="icons clear-icon" onclick="clean(this);"></i>
+<i class="icons search-icon"></i>
+</div>
+<div class="list" id="pallist">
+<div class="lstI" data-id="0" onclick="setPalette(0)"><a href="#0" onclick="setPalette(0)">${22:Default}</a><div class="lstIprev"></div></div>
+</div>
+</div>
+<br/>
+</div>
+</div>
+</div>
+</div>
+<div id="connind"></div>
+<div id="toast"></div>
+<div id="namelabel" onclick="toggleNodes()"></div>
+<div class="modal" id="info">
+<div id="imgw">
+<img alt="" class="wi" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAFCAYAAAC5Fuf5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABbSURBVChTlY9bDoAwDMNW7n9nwCipytQN4Z8tbrTHmDmF4oPzyldwRqp1SSdnV/NuZuzqerAByxXznBw3igkeFEfXyUuhK/yFM0CxJfyqXZEOc6/Sr9/bf7uIC5Nwd7orMvAPAAAAAElFTkSuQmCC"/>
+</div><br/>
+<div id="kv">${23:Loading...}</div><br/>
+<div>
+<button class="btn" onclick="requestJson()">${24:Refresh}</button>
+<button class="btn" onclick="toggleInfo()">${25:Close Info}</button>
+<button class="btn" onclick="toggleNodes()">${26:Instance List}</button>
+<button class="btn" id="resetbtn" onclick="cnfReset()">${27:Reboot WLED}</button>
+</div>
+<span class="h">${28:Made with }<span id="heart">❤︎</span>${29: by Aircoookie and the }<a href="https://wled.discourse.group/" target="_blank">${30:WLED community}</a></span>
+</div>
+<div class="modal" id="nodes">
+<div id="ndlt">${31:WLED instances}</div>
+<div id="kn">${32:Loading...}</div><br/>
+<div>
+<button class="btn" onclick="loadNodes()">${33:Refresh}</button>
+<button class="btn" onclick="toggleNodes()">${34:Close list}</button>
+</div>
+</div>
+<i class="icons huge" id="roverstar" onclick="setLor(0)"></i><br/>
+<script src="simple.js"></script>
+
+

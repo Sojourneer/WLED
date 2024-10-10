@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="width=device-width" name="viewport"/>
+<title>${1:WLED Update}</title>
+<script>
+		function B() { window.history.back(); }
+		function U() { document.getElementById("uf").style.display="none";document.getElementById("msg").style.display="block"; }
+		function GetV() {/*injected values here*/}
+	</script>
+<style>
+		@import url("style.css");
+	</style>
+</head>
+<body onload="GetV()">
+<h2>${2:WLED Software Update}</h2>
+<form action="./update" enctype="multipart/form-data" id="uf" method="POST" onsubmit="U()">${3:
+		Installed version: }<span class="sip">${4:##VERSION##}</span><br/>${5:
+		Download the latest binary: }<a href="https://github.com/Aircoookie/WLED/releases" target="_blank">
+<img src="https://img.shields.io/github/release/Aircoookie/WLED.svg?style=flat-square"/></a><br/>
+<input name="update" required="" type="file"/><br/> <!--should have accept='.bin', but it prevents file upload from android app-->
+<button type="submit">${6:Update!}</button><br/>
+<button onclick="B()" type="button">${7:Back}</button>
+</form>
+<div id="msg"><b>${8:Updating...}</b><br/>${9:Please do not close or refresh the page :)}</div>
+</body>
+</html>

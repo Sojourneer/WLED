@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="no-cache, no-store, must-revalidate" http-equiv="Cache-Control"/>
+<meta content="no-cache" http-equiv="Pragma"/>
+<meta content="0" http-equiv="Expires"/>
+<title>${1:WLED Pixel Art Converter}</title>
+<link href="pixart.css" rel="stylesheet"/>
+<link href="favicon-16x16.png" rel="shortcut icon"/>
+<script type="text/javascript">
+      var d = document;
+      function gId(e) {return d.getElementById(e);}
+      function cE(e) {return d.createElement(e);}
+    </script>
+</head>
+<body>
+<body>
+<div class="top-part">
+<div style="display: flex; justify-content: center;">
+<h1 style="display: flex; align-items: center;">
+<svg style="width:36px;height:36px;margin-right:6px;" viewbox="0 0 32 32">
+<rect height="4" style="fill:#003FFF" width="8" x="6" y="22"></rect>
+<rect height="8" style="fill:#003FFF" width="4" x="14" y="14"></rect>
+<rect height="8" style="fill:#003FFF" width="4" x="18" y="10"></rect>
+<rect height="4" style="fill:#003FFF" width="8" x="22" y="6"></rect>
+</svg>${2:
+            WLED Pixel Art Converter
+          }</h1>
+</div>
+<h2>${3:Convert image to WLED JSON (pixel art on WLED matrix)}</h2>
+<p>
+<table id="fieldTable" style="width: 100%; table-layout: fixed; align-content: center;">
+<tr>
+<td style="vertical-align: middle;">
+<label for="ledSetupSelector">${4:Led setup:}</label>
+</td>
+<td class="adaptiveTD">
+<select class="mainSelector" id="ledSetupSelector">
+<option selected="" value="matrix">${5:2D Matrix}</option>
+<option value="r2l">${6:Serpentine, first row right to left &lt;-}</option>
+<option value="l2r">${7:Serpentine, first row left to right -&gt;}</option>
+</select>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: middle;">
+<label for="formatSelector">${8:Output format:}</label>
+</td>
+<td class="adaptiveTD">
+<select class="mainSelector" id="formatSelector">
+<option selected="" value="wled">${9:WLED JSON}</option>
+<option value="curl">${10:CURL}</option>
+<option value="ha">${11:Home Assistant YAML}</option>
+</select>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: middle;">
+<label for="colorFormatSelector">${12:Color code format:}</label>
+</td>
+<td class="adaptiveTD">
+<select class="mainSelector" id="colorFormatSelector">
+<option selected="" value="hex">${13:HEX ("f4f4f4")}</option>
+<option value="dec">${14:DEC (244,244,244)}</option>
+</select>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: middle;">
+<label for="addressingSelector">${15:Addressing:}</label>
+</td>
+<td class="adaptiveTD">
+<select class="mainSelector" id="addressingSelector">
+<option selected="" value="hybrid">${16:Hybrid ("f0f0f0",10, 17, "f4f4f4")}</option>
+<option value="range">${17:Range (10, 17, "f4f4f4")}</option>
+<option value="single">${18:Single ("f4f4f4")}</option>
+</select>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: middle;">
+<label for="brightnessNumber">${19:Brightness:}</label>
+</td>
+<td style="vertical-align: middle; display: flex; align-items: center;">
+<input id="brightnessNumber" max="255" min="1" type="range" value="128"/>
+<span id="brightnessValue">128</span>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: middle;">
+<label for="colorLimitNumber">${20:Max no of colors/JSON:}</label>
+</td>
+<td style="vertical-align: middle; display: flex; align-items: center;">
+<input id="colorLimitNumber" max="512" min="1" type="range" value="256"/>
+<span id="colorLimitValue">256</span>
+</td>
+</tr>
+<tr class="ha-hide">
+<td style="vertical-align: middle;">
+<label for="haID">${21:HA Device ID:}</label>
+</td>
+<td class="adaptiveTD">
+<input class="fullTextField" id="haID" type="text" value="pixel_art_controller_001"/>
+</td>
+</tr>
+<tr class="ha-hide">
+<td style="vertical-align: middle;">
+<label for="haUID">${22:HA Device Unique ID:}</label>
+</td>
+<td class="adaptiveTD">
+<input class="fullTextField" id="haUID" type="text" value="pixel_art_controller_001a"/>
+</td>
+</tr>
+<tr class="ha-hide">
+<td style="vertical-align: middle;">
+<label for="haName">${23:HA Device Name:}</label>
+</td>
+<td class="adaptiveTD">
+<input class="fullTextField" id="haName" type="text" value="Pixel Art Kitchen"/>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: middle;">
+<label for="curlUrl">${24:Device IP/host name:}</label>
+</td>
+<td class="adaptiveTD">
+<input class="fullTextField" id="curlUrl" type="text" value=""/>
+</td>
+</tr>
+<tr>
+<td style="vertical-align: middle;">
+<label for="targetSegment">${25:Target segment id:}</label>
+</td>
+<td class="adaptiveTD">
+<input class="flxTFld" id="segID" max="63" min="0" type="number" value="0"/>
+<select class="adaptiveSelector" id="targetSegment">
+</select>
+<div class="segmentsDiv" id="getSegmentsDiv"></div>
+</td>
+</tr>
+</table>
+<table class="scaleTableClass" id="scaleTable" style="width: 100%; table-layout: fixed; align-content: center;">
+<tr>
+<td style="vertical-align: middle;">
+<div id="scaleDiv">
+<svg id="scaleToggle" onclick="switchScale()" style="width:36px;height:36px; cursor: pointer;" viewbox="0 0 24 24">
+<path d="M17,7H7A5,5 0 0,0 2,12A5,5 0 0,0 7,17H17A5,5 0 0,0 22,12A5,5 0 0,0 17,7M7,15A3,3 0 0,1 4,12A3,3 0 0,1 7,9A3,3 0 0,1 10,12A3,3 0 0,1 7,15Z" fill="currentColor" id="scaleTogglePath"></path>
+</svg>${26:
+                    Scale image
+                }</div>
+</td>
+<td style="vertical-align: middle;">
+<div id="sizeDiv" style="display: none;">
+<label for="sizeX">${27:W : }</label>  <input class="sizeInputFields" id="sizeX" min="1" type="number" value="16"/>
+                     
+                  <label for="sizeY">${28:H : }</label>  <input class="sizeInputFields" id="sizeY" min="1" type="number" value="16"/>
+</div>
+</td>
+</tr>
+</table>
+</p>
+<p>
+<label for="file-picker">
+<div id="drop-zone">${29:    
+                Drop image here }<br/>${30:or }<br/>${31:
+                Click to select a file
+            }</div>
+</label>
+</p>
+<p>
+<input id="file-picker" style="display: none;" type="file"/>
+<div style="width: 100%; text-align: center;">
+<img id="preview" style="display: none; margin: 0 auto;"/>
+</div>
+<!--
+          <div id="submitConvertDiv" style="display: none;">
+            <button id="convertbutton" class="buttonclass"></button>
+          </div>
+          -->
+<div id="raw-image-container" style="display: none">
+<img alt="RawImage image" id="image" src=""/>
+</div>
+</p>
+<div id="image-container" style="display: none;">
+<div id="image-info" style="display: none"></div>
+<textarea id="JSONled" readonly=""></textarea>
+</div>
+<div id="button-container" style="display: none;">
+<button class="buttonclass" id="copyJSONledbutton"></button>
+<div class="gap" id="gap1"></div>
+<button class="buttonclass" id="sendJSONledbutton"></button>
+</div>
+<div>
+<h3><div id="version">${32:Version 1.0.8}</div> -  <a href="https://github.com/werkstrom/WLED-PixelArtConverter/blob/main/README.md" target="_blank">${33:Help/About}</a></h3>
+</div>
+</div>
+<div class="bottom-part" id="bottom-part" style="display: none"></div>
+<canvas id="pixelCanvas"></canvas>
+</body></body></html>
+<script src="statics.js" type="text/javascript"></script>
+<script src="getPixelValues.js" type="text/javascript"></script>
+<script src="boxdraw.js" type="text/javascript"></script>
+<script src="pixart.js" type="text/javascript"></script>
+

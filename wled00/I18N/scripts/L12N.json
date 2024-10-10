@@ -1,0 +1,4713 @@
+{
+    "\n\t\t\t\t\t\t\t\tLoading...\n\t\t\t\t\t\t\t": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                24,
+                26
+            ]
+        }
+    },
+    "\n\t\t\t\tTo improve the safety of your setup,": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                11
+            ]
+        }
+    },
+    "\n\t\t\t\tWARNING: You may need to update each panel parameters after they are generated.": {
+        "<TBD>": {
+            "wled00/data/settings_2D.htm": [
+                28
+            ]
+        }
+    },
+    "\n\t\t\t\tmultiple power injection points and a fuse!": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                13
+            ]
+        }
+    },
+    "\n\t\t\t\tplease use thick cables,": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                12
+            ]
+        }
+    },
+    "\n\t\t\t\t\u26a0 Your power supply provides high current.": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                10
+            ]
+        }
+    },
+    "\n\t\t\t(Current estimated usage: ": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                17
+            ]
+        }
+    },
+    "\n\t\t\t1": {
+        "<TBD>": {
+            "wled00/data/settings_2D.htm": [
+                13
+            ]
+        }
+    },
+    "\n\t\t\t12h LED: ": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                47
+            ]
+        }
+    },
+    "\n\t\t\tA value of -1 means that pixel at that position is missing, a value of 0 means never paint that pixel, and 1 means regular pixel.": {
+        "<TBD>": {
+            "wled00/data/settings_2D.htm": [
+                40
+            ]
+        }
+    },
+    "\n\t\t\tCCT additive blending: ": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                98
+            ]
+        }
+    },
+    "\n\t\t\tCalculate CCT from RGB: ": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                97
+            ]
+        }
+    },
+    "\n\t\t\tColor Order Override:\n\t\t\t": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                39
+            ]
+        }
+    },
+    "\n\t\t\tConnect the module to your local WiFi here!": {
+        "<TBD>": {
+            "wled00/data/welcome.htm": [
+                5
+            ]
+        }
+    },
+    "\n\t\t\tFirst LED: ": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                45
+            ]
+        }
+    },
+    "\n\t\t\tGlobal override for Auto-calculate white:": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                90
+            ]
+        }
+    },
+    "\n\t\t\tHardware MAC: ": {
+        "<TBD>": {
+            "wled00/data/settings_wifi.htm": [
+                38
+            ]
+        }
+    },
+    "\n\t\t\tHorizontal panels: ": {
+        "<TBD>": {
+            "wled00/data/settings_2D.htm": [
+                11
+            ]
+        }
+    },
+    "\n\t\t\tIf you are using an external power supply, enter its rating.": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                16
+            ]
+        }
+    },
+    "\n\t\t\tKeep at <1A if powering LEDs directly from the ESP 5V pin!": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                15
+            ]
+        }
+    },
+    "\n\t\t\tKeep disabled if not using a remote, increases power consumption.": {
+        "<TBD>": {
+            "wled00/data/settings_wifi.htm": [
+                36
+            ]
+        }
+    },
+    "\n\t\t\tLED voltage (Max. current for a single LED):": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                19
+            ]
+        }
+    },
+    "\n\t\t\tLast Seen: ": {
+        "<TBD>": {
+            "wled00/data/settings_wifi.htm": [
+                39
+            ]
+        }
+    },
+    "\n\t\t\tLoading...\n\t\t": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                35
+            ]
+        }
+    },
+    "\n\t\t\tMaximum Current: ": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                8
+            ]
+        }
+    },
+    "\n\t\t\tOrientation: ": {
+        "<TBD>": {
+            "wled00/data/settings_2D.htm": [
+                20
+            ]
+        }
+    },
+    "\n\t\t\tPanel dimensions (WxH): ": {
+        "<TBD>": {
+            "wled00/data/settings_2D.htm": [
+                9
+            ]
+        }
+    },
+    "\n\t\t\tSeconds (as trail): ": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                49
+            ]
+        }
+    },
+    "\n\t\t\tSerpentine: ": {
+        "<TBD>": {
+            "wled00/data/settings_2D.htm": [
+                23
+            ]
+        }
+    },
+    "\n\t\t\tShow 5min marks: ": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                48
+            ]
+        }
+    },
+    "\n\t\t\tUse less than ": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                33
+            ]
+        }
+    },
+    "\n\t\t\tVertical panels: ": {
+        "<TBD>": {
+            "wled00/data/settings_2D.htm": [
+                12
+            ]
+        }
+    },
+    "\n\t\t\t\u26a0 You might run into stability or lag issues.": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                32
+            ]
+        }
+    },
+    "\n\t\t\n\t\t\tEnable Remote: ": {
+        "<TBD>": {
+            "wled00/data/settings_wifi.htm": [
+                37
+            ]
+        }
+    },
+    "\n\t\t(c) 2016-2023 Christian Schwinne ": {
+        "<TBD>": {
+            "wled00/data/settings_sec.htm": [
+                35
+            ]
+        }
+    },
+    "\n\t\tA huge thank you to everyone who helped me create WLED!": {
+        "<TBD>": {
+            "wled00/data/settings_sec.htm": [
+                34
+            ]
+        }
+    },
+    "\n\t\tAP IP: ": {
+        "<TBD>": {
+            "wled00/data/settings_wifi.htm": [
+                27
+            ]
+        }
+    },
+    "\n\t\tAP SSID (leave empty for no AP):": {
+        "<TBD>": {
+            "wled00/data/settings_wifi.htm": [
+                18
+            ]
+        }
+    },
+    "\n\t\tAP opens:\n\t\t": {
+        "<TBD>": {
+            "wled00/data/settings_wifi.htm": [
+                22
+            ]
+        }
+    },
+    "\n\t\tAP password (leave empty for open):": {
+        "<TBD>": {
+            "wled00/data/settings_wifi.htm": [
+                20
+            ]
+        }
+    },
+    "\n\t\tAccess Point WiFi channel: ": {
+        "<TBD>": {
+            "wled00/data/settings_wifi.htm": [
+                21
+            ]
+        }
+    },
+    "\n\t\tAlexa On/Off Preset: ": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                59
+            ]
+        }
+    },
+    "\n\t\tAll settings and presets will be erased.": {
+        "<TBD>": {
+            "wled00/data/settings_sec.htm": [
+                15
+            ]
+        }
+    },
+    "\n\t\tAnalog Clock overlay: ": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                44
+            ]
+        }
+    },
+    "\n\t\tApply IR change to main segment only: ": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                52
+            ]
+        }
+    },
+    "\n\t\tApply preset ": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                62
+            ]
+        }
+    },
+    "\n\t\tBrightness factor: ": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                69
+            ]
+        }
+    },
+    "\n\t\tClient IP: ": {
+        "<TBD>": {
+            "wled00/data/settings_wifi.htm": [
+                15
+            ]
+        }
+    },
+    "\n\t\tCountdown Goal:": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                51
+            ]
+        }
+    },
+    "\n\t\tCountdown Mode: ": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                50
+            ]
+        }
+    },
+    "\n\t\tCountdown-Over Preset: ": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                60
+            ]
+        }
+    },
+    "\n\t\tCrossfade: ": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                71
+            ]
+        }
+    },
+    "\n\t\tCurrent local time is ": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                33
+            ]
+        }
+    },
+    "\n\t\tCustom bus start indices: ": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                37
+            ]
+        }
+    },
+    "\n\t\tDate:\u00a0": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                52
+            ]
+        }
+    },
+    "\n\t\tDefault Duration: ": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                80
+            ]
+        }
+    },
+    "\n\t\tDefault Target brightness: ": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                82
+            ]
+        }
+    },
+    "\n\t\tDefault brightness: ": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                60
+            ]
+        }
+    },
+    "\n\t\tDeny access to WiFi settings if locked: ": {
+        "<TBD>": {
+            "wled00/data/settings_sec.htm": [
+                13
+            ]
+        }
+    },
+    "\n\t\tDisable WiFi sleep: ": {
+        "<TBD>": {
+            "wled00/data/settings_wifi.htm": [
+                31
+            ]
+        }
+    },
+    "\n\t\tDisable internal pull-up/down: ": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                40
+            ]
+        }
+    },
+    "\n\t\tDo not enable if WiFi is working correctly, increases power consumption.": {
+        "<TBD>": {
+            "wled00/data/settings_wifi.htm": [
+                33
+            ]
+        }
+    },
+    "\n\t\tDownload the latest binary: ": {
+        "<TBD>": {
+            "wled00/data/update.htm": [
+                5
+            ]
+        }
+    },
+    "\n\t\tEach panel can be of different size and/or have different LED orientation and/or starting point and/or layout.": {
+        "<TBD>": {
+            "wled00/data/settings_2D.htm": [
+                33
+            ]
+        }
+    },
+    "\n\t\tEffect blending: ": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                72
+            ]
+        }
+    },
+    "\n\t\tEnable ArduinoOTA: ": {
+        "<TBD>": {
+            "wled00/data/settings_sec.htm": [
+                19
+            ]
+        }
+    },
+    "\n\t\tEnable Palette transitions: ": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                75
+            ]
+        }
+    },
+    "\n\t\tEnable automatic brightness limiter: ": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                7
+            ]
+        }
+    },
+    "\n\t\tFactory reset: ": {
+        "<TBD>": {
+            "wled00/data/settings_sec.htm": [
+                14
+            ]
+        }
+    },
+    "\n\t\tFor security reasons, passwords are not backed up.\n\t\t": {
+        "<TBD>": {
+            "wled00/data/settings_sec.htm": [
+                29
+            ]
+        }
+    },
+    "\n\t\tForce 802.11g mode (ESP8266 only): ": {
+        "<TBD>": {
+            "wled00/data/settings_wifi.htm": [
+                30
+            ]
+        }
+    },
+    "\n\t\tGet time from NTP server: ": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                5
+            ]
+        }
+    },
+    "\n\t\tGlobal I": {
+        "<TBD>": {
+            "wled00/data/settings_um.htm": [
+                7
+            ]
+        }
+    },
+    "\n\t\tGlobal SPI GPIOs (HW)": {
+        "<TBD>": {
+            "wled00/data/settings_um.htm": [
+                12
+            ]
+        }
+    },
+    "\n\t\tHide AP name: ": {
+        "<TBD>": {
+            "wled00/data/settings_wifi.htm": [
+                19
+            ]
+        }
+    },
+    "\n\t\tI hate dark mode: ": {
+        "<TBD>": {
+            "wled00/data/settings_ui.htm": [
+                16
+            ]
+        }
+    },
+    "\n\t\tIR GPIO: ": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                42
+            ]
+        }
+    },
+    "\n\t\tIncorrect configuration may require a factory reset or re-flashing of your ESP.": {
+        "<TBD>": {
+            "wled00/data/settings_sec.htm": [
+                28
+            ]
+        }
+    },
+    "\n\t\tInstalled version: ": {
+        "<TBD>": {
+            "wled00/data/update.htm": [
+                3
+            ]
+        }
+    },
+    "\n\t\tJust enter the preset ID below!": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                57
+            ]
+        }
+    },
+    "\n\t\tLED Memory Usage: ": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                30
+            ]
+        }
+    },
+    "\n\t\tLatitude: ": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                35
+            ]
+        }
+    },
+    "\n\t\tLock wireless (OTA) software update: ": {
+        "<TBD>": {
+            "wled00/data/settings_sec.htm": [
+                7
+            ]
+        }
+    },
+    "\n\t\tLongitude: ": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                38
+            ]
+        }
+    },
+    "\n\t\tMISO:": {
+        "<TBD>": {
+            "wled00/data/settings_um.htm": [
+                15
+            ]
+        }
+    },
+    "\n\t\tMOSI:": {
+        "<TBD>": {
+            "wled00/data/settings_um.htm": [
+                14
+            ]
+        }
+    },
+    "\n\t\tMake a segment for each output: ": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                36
+            ]
+        }
+    },
+    "\n\t\tMode:\n\t\t": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                83
+            ]
+        }
+    },
+    "\n\t\tNetwork name (SSID, empty to not connect):": {
+        "<TBD>": {
+            "wled00/data/settings_wifi.htm": [
+                7
+            ]
+        }
+    },
+    "\n\t\tNetwork password: ": {
+        "<TBD>": {
+            "wled00/data/settings_wifi.htm": [
+                8
+            ]
+        }
+    },
+    "\n\t\tNumber of panels: ": {
+        "<TBD>": {
+            "wled00/data/settings_2D.htm": [
+                31
+            ]
+        }
+    },
+    "\n\t\tPalette blending:\n\t\t": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                100
+            ]
+        }
+    },
+    "\n\t\tPassphrase: ": {
+        "<TBD>": {
+            "wled00/data/settings_sec.htm": [
+                8
+            ]
+        }
+    },
+    "\n\t\tReboot after save? ": {
+        "<TBD>": {
+            "wled00/data/settings_um.htm": [
+                17
+            ]
+        }
+    },
+    "\n\t\tRefresh the main UI to apply changes.": {
+        "<TBD>": {
+            "wled00/data/settings_ui.htm": [
+                13
+            ]
+        }
+    },
+    "\n\t\tRelay GPIO: ": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                56
+            ]
+        }
+    },
+    "\n\t\tSCL:": {
+        "<TBD>": {
+            "wled00/data/settings_um.htm": [
+                11
+            ]
+        }
+    },
+    "\n\t\tSCLK:": {
+        "<TBD>": {
+            "wled00/data/settings_um.htm": [
+                16
+            ]
+        }
+    },
+    "\n\t\tSDA:": {
+        "<TBD>": {
+            "wled00/data/settings_um.htm": [
+                10
+            ]
+        }
+    },
+    "\n\t\tServer description: ": {
+        "<TBD>": {
+            "wled00/data/settings_ui.htm": [
+                7
+            ]
+        }
+    },
+    "\n\t\tServer message: ": {
+        "<TBD>": {
+            "wled00/data/settings_sec.htm": [
+                38
+            ]
+        }
+    },
+    "\n\t\tSettings PIN: ": {
+        "<TBD>": {
+            "wled00/data/settings_sec.htm": [
+                5
+            ]
+        }
+    },
+    "\n\t\tStatic IP (leave at 0.0.0.0 for DHCP):": {
+        "<TBD>": {
+            "wled00/data/settings_wifi.htm": [
+                9
+            ]
+        }
+    },
+    "\n\t\tStatic gateway:": {
+        "<TBD>": {
+            "wled00/data/settings_wifi.htm": [
+                10
+            ]
+        }
+    },
+    "\n\t\tStatic subnet mask:": {
+        "<TBD>": {
+            "wled00/data/settings_wifi.htm": [
+                11
+            ]
+        }
+    },
+    "\n\t\tSync button toggles both send and receive: ": {
+        "<TBD>": {
+            "wled00/data/settings_ui.htm": [
+                8
+            ]
+        }
+    },
+    "\n\t\tTarget refresh rate: ": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                105
+            ]
+        }
+    },
+    "\n\t\tThe password should be changed when OTA is enabled.": {
+        "<TBD>": {
+            "wled00/data/settings_sec.htm": [
+                10
+            ]
+        }
+    },
+    "\n\t\tTime zone: \n\t\t": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                7
+            ]
+        }
+    },
+    "\n\t\tTime:\u00a0": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                53
+            ]
+        }
+    },
+    "\n\t\tTimed-Light-Over Presets: ": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                61
+            ]
+        }
+    },
+    "\n\t\tTo enable OTA, for security reasons you need to also enter the correct password!": {
+        "<TBD>": {
+            "wled00/data/settings_sec.htm": [
+                9
+            ]
+        }
+    },
+    "\n\t\tTotal LEDs: ": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                5
+            ]
+        }
+    },
+    "\n\t\tTouch threshold: ": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                41
+            ]
+        }
+    },
+    "\n\t\tTransition Time: ": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                73
+            ]
+        }
+    },
+    "\n\t\tTurn LEDs on after power up/reset: ": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                59
+            ]
+        }
+    },
+    "\n\t\tUTC offset: ": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                31
+            ]
+        }
+    },
+    "\n\t\tUse 24h format: ": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                6
+            ]
+        }
+    },
+    "\n\t\tUse Gamma correction for brightness: ": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                66
+            ]
+        }
+    },
+    "\n\t\tUse Gamma correction for color: ": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                64
+            ]
+        }
+    },
+    "\n\t\tUse Gamma value: ": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                68
+            ]
+        }
+    },
+    "\n\t\tUse global LED buffer: ": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                38
+            ]
+        }
+    },
+    "\n\t\tWhite Balance correction: ": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                89
+            ]
+        }
+    },
+    "\n\t\tYou will need to set them again if using a different browser, device or WLED IP address.": {
+        "<TBD>": {
+            "wled00/data/settings_ui.htm": [
+                12
+            ]
+        }
+    },
+    "\n\t\thttp:// ": {
+        "<TBD>": {
+            "wled00/data/settings_wifi.htm": [
+                13
+            ]
+        }
+    },
+    "\n\t\tmDNS address (leave empty for no mDNS):": {
+        "<TBD>": {
+            "wled00/data/settings_wifi.htm": [
+                12
+            ]
+        }
+    },
+    "\n\tSample Detail.\n": {
+        "<TBD>": {
+            "wled00/data/msg.htm": [
+                3
+            ]
+        }
+    },
+    "\n\tStrip or panel:\n\t": {
+        "<TBD>": {
+            "wled00/data/settings_2D.htm": [
+                5
+            ]
+        }
+    },
+    "\n\tTo use built-in effects, use an override button below.": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                57
+            ]
+        }
+    },
+    "\n\tYou can return to realtime mode by pressing the star in the top left corner.": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                58
+            ]
+        }
+    },
+    "\n\nChannels per fixture (15 max): ": {
+        "<TBD>": {
+            "wled00/data/settings_dmx.htm": [
+                9
+            ]
+        }
+    },
+    "\n\nProxy Universe ": {
+        "<TBD>": {
+            "wled00/data/settings_dmx.htm": [
+                5
+            ]
+        }
+    },
+    "\n                    Range\n                  ": {
+        "<TBD>": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                8
+            ]
+        }
+    },
+    "\n                    Segment 0\n                  ": {
+        "<TBD>": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                18
+            ]
+        }
+    },
+    "\n                    upload\n                  ": {
+        "<TBD>": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                35
+            ]
+        }
+    },
+    "\n                   \u00a0Scale image\n                ": {
+        "<TBD>": {
+            "wled00/data/pixart/pixart.htm": [
+                26
+            ]
+        }
+    },
+    "\n                  Copy to Clipboard\n                ": {
+        "<TBD>": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                39
+            ]
+        }
+    },
+    "\n                  Download\n                ": {
+        "<TBD>": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                41
+            ]
+        }
+    },
+    "\n                  Simulate\n                ": {
+        "<TBD>": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                42
+            ]
+        }
+    },
+    "\n                Click to select a file\n            ": {
+        "<TBD>": {
+            "wled00/data/pixart/pixart.htm": [
+                31
+            ]
+        }
+    },
+    "\n                Color that will replace the\n                ": {
+        "<TBD>": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                31
+            ]
+        }
+    },
+    "\n                Generate\n              ": {
+        "<TBD>": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                38
+            ]
+        }
+    },
+    "\n              Drag and drop a file here or click to select a local file\n            ": {
+        "<TBD>": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                37
+            ]
+        }
+    },
+    "\n            WLED Pixel Art Converter\n          ": {
+        "<TBD>": {
+            "wled00/data/pixart/pixart.htm": [
+                2
+            ]
+        }
+    },
+    "\n          Available static palettes\n        ": {
+        "<TBD>": {
+            "wled00/data/cpal/cpal.htm": [
+                5
+            ]
+        }
+    },
+    "\n          Currently in use custom palettes\n        ": {
+        "<TBD>": {
+            "wled00/data/cpal/cpal.htm": [
+                3
+            ]
+        }
+    },
+    "\n          Github \u00a9 Pixel Magic Tool\n        ": {
+        "<TBD>": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                43
+            ]
+        }
+    },
+    "\n      Click on the gradient editor to add new color slider, then the colored box below the slider to change its color. \n      Click the red box below indicator (and confirm) to delete. \n      Once finished, click the arrow icon to upload into the desired slot. \n      To edit existing palette, click the pencil icon.\n    ": {
+        "<TBD>": {
+            "wled00/data/cpal/cpal.htm": [
+                4
+            ]
+        }
+    },
+    "\n(alternatively, connect a second ESP to them and use the UDP sync)\n": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                73
+            ]
+        }
+    },
+    "\n(when first connecting)": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                102
+            ]
+        }
+    },
+    "\n2nd Port: ": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                7
+            ]
+        }
+    },
+    "\nAlexa invocation name: ": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                67
+            ]
+        }
+    },
+    "\nAlso emulate devices to call the first ": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                68
+            ]
+        }
+    },
+    "\nBaud rate:\n": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                106
+            ]
+        }
+    },
+    "\nBroker: ": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                77
+            ]
+        }
+    },
+    "\nClient ID: ": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                83
+            ]
+        }
+    },
+    "\nDMX fixtures start LED: ": {
+        "<TBD>": {
+            "wled00/data/settings_dmx.htm": [
+                16
+            ]
+        }
+    },
+    "\nDMX mode:\n": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                46
+            ]
+        }
+    },
+    "\nDMX segment spacing: ": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                44
+            ]
+        }
+    },
+    "\nDMX start address: ": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                43
+            ]
+        }
+    },
+    "\nDevice Topic: ": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                84
+            ]
+        }
+    },
+    "\nDisable realtime gamma correction: ": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                62
+            ]
+        }
+    },
+    "\nE1.31 port priority: ": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                45
+            ]
+        }
+    },
+    "\nEmulate Alexa device: ": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                66
+            ]
+        }
+    },
+    "\nEnable MQTT: ": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                76
+            ]
+        }
+    },
+    "\nEnable instance list: ": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                26
+            ]
+        }
+    },
+    "\nFor best results, only use one of these services at a time.": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                72
+            ]
+        }
+    },
+    "\nForce max brightness: ": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                61
+            ]
+        }
+    },
+    "\nGroup Topic: ": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                85
+            ]
+        }
+    },
+    "\nHue Bridge IP:": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                100
+            ]
+        }
+    },
+    "\nHue status: ": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                103
+            ]
+        }
+    },
+    "\nMake this instance discoverable: ": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                27
+            ]
+        }
+    },
+    "\nMulticast: ": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                37
+            ]
+        }
+    },
+    "\nNever use the MQTT password for another service!": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                80
+            ]
+        }
+    },
+    "\nPassword: ": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                82
+            ]
+        }
+    },
+    "\nPoll Hue light ": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                93
+            ]
+        }
+    },
+    "\nPort: ": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                78
+            ]
+        }
+    },
+    "\nPublish on button press: ": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                86
+            ]
+        }
+    },
+    "\nRealtime LED offset: ": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                63
+            ]
+        }
+    },
+    "\nReceive UDP realtime: ": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                29
+            ]
+        }
+    },
+    "\nReceive: ": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                11
+            ]
+        }
+    },
+    "\nRetain brightness & color messages: ": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                87
+            ]
+        }
+    },
+    "\nSend Alexa notifications: ": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                20
+            ]
+        }
+    },
+    "\nSend Macro notifications: ": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                22
+            ]
+        }
+    },
+    "\nSend Philips Hue change notifications: ": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                21
+            ]
+        }
+    },
+    "\nSend notifications on button press or IR: ": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                19
+            ]
+        }
+    },
+    "\nSend notifications on direct change: ": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                18
+            ]
+        }
+    },
+    "\nSkip out-of-sequence packets: ": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                42
+            ]
+        }
+    },
+    "\nSpacing between start channels: ": {
+        "<TBD>": {
+            "wled00/data/settings_dmx.htm": [
+                11
+            ]
+        }
+    },
+    "\nStart channel: ": {
+        "<TBD>": {
+            "wled00/data/settings_dmx.htm": [
+                10
+            ]
+        }
+    },
+    "\nStart universe: ": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                38
+            ]
+        }
+    },
+    "\nThen, receive ": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                96
+            ]
+        }
+    },
+    "\nThis may impact the responsiveness of WLED.": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                71
+            ]
+        }
+    },
+    "\nTimeout: ": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                59
+            ]
+        }
+    },
+    "\nType:\n": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                32
+            ]
+        }
+    },
+    "\nUDP Port: ": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                6
+            ]
+        }
+    },
+    "\nUDP packet retransmissions: ": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                23
+            ]
+        }
+    },
+    "\nUse main segment only: ": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                30
+            ]
+        }
+    },
+    "\nUsername: ": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                81
+            ]
+        }
+    },
+    "    \n                Drop image here ": {
+        "<TBD>": {
+            "wled00/data/pixart/pixart.htm": [
+                29
+            ]
+        }
+    },
+    " (0-255)": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                61
+            ]
+        }
+    },
+    " (not recommended)": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                67
+            ]
+        }
+    },
+    " (strongly recommended)": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                65
+            ]
+        }
+    },
+    " .local": {
+        "<TBD>": {
+            "wled00/data/settings_wifi.htm": [
+                14
+            ]
+        }
+    },
+    " B": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                31
+            ]
+        }
+    },
+    " Brightness, and ": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                98
+            ]
+        }
+    },
+    " Check out ": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                40
+            ]
+        }
+    },
+    " Color": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                99
+            ]
+        }
+    },
+    " Color palette": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                23
+            ]
+        }
+    },
+    " Disabled in this build ": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                104
+            ]
+        }
+    },
+    " FPS\n\t\t": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                106
+            ]
+        }
+    },
+    " Invert ": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                57
+            ]
+        }
+    },
+    " Last LED: ": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                46
+            ]
+        }
+    },
+    " Not active ": {
+        "<TBD>": {
+            "wled00/data/settings_wifi.htm": [
+                28
+            ]
+        }
+    },
+    " Not connected ": {
+        "<TBD>": {
+            "wled00/data/settings_wifi.htm": [
+                16
+            ]
+        }
+    },
+    " On/Off, ": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                97
+            ]
+        }
+    },
+    " Palette Time: ": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                77
+            ]
+        }
+    },
+    " Response error! ": {
+        "<TBD>": {
+            "wled00/data/settings_sec.htm": [
+                39
+            ]
+        }
+    },
+    " Segment options, ": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                16
+            ]
+        }
+    },
+    " Solid": {
+        "<TBD>": {
+            "wled00/data/simple.htm": [
+                19
+            ]
+        }
+    },
+    " affect final layout.": {
+        "<TBD>": {
+            "wled00/data/settings_2D.htm": [
+                27
+            ]
+        }
+    },
+    " at boot (0 uses defaults)\n\t\t": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                63
+            ]
+        }
+    },
+    " bounds": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                17
+            ]
+        }
+    },
+    " by Aircoookie and the ": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                51
+            ],
+            "wled00/data/simple.htm": [
+                29
+            ]
+        }
+    },
+    " every ": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                94
+            ]
+        }
+    },
+    " file containing an array with number of elements equal to the matrix size.": {
+        "<TBD>": {
+            "wled00/data/settings_2D.htm": [
+                39
+            ]
+        }
+    },
+    " for the best experience!": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                35
+            ]
+        }
+    },
+    " from E1.31 to DMX (0=disabled)": {
+        "<TBD>": {
+            "wled00/data/settings_dmx.htm": [
+                6
+            ]
+        }
+    },
+    " in the image\n              ": {
+        "<TBD>": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                33
+            ]
+        }
+    },
+    " mA": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                9,
+                26
+            ]
+        }
+    },
+    " min": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                81
+            ]
+        }
+    },
+    " ms": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                74
+            ],
+            "wled00/data/settings_sync.htm": [
+                60
+            ]
+        }
+    },
+    " ms: ": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                95
+            ]
+        }
+    },
+    " panel: ": {
+        "<TBD>": {
+            "wled00/data/settings_2D.htm": [
+                15
+            ]
+        }
+    },
+    " presets": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                69
+            ]
+        }
+    },
+    " s": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                78
+            ]
+        }
+    },
+    " seconds (max. 18 hours)": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                32
+            ]
+        }
+    },
+    " version ##VERSION##": {
+        "<TBD>": {
+            "wled00/data/settings_sec.htm": [
+                32
+            ]
+        }
+    },
+    " x ": {
+        "<TBD>": {
+            "wled00/data/settings_2D.htm": [
+                10
+            ]
+        }
+    },
+    "##VERSION##": {
+        "<TBD>": {
+            "wled00/data/update.htm": [
+                4
+            ]
+        }
+    },
+    "(change requires reboot!)": {
+        "<TBD>": {
+            "wled00/data/settings_um.htm": [
+                9
+            ]
+        }
+    },
+    "(only changable on ESP32, change requires reboot!)": {
+        "<TBD>": {
+            "wled00/data/settings_um.htm": [
+                13
+            ]
+        }
+    },
+    "(opens new tab, only works in browser)": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                42
+            ]
+        }
+    },
+    ".json": {
+        "<TBD>": {
+            "wled00/data/settings_2D.htm": [
+                38
+            ]
+        }
+    },
+    "12V (30mA)": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                22
+            ]
+        }
+    },
+    "1D Strip": {
+        "<TBD>": {
+            "wled00/data/settings_2D.htm": [
+                6
+            ]
+        }
+    },
+    "21-key RGB": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                48
+            ]
+        }
+    },
+    "24-key RGB": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                44
+            ]
+        }
+    },
+    "24-key with CT": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                45
+            ]
+        }
+    },
+    "2D Configuration": {
+        "<TBD>": {
+            "wled00/data/settings.htm": [
+                5
+            ]
+        }
+    },
+    "2D Matrix": {
+        "<TBD>": {
+            "wled00/data/pixart/pixart.htm": [
+                5
+            ],
+            "wled00/data/settings_2D.htm": [
+                7
+            ]
+        }
+    },
+    "2D Set-up": {
+        "<TBD>": {
+            "wled00/data/settings_2D.htm": [
+                1
+            ]
+        }
+    },
+    "2D setup": {
+        "<TBD>": {
+            "wled00/data/settings_2D.htm": [
+                4
+            ]
+        }
+    },
+    "40-key blue": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                46
+            ]
+        }
+    },
+    "404 Not Found": {
+        "<TBD>": {
+            "wled00/data/404.htm": [
+                2
+            ]
+        }
+    },
+    "44-key RGB": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                47
+            ]
+        }
+    },
+    "5V default (55mA)": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                20
+            ]
+        }
+    },
+    "5V efficient (35mA)": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                21
+            ]
+        }
+    },
+    "6-key black": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                49
+            ]
+        }
+    },
+    "800 LEDs per output": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                34
+            ]
+        }
+    },
+    "9-key red": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                50
+            ]
+        }
+    },
+    "A matrix is made of 1 or more physical LED panels.": {
+        "<TBD>": {
+            "wled00/data/settings_2D.htm": [
+                32
+            ]
+        }
+    },
+    "ABC! WLED V43 & compatible": {
+        "<TBD>": {
+            "wled00/data/settings_wifi.htm": [
+                43
+            ]
+        }
+    },
+    "ACST": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                24
+            ]
+        }
+    },
+    "ACST/ACDT": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                25
+            ]
+        }
+    },
+    "AEST/AEDT": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                19
+            ]
+        }
+    },
+    "AKST/AKDT (Anchorage)": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                28
+            ]
+        }
+    },
+    "About": {
+        "<TBD>": {
+            "wled00/data/settings_sec.htm": [
+                30
+            ]
+        }
+    },
+    "Accurate": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                94
+            ]
+        }
+    },
+    "Addressing:": {
+        "<TBD>": {
+            "wled00/data/pixart/pixart.htm": [
+                15
+            ]
+        }
+    },
+    "Advanced": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                99
+            ]
+        }
+    },
+    "Akemi does not know where you are headed...": {
+        "<TBD>": {
+            "wled00/data/404.htm": [
+                3
+            ]
+        }
+    },
+    "Alexa Voice Assistant": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                64
+            ]
+        }
+    },
+    "Always": {
+        "<TBD>": {
+            "wled00/data/settings_wifi.htm": [
+                25
+            ]
+        }
+    },
+    "Analog Button setup": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                71
+            ]
+        }
+    },
+    "Animation": {
+        "<TBD>": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                20
+            ]
+        }
+    },
+    "Apply": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                108
+            ]
+        }
+    },
+    "Art-Net": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                34
+            ]
+        }
+    },
+    "Automatically limits brightness to stay close to the limit.": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                14
+            ]
+        }
+    },
+    "BG image URL": {
+        "<TBD>": {
+            "wled00/data/settings_ui.htm": [
+                18
+            ]
+        }
+    },
+    "Back": {
+        "<TBD>": {
+            "wled00/data/settings.htm": [
+                2
+            ],
+            "wled00/data/settings_wifi.htm": [
+                2,
+                53
+            ],
+            "wled00/data/settings_leds.htm": [
+                2,
+                109
+            ],
+            "wled00/data/settings_dmx.htm": [
+                2,
+                18
+            ],
+            "wled00/data/settings_ui.htm": [
+                2,
+                23
+            ],
+            "wled00/data/settings_sync.htm": [
+                2,
+                108
+            ],
+            "wled00/data/settings_time.htm": [
+                2,
+                73
+            ],
+            "wled00/data/settings_sec.htm": [
+                2,
+                40
+            ],
+            "wled00/data/settings_um.htm": [
+                2,
+                19
+            ],
+            "wled00/data/settings_2D.htm": [
+                2,
+                41
+            ],
+            "wled00/data/settings_pin.htm": [
+                3
+            ],
+            "wled00/data/update.htm": [
+                7
+            ]
+        }
+    },
+    "Back to controls": {
+        "<TBD>": {
+            "wled00/data/404.htm": [
+                4
+            ]
+        }
+    },
+    "Backup & Restore": {
+        "<TBD>": {
+            "wled00/data/settings_sec.htm": [
+                20
+            ]
+        }
+    },
+    "Backup configuration": {
+        "<TBD>": {
+            "wled00/data/settings_sec.htm": [
+                24
+            ]
+        }
+    },
+    "Backup presets": {
+        "<TBD>": {
+            "wled00/data/settings_sec.htm": [
+                21
+            ]
+        }
+    },
+    "Black": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                67
+            ],
+            "wled00/data/simple.htm": [
+                40
+            ]
+        }
+    },
+    "Blue": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                69
+            ],
+            "wled00/data/simple.htm": [
+                42
+            ]
+        }
+    },
+    "Blue channel": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                19
+            ]
+        }
+    },
+    "Bottom": {
+        "<TBD>": {
+            "wled00/data/settings_2D.htm": [
+                17
+            ]
+        }
+    },
+    "Brighter": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                93
+            ]
+        }
+    },
+    "Brightness": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                12
+            ],
+            "wled00/data/pxmagic/pxmagic.htm": [
+                19
+            ]
+        }
+    },
+    "Brightness,": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                12
+            ]
+        }
+    },
+    "Brightness:": {
+        "<TBD>": {
+            "wled00/data/pixart/pixart.htm": [
+                19
+            ]
+        }
+    },
+    "Button actions": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                62
+            ]
+        }
+    },
+    "C GPIOs (HW)": {
+        "<TBD>": {
+            "wled00/data/settings_um.htm": [
+                8
+            ]
+        }
+    },
+    "CA-Saskatchewan": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                23
+            ]
+        }
+    },
+    "CET/CEST": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                10
+            ]
+        }
+    },
+    "CST (AWST, PHST)": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                17
+            ]
+        }
+    },
+    "CURL": {
+        "<TBD>": {
+            "wled00/data/pixart/pixart.htm": [
+                10
+            ],
+            "wled00/data/pxmagic/pxmagic.htm": [
+                13
+            ]
+        }
+    },
+    "Can help with connectivity issues.": {
+        "<TBD>": {
+            "wled00/data/settings_wifi.htm": [
+                32
+            ]
+        }
+    },
+    "Channel functions": {
+        "<TBD>": {
+            "wled00/data/settings_dmx.htm": [
+                17
+            ]
+        }
+    },
+    "Check 1": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                32
+            ]
+        }
+    },
+    "Check 2": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                33
+            ]
+        }
+    },
+    "Check 3": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                34
+            ]
+        }
+    },
+    "Choose a color": {
+        "<TBD>": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                30
+            ]
+        }
+    },
+    "Clear local storage": {
+        "<TBD>": {
+            "wled00/data/settings_ui.htm": [
+                22
+            ]
+        }
+    },
+    "Clock": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                43
+            ]
+        }
+    },
+    "Close Info": {
+        "<TBD>": {
+            "wled00/data/simple.htm": [
+                25
+            ]
+        }
+    },
+    "Close list": {
+        "<TBD>": {
+            "wled00/data/simple.htm": [
+                34
+            ]
+        }
+    },
+    "Color code format:": {
+        "<TBD>": {
+            "wled00/data/pixart/pixart.htm": [
+                12
+            ]
+        }
+    },
+    "Color slots": {
+        "<TBD>": {
+            "wled00/data/simple.htm": [
+                16
+            ]
+        }
+    },
+    "Color,": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                13
+            ]
+        }
+    },
+    "Colors": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                41
+            ]
+        }
+    },
+    "Config": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                10
+            ],
+            "wled00/data/simple.htm": [
+                7
+            ]
+        }
+    },
+    "Config template: ": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                107
+            ]
+        }
+    },
+    "Configure Access Point": {
+        "<TBD>": {
+            "wled00/data/settings_wifi.htm": [
+                17
+            ]
+        }
+    },
+    "Connect to existing network": {
+        "<TBD>": {
+            "wled00/data/settings_wifi.htm": [
+                5
+            ]
+        }
+    },
+    "Contributors, dependencies and special thanks": {
+        "<TBD>": {
+            "wled00/data/settings_sec.htm": [
+                33
+            ]
+        }
+    },
+    "Convert image to WLED JSON (pixel art on WLED matrix)": {
+        "<TBD>": {
+            "wled00/data/pixart/pixart.htm": [
+                3
+            ]
+        }
+    },
+    "Custom": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                24
+            ]
+        }
+    },
+    "Custom 1": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                29
+            ]
+        }
+    },
+    "Custom 2": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                30
+            ]
+        }
+    },
+    "Custom 3": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                31
+            ]
+        }
+    },
+    "Custom CSS: ": {
+        "<TBD>": {
+            "wled00/data/settings_ui.htm": [
+                20
+            ]
+        }
+    },
+    "Custom max. current per LED: ": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                25
+            ]
+        }
+    },
+    "Custom port": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                35
+            ]
+        }
+    },
+    "Cyan": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                70
+            ],
+            "wled00/data/simple.htm": [
+                43
+            ]
+        }
+    },
+    "DEC (244,244,244)": {
+        "<TBD>": {
+            "wled00/data/pixart/pixart.htm": [
+                14
+            ]
+        }
+    },
+    "DMX Map": {
+        "<TBD>": {
+            "wled00/data/settings_dmx.htm": [
+                15
+            ],
+            "wled00/data/dmxmap.htm": [
+                1
+            ]
+        }
+    },
+    "DMX Output": {
+        "<TBD>": {
+            "wled00/data/settings.htm": [
+                7
+            ]
+        }
+    },
+    "DMX Settings": {
+        "<TBD>": {
+            "wled00/data/settings_dmx.htm": [
+                1
+            ]
+        }
+    },
+    "Default": {
+        "<TBD>": {
+            "wled00/data/simple.htm": [
+                20,
+                22
+            ]
+        }
+    },
+    "Defaults": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                58
+            ]
+        }
+    },
+    "Device": {
+        "<TBD>": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                14
+            ]
+        }
+    },
+    "Device IP/host name:": {
+        "<TBD>": {
+            "wled00/data/pixart/pixart.htm": [
+                24
+            ]
+        }
+    },
+    "Dimmer + Multi RGB": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                55
+            ]
+        }
+    },
+    "Disable OTA when not in use, otherwise an attacker can reflash device software!": {
+        "<TBD>": {
+            "wled00/data/settings_sec.htm": [
+                11
+            ]
+        }
+    },
+    "Disabled": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                91
+            ],
+            "wled00/data/settings_sync.htm": [
+                47
+            ]
+        }
+    },
+    "Disconnected": {
+        "<TBD>": {
+            "wled00/data/settings_wifi.htm": [
+                24
+            ]
+        }
+    },
+    "Dual": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                95
+            ]
+        }
+    },
+    "Duration": {
+        "<TBD>": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                26
+            ]
+        }
+    },
+    "E": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                39
+            ]
+        }
+    },
+    "E1.31 (sACN)": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                33
+            ]
+        }
+    },
+    "E1.31 info": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                58
+            ]
+        }
+    },
+    "EET/EEST": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                11
+            ]
+        }
+    },
+    "ESP32-POE": {
+        "<TBD>": {
+            "wled00/data/settings_wifi.htm": [
+                44
+            ]
+        }
+    },
+    "ESP32Deux": {
+        "<TBD>": {
+            "wled00/data/settings_wifi.htm": [
+                45
+            ]
+        }
+    },
+    "Effect": {
+        "<TBD>": {
+            "wled00/data/simple.htm": [
+                18
+            ],
+            "wled00/data/settings_sync.htm": [
+                50
+            ]
+        }
+    },
+    "Effect + White": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                51
+            ]
+        }
+    },
+    "Effect Segment": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                52
+            ]
+        }
+    },
+    "Effect Segment + White": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                53
+            ]
+        }
+    },
+    "Effect intensity": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                28
+            ],
+            "wled00/data/simple.htm": [
+                47
+            ]
+        }
+    },
+    "Effect mode": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                25
+            ]
+        }
+    },
+    "Effect speed": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                27
+            ],
+            "wled00/data/simple.htm": [
+                46
+            ]
+        }
+    },
+    "Effects": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                42
+            ],
+            "wled00/data/settings_sync.htm": [
+                15
+            ]
+        }
+    },
+    "Empty or min. 8 characters": {
+        "<TBD>": {
+            "wled00/data/settings_wifi.htm": [
+                55
+            ]
+        }
+    },
+    "Enable simplified UI: ": {
+        "<TBD>": {
+            "wled00/data/settings_ui.htm": [
+                10
+            ]
+        }
+    },
+    "Ethernet Type": {
+        "<TBD>": {
+            "wled00/data/settings_wifi.htm": [
+                41
+            ]
+        }
+    },
+    "Expand": {
+        "<TBD>": {
+            "wled00/data/simple.htm": [
+                8
+            ]
+        }
+    },
+    "Experimental": {
+        "<TBD>": {
+            "wled00/data/settings_wifi.htm": [
+                29
+            ]
+        }
+    },
+    "Fade": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                85
+            ]
+        }
+    },
+    "Fade Color": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                86
+            ]
+        }
+    },
+    "For best performance, it is recommended to turn off the streaming source when not in use.": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                61
+            ]
+        }
+    },
+    "Frames": {
+        "<TBD>": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                25
+            ]
+        }
+    },
+    "Friendly Name": {
+        "<TBD>": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                16
+            ]
+        }
+    },
+    "GMT(UTC)": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                8
+            ]
+        }
+    },
+    "GMT/BST": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                9
+            ]
+        }
+    },
+    "Gap file: ": {
+        "<TBD>": {
+            "wled00/data/settings_2D.htm": [
+                35
+            ]
+        }
+    },
+    "Get location": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                41
+            ]
+        }
+    },
+    "Global brightness": {
+        "<TBD>": {
+            "wled00/data/simple.htm": [
+                9
+            ]
+        }
+    },
+    "Green": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                71
+            ],
+            "wled00/data/simple.htm": [
+                44
+            ]
+        }
+    },
+    "Green channel": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                18
+            ]
+        }
+    },
+    "H : ": {
+        "<TBD>": {
+            "wled00/data/pixart/pixart.htm": [
+                28
+            ]
+        }
+    },
+    "HA Device ID:": {
+        "<TBD>": {
+            "wled00/data/pixart/pixart.htm": [
+                21
+            ]
+        }
+    },
+    "HA Device Name:": {
+        "<TBD>": {
+            "wled00/data/pixart/pixart.htm": [
+                23
+            ]
+        }
+    },
+    "HA Device Unique ID:": {
+        "<TBD>": {
+            "wled00/data/pixart/pixart.htm": [
+                22
+            ]
+        }
+    },
+    "HEX (\"f4f4f4\")": {
+        "<TBD>": {
+            "wled00/data/pixart/pixart.htm": [
+                13
+            ]
+        }
+    },
+    "HST (Hawaii)": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                26
+            ]
+        }
+    },
+    "Hardware setup": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                28
+            ]
+        }
+    },
+    "Height": {
+        "<TBD>": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                24
+            ]
+        }
+    },
+    "Help/About": {
+        "<TBD>": {
+            "wled00/data/pixart/pixart.htm": [
+                33
+            ]
+        }
+    },
+    "Holidays: ": {
+        "<TBD>": {
+            "wled00/data/settings_ui.htm": [
+                21
+            ]
+        }
+    },
+    "Home Assistant": {
+        "<TBD>": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                12
+            ]
+        }
+    },
+    "Home Assistant YAML": {
+        "<TBD>": {
+            "wled00/data/pixart/pixart.htm": [
+                11
+            ]
+        }
+    },
+    "Horizontal": {
+        "<TBD>": {
+            "wled00/data/settings_2D.htm": [
+                21
+            ]
+        }
+    },
+    "Hostname": {
+        "<TBD>": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                2
+            ]
+        }
+    },
+    "Hue": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                13
+            ]
+        }
+    },
+    "Hybrid (\"f0f0f0\",10, 17, \"f4f4f4\")": {
+        "<TBD>": {
+            "wled00/data/pixart/pixart.htm": [
+                16
+            ]
+        }
+    },
+    "IR info": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                55
+            ]
+        }
+    },
+    "IST (India)": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                22
+            ]
+        }
+    },
+    "Images upload to WLED": {
+        "<TBD>": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                34
+            ]
+        }
+    },
+    "Imma firin ma lazer (if it has DMX support)": {
+        "<TBD>": {
+            "wled00/data/settings_dmx.htm": [
+                4
+            ]
+        }
+    },
+    "Index": {
+        "<TBD>": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                7
+            ]
+        }
+    },
+    "Individual": {
+        "<TBD>": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                6
+            ]
+        }
+    },
+    "Info": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                8
+            ],
+            "wled00/data/simple.htm": [
+                5
+            ]
+        }
+    },
+    "Instance List": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                47
+            ],
+            "wled00/data/simple.htm": [
+                26
+            ],
+            "wled00/data/settings_sync.htm": [
+                25
+            ]
+        }
+    },
+    "JSON file: ": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                53
+            ]
+        }
+    },
+    "JSON remote": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                51
+            ]
+        }
+    },
+    "JST (KST)": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                18
+            ]
+        }
+    },
+    "Just trying this out in AP mode?": {
+        "<TBD>": {
+            "wled00/data/welcome.htm": [
+                7
+            ]
+        }
+    },
+    "KIT-VE": {
+        "<TBD>": {
+            "wled00/data/settings_wifi.htm": [
+                46
+            ]
+        }
+    },
+    "Keep at 115200 to use Improv. Some boards may not support high rates.": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                107
+            ]
+        }
+    },
+    "Keep at default if you are unsure about your type of LEDs.": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                27
+            ]
+        }
+    },
+    "Kelvin/Temperature": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                16
+            ]
+        }
+    },
+    "LED & Hardware setup": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                4
+            ]
+        }
+    },
+    "LED Preferences": {
+        "<TBD>": {
+            "wled00/data/settings.htm": [
+                4
+            ]
+        }
+    },
+    "LED Settings": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                1
+            ]
+        }
+    },
+    "LED outputs:": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                29
+            ]
+        }
+    },
+    "LED panel layout": {
+        "<TBD>": {
+            "wled00/data/settings_2D.htm": [
+                34
+            ]
+        }
+    },
+    "Led setup:": {
+        "<TBD>": {
+            "wled00/data/pixart/pixart.htm": [
+                4
+            ]
+        }
+    },
+    "LedFx": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                41
+            ]
+        }
+    },
+    "Left": {
+        "<TBD>": {
+            "wled00/data/settings_2D.htm": [
+                18
+            ]
+        }
+    },
+    "Licensed under the ": {
+        "<TBD>": {
+            "wled00/data/settings_sec.htm": [
+                36
+            ]
+        }
+    },
+    "Linear (always wrap)": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                102
+            ]
+        }
+    },
+    "Linear (never wrap)": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                103
+            ]
+        }
+    },
+    "Linear (wrap if moving)": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                101
+            ]
+        }
+    },
+    "Listen for events over ESP-NOW": {
+        "<TBD>": {
+            "wled00/data/settings_wifi.htm": [
+                35
+            ]
+        }
+    },
+    "Loading WLED UI...": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                2
+            ],
+            "wled00/data/simple.htm": [
+                2
+            ]
+        }
+    },
+    "Loading settings...": {
+        "<TBD>": {
+            "wled00/data/settings_ui.htm": [
+                14
+            ],
+            "wled00/data/settings_um.htm": [
+                18
+            ]
+        }
+    },
+    "Loading...": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                40,
+                45,
+                54,
+                56
+            ],
+            "wled00/data/simple.htm": [
+                23,
+                32
+            ]
+        }
+    },
+    "MIT license": {
+        "<TBD>": {
+            "wled00/data/settings_sec.htm": [
+                37
+            ]
+        }
+    },
+    "MQTT": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                74
+            ]
+        }
+    },
+    "MQTT and Hue sync all connect to external hosts!": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                70
+            ]
+        }
+    },
+    "MQTT info": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                89
+            ]
+        }
+    },
+    "MX-CST": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                29
+            ]
+        }
+    },
+    "Macro presets": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                54
+            ]
+        }
+    },
+    "Macros have moved!": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                55
+            ]
+        }
+    },
+    "Made with ": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                50
+            ],
+            "wled00/data/simple.htm": [
+                28
+            ]
+        }
+    },
+    "Manual OTA Update": {
+        "<TBD>": {
+            "wled00/data/settings_sec.htm": [
+                18
+            ]
+        }
+    },
+    "Matrix Generator ": {
+        "<TBD>": {
+            "wled00/data/settings_2D.htm": [
+                8
+            ]
+        }
+    },
+    "Max": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                96
+            ]
+        }
+    },
+    "Max no of colors/JSON:": {
+        "<TBD>": {
+            "wled00/data/pixart/pixart.htm": [
+                20
+            ]
+        }
+    },
+    "Misc Settings": {
+        "<TBD>": {
+            "wled00/data/settings_sec.htm": [
+                1
+            ]
+        }
+    },
+    "Multi RGB": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                54
+            ]
+        }
+    },
+    "Multi RGBW": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                56
+            ]
+        }
+    },
+    "N": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                36
+            ]
+        }
+    },
+    "N/A": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                70
+            ]
+        }
+    },
+    "NOVT (Novosibirsk)": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                27
+            ]
+        }
+    },
+    "NZST/NZDT": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                20
+            ]
+        }
+    },
+    "Network DMX input": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                31
+            ]
+        }
+    },
+    "Never (not recommended)": {
+        "<TBD>": {
+            "wled00/data/settings_wifi.htm": [
+                26
+            ]
+        }
+    },
+    "Next steps:": {
+        "<TBD>": {
+            "wled00/data/welcome.htm": [
+                4
+            ]
+        }
+    },
+    "No connection after boot": {
+        "<TBD>": {
+            "wled00/data/settings_wifi.htm": [
+                23
+            ]
+        }
+    },
+    "No usermod custom web page set.": {
+        "<TBD>": {
+            "wled00/data/usermod.htm": [
+                1
+            ]
+        }
+    },
+    "Nodes": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                9
+            ],
+            "wled00/data/simple.htm": [
+                6
+            ]
+        }
+    },
+    "None": {
+        "<TBD>": {
+            "wled00/data/settings_wifi.htm": [
+                40,
+                42
+            ],
+            "wled00/data/settings_leds.htm": [
+                92
+            ]
+        }
+    },
+    "None (not recommended)": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                104
+            ]
+        }
+    },
+    "North Korea": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                21
+            ]
+        }
+    },
+    "Not found": {
+        "<TBD>": {
+            "wled00/data/404.htm": [
+                1
+            ]
+        }
+    },
+    "Note: Gap file is a ": {
+        "<TBD>": {
+            "wled00/data/settings_2D.htm": [
+                37
+            ]
+        }
+    },
+    "Number of fixtures is taken from LED config page": {
+        "<TBD>": {
+            "wled00/data/settings_dmx.htm": [
+                8
+            ]
+        }
+    },
+    "Orange": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                63
+            ],
+            "wled00/data/simple.htm": [
+                36
+            ]
+        }
+    },
+    "Output": {
+        "<TBD>": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                9
+            ]
+        }
+    },
+    "Output format:": {
+        "<TBD>": {
+            "wled00/data/pixart/pixart.htm": [
+                8
+            ]
+        }
+    },
+    "Override once": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                59
+            ]
+        }
+    },
+    "Override until reboot": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                60
+            ]
+        }
+    },
+    "PC Mode": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                11
+            ]
+        }
+    },
+    "PIN required": {
+        "<TBD>": {
+            "wled00/data/settings_pin.htm": [
+                1
+            ]
+        }
+    },
+    "PKT (Pakistan)": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                30
+            ]
+        }
+    },
+    "Panel set-up": {
+        "<TBD>": {
+            "wled00/data/settings_2D.htm": [
+                30
+            ]
+        }
+    },
+    "Pattern": {
+        "<TBD>": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                4
+            ]
+        }
+    },
+    "Peek": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                7
+            ]
+        }
+    },
+    "Philips Hue": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                90
+            ]
+        }
+    },
+    "Pink": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                68
+            ],
+            "wled00/data/simple.htm": [
+                41
+            ]
+        }
+    },
+    "Pixel Magic Tool": {
+        "<TBD>": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                1
+            ]
+        }
+    },
+    "Please do not close or refresh the page :)": {
+        "<TBD>": {
+            "wled00/data/update.htm": [
+                9
+            ]
+        }
+    },
+    "Please enter a 4 digit number": {
+        "<TBD>": {
+            "wled00/data/settings_sec.htm": [
+                42
+            ]
+        }
+    },
+    "Please enter settings PIN code": {
+        "<TBD>": {
+            "wled00/data/settings_pin.htm": [
+                2
+            ]
+        }
+    },
+    "Populate": {
+        "<TBD>": {
+            "wled00/data/settings_2D.htm": [
+                29
+            ]
+        }
+    },
+    "Port: ": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                36
+            ]
+        }
+    },
+    "Power": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                4
+            ],
+            "wled00/data/simple.htm": [
+                4
+            ]
+        }
+    },
+    "Preset": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                57
+            ]
+        }
+    },
+    "Preset Name": {
+        "<TBD>": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                3
+            ]
+        }
+    },
+    "Presets": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                39,
+                44
+            ],
+            "wled00/data/simple.htm": [
+                17
+            ]
+        }
+    },
+    "Presets now also can be used as macros to save both JSON and HTTP API commands.": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                56
+            ]
+        }
+    },
+    "Press the pushlink button on the bridge, after that save this page!": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                101
+            ]
+        }
+    },
+    "Pressing Populate will create LED panel layout with pre-arranged matrix.": {
+        "<TBD>": {
+            "wled00/data/settings_2D.htm": [
+                24
+            ]
+        }
+    },
+    "Quick Load": {
+        "<TBD>": {
+            "wled00/data/simple.htm": [
+                10
+            ]
+        }
+    },
+    "QuinLED-Dig-Octa & T-ETH-POE": {
+        "<TBD>": {
+            "wled00/data/settings_wifi.htm": [
+                47
+            ]
+        }
+    },
+    "QuinLED-ESP32": {
+        "<TBD>": {
+            "wled00/data/settings_wifi.htm": [
+                48
+            ]
+        }
+    },
+    "R": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                22
+            ],
+            "wled00/data/simple.htm": [
+                12
+            ]
+        }
+    },
+    "RGB channels": {
+        "<TBD>": {
+            "wled00/data/simple.htm": [
+                13
+            ]
+        }
+    },
+    "Random": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                72
+            ],
+            "wled00/data/simple.htm": [
+                45
+            ]
+        }
+    },
+    "Random BG image": {
+        "<TBD>": {
+            "wled00/data/settings_ui.htm": [
+                19
+            ]
+        }
+    },
+    "Random Cycle": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                76
+            ]
+        }
+    },
+    "Range (10, 17, \"f4f4f4\")": {
+        "<TBD>": {
+            "wled00/data/pixart/pixart.htm": [
+                17
+            ]
+        }
+    },
+    "Realtime": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                28
+            ]
+        }
+    },
+    "Reboot WLED": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                49
+            ],
+            "wled00/data/simple.htm": [
+                27
+            ]
+        }
+    },
+    "Reboot required to apply changes. ": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                24,
+                88
+            ]
+        }
+    },
+    "Reboot required.": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                39
+            ]
+        }
+    },
+    "Receive:": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                10
+            ]
+        }
+    },
+    "Recommended power supply for brightest white:": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                6
+            ]
+        }
+    },
+    "Red": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                62
+            ],
+            "wled00/data/simple.htm": [
+                35
+            ]
+        }
+    },
+    "Red channel": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                17
+            ]
+        }
+    },
+    "Refresh": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                46,
+                55
+            ],
+            "wled00/data/simple.htm": [
+                24,
+                33
+            ]
+        }
+    },
+    "Remote disabled": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                43
+            ]
+        }
+    },
+    "Reset segments": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                36
+            ]
+        }
+    },
+    "Resize Image": {
+        "<TBD>": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                22
+            ]
+        }
+    },
+    "Restore configuration": {
+        "<TBD>": {
+            "wled00/data/settings_sec.htm": [
+                25
+            ]
+        }
+    },
+    "Restore presets": {
+        "<TBD>": {
+            "wled00/data/settings_sec.htm": [
+                22
+            ]
+        }
+    },
+    "Right": {
+        "<TBD>": {
+            "wled00/data/settings_2D.htm": [
+                19
+            ]
+        }
+    },
+    "S": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                37
+            ]
+        }
+    },
+    "Sample Message.": {
+        "<TBD>": {
+            "wled00/data/msg.htm": [
+                2
+            ]
+        }
+    },
+    "Saturation": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                14
+            ]
+        }
+    },
+    "Save": {
+        "<TBD>": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                40
+            ],
+            "wled00/data/settings_leds.htm": [
+                3,
+                110
+            ],
+            "wled00/data/settings_dmx.htm": [
+                3,
+                19
+            ],
+            "wled00/data/settings_ui.htm": [
+                3,
+                24
+            ],
+            "wled00/data/settings_sync.htm": [
+                3,
+                109
+            ],
+            "wled00/data/settings_time.htm": [
+                3,
+                74
+            ],
+            "wled00/data/settings_sec.htm": [
+                3,
+                41
+            ],
+            "wled00/data/settings_um.htm": [
+                3,
+                20
+            ],
+            "wled00/data/settings_2D.htm": [
+                3,
+                42
+            ]
+        }
+    },
+    "Save & Connect": {
+        "<TBD>": {
+            "wled00/data/settings_wifi.htm": [
+                3,
+                54
+            ]
+        }
+    },
+    "Scan": {
+        "<TBD>": {
+            "wled00/data/settings_wifi.htm": [
+                6
+            ]
+        }
+    },
+    "Security & Update setup": {
+        "<TBD>": {
+            "wled00/data/settings_sec.htm": [
+                4
+            ]
+        }
+    },
+    "Security & Updates": {
+        "<TBD>": {
+            "wled00/data/settings.htm": [
+                11
+            ]
+        }
+    },
+    "Segment Id": {
+        "<TBD>": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                17
+            ]
+        }
+    },
+    "Segments": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                43
+            ]
+        }
+    },
+    "Select a choice": {
+        "<TBD>": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                5,
+                10
+            ]
+        }
+    },
+    "Select image": {
+        "<TBD>": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                36
+            ]
+        }
+    },
+    "Send:": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                9
+            ]
+        }
+    },
+    "Serg74-ETH32": {
+        "<TBD>": {
+            "wled00/data/settings_wifi.htm": [
+                49
+            ]
+        }
+    },
+    "Serial": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                105
+            ]
+        }
+    },
+    "Serpentine, first row left to right ->": {
+        "<TBD>": {
+            "wled00/data/pixart/pixart.htm": [
+                7
+            ]
+        }
+    },
+    "Serpentine, first row right to left <-": {
+        "<TBD>": {
+            "wled00/data/pixart/pixart.htm": [
+                6
+            ]
+        }
+    },
+    "Settings on this page are only changable if OTA lock is disabled!": {
+        "<TBD>": {
+            "wled00/data/settings_sec.htm": [
+                12
+            ]
+        }
+    },
+    "Single (\"f4f4f4\")": {
+        "<TBD>": {
+            "wled00/data/pixart/pixart.htm": [
+                18
+            ]
+        }
+    },
+    "Single DRGB": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                49
+            ]
+        }
+    },
+    "Single RGB": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                48
+            ]
+        }
+    },
+    "Software Update": {
+        "<TBD>": {
+            "wled00/data/settings_sec.htm": [
+                17
+            ]
+        }
+    },
+    "Solid": {
+        "<TBD>": {
+            "wled00/data/simple.htm": [
+                21
+            ]
+        }
+    },
+    "Solid color": {
+        "<TBD>": {
+            "wled00/data/simple.htm": [
+                11
+            ]
+        }
+    },
+    "Sorry, WLED UI needs JavaScript!": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                3
+            ],
+            "wled00/data/simple.htm": [
+                3
+            ]
+        }
+    },
+    "Submit": {
+        "<TBD>": {
+            "wled00/data/settings_pin.htm": [
+                4
+            ]
+        }
+    },
+    "Sunrise": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                87
+            ]
+        }
+    },
+    "Sync": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                6
+            ]
+        }
+    },
+    "Sync Interfaces": {
+        "<TBD>": {
+            "wled00/data/settings.htm": [
+                8
+            ]
+        }
+    },
+    "Sync Settings": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                1
+            ]
+        }
+    },
+    "Sync groups": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                8
+            ]
+        }
+    },
+    "Sync setup": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                4
+            ]
+        }
+    },
+    "Target segment id:": {
+        "<TBD>": {
+            "wled00/data/pixart/pixart.htm": [
+                25
+            ]
+        }
+    },
+    "Thank you for installing my application!": {
+        "<TBD>": {
+            "wled00/data/welcome.htm": [
+                3
+            ]
+        }
+    },
+    "The MQTT credentials are sent over an unsecured connection.": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                79
+            ]
+        }
+    },
+    "The following UI customization settings are unique both to the WLED device and this browser.": {
+        "<TBD>": {
+            "wled00/data/settings_ui.htm": [
+                11
+            ]
+        }
+    },
+    "This firmware build does not include Alexa support.": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                65
+            ]
+        }
+    },
+    "This firmware build does not include MQTT support.": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                75
+            ]
+        }
+    },
+    "This firmware build does not include Philips Hue support.": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                91
+            ]
+        }
+    },
+    "This firmware build does not include simplified UI support.": {
+        "<TBD>": {
+            "wled00/data/settings_ui.htm": [
+                9
+            ]
+        }
+    },
+    "This will cause overlap.": {
+        "<TBD>": {
+            "wled00/data/settings_dmx.htm": [
+                14
+            ]
+        }
+    },
+    "This will disable the LED data output to DMX configurable below": {
+        "<TBD>": {
+            "wled00/data/settings_dmx.htm": [
+                7
+            ]
+        }
+    },
+    "Time & Macros": {
+        "<TBD>": {
+            "wled00/data/settings.htm": [
+                9
+            ]
+        }
+    },
+    "Time Settings": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                1
+            ]
+        }
+    },
+    "Time setup": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                4
+            ]
+        }
+    },
+    "Time-controlled presets": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                72
+            ]
+        }
+    },
+    "Timed light": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                79
+            ]
+        }
+    },
+    "Timer": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                5
+            ]
+        }
+    },
+    "To the controls!": {
+        "<TBD>": {
+            "wled00/data/welcome.htm": [
+                8
+            ]
+        }
+    },
+    "Top": {
+        "<TBD>": {
+            "wled00/data/settings_2D.htm": [
+                16
+            ]
+        }
+    },
+    "Transition": {
+        "<TBD>": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                28
+            ]
+        }
+    },
+    "Transition: ": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                37
+            ]
+        }
+    },
+    "Transitions": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                70
+            ]
+        }
+    },
+    "Transparent Image": {
+        "<TBD>": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                21
+            ]
+        }
+    },
+    "TwilightLord-ESP32": {
+        "<TBD>": {
+            "wled00/data/settings_wifi.htm": [
+                50
+            ]
+        }
+    },
+    "UI Appearance": {
+        "<TBD>": {
+            "wled00/data/settings_ui.htm": [
+                15
+            ]
+        }
+    },
+    "UI Settings": {
+        "<TBD>": {
+            "wled00/data/settings_ui.htm": [
+                1
+            ]
+        }
+    },
+    "US-AZ": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                15
+            ]
+        }
+    },
+    "US-CST/CDT": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                13
+            ]
+        }
+    },
+    "US-EST/EDT": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                12
+            ]
+        }
+    },
+    "US-MST/MDT": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                14
+            ]
+        }
+    },
+    "US-PST/PDT": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                16
+            ]
+        }
+    },
+    "Unique Id": {
+        "<TBD>": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                15
+            ]
+        }
+    },
+    "Update WLED": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                48
+            ]
+        }
+    },
+    "Update!": {
+        "<TBD>": {
+            "wled00/data/update.htm": [
+                6
+            ]
+        }
+    },
+    "Updating...": {
+        "<TBD>": {
+            "wled00/data/update.htm": [
+                8
+            ]
+        }
+    },
+    "Upload": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                54
+            ],
+            "wled00/data/settings_sec.htm": [
+                23,
+                26
+            ],
+            "wled00/data/settings_2D.htm": [
+                36
+            ]
+        }
+    },
+    "Use 0 for the default action instead of a preset": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                58
+            ]
+        }
+    },
+    "User Interface": {
+        "<TBD>": {
+            "wled00/data/settings.htm": [
+                6
+            ]
+        }
+    },
+    "Usermod Settings": {
+        "<TBD>": {
+            "wled00/data/settings_um.htm": [
+                1
+            ]
+        }
+    },
+    "Usermod Setup": {
+        "<TBD>": {
+            "wled00/data/settings_um.htm": [
+                6
+            ]
+        }
+    },
+    "Usermods": {
+        "<TBD>": {
+            "wled00/data/settings.htm": [
+                10
+            ]
+        }
+    },
+    "Value/Brightness": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                15
+            ]
+        }
+    },
+    "Values above ": {
+        "<TBD>": {
+            "wled00/data/settings_2D.htm": [
+                25
+            ]
+        }
+    },
+    "Version 1.0.8": {
+        "<TBD>": {
+            "wled00/data/pixart/pixart.htm": [
+                32
+            ]
+        }
+    },
+    "Vertical": {
+        "<TBD>": {
+            "wled00/data/settings_2D.htm": [
+                22
+            ]
+        }
+    },
+    "W": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                40
+            ]
+        }
+    },
+    "W : ": {
+        "<TBD>": {
+            "wled00/data/pixart/pixart.htm": [
+                27
+            ]
+        }
+    },
+    "WARNING: Channel gap is lower than channels per fixture.": {
+        "<TBD>": {
+            "wled00/data/settings_dmx.htm": [
+                13
+            ]
+        }
+    },
+    "WESP32": {
+        "<TBD>": {
+            "wled00/data/settings_wifi.htm": [
+                51
+            ]
+        }
+    },
+    "WLED": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                1
+            ],
+            "wled00/data/simple.htm": [
+                1
+            ],
+            "wled00/data/settings_sec.htm": [
+                31
+            ]
+        }
+    },
+    "WLED Broadcast": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                5
+            ]
+        }
+    },
+    "WLED Custom Palette Editor": {
+        "<TBD>": {
+            "wled00/data/cpal/cpal.htm": [
+                1,
+                2
+            ]
+        }
+    },
+    "WLED JSON": {
+        "<TBD>": {
+            "wled00/data/pixart/pixart.htm": [
+                9
+            ],
+            "wled00/data/pxmagic/pxmagic.htm": [
+                11
+            ]
+        }
+    },
+    "WLED Live Preview": {
+        "<TBD>": {
+            "wled00/data/liveview.htm": [
+                1
+            ],
+            "wled00/data/liveviewws2D.htm": [
+                1
+            ]
+        }
+    },
+    "WLED Message": {
+        "<TBD>": {
+            "wled00/data/msg.htm": [
+                1
+            ]
+        }
+    },
+    "WLED Pixel Art Converter": {
+        "<TBD>": {
+            "wled00/data/pixart/pixart.htm": [
+                1
+            ]
+        }
+    },
+    "WLED Settings": {
+        "<TBD>": {
+            "wled00/data/settings.htm": [
+                1
+            ]
+        }
+    },
+    "WLED Software Update": {
+        "<TBD>": {
+            "wled00/data/update.htm": [
+                2
+            ]
+        }
+    },
+    "WLED Update": {
+        "<TBD>": {
+            "wled00/data/update.htm": [
+                1
+            ]
+        }
+    },
+    "WLED community": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                52
+            ],
+            "wled00/data/simple.htm": [
+                30
+            ]
+        }
+    },
+    "WLED instances": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                53
+            ],
+            "wled00/data/simple.htm": [
+                31
+            ]
+        }
+    },
+    "WS2815 (12mA)": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                23
+            ]
+        }
+    },
+    "WT32-ETH01": {
+        "<TBD>": {
+            "wled00/data/settings_wifi.htm": [
+                52
+            ]
+        }
+    },
+    "Wait and set": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                84
+            ]
+        }
+    },
+    "Warm White": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                65
+            ],
+            "wled00/data/simple.htm": [
+                38
+            ]
+        }
+    },
+    "Web Setup": {
+        "<TBD>": {
+            "wled00/data/settings_ui.htm": [
+                6
+            ]
+        }
+    },
+    "Welcome to WLED!": {
+        "<TBD>": {
+            "wled00/data/welcome.htm": [
+                2
+            ]
+        }
+    },
+    "Welcome!": {
+        "<TBD>": {
+            "wled00/data/welcome.htm": [
+                1
+            ]
+        }
+    },
+    "White": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                66
+            ],
+            "wled00/data/simple.htm": [
+                39
+            ]
+        }
+    },
+    "White balance": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                21
+            ],
+            "wled00/data/simple.htm": [
+                15
+            ]
+        }
+    },
+    "White channel": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                20
+            ],
+            "wled00/data/simple.htm": [
+                14
+            ]
+        }
+    },
+    "White management": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                88
+            ]
+        }
+    },
+    "Why would you? ": {
+        "<TBD>": {
+            "wled00/data/settings_ui.htm": [
+                17
+            ]
+        }
+    },
+    "WiFi Settings": {
+        "<TBD>": {
+            "wled00/data/settings_wifi.htm": [
+                1
+            ]
+        }
+    },
+    "WiFi Setup": {
+        "<TBD>": {
+            "wled00/data/settings.htm": [
+                3
+            ]
+        }
+    },
+    "WiFi settings": {
+        "<TBD>": {
+            "wled00/data/welcome.htm": [
+                6
+            ]
+        }
+    },
+    "WiFi setup": {
+        "<TBD>": {
+            "wled00/data/settings_wifi.htm": [
+                4
+            ]
+        }
+    },
+    "Width": {
+        "<TBD>": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                23
+            ]
+        }
+    },
+    "Wireless Remote": {
+        "<TBD>": {
+            "wled00/data/settings_wifi.htm": [
+                34
+            ]
+        }
+    },
+    "Yellow": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                64
+            ],
+            "wled00/data/simple.htm": [
+                37
+            ]
+        }
+    },
+    "You can find the bridge IP and the light number in the 'About' section of the hue app.": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                92
+            ]
+        }
+    },
+    "['ffffff']": {
+        "<TBD>": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                44
+            ]
+        }
+    },
+    "[0, 'ffffff']": {
+        "<TBD>": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                45
+            ]
+        }
+    },
+    "[0, 5, 'ffffff']": {
+        "<TBD>": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                46
+            ]
+        }
+    },
+    "and ": {
+        "<TBD>": {
+            "wled00/data/settings_sync.htm": [
+                14
+            ]
+        }
+    },
+    "double": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                69
+            ]
+        }
+    },
+    "info": {
+        "<TBD>": {
+            "wled00/data/settings_dmx.htm": [
+                12
+            ]
+        }
+    },
+    "long": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                67
+            ]
+        }
+    },
+    "off->on": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                68
+            ]
+        }
+    },
+    "on->off": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                66
+            ]
+        }
+    },
+    "or ": {
+        "<TBD>": {
+            "wled00/data/pixart/pixart.htm": [
+                30
+            ]
+        }
+    },
+    "push": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                63
+            ]
+        }
+    },
+    "sec": {
+        "<TBD>": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                27,
+                29
+            ]
+        }
+    },
+    "short": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                65
+            ]
+        }
+    },
+    "st": {
+        "<TBD>": {
+            "wled00/data/settings_2D.htm": [
+                14
+            ]
+        }
+    },
+    "switch": {
+        "<TBD>": {
+            "wled00/data/settings_time.htm": [
+                64
+            ]
+        }
+    },
+    "transparent pixels": {
+        "<TBD>": {
+            "wled00/data/pxmagic/pxmagic.htm": [
+                32
+            ]
+        }
+    },
+    "unknown": {
+        "<TBD>": {
+            "wled00/data/settings_leds.htm": [
+                18
+            ],
+            "wled00/data/settings_time.htm": [
+                34
+            ]
+        }
+    },
+    "will not": {
+        "<TBD>": {
+            "wled00/data/settings_2D.htm": [
+                26
+            ]
+        }
+    },
+    "\u00a0s": {
+        "<TBD>": {
+            "wled00/data/index.htm": [
+                38
+            ]
+        }
+    },
+    "\u26a0 Could not access local storage. Make sure it is enabled in your browser.": {
+        "<TBD>": {
+            "wled00/data/settings_ui.htm": [
+                5
+            ]
+        }
+    },
+    "\u26a0 Could not load configuration.": {
+        "<TBD>": {
+            "wled00/data/settings_um.htm": [
+                5
+            ]
+        }
+    },
+    "\u26a0 Restoring presets/configuration will OVERWRITE your current presets/configuration.": {
+        "<TBD>": {
+            "wled00/data/settings_sec.htm": [
+                27
+            ]
+        }
+    },
+    "\u26a0 Unencrypted transmission. An attacker on the same network can intercept form data!": {
+        "<TBD>": {
+            "wled00/data/settings_sec.htm": [
+                16
+            ]
+        }
+    },
+    "\u26a0 Unencrypted transmission. Be prudent when selecting PIN, do NOT use your banking, door, SIM, etc. pin!": {
+        "<TBD>": {
+            "wled00/data/settings_sec.htm": [
+                6
+            ]
+        }
+    },
+    "\u2714 Configuration saved!": {
+        "<TBD>": {
+            "wled00/data/settings_um.htm": [
+                4
+            ]
+        }
+    },
+    "\u2714 Local UI settings saved!": {
+        "<TBD>": {
+            "wled00/data/settings_ui.htm": [
+                4
+            ]
+        }
+    }
+}
