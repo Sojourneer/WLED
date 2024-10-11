@@ -1,0 +1,19 @@
+OK * cache the original UI files and use if they exist (since L12N will overwrite them)
+OK ** Tweak to keep the leading and trailing \n \t etc.
+    a. Keep them out of the phrases, and let the localization replace only the phrase part
+       OR
+    OK b. Leave them in the phrases, and get L12N to put them in
+       after googletrans strips them out.
+       ** This alternative is more flexible.
+
+* L12N
+  * Review grouping logic, and where it should be done
+* applyLang
+  OK * parsing
+  OK * shaping lang json
+     * do the replacement and write it out
+
+Cdata.js
+OK * Figure out the impact of templatizing on cdata.js replacement code
+* Consider rewriting applyLang in js, to facilitate integration with cdata.js at future date
+

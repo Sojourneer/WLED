@@ -1,6 +1,7 @@
 import json
 from googletrans import Translator
 import itertools
+import re
 
 target_lang = "ja"
 translator = Translator()
@@ -29,11 +30,18 @@ flat1 = sorted(flat,key=cookedKey)
 
 cooked = {}
 cnt = 0
+surroundWS = re.compile("(?s)^([\t\n ]*+)(.*[^\t\n ])([\t\n ]*)$")
+
 for text, textg in itertools.groupby(flat1, key=cookedKey):
     if target_lang == None:
         translation = "<TBD>"
     else:
-        translation = translator.translate(text, sr="en", dest=target_lang).text
+        m = surroundWS.match(text)
+        if m == None:
+            print("Mismatch '{}'".format(text))
+            translation = text
+        else:
+            translation = m.group(1) + translator.translate(m.group(2), sr="en", dest=target_lang).text + m.group(3)
 
     entry = {}
     entry2 = {}
