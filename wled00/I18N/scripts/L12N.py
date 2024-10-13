@@ -1,9 +1,27 @@
+import argparse
+
 import json
 from googletrans import Translator
 import itertools
 import re
 
-target_lang = "ja"
+parser = argparse.ArgumentParser(
+                    prog='L12N',
+                    description='Creates translated phrase file for specified language from data.json'
+)
+
+def LangFile(la):
+    if(len(la) != 2):
+        raise argparse.ArgumentTypeError("Expecting 2 letter code!")
+    return la
+
+parser.add_argument('-l', '--lang', help='Two letter language code', type=LangFile, required=True)      # option that takes a value
+parser.add_argument('-v', '--verbose',
+                    action='store_true')  # on/off flag
+
+args = parser.parse_args()
+
+target_lang = args.lang
 translator = Translator()
 
 with open("wled00/I18N/scripts/data.json", "r") as f:
