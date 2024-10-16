@@ -289,6 +289,52 @@
             "sourceLine": 170
         }
     },
+    "wled00/data/edit.htm": {
+        "1": {
+            "content": "ESP8266 SPIFFS File Editor",
+            "sourceLine": 8
+        },
+        "2": {
+            "content": "Upload?",
+            "sourceLine": 587
+        },
+        "3": {
+            "content": "Create",
+            "sourceLine": 588
+        },
+        "4": {
+            "content": " Save ",
+            "sourceLine": 589
+        },
+        "5": {
+            "content": "Preview",
+            "sourceLine": 590
+        },
+        "6": {
+            "content": "Edit",
+            "sourceLine": 591
+        },
+        "7": {
+            "content": "Download",
+            "sourceLine": 592
+        },
+        "8": {
+            "content": "Delete",
+            "sourceLine": 593
+        },
+        "9": {
+            "content": "Create",
+            "sourceLine": 595
+        },
+        "10": {
+            "content": "Create",
+            "sourceLine": 596
+        },
+        "11": {
+            "content": "Create",
+            "sourceLine": 597
+        }
+    },
     "wled00/data/simple.htm": {
         "1": {
             "content": "WLED",

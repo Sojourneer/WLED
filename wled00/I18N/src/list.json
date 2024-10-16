@@ -1,5 +1,6 @@
 [
   "wled00/data/index.htm",
+  "wled00/data/edit.htm",
   "wled00/data/simple.htm",
   "wled00/data/pixart/pixart.htm",
   "wled00/data/cpal/cpal.htm",

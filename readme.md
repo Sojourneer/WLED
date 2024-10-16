@@ -9,6 +9,10 @@
   <a href="https://gitpod.io/#https://github.com/Aircoookie/WLED"><img src="https://img.shields.io/badge/Gitpod-ready--to--code-blue?style=flat-square&logo=gitpod"></a>
 
   </p>
+<p>
+This fork is where I work on my usermods and etc. to WLED.  The major interesting feature, a work-in-progress, is a static build-time translation apparatus for WLED.  When complete, the translation feature wil be moved to a clean fork.
+</p>
+
 
 # Welcome to my project WLED! ✨
 
