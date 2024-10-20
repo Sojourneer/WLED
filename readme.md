@@ -11,6 +11,7 @@
   </p>
 <p>
 This fork is where I work on my usermods and etc. to WLED.  The major interesting feature, a work-in-progress, is a static build-time translation apparatus for WLED.  When complete, the translation feature wil be moved to a clean fork.
+Details can be found in wled/I18N.
 </p>
 
 
