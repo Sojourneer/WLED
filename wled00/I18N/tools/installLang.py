@@ -83,7 +83,6 @@ for target_lang in args.lang:
                     fnE = t["for"][fn] # [3, 1]
                     for line in t["for"][fn]:
                         flat.append({"t": t["translation"], "fn":fn, "line":line})
-            #print("flat",flat)
             
             overrides = {}
             flat = sorted(flat, key=lambda fe: fe["fn"])
@@ -95,11 +94,8 @@ for target_lang in args.lang:
                     overrides[fn] = sortedTranslations[0]
                 else:
                     overrides[fn] = sortedTranslations
-
-                print("sorted",fn,sortedTrans,overrides[fn])
-            
-            print(overrides)
-            optimized[hash] = {"d":translationEntries[0]["translation"], "o":overrides}
+           
+            optimized[hash] = overrides
 
     with open("wled00/I18N/langs/{0}.json".format(target_lang), "w", encoding="utf-8") as f:
         json.dump(optimized, f, indent=4, ensure_ascii=False)
