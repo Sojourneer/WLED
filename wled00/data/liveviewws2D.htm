@@ -1,19 +1,20 @@
 <!DOCTYPE html>
+
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-	<meta charset="utf-8">
-	<meta name="theme-color" content="#222222">
-	<title>WLED Live Preview</title>
-	<style>
+<meta content="width=device-width, initial-scale=1, minimum-scale=1" name="viewport"/>
+<meta charset="utf-8"/>
+<meta content="#222222" name="theme-color"/>
+<title>${8a37e3c3f8460985093ab49528256293f25c6def:WLED Live Preview}</title>
+<style>
 	body {
 		margin: 0;
 	}
 	</style>
-</head>
+<script src="../scripts/localize.js"></script></head>
 <body>
-	<canvas id="canv"></canvas>
-	<script>
+<canvas id="canv"></canvas>
+<script>
 		var c = document.getElementById('canv');
 		var leds = "";
 		var throttled = false;
@@ -80,5 +81,5 @@
 			}
 		});
 	</script>
-</body>
+<div id="I18N:template" style="display:none">wled00/data/liveviewws2D.htm</div></body>
 </html>

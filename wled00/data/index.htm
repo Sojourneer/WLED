@@ -1,343 +1,332 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-	<meta charset="utf-8">
-	<meta name="theme-color" content="#222222">
-	<meta content="yes" name="apple-mobile-web-app-capable">
-	<link rel="shortcut icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAGACGAAAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAAQAAAAEAgGAAAAH/P/YQAAAE1JREFUOI1j/P//PwOxgNGeAUMxE9G6cQCKDWAhpADZ2f8PMjBS3QW08QK20KaZC2gfC9hCnqouoNgARgY7zMxAyNlUdQHlXiAlO2MDAD63EVqNHAe0AAAAAElFTkSuQmCC"/>
-	<title>WLED</title>
-	<link rel="stylesheet" href="index.css">
-</head>
+<meta content="width=device-width, initial-scale=1, minimum-scale=1" name="viewport"/>
+<meta charset="utf-8"/>
+<meta content="#222222" name="theme-color"/>
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAGACGAAAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAAQAAAAEAgGAAAAH/P/YQAAAE1JREFUOI1j/P//PwOxgNGeAUMxE9G6cQCKDWAhpADZ2f8PMjBS3QW08QK20KaZC2gfC9hCnqouoNgARgY7zMxAyNlUdQHlXiAlO2MDAD63EVqNHAe0AAAAAElFTkSuQmCC" rel="shortcut icon"/>
+<title>${594b50096d0342573a7eca51b7e5d59ba3184969:WLED}</title>
+<link href="index.css" rel="stylesheet"/>
+<script src="../scripts/localize.js"></script></head>
 <body onload="onLoad()">
-
-<div id="cv" class="overlay">Loading WLED UI...</div>
-<noscript><div class="overlay" style="opacity:1;">Sorry, WLED UI needs JavaScript!</div></noscript>
+<div class="overlay" id="cv">${a7788ee20cf490b9f543d00b50513599e1bf0b17:Loading WLED UI...}</div>
+<noscript><div class="overlay" style="opacity:1;">${ce9af0076a3ce3b81539f426b03435351b544565:Sorry, WLED UI needs JavaScript!}</div></noscript>
 <div id="bg"></div>
-
 <div class="wrapper" id="top">
-	<div class="tab top">
-		<div class="btnwrap">
-			<button id="buttonPower" onclick="togglePower()" class="tgl"><i class="icons">&#xe08f;</i><p class="tab-label">Power</p></button>
-			<button id="buttonNl" onclick="toggleNl()"><i class="icons">&#xe2a2;</i><p class="tab-label">Timer</p></button>
-			<button id="buttonSync" onclick="toggleSync()"><i class="icons">&#xe116;</i><p class="tab-label">Sync</p></button>
-			<button id="buttonSr" onclick="toggleLiveview()"><i class="icons">&#xe410;</i><p class="tab-label">Peek</p></button>
-			<button id="buttonI" onclick="toggleInfo()"><i class="icons">&#xe066;</i><p class="tab-label">Info</p></button>
-			<button id="buttonNodes" onclick="toggleNodes()"><i class="icons">&#xe22d;</i><p class="tab-label">Nodes</p></button>
-			<button onclick="window.location.href=getURL('/settings');"><i class="icons">&#xe0a2;</i><p class="tab-label">Config</p></button>
-			<button id="buttonPcm" onclick="togglePcMode(true)"><i class="icons">&#xe23d;</i><p class="tab-label">PC Mode</p></button>
-		</div>
-		<div id="briwrap">
-			<p class="hd">Brightness</p>
-			<div class="slider">
-				<i class="icons slider-icon" onclick="tglTheme()" style="transform: translateY(2px);">&#xe2a6;</i>
-				<div class="sliderwrap il">
-					<input id="sliderBri" onchange="setBri()" oninput="updateTrail(this)" max="255" min="1" type="range" value="128" />
-					<div class="sliderdisplay"></div>
-				</div>
-				<output class="sliderbubble"></output>
-			</div>
-		</div>
-		<iframe id="liveview" src="about:blank"></iframe>
-	</div>
+<div class="tab top">
+<div class="btnwrap">
+<button class="tgl" id="buttonPower" onclick="togglePower()"><i class="icons"></i><p class="tab-label">${7548ab52c3d1d595240379937e08f3e95c072312:Power}</p></button>
+<button id="buttonNl" onclick="toggleNl()"><i class="icons"></i><p class="tab-label">${9d9cec22f36fd2bb99d5fe8c4723347bec202ca5:Timer}</p></button>
+<button id="buttonSync" onclick="toggleSync()"><i class="icons"></i><p class="tab-label">${905f63092ff26517a7aa8083857b3c8af9707002:Sync}</p></button>
+<button id="buttonSr" onclick="toggleLiveview()"><i class="icons"></i><p class="tab-label">${b4068697aef264668c8dddfcaa3ac7e474d09fe9:Peek}</p></button>
+<button id="buttonI" onclick="toggleInfo()"><i class="icons"></i><p class="tab-label">${4b631f69842530d659306c8f06dbad594a6b1807:Info}</p></button>
+<button id="buttonNodes" onclick="toggleNodes()"><i class="icons"></i><p class="tab-label">${9e325452c6548fc2449564842660d75ef3b1eb73:Nodes}</p></button>
+<button onclick="window.location.href=getURL('/settings');"><i class="icons"></i><p class="tab-label">${8851142da56fd885ce668a165b33fee7003e858d:Config}</p></button>
+<button id="buttonPcm" onclick="togglePcMode(true)"><i class="icons"></i><p class="tab-label">${bc5d7cf2f8bcb2d7ccdd893258d4ead963c66762:PC Mode}</p></button>
 </div>
-
-<div class ="container">
-	<div id="Colors" class="tabcontent">
-		<div id="picker" class="noslide"></div>
-		<div id="hwrap" class="slider">
-			<div title="Hue" class="sliderwrap il">
-				<input id="sliderH" class="noslide" oninput="fromH()" onchange="setColor(0)" max="359" min="0" type="range" value="0" step="any">
-				<div class="sliderdisplay" style="background: linear-gradient(90deg, #f00 2%, #ff0 19%, #0f0 35%, #0ff 52%, #00f 68%, #f0f 85%, #f00)"></div>
-			</div>
-		</div>
-		<div id="swrap" class="slider">
-			<div title="Saturation" class="sliderwrap il">
-				<input id="sliderS" class="noslide" oninput="fromS()" onchange="setColor(0)" max="100" min="0" type="range" value="100" step="any">
-				<div class="sliderdisplay" style="background: linear-gradient(90deg, #aaa 0%, #f00)"></div>
-			</div>
-		</div>
-		<div id="vwrap" class="slider">
-			<div title="Value/Brightness" class="sliderwrap il">
-				<input id="sliderV" class="noslide" oninput="fromV()" onchange="setColor(0)" max="100" min="0" type="range" value="100" step="any" />
-				<div class="sliderdisplay"></div>
-			</div>
-		</div>
-		<div id="kwrap" class="slider">
-			<div title="Kelvin/Temperature" class="sliderwrap il">
-				<input id="sliderK" class="noslide" oninput="fromK()" onchange="setColor(0)" max="10091" min="1900" type="range" value="6550" />
-				<div class="sliderdisplay"></div>
-			</div>
-		</div>
-		<div id="rgbwrap">
-			<div id="rwrap" class="slider">
-				<div title="Red channel" class="sliderwrap il">
-					<input id="sliderR" class="noslide" oninput="fromRgb()" onchange="setColor(0)" max="255" min="0" type="range" value="128" />
-					<div class="sliderdisplay"></div>
-				</div>
-			</div>
-			<div id="gwrap" class="slider">
-				<div title="Green channel" class="sliderwrap il">
-					<input id="sliderG" class="noslide" oninput="fromRgb()" onchange="setColor(0)" max="255" min="0" type="range" value="128" />
-					<div class="sliderdisplay"></div>
-				</div>
-			</div>
-			<div id="bwrap" class="slider">
-				<div title="Blue channel" class="sliderwrap il">
-					<input id="sliderB" class="noslide" oninput="fromRgb()" onchange="setColor(0)" max="255" min="0" type="range" value="128" />
-					<div class="sliderdisplay"></div>
-				</div>
-			</div>
-		</div>
-		<div id="wwrap" class="slider">
-			<div id="whibri" title="White channel" class="sliderwrap il">
-				<input id="sliderW" class="noslide" oninput="fromW()" onchange="setColor(0)" max="255" min="0" type="range" value="128" />
-				<div class="sliderdisplay"></div>
-			</div>
-		</div>
-		<div id="wbal" class="slider">
-			<div title="White balance" class="sliderwrap il">
-				<input id="sliderA" class="noslide" onchange="setBalance(this.value)" max="255" min="0" type="range" value="128" />
-				<div class="sliderdisplay"></div>
-			</div>
-		</div>
-		<div id="qcs-w">
-			<div class="qcs" onclick="pC('#ff0000');" style="background-color:#ff0000;"></div>
-			<div class="qcs" onclick="pC('#ffa000');" style="background-color:#ffa000;"></div>
-			<div class="qcs" onclick="pC('#ffc800');" style="background-color:#ffc800;"></div>
-			<div class="qcs" onclick="pC('#ffe0a0');" style="background-color:#ffe0a0;"></div>
-			<div class="qcs" onclick="pC('#ffffff');" style="background-color:#ffffff;"></div>
-			<div class="qcs qcsb" onclick="pC('#000000');" style="background-color:#000000;"></div><br>
-			<div class="qcs" onclick="pC('#ff00ff');" style="background-color:#ff00ff;"></div>
-			<div class="qcs" onclick="pC('#0000ff');" style="background-color:#0000ff;"></div>
-			<div class="qcs" onclick="pC('#00ffc8');" style="background-color:#00ffc8;"></div>
-			<div class="qcs" onclick="pC('#08ff00');" style="background-color:#08ff00;"></div>
-			<div class="qcs" onclick="pC('rnd');" title="Random" style="background:linear-gradient(to right, red, orange, yellow, green, blue, purple);transform: translateY(-11px);">R</div>
-		</div>
-		<div id="csl">
-			<button id="csl0" title="Select slot" class="btn" onclick="selectSlot(0);" data-r="0" data-g="0" data-b="0" data-w="0">1</button>
-			<button id="csl1" title="Select slot" class="btn" onclick="selectSlot(1);" data-r="0" data-g="0" data-b="0" data-w="0">2</button>
-			<button id="csl2" title="Select slot" class="btn" onclick="selectSlot(2);" data-r="0" data-g="0" data-b="0" data-w="0">3</button>
-		</div>
-		<p class="labels h" id="cslLabel"></p>
-		<div id="hexw">
-			<i class="icons sel-icon" onclick="tglRgb()">&#xe22d;</i>
-			<input id="hexc" title="Hex RGB" type="text" class="noslide" onkeydown="hexEnter()" autocomplete="off" maxlength="8" />
-			<button id="hexcnf" class="btn btn-xs" onclick="fromHex();"><i class="icons btn-icon">&#xe390;</i></button>
-		</div>
-		<div style="padding: 8px 0;" id="btns">
-			<button class="btn btn-xs" title="File editor" type="button" id="edit" onclick="window.location.href=getURL('/edit')"><i class="icons btn-icon">&#xe2c6;</i></button>
-			<button class="btn btn-xs" title="Pixel Magic Tool" type="button" id="pxmb" onclick="window.location.href=getURL('/pxmagic.htm')"><i class="icons btn-icon">&#xe410;</i></button>
-			<button class="btn btn-xs" title="Add custom palette" type="button" onclick="window.location.href=getURL('/cpal.htm')"><i class="icons btn-icon">&#xe18a;</i></button>
-			<button class="btn btn-xs" title="Remove last custom palette" type="button" id="rmPal" onclick="palettesData=null;localStorage.removeItem('wledPalx');requestJson({rmcpal:true});setTimeout(loadPalettes,250,loadPalettesData);"><i class="icons btn-icon">&#xe037;</i></button>
-		</div>
-		<p class="labels hd" id="pall"><i class="icons sel-icon" onclick="tglHex()">&#xe2b3;</i> Color palette</p>
-		<div id="palw" class="il">
-			<div class="staytop fnd">
-				<input type="text" placeholder="Search" oninput="search(this,'pallist')" onfocus="search(this,'pallist')" />
-				<i class="icons clear-icon" onclick="clean(this)">&#xe38f;</i>
-				<i class="icons search-icon">&#xe0a1;</i>
-			</div>
-			<div id="pallist" class="list">
-				<div class="lstI">
-					<label class="radio schkl" onclick="loadPalettes()">
-						<div class="lstIcontent">
-							<span class="lstIname">
+<div id="briwrap">
+<p class="hd">${e1a2b65df8ed2838f913f965758b2f3fb76bcc19:Brightness}</p>
+<div class="slider">
+<i class="icons slider-icon" onclick="tglTheme()" style="transform: translateY(2px);"></i>
+<div class="sliderwrap il">
+<input id="sliderBri" max="255" min="1" onchange="setBri()" oninput="updateTrail(this)" type="range" value="128"/>
+<div class="sliderdisplay"></div>
+</div>
+<output class="sliderbubble"></output>
+</div>
+</div>
+<iframe id="liveview" src="about:blank"></iframe>
+</div>
+</div>
+<div class="container">
+<div class="tabcontent" id="Colors">
+<div class="noslide" id="picker"></div>
+<div class="slider" id="hwrap">
+<div class="sliderwrap il" data-I18N="title" title="${7e58a6e8d89e8504ad31e135de9b485ad40f05f6:Hue}">
+<input class="noslide" id="sliderH" max="359" min="0" onchange="setColor(0)" oninput="fromH()" step="any" type="range" value="0"/>
+<div class="sliderdisplay" style="background: linear-gradient(90deg, #f00 2%, #ff0 19%, #0f0 35%, #0ff 52%, #00f 68%, #f0f 85%, #f00)"></div>
+</div>
+</div>
+<div class="slider" id="swrap">
+<div class="sliderwrap il" data-I18N="title" title="${20a32bc870bfee27f206695667deec78b1e03803:Saturation}">
+<input class="noslide" id="sliderS" max="100" min="0" onchange="setColor(0)" oninput="fromS()" step="any" type="range" value="100"/>
+<div class="sliderdisplay" style="background: linear-gradient(90deg, #aaa 0%, #f00)"></div>
+</div>
+</div>
+<div class="slider" id="vwrap">
+<div class="sliderwrap il" data-I18N="title" title="${b54ac189eaa9c4ce0424b4b0f8af61c9b434d489:Value/Brightness}">
+<input class="noslide" id="sliderV" max="100" min="0" onchange="setColor(0)" oninput="fromV()" step="any" type="range" value="100">
+<div class="sliderdisplay"></div>
+</input></div>
+</div>
+<div class="slider" id="kwrap">
+<div class="sliderwrap il" data-I18N="title" title="${a8a15d1f6b01cfd7e127dae855a4f7b3a348e3a5:Kelvin/Temperature}">
+<input class="noslide" id="sliderK" max="10091" min="1900" onchange="setColor(0)" oninput="fromK()" type="range" value="6550">
+<div class="sliderdisplay"></div>
+</input></div>
+</div>
+<div id="rgbwrap">
+<div class="slider" id="rwrap">
+<div class="sliderwrap il" data-I18N="title" title="${30a19c0cae9b5ac15c862a852a46b1a18de9b9fd:Red channel}">
+<input class="noslide" id="sliderR" max="255" min="0" onchange="setColor(0)" oninput="fromRgb()" type="range" value="128"/>
+<div class="sliderdisplay"></div>
+</div>
+</div>
+<div class="slider" id="gwrap">
+<div class="sliderwrap il" data-I18N="title" title="${8ba95db22f016f055346dc0b25707f778f7b652a:Green channel}">
+<input class="noslide" id="sliderG" max="255" min="0" onchange="setColor(0)" oninput="fromRgb()" type="range" value="128"/>
+<div class="sliderdisplay"></div>
+</div>
+</div>
+<div class="slider" id="bwrap">
+<div class="sliderwrap il" data-I18N="title" title="${84fa23f84a8f96c7d1d6e3a060deeca81b913af1:Blue channel}">
+<input class="noslide" id="sliderB" max="255" min="0" onchange="setColor(0)" oninput="fromRgb()" type="range" value="128"/>
+<div class="sliderdisplay"></div>
+</div>
+</div>
+</div>
+<div class="slider" id="wwrap">
+<div class="sliderwrap il" data-I18N="title" id="whibri" title="${96b0e8049096ae609c2e125ec24805b4949795f0:White channel}">
+<input class="noslide" id="sliderW" max="255" min="0" onchange="setColor(0)" oninput="fromW()" type="range" value="128"/>
+<div class="sliderdisplay"></div>
+</div>
+</div>
+<div class="slider" id="wbal">
+<div class="sliderwrap il" data-I18N="title" title="${6933fd716ed4f3b8adb6153b3ce1801867404fde:White balance}">
+<input class="noslide" id="sliderA" max="255" min="0" onchange="setBalance(this.value)" type="range" value="128"/>
+<div class="sliderdisplay"></div>
+</div>
+</div>
+<div id="qcs-w">
+<div class="qcs" onclick="pC('#ff0000');" style="background-color:#ff0000;"></div>
+<div class="qcs" onclick="pC('#ffa000');" style="background-color:#ffa000;"></div>
+<div class="qcs" onclick="pC('#ffc800');" style="background-color:#ffc800;"></div>
+<div class="qcs" onclick="pC('#ffe0a0');" style="background-color:#ffe0a0;"></div>
+<div class="qcs" onclick="pC('#ffffff');" style="background-color:#ffffff;"></div>
+<div class="qcs qcsb" onclick="pC('#000000');" style="background-color:#000000;"></div><br/>
+<div class="qcs" onclick="pC('#ff00ff');" style="background-color:#ff00ff;"></div>
+<div class="qcs" onclick="pC('#0000ff');" style="background-color:#0000ff;"></div>
+<div class="qcs" onclick="pC('#00ffc8');" style="background-color:#00ffc8;"></div>
+<div class="qcs" onclick="pC('#08ff00');" style="background-color:#08ff00;"></div>
+<div class="qcs" data-I18N="title" onclick="pC('rnd');" style="background:linear-gradient(to right, red, orange, yellow, green, blue, purple);transform: translateY(-11px);" title="${58d888c08aa561f370e38cee976121532a883d71:Random}">${06576556d1ad802f247cad11ae748be47b70cd9c:R}</div>
+</div>
+<div id="csl">
+<button class="btn" data-I18N="title" data-b="0" data-g="0" data-r="0" data-w="0" id="csl0" onclick="selectSlot(0);" title="${7e018053c795f5424cdb7de740451cc13ab3fc76:Select slot}">1</button>
+<button class="btn" data-I18N="title" data-b="0" data-g="0" data-r="0" data-w="0" id="csl1" onclick="selectSlot(1);" title="${7e018053c795f5424cdb7de740451cc13ab3fc76:Select slot}">2</button>
+<button class="btn" data-I18N="title" data-b="0" data-g="0" data-r="0" data-w="0" id="csl2" onclick="selectSlot(2);" title="${7e018053c795f5424cdb7de740451cc13ab3fc76:Select slot}">3</button>
+</div>
+<p class="labels h" id="cslLabel"></p>
+<div id="hexw">
+<i class="icons sel-icon" onclick="tglRgb()"></i>
+<input autocomplete="off" class="noslide" data-I18N="title" id="hexc" maxlength="8" onkeydown="hexEnter()" title="${0c1e877247a6f4e83632d0e7e613d303093ee9d3:Hex RGB}" type="text"/>
+<button class="btn btn-xs" id="hexcnf" onclick="fromHex();"><i class="icons btn-icon"></i></button>
+</div>
+<div id="btns" style="padding: 8px 0;">
+<button class="btn btn-xs" data-I18N="title" id="edit" onclick="window.location.href=getURL('/edit')" title="${cde41bd017726af47d0dfab35d4e4b7097331ff1:File editor}" type="button"><i class="icons btn-icon"></i></button>
+<button class="btn btn-xs" data-I18N="title" id="pxmb" onclick="window.location.href=getURL('/pxmagic.htm')" title="${565bf8534b47a2475204297cecfe362a33129319:Pixel Magic Tool}" type="button"><i class="icons btn-icon"></i></button>
+<button class="btn btn-xs" data-I18N="title" onclick="window.location.href=getURL('/cpal.htm')" title="${77daea33b17313e2cea0a43191bee27d25eaa8a2:Add custom palette}" type="button"><i class="icons btn-icon"></i></button>
+<button class="btn btn-xs" data-I18N="title" id="rmPal" onclick="palettesData=null;localStorage.removeItem('wledPalx');requestJson({rmcpal:true});setTimeout(loadPalettes,250,loadPalettesData);" title="${93175e306a64c4158659ab10c8bcc06232997a0c:Remove last custom palette}" type="button"><i class="icons btn-icon"></i></button>
+</div>
+<p class="labels hd" id="pall"><i class="icons sel-icon" onclick="tglHex()"></i><span>${ade1956dc45b87c2bc4bacad69b3fdfad40e461a: Color palette}</span></p>
+<div class="il" id="palw">
+<div class="staytop fnd">
+<input data-I18N="placeholder" onfocus="search(this,'pallist')" oninput="search(this,'pallist')" placeholder="${bce06414177f72ab70e6387b6af9f8ceef0d6049:Search}" type="text"/>
+<i class="icons clear-icon" onclick="clean(this)"></i>
+<i class="icons search-icon"></i>
+</div>
+<div class="list" id="pallist">
+<div class="lstI">
+<label class="radio schkl" onclick="loadPalettes()">
+<div class="lstIcontent">
+<span class="lstIname">${a3297d22e7010543c46682472092fc202e708bc3:
 								Loading...
-							</span>
-						</div>
-					</label>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="Effects" class="tabcontent">
-		<div id="fx">
-			<p class="labels hd" id="modeLabel">Effect mode</p>
-			<div class="staytop fnd" id="fxFind" onmousedown="preventBlur(event);">
-				<input type="text" placeholder="Search" oninput="search(this,'fxlist')" onfocus="filterFocus(event);search(this,'fxlist');" onblur="filterFocus(event);">
-				<i class="icons clear-icon" onclick="clean(this);">&#xe38f;</i>
-				<i class="icons search-icon" style="cursor:pointer;">&#xe0a1;</i>
-				<div id="filters" class="filter fade">
-					<label id="filterPal" title="Uses palette" class="check fchkl">&#x1F3A8;
-						<input type="checkbox" data-flt="&#x1F3A8;" onchange="filterFx();">
-						<span class="checkmark"></span>
-					</label>
-					<label id="filter0D" title="Single pixel" class="check fchkl">&#8226;
-						<input type="checkbox" data-flt="&#8226;" onchange="filterFx();">
-						<span class="checkmark"></span>
-					</label>
-					<label id="filter1D" title="1D" class="check fchkl">&#8942;
-						<input type="checkbox" data-flt="&#8942;" onchange="filterFx();">
-						<span class="checkmark"></span>
-					</label>
-					<label id="filter2D" title="2D" class="check fchkl">&#9638;
-						<input type="checkbox" data-flt="&#9638;" onchange="filterFx();">
-						<span class="checkmark"></span>
-					</label>
-					<label id="filterVol" title="Volume" class="check fchkl">&#9834;
-						<input type="checkbox" data-flt="&#9834;" onchange="filterFx();">
-						<span class="checkmark"></span>
-					</label>
-					<label id="filterFreq" title="Frequency" class="check fchkl">&#9835;
-						<input type="checkbox" data-flt="&#9835;" onchange="filterFx();">
-						<span class="checkmark"></span>
-					</label>
-				</div>
-			</div>
-			<div id="fxlist" class="list">
-				<div class="lstI">
-					<label class="radio schkl" onclick="loadFX()">
-						<div class="lstIcontent">
-							<span class="lstIname">
+							}</span>
+</div>
+</label>
+</div>
+</div>
+</div>
+</div>
+<div class="tabcontent" id="Effects">
+<div id="fx">
+<p class="labels hd" id="modeLabel">${4eecae1ac688b952c64d0435ebd8a2562e5ab1d3:Effect mode}</p>
+<div class="staytop fnd" id="fxFind" onmousedown="preventBlur(event);">
+<input data-I18N="placeholder" onblur="filterFocus(event);" onfocus="filterFocus(event);search(this,'fxlist');" oninput="search(this,'fxlist')" placeholder="${bce06414177f72ab70e6387b6af9f8ceef0d6049:Search}" type="text"/>
+<i class="icons clear-icon" onclick="clean(this);"></i>
+<i class="icons search-icon" style="cursor:pointer;"></i>
+<div class="filter fade" id="filters">
+<label class="check fchkl" data-I18N="title" id="filterPal" title="${6d41cd2155d54abd0cc30fb6d05a548ea5bdf23c:Uses palette}">🎨
+						<input data-flt="🎨" onchange="filterFx();" type="checkbox"/>
+<span class="checkmark"></span>
+</label>
+<label class="check fchkl" data-I18N="title" id="filter0D" title="${2fb4353fad0ad28de90131e479a38479b984ba67:Single pixel}">•
+						<input data-flt="•" onchange="filterFx();" type="checkbox"/>
+<span class="checkmark"></span>
+</label>
+<label class="check fchkl" data-I18N="title" id="filter1D" title="${dba20f120b692d00db60685dfe6f98d303603993:1D}">⋮
+						<input data-flt="⋮" onchange="filterFx();" type="checkbox"/>
+<span class="checkmark"></span>
+</label>
+<label class="check fchkl" data-I18N="title" id="filter2D" title="${3698fe042008427de9606b9970be07dbb178b3aa:2D}">▦
+						<input data-flt="▦" onchange="filterFx();" type="checkbox"/>
+<span class="checkmark"></span>
+</label>
+<label class="check fchkl" data-I18N="title" id="filterVol" title="${3b18e8e332500f3dfedb21b0aed686cfa9832cfe:Volume}">♪
+						<input data-flt="♪" onchange="filterFx();" type="checkbox"/>
+<span class="checkmark"></span>
+</label>
+<label class="check fchkl" data-I18N="title" id="filterFreq" title="${89836a870e44fb467d13116254b39e2482f5cdf1:Frequency}">♫
+						<input data-flt="♫" onchange="filterFx();" type="checkbox"/>
+<span class="checkmark"></span>
+</label>
+</div>
+</div>
+<div class="list" id="fxlist">
+<div class="lstI">
+<label class="radio schkl" onclick="loadFX()">
+<div class="lstIcontent">
+<span class="lstIname">${a3297d22e7010543c46682472092fc202e708bc3:
 								Loading...
-							</span>
-						</div>
-					</label>
-				</div>
-			</div>
-		</div>
-		<div id="sliders">
-			<div id="slider0" class="slider">
-				<i class="icons slider-icon" title="Freeze" onclick="tglFreeze()">&#xe325;</i>
-				<div title="Effect speed" class="sliderwrap il">
-					<input id="sliderSpeed" class="noslide" onchange="setSpeed()" oninput="updateTrail(this)" max="255" min="0" type="range" value="128" />
-					<div class="sliderdisplay"></div>
-				</div>
-				<output class="sliderbubble"></output>
-			</div>
-			<div id="slider1" class="slider">
-				<i class="icons slider-icon" title="Toggle labels" onclick="tglLabels()">&#xe409;</i>
-				<div title="Effect intensity" class="sliderwrap il">
-					<input id="sliderIntensity" class="noslide" onchange="setIntensity()" oninput="updateTrail(this)" max="255" min="0" type="range" value="128" />
-					<div class="sliderdisplay"></div>
-				</div>
-				<output class="sliderbubble"></output>
-			</div>
-			<div id="slider2" class="slider hide">
-				<i class="icons slider-icon">&#xe410;</i>
-				<div title="Custom 1" class="sliderwrap il">
-					<input id="sliderC1" class="noslide" onchange="setCustom(1)" oninput="updateTrail(this)" max="255" min="0" type="range" value="0" />
-					<div class="sliderdisplay"></div>
-				</div>
-				<output class="sliderbubble"></output>
-			</div>
-			<div id="slider3" class="slider hide">
-				<i class="icons slider-icon">&#xe0a2;</i>
-				<div title="Custom 2" class="sliderwrap il">
-					<input id="sliderC2" class="noslide" onchange="setCustom(2)" oninput="updateTrail(this)" max="255" min="0" type="range" value="0" />
-					<div class="sliderdisplay"></div>
-				</div>
-				<output class="sliderbubble"></output>
-			</div>
-			<div id="slider4" class="slider hide">
-				<i class="icons slider-icon">&#xe0e8;</i>
-				<div title="Custom 3" class="sliderwrap il">
-					<input id="sliderC3" class="noslide" onchange="setCustom(3)" oninput="updateTrail(this)" max="31" min="0" type="range" value="0" />
-					<div class="sliderdisplay"></div>
-				</div>
-				<output class="sliderbubble"></output>
-			</div>
-			<div id="fxopt" class="option fade">
-				<label id="opt0" title="Check 1" class="check ochkl hide"><i class="icons">&#xe2b3;</i>
-					<input id="checkO1" type="checkbox" onchange="setOption(1, this.checked)">
-					<span class="checkmark"></span>
-				</label>
-				<label id="opt1" title="Check 2" class="check ochkl hide"><i class="icons">&#xe34b;</i>
-					<input id="checkO2" type="checkbox" onchange="setOption(2, this.checked)">
-					<span class="checkmark"></span>
-				</label>
-				<label id="opt2" title="Check 3" class="check ochkl hide"><i class="icons">&#xe04c;</i>
-					<input id="checkO3" type="checkbox" onchange="setOption(3, this.checked)">
-					<span class="checkmark"></span>
-				</label>
-			</div>
-		</div>
-	</div>
-
-	<div id="Segments" class="tabcontent">
-		<p class="labels hd" id="segLabel">Segments</p>
-		<div id="segcont">
+							}</span>
+</div>
+</label>
+</div>
+</div>
+</div>
+<div id="sliders">
+<div class="slider" id="slider0">
+<i class="icons slider-icon" data-I18N="title" onclick="tglFreeze()" title="${5a6b2d30fea65c18adb9b90c467fa827dbba5c4b:Freeze}"></i>
+<div class="sliderwrap il" data-I18N="title" title="${892fdc2a98e5d347172484c4ec085b0ad7a7192e:Effect speed}">
+<input class="noslide" id="sliderSpeed" max="255" min="0" onchange="setSpeed()" oninput="updateTrail(this)" type="range" value="128">
+<div class="sliderdisplay"></div>
+</input></div>
+<output class="sliderbubble"></output>
+</div>
+<div class="slider" id="slider1">
+<i class="icons slider-icon" data-I18N="title" onclick="tglLabels()" title="${60ed16ee7337e9b0952723cd50fcaf08bbe90775:Toggle labels}"></i>
+<div class="sliderwrap il" data-I18N="title" title="${8543c4bba09d5a78ed857a658f2dd4c3fb33193c:Effect intensity}">
+<input class="noslide" id="sliderIntensity" max="255" min="0" onchange="setIntensity()" oninput="updateTrail(this)" type="range" value="128">
+<div class="sliderdisplay"></div>
+</input></div>
+<output class="sliderbubble"></output>
+</div>
+<div class="slider hide" id="slider2">
+<i class="icons slider-icon"></i>
+<div class="sliderwrap il" data-I18N="title" title="${30b969fdd9df1c667b67be0566ab211c98ebe23b:Custom 1}">
+<input class="noslide" id="sliderC1" max="255" min="0" onchange="setCustom(1)" oninput="updateTrail(this)" type="range" value="0">
+<div class="sliderdisplay"></div>
+</input></div>
+<output class="sliderbubble"></output>
+</div>
+<div class="slider hide" id="slider3">
+<i class="icons slider-icon"></i>
+<div class="sliderwrap il" data-I18N="title" title="${85bb9ef83aca5b2d08226ff8b7b8f30a94d5adc9:Custom 2}">
+<input class="noslide" id="sliderC2" max="255" min="0" onchange="setCustom(2)" oninput="updateTrail(this)" type="range" value="0">
+<div class="sliderdisplay"></div>
+</input></div>
+<output class="sliderbubble"></output>
+</div>
+<div class="slider hide" id="slider4">
+<i class="icons slider-icon"></i>
+<div class="sliderwrap il" data-I18N="title" title="${780fe3f76108361a30e62155de74dbb41619d130:Custom 3}">
+<input class="noslide" id="sliderC3" max="31" min="0" onchange="setCustom(3)" oninput="updateTrail(this)" type="range" value="0">
+<div class="sliderdisplay"></div>
+</input></div>
+<output class="sliderbubble"></output>
+</div>
+<div class="option fade" id="fxopt">
+<label class="check ochkl hide" data-I18N="title" id="opt0" title="${406ca046bf284d394bf28d4c5ca8c0ec48744101:Check 1}"><i class="icons"></i>
+<input id="checkO1" onchange="setOption(1, this.checked)" type="checkbox"/>
+<span class="checkmark"></span>
+</label>
+<label class="check ochkl hide" data-I18N="title" id="opt1" title="${4c016e8c87e5d6108490193d3f02a4322f149691:Check 2}"><i class="icons"></i>
+<input id="checkO2" onchange="setOption(2, this.checked)" type="checkbox"/>
+<span class="checkmark"></span>
+</label>
+<label class="check ochkl hide" data-I18N="title" id="opt2" title="${d9cd2b1622460e1d1424f8a8e92ea2f826b252dc:Check 3}"><i class="icons"></i>
+<input id="checkO3" onchange="setOption(3, this.checked)" type="checkbox"/>
+<span class="checkmark"></span>
+</label>
+</div>
+</div>
+</div>
+<div class="tabcontent" id="Segments">
+<p class="labels hd" id="segLabel">${6648f8ac667d30e2d5d6d92795fc917bfee64570:Segments}</p>
+<div id="segcont">${d75964cddd74595f9abad7d6ff1b2f70cdfcc919:
 			Loading...
-		</div>
-		<div id="segutil" class="staybot">
-		</div>
-		<div id="segutil2">
-			<button class="btn btn-s" id="rsbtn" onclick="rSegs()">Reset segments</button>
-		</div>
-		<p>Transition: <input id="tt" type="number" min="0" max="65.5" step="0.1" value="0.7">&nbsp;s</p>
-		<p id="ledmap" class="hide"></p>
-	</div>
-
-	<div id="Presets" class="tabcontent">
-		<div id="pql">
-		</div>
-		<p class="labels hd">Presets</p>
-		<div class="staytop fnd" id="psFind">
-			<input type="text" placeholder="Search" oninput="search(this,'pcont')" onfocus="search(this,'pcont')" />
-			<i class="icons clear-icon" onclick="clean(this);">&#xe38f;</i>
-			<i class="icons search-icon">&#xe0a1;</i>
-		</div>
-		<div id="pcont" class="list">
-			<span onclick="loadPresets()">Loading...</span>
-		</div>
-		<div id="putil" class="staybot">
-		</div>
-	</div>
+		}</div>
+<div class="staybot" id="segutil">
 </div>
-
+<div id="segutil2">
+<button class="btn btn-s" id="rsbtn" onclick="rSegs()">${5ca62f80f75cde44818e10da155aadb13ae3bcd3:Reset segments}</button>
+</div>
+<p id="djh001"><span>${bce58b4ecf9d1d4e3419f8fe15ac1b5d28a31316:Transition: }</span><input id="tt" type="number" min="0" max="65.5" step="0.1" value="0.7"/><span>${06d1d860e2947128b9b52a760634ecefa34eb1a1:&nbsp; s}</span>
+</p>
+<p class="hide" id="ledmap"></p>
+</div>
+<div class="tabcontent" id="Presets">
+<div id="pql">
+</div>
+<p class="labels hd">${e709e76ff5425bd59879423588e80e67d778fa57:Presets}</p>
+<div class="staytop fnd" id="psFind">
+<input data-I18N="placeholder" onfocus="search(this,'pcont')" oninput="search(this,'pcont')" placeholder="${bce06414177f72ab70e6387b6af9f8ceef0d6049:Search}" type="text">
+<i class="icons clear-icon" onclick="clean(this);"></i>
+<i class="icons search-icon"></i>
+</input></div>
+<div class="list" id="pcont">
+<span onclick="loadPresets()">${b04ba49f848624bb97ab094a2631d2ad74913498:Loading...}</span>
+</div>
+<div class="staybot" id="putil">
+</div>
+</div>
+</div>
 <div class="tab bot" id="bot">
-	<button class="tablinks" onclick="openTab(0)"><i class="icons">&#xe2b3;</i><p class="tab-label">Colors</p></button>
-	<button class="tablinks" onclick="openTab(1)"><i class="icons">&#xe23d;</i><p class="tab-label">Effects</p></button>
-	<button class="tablinks" onclick="openTab(2)"><i class="icons">&#xe34b;</i><p class="tab-label">Segments</p></button>
-	<button class="tablinks" onclick="openTab(3)"><i class="icons">&#xe04c;</i><p class="tab-label">Presets</p></button>
+<button class="tablinks" onclick="openTab(0)"><i class="icons"></i><p class="tab-label">${88d5e4cac104ffc3f02dd54f2f0f1074fd33fd9b:Colors}</p></button>
+<button class="tablinks" onclick="openTab(1)"><i class="icons"></i><p class="tab-label">${8f25a859269ca51039632dd6bba28fb061cfb8d4:Effects}</p></button>
+<button class="tablinks" onclick="openTab(2)"><i class="icons"></i><p class="tab-label">${6648f8ac667d30e2d5d6d92795fc917bfee64570:Segments}</p></button>
+<button class="tablinks" onclick="openTab(3)"><i class="icons"></i><p class="tab-label">${e709e76ff5425bd59879423588e80e67d778fa57:Presets}</p></button>
 </div>
-
 <div id="connind"></div>
 <div id="toast" onclick="clearErrorToast(100);"></div>
 <div id="namelabel" onclick="toggleNodes()"></div>
-<div id="info" class="modal">
-	<button class="btn btn-xs close" onclick="toggleInfo()"><i class="icons rot45">&#xe18a;</i></button>
-	<div id="imgw">
-		<img class="wi" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAFCAYAAAC5Fuf5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABbSURBVChTlY9bDoAwDMNW7n9nwCipytQN4Z8tbrTHmDmF4oPzyldwRqp1SSdnV/NuZuzqerAByxXznBw3igkeFEfXyUuhK/yFM0CxJfyqXZEOc6/Sr9/bf7uIC5Nwd7orMvAPAAAAAElFTkSuQmCC" />
-	</div>
-	<div id="kv">Loading...</div><br>
-	<div>
-		<button class="btn ibtn" onclick="requestJson()">Refresh</button>
-		<button class="btn ibtn" onclick="toggleNodes()">Instance List</button>
-		<button class="btn ibtn" onclick="window.open(getURL('/update'),'_self');">Update WLED</button>
-		<button class="btn ibtn" id="resetbtn" onclick="cnfReset()">Reboot WLED</button>
-	</div>
-	<br>
-	<span class="h">Made with&#32;<span id="heart">&#10084;&#xFE0E;</span>&#32;by&#32;<a href="https://github.com/Aircoookie/" target="_blank">Aircoookie</a>&#32;and the&#32;<a href="https://wled.discourse.group/" target="_blank">WLED community</a></span>
+<div class="modal" id="info">
+<button class="btn btn-xs close" onclick="toggleInfo()"><i class="icons rot45"></i></button>
+<div id="imgw">
+<img alt="" class="wi" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAFCAYAAAC5Fuf5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABbSURBVChTlY9bDoAwDMNW7n9nwCipytQN4Z8tbrTHmDmF4oPzyldwRqp1SSdnV/NuZuzqerAByxXznBw3igkeFEfXyUuhK/yFM0CxJfyqXZEOc6/Sr9/bf7uIC5Nwd7orMvAPAAAAAElFTkSuQmCC"/>
 </div>
-
-<div id="nodes" class="modal">
-	<button class="btn btn-xs close" onclick="toggleNodes()"><i class="icons rot45">&#xe18a;</i></button>
-	<div id="ndlt">WLED instances</div>
-	<div id="kn">Loading...</div>
-	<div style="position:sticky;bottom:0;">
-		<button class="btn ibtn" onclick="loadNodes()">Refresh</button>
-	</div>
+<div id="kv">${b04ba49f848624bb97ab094a2631d2ad74913498:Loading...}</div><br/>
+<div>
+<button class="btn ibtn" onclick="requestJson()">${56e3badc4e6c5cc95e0ea5a9a878b9bd09f319d4:Refresh}</button>
+<button class="btn ibtn" onclick="toggleNodes()">${637c2bf1425e8666dd14c689d9f765342d9572ab:Instance List}</button>
+<button class="btn ibtn" onclick="window.open(getURL('/update'),'_self');">${eb8a806f7bac670c6dfbe1ad922bd7b64db5eb5c:Update WLED}</button>
+<button class="btn ibtn" id="resetbtn" onclick="cnfReset()">${5bc2795ef9ba87b54537d749565830f763ad92e6:Reboot WLED}</button>
 </div>
-
-<div id="mlv2D" class="modal">
-	<div id="klv2D" style="width:100%; height:100%">Loading...</div>
+<br/>
+<span class="h"><span>${feaf34d2c6413dbee1ddd4d30fe0a351d108bd72:Made with }</span><span id="heart">❤︎</span><span>${876074b47592269b365a8b4b9bf3cea4c149f6c6: by }</span><a href="https://github.com/Aircoookie/" target="_blank">${974280ab92799e72caa1154cac5e888e02fa039b:Aircoookie}</a><span>${8e3037d9495a889c6e9335d85ba7779054b29fd7: and the }</span><a href="https://wled.discourse.group/" target="_blank">${88a7d8ebb9193220ce50317a4da6a68f7f65fa2f:WLED community}</a></span>
 </div>
-
-<div id="rover" class="modal">
-	<i class="icons huge">&#xe410;</i><br>
-	<div id="lv">?</div><br><br>
-	To use built-in effects, use an override button below.<br>
-	You can return to realtime mode by pressing the star in the top left corner.<br>
-	<button class="btn ibtn" onclick="setLor(1)">Override once</button>
-	<button class="btn ibtn" onclick="setLor(2)">Override until reboot</button><br>
-	<span class="h">For best performance, it is recommended to turn off the streaming source when not in use.</span>
+<div class="modal" id="nodes">
+<button class="btn btn-xs close" onclick="toggleNodes()"><i class="icons rot45"></i></button>
+<div id="ndlt">${7ae7298ac0f8560d0eecec2e3c88130d0e5bb0e6:WLED instances}</div>
+<div id="kn">${b04ba49f848624bb97ab094a2631d2ad74913498:Loading...}</div>
+<div style="position:sticky;bottom:0;">
+<button class="btn ibtn" onclick="loadNodes()">${56e3badc4e6c5cc95e0ea5a9a878b9bd09f319d4:Refresh}</button>
 </div>
-
-<i id="roverstar" class="icons huge" onclick="setLor(0)">&#xe410;</i><br>
-
+</div>
+<div class="modal" id="mlv2D">
+<div id="klv2D" style="width:100%; height:100%">${b04ba49f848624bb97ab094a2631d2ad74913498:Loading...}</div>
+</div>
+<div class="modal" id="rover">
+<i class="icons huge"></i><br/>
+<div id="lv">?</div><br/><br/><span>${f7392d6bc0c3bdc4eb58df3307bb8d262c5fa908:
+	To use built-in effects, use an override button below.}</span><br/><span>${bd99880a92c6a2090a8875e12e70d18a4161e027:
+	You can return to realtime mode by pressing the star in the top left corner.}</span><br/>
+<button class="btn ibtn" onclick="setLor(1)">${a1af4efac6f89821bfcc8f45c6d6967b8e5bdf1b:Override once}</button>
+<button class="btn ibtn" onclick="setLor(2)">${23b3a9b3e07164b16a9a80d9411e6bebde1fefb7:Override until reboot}</button><br/>
+<span class="h">${9ba8f140d2dd1629eedda6944180bc4fb621e16a:For best performance, it is recommended to turn off the streaming source when not in use.}</span>
+</div>
+<i class="icons huge" id="roverstar" onclick="setLor(0)"></i><br/>
 <!-- 
 	If you want to load iro.js and rangetouch.js as consecutive requests, you can do it like it was done in 0.14.0:
 	https://github.com/Aircoookie/WLED/blob/v0.14.0/wled00/data/index.htm
@@ -345,5 +334,5 @@
 <script src="iro.js"></script>
 <script src="rangetouch.js"></script>
 <script src="index.js"></script>
-</body>
+<div id="I18N:template" style="display:none">wled00/data/index.htm</div></body>
 </html>

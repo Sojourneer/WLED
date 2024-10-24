@@ -1,17 +1,18 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
-	<title>WLED Settings</title>
-	<script src="common.js" async type="text/javascript"></script>
-	<script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>${efa3774893b68721b14f129c0b5647f1b81833c8:WLED Settings}</title>
+<script async="" src="common.js" type="text/javascript"></script>
+<script>
 		function S() {
 			getLoc();
 			loadJS(getURL('/settings/s.js?p=0'), false);	// If we set async false, file is loaded and executed, then next statement is processed
 		}
 	</script>
-	<style>
+<style>
 		body {
 			text-align: center;
 			background: #222;
@@ -35,17 +36,17 @@
 			cursor: pointer;
 		}
 	</style>
-</head>
+<script src="../scripts/localize.js"></script></head>
 <body onload="S()">
-<button type=submit id="b" onclick="window.location=getURL('/')">Back</button>
-<button type="submit" onclick="window.location=getURL('/settings/wifi')">WiFi Setup</button>
-<button type="submit" onclick="window.location=getURL('/settings/leds')">LED Preferences</button>
-<button id="2dbtn" type="submit" onclick="window.location=getURL('/settings/2D')">2D Configuration</button>
-<button type="submit" onclick="window.location=getURL('/settings/ui')">User Interface</button>
-<button id="dmxbtn" style="display:none;" type="submit" onclick="window.location=getURL('/settings/dmx')">DMX Output</button>
-<button type="submit" onclick="window.location=getURL('/settings/sync')">Sync Interfaces</button>
-<button type="submit" onclick="window.location=getURL('/settings/time')">Time & Macros</button>
-<button type="submit" onclick="window.location=getURL('/settings/um')">Usermods</button>
-<button type="submit" onclick="window.location=getURL('/settings/sec')">Security & Updates</button>
-</body>
+<button id="b" onclick="window.location=getURL('/')" type="submit">${b52b36b7269fbfc58ec24bb724691951a3decbe8:Back}</button>
+<button onclick="window.location=getURL('/settings/wifi')" type="submit">${5e0ef77024e2531a39d7d853b1d610ca6882bc30:WiFi Setup}</button>
+<button onclick="window.location=getURL('/settings/leds')" type="submit">${67e7b54d47e347a30f03c29b6e5eb4de3da5f611:LED Preferences}</button>
+<button id="2dbtn" onclick="window.location=getURL('/settings/2D')" type="submit">${2412f78fc33fd7a510e48b628ae3a2aec62c3ac5:2D Configuration}</button>
+<button onclick="window.location=getURL('/settings/ui')" type="submit">${ed5170cd339b4047e02379b1d218d6d630aafc71:User Interface}</button>
+<button id="dmxbtn" onclick="window.location=getURL('/settings/dmx')" style="display:none;" type="submit">${68e01fb4df9c79d96c59e78f75b523e2d6c8f830:DMX Output}</button>
+<button onclick="window.location=getURL('/settings/sync')" type="submit">${4f446b5a9f2d10f7421f8adda3d7dd66b95caa2a:Sync Interfaces}</button>
+<button onclick="window.location=getURL('/settings/time')" type="submit">${4d96c7e4085d43075b0d6b0b0773cfafc31fa9c7:Time &amp; Macros}</button>
+<button onclick="window.location=getURL('/settings/um')" type="submit">${1729f7b5ba2e11e571754f0a3b590bd2bcf9e278:Usermods}</button>
+<button onclick="window.location=getURL('/settings/sec')" type="submit">${e1d4060c747d34f248a70d73a705fd331f035734:Security &amp; Updates}</button>
+<div id="I18N:template" style="display:none">wled00/data/settings.htm</div></body>
 </html>

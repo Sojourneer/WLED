@@ -1,11 +1,12 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
-	<meta charset="utf-8">
-	<title>Time Settings</title>
-	<script src="common.js" async type="text/javascript"></script>
-	<script>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<meta charset="utf-8"/>
+<title>${de94043773e73e2bb6f84fe1f8b6735251109447:Time Settings}</title>
+<script async="" src="common.js" type="text/javascript"></script>
+<script>
 	var el=false;
 	var ms=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 	function S() {
@@ -119,93 +120,93 @@
 		if (parseFloat(d.Sf.LN.value)<0) { d.Sf.LNR.value = "W"; d.Sf.LN.value = -1*parseFloat(d.Sf.LN.value); } else d.Sf.LNR.value = "E";
 	}
 	</script>
-	<style>@import url("style.css");</style>
-</head>
+<style>@import url("style.css");</style>
+<script src="../scripts/localize.js"></script></head>
 <body onload="S()">
-	<form id="form_s" name="Sf" method="post" onsubmit="Wd()">
-		<div class="toprow">
-		<div class="helpB"><button type="button" onclick="H('features/settings/#time-settings')">?</button></div>
-		<button type="button" onclick="B()">Back</button><button type="submit">Save</button><hr>
-		</div>
-		<h2>Time setup</h2>
-		Get time from NTP server: <input type="checkbox" name="NT"><br>
-		<input type="text" name="NS" maxlength="32"><br>
-		Use 24h format: <input type="checkbox" name="CF"><br>
+<form id="form_s" method="post" name="Sf" onsubmit="Wd()">
+<div class="toprow">
+<div class="helpB"><button onclick="H('features/settings/#time-settings')" type="button">?</button></div>
+<button onclick="B()" type="button">${b52b36b7269fbfc58ec24bb724691951a3decbe8:Back}</button><button type="submit">${efc007a393f66cdb14d57d385822a3d9e36ef873:Save}</button><hr/>
+</div>
+<h2>${8c6efe43f08e30daeee91f696240fb0c0637c657:Time setup}</h2><span>${1b0f9ceeb2cd4e15c2939a0e3c8727c4c5674ca7:
+		Get time from NTP server: }</span><input name="NT" type="checkbox"/><br/>
+<input maxlength="32" name="NS" type="text"/><br/><span>${0c1911a2a8cfac9fb4108b499e6e9b6b3dc7b451:
+		Use 24h format: }</span><input name="CF" type="checkbox"/><br/><span>${d7565aeaad2929d440344a9dfd1ee894bbbb3cd8:
 		Time zone: 
-		<select name="TZ">
-			<option value="0" selected>GMT(UTC)</option>
-			<option value="1">GMT/BST</option>
-			<option value="2">CET/CEST</option>
-			<option value="3">EET/EEST</option>
-			<option value="4">US-EST/EDT</option>
-			<option value="5">US-CST/CDT</option>
-			<option value="6">US-MST/MDT</option>
-			<option value="7">US-AZ</option>
-			<option value="8">US-PST/PDT</option>
-			<option value="9">CST (AWST, PHST)</option>
-			<option value="10">JST (KST)</option>
-			<option value="11">AEST/AEDT</option>
-			<option value="12">NZST/NZDT</option>
-			<option value="13">North Korea</option>
-			<option value="14">IST (India)</option>
-			<option value="15">CA-Saskatchewan</option>
-			<option value="16">ACST</option>
-			<option value="17">ACST/ACDT</option>
-			<option value="18">HST (Hawaii)</option>
-			<option value="19">NOVT (Novosibirsk)</option>
-			<option value="20">AKST/AKDT (Anchorage)</option>
-			<option value="21">MX-CST</option>
-			<option value="22">PKT (Pakistan)</option>
-			<option value="23">BRT (Brasília)</option>
-		</select><br>
-		UTC offset: <input name="UO" type="number" min="-65500" max="65500" required> seconds (max. 18 hours)<br>
-		Current local time is <span class="times">unknown</span>.<br>
-		Latitude: <select name="LTR"><option value="N">N</option><option value="S">S</option></select><input name="LT" type="number" class="xl" min="0" max="66.6" step="0.01"><br>
-		Longitude: <select name="LNR"><option value="E">E</option><option value="W">W</option></select><input name="LN" type="number" class="xl" min="0" max="180" step="0.01"><br>
-		<button type="button" id="locbtn" onclick="getLatLon()">Get location</button>
-		<div><i>(opens new tab, only works in browser)</i></div>
-		<div id="sun" class="times"></div>
-		<h3>Clock</h3>
-		Analog Clock overlay: <input type="checkbox" name="OL" onchange="Cs()"><br>
-		<div id="cac">
-			First LED: <input name="O1" type="number" min="0" max="255" required> Last LED: <input name="O2" type="number" min="0" max="255" required><br>
-			12h LED: <input name="OM" type="number" min="0" max="255" required><br>
-			Show 5min marks: <input type="checkbox" name="O5"><br>
-			Seconds (as trail): <input type="checkbox" name="OS"><br>
-			Show clock overlay only if all LEDs are solid black: <input type="checkbox" name="OB"><br>
-		</div>
-		Countdown Mode: <input type="checkbox" name="CE"><br>
-		Countdown Goal:<br>
-		Date:&nbsp;<nowrap>20<input name="CY" class="xs" type="number" min="0" max="99" required>-<input name="CI" class="xs" type="number" min="1" max="12" required>-<input name="CD" class="xs" type="number" min="1" max="31" required></nowrap><br>
-		Time:&nbsp;<nowrap><input name="CH" class="xs" type="number" min="0" max="23" required>:<input name="CM" class="xs" type="number" min="0" max="59" required>:<input name="CS" class="xs" type="number" min="0" max="59" required></nowrap><br>
-		<h3>Macro presets</h3>
-		<b>Macros have moved!</b><br>
-		<i>Presets now also can be used as macros to save both JSON and HTTP API commands.<br>
-		Just enter the preset ID below!</i>
-		<i>Use 0 for the default action instead of a preset</i><br>
-		Alexa On/Off Preset: <input name="A0" class="m" type="number" min="0" max="250" required> <input name="A1" class="m" type="number" min="0" max="250" required><br>
-		Countdown-Over Preset: <input name="MC" class="m" type="number" min="0" max="250" required><br>
-		Timed-Light-Over Presets: <input name="MN" class="m" type="number" min="0" max="250" required><br>
-		<h3>Button actions</h3>
-		<table style="margin: 0 auto;" id="macros">
-			<thead>
-				<tr>
-					<td>push<br>switch</td>
-					<td>short<br>on-&gt;off</td>
-					<td>long<br>off-&gt;on</td>
-					<td>double<br>N/A</td>
-				</tr>
-			</thead>
-			<tbody>
-			</tbody>
-		</table>
-		<a href="https://kno.wled.ge/features/macros/#analog-button" target="_blank">Analog Button setup</a>
-		<h3>Time-controlled presets</h3>
-		<div style="display: inline-block">
-		<table id="TMT" style="min-width:330px;"></table>
-		</div>
-		<hr>
-		<button type="button" onclick="B()">Back</button><button type="submit">Save</button>
-	</form>
-</body>
+		}</span><select name="TZ">
+<option selected="" value="0">${e5b6710c258c44e9864d0fc84bd4fdc10233d155:GMT(UTC)}</option>
+<option value="1">${05c77305a3dad0d7f10e068cd8735e8bfc5610ea:GMT/BST}</option>
+<option value="2">${e6ae051d019d9bdf9829a4f3b6a0c964dd0c3921:CET/CEST}</option>
+<option value="3">${b9b4a419a971fdc9d74f8f513a28f1e4915a65c1:EET/EEST}</option>
+<option value="4">${1f7cf0c8419f4a8e58b7521c532324acb231c474:US-EST/EDT}</option>
+<option value="5">${8e180e29b5554b0f39034b56074135c55e799979:US-CST/CDT}</option>
+<option value="6">${8e4686f5b9f151b7946b7fd63b64c4b4032322a3:US-MST/MDT}</option>
+<option value="7">${58c9ae6e58bf854390ba839fd430db562ad21af2:US-AZ}</option>
+<option value="8">${6d37ceb2cb22221ec777d256d3becf4615a305cd:US-PST/PDT}</option>
+<option value="9">${c4faf1aac73dd6b3e75f24090e3f29970fc986b5:CST (AWST, PHST)}</option>
+<option value="10">${e23f854ab1618334a88820e78a385f0170e6be9b:JST (KST)}</option>
+<option value="11">${735273dce9b95aa25ff9a81d1302372faf34d81a:AEST/AEDT}</option>
+<option value="12">${408f10e994890060c43819fa510c3032c91be94b:NZST/NZDT}</option>
+<option value="13">${765b46e79beff128df05b121d344cc7ad23dbac5:North Korea}</option>
+<option value="14">${a109f8346a839932bd21fc831fb74855792ae25f:IST (India)}</option>
+<option value="15">${abfd5f0ea11a437ee74aa85df9dd2e37038f7e8e:CA-Saskatchewan}</option>
+<option value="16">${7e6a7e6a4e3c4a08ff2acf2cb2521718864ac998:ACST}</option>
+<option value="17">${38214a742e2eafed121bffe909f58d9890bd470e:ACST/ACDT}</option>
+<option value="18">${6e55518a88edd152985f96ad2d9c461c4d721c99:HST (Hawaii)}</option>
+<option value="19">${2bf886bea26ae34cd295cc02b2ede0261199ea9c:NOVT (Novosibirsk)}</option>
+<option value="20">${576106b6224c39d5c6d4c082411de1d9a22fba23:AKST/AKDT (Anchorage)}</option>
+<option value="21">${6df01b510709c25299edfa4aaf8879d7fb467b52:MX-CST}</option>
+<option value="22">${7672d1c72ddd769c95c44f9ba098bc64ffc0f69b:PKT (Pakistan)}</option>
+<option value="23">${e185ef53122c9afb1fa31404170547e6e3b8957f:BRT (Brasília)}</option>
+</select><br/><span>${ce5e15c3f520b523948e74dddb02251a0d75390d:
+		UTC offset: }</span><input max="65500" min="-65500" name="UO" required="" type="number"/><span>${af96e5ff638ca423286290dac5346f7a41177d41: seconds (max. 18 hours)}</span><br/><span>${6a4b2cd9889cdd350f9f98bff87e56737d2fdc6e:
+		Current local time is }</span><span class="times">${50d8b4a941c26b89482c94ab324b5a274f9ced66:unknown}</span>.<br/><span>${8535effc59f9158cc2ec31f7e48ee4460495edeb:
+		Latitude: }</span><select name="LTR"><option value="N">${b51a60734da64be0e618bacbea2865a8a7dcd669:N}</option><option value="S">${02aa629c8b16cd17a44f3a0efec2feed43937642:S}</option></select><input class="xl" max="66.6" min="0" name="LT" step="0.01" type="number"/><br/><span>${f5d6150895cc3de102bd325bd842defc56553c2d:
+		Longitude: }</span><select name="LNR"><option value="E">${e0184adedf913b076626646d3f52c3b49c39ad6d:E}</option><option value="W">${e2415cb7f63df0c9de23362326ad3c37a9adfc96:W}</option></select><input class="xl" max="180" min="0" name="LN" step="0.01" type="number"/><br/>
+<button id="locbtn" onclick="getLatLon()" type="button">${c4fee9988323ebf722f55bcc59846b025f4dd210:Get location}</button>
+<div><i>${2be1af1195ed3d09d6485904e745aceb3e3eb0da:(opens new tab, only works in browser)}</i></div>
+<div class="times" id="sun"></div>
+<h3>${04f6b3ea183eb9d70981161c4424a6cf525afd9f:Clock}</h3><span>${b58973ae7bcdb644ac89ae53bee4a77dc4046101:
+		Analog Clock overlay: }</span><input name="OL" onchange="Cs()" type="checkbox"/><br/>
+<div id="cac"><span>${9d33c6dd03e8360ae297c513263f0325d9691f51:
+			First LED: }</span><input max="255" min="0" name="O1" required="" type="number"/><span>${2137680bbbb48266ab9fc2975a14782fdf1121ea: Last LED: }</span><input max="255" min="0" name="O2" required="" type="number"/><br/><span>${91e39e2e4c37fc00256b4ccb54c8502cef1bd413:
+			12h LED: }</span><input max="255" min="0" name="OM" required="" type="number"/><br/><span>${7a1a3077671abd27afcd5c934099b2b32ac6d9af:
+			Show 5min marks: }</span><input name="O5" type="checkbox"/><br/><span>${1bea4adf3789ca8ec14ddc8a271a299cedb2b535:
+			Seconds (as trail): }</span><input name="OS" type="checkbox"/><br/><span>${ec5ab1dad099b6c8b8d43b1645e269110813a035:
+			Show clock overlay only if all LEDs are solid black: }</span><input name="OB" type="checkbox"/><br/>
+</div><span>${34b5c1e682e73b770522ebb723aecdddc9a159f8:
+		Countdown Mode: }</span><input name="CE" type="checkbox"/><br/><span>${c41b37e0d7876f85b7592ae6c29f498b8af158ab:
+		Countdown Goal:}</span><br/><span>${ad46f8bd4343db3455164d1fbd713d143d6a0990:
+		Date: }</span><nowrap>20<input class="xs" max="99" min="0" name="CY" required="" type="number"/>-<input class="xs" max="12" min="1" name="CI" required="" type="number"/>-<input class="xs" max="31" min="1" name="CD" required="" type="number"/></nowrap><br/><span>${70e63551b6439dcacdeca3cf8f74dc4ad76a17c5:
+		Time: }</span><nowrap><input class="xs" max="23" min="0" name="CH" required="" type="number"/>:<input class="xs" max="59" min="0" name="CM" required="" type="number"/>:<input class="xs" max="59" min="0" name="CS" required="" type="number"/></nowrap><br/>
+<h3>${bf33662982429f104b540449bfee358ac6f81011:Macro presets}</h3>
+<b>${c54d9f9b31868f4846a26b1f6d2f9656463ea479:Macros have moved!}</b><br/>
+<i><span>${a974186f97fe525326b317d28531e382c7753445:Presets now also can be used as macros to save both JSON and HTTP API commands.}</span><br/><span>${85847781b4577ee0f397aed4a2bdcd6b4e7e403e:
+		Just enter the preset ID below!}</span></i>
+<i>${5bfa409c01fd78ff30144f568111d60d6795a518:Use 0 for the default action instead of a preset}</i><br/><span>${c818a4c4433d50c20c5a81a09fbaef30ee5b0daf:
+		Alexa On/Off Preset: }</span><input class="m" max="250" min="0" name="A0" required="" type="number"/> <input class="m" max="250" min="0" name="A1" required="" type="number"/><br/><span>${e2461bdbae9a9b46e6b055fed1f08d0869fd7d20:
+		Countdown-Over Preset: }</span><input class="m" max="250" min="0" name="MC" required="" type="number"/><br/><span>${d2d6e2e0bfb1ff3c0b7dbb123abe2a9ab394da4e:
+		Timed-Light-Over Presets: }</span><input class="m" max="250" min="0" name="MN" required="" type="number"/><br/>
+<h3>${5c8965be05de2d74089160e02effc83af5a835a9:Button actions}</h3>
+<table id="macros" style="margin: 0 auto;">
+<thead>
+<tr>
+<td><span>${dc867c03d6f1f4385a2475b4be1137e585036dd1:push}</span><br/><span>${01ba7992f85de477e8e630428eb5ed14769f9155:switch}</span></td>
+<td><span>${a0f4ea7d91495df92bbac2e2149dfb850fe81396:short}</span><br/><span>${dda3be2fdc37c1ae40722997d3ded5ce8e9e602d:on-&gt;off}</span></td>
+<td><span>${bd3027fa569ea15ca76d84db21c67e2d514c1a5a:long}</span><br/><span>${ecb32bef6a03476b9b68a3e28c4c7359a291eb19:off-&gt;on}</span></td>
+<td><span>${bdb36bb22deb169275b3094ba9005a29eeddd195:double}</span><br/><span>${08d2e98e6754af941484848930ccbaddfefe13d6:N/A}</span></td>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<a href="https://kno.wled.ge/features/macros/#analog-button" target="_blank">${58161e15d46ffd9e66b2833bd5254f31a683ae98:Analog Button setup}</a>
+<h3>${edc8cf38d9e34a05124d7d1500dd2bd187077378:Time-controlled presets}</h3>
+<div style="display: inline-block">
+<table id="TMT" style="min-width:330px;"></table>
+</div>
+<hr/>
+<button onclick="B()" type="button">${b52b36b7269fbfc58ec24bb724691951a3decbe8:Back}</button><button type="submit">${efc007a393f66cdb14d57d385822a3d9e36ef873:Save}</button>
+</form>
+<div id="I18N:template" style="display:none">wled00/data/settings_time.htm</div></body>
 </html>

@@ -1,11 +1,12 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
-	<title>UI Settings</title>
-	<script src="common.js" async type="text/javascript"></script>
-	<script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>${826e8fdcb0b1693928bacd6bc26875794261de29:UI Settings}</title>
+<script async="" src="common.js" type="text/javascript"></script>
+<script>
 	var initial_ds, initial_st, initial_su, oldUrl;
 	var sett = null;
 	var l = {
@@ -208,62 +209,60 @@
 		gId("theme_bg_rnd").checked = false;
 	}
 	</script>
-	<style>@import url("style.css");</style>
-</head>
+<style>@import url("style.css");</style>
+<script src="../scripts/localize.js"></script></head>
 <body onload="S()">
-	<form id="form_s" name="Sf" method="post">
-		<div class="toprow">
-		<div class="helpB"><button type="button" onclick="H('features/settings/#user-interface-settings')">?</button></div>
-		<button type="button" onclick="B()">Back</button><button type="button" onclick="Save()">Save</button><br>
-		<span id="lssuc" style="color:green; display:none">&#10004; Local UI settings saved!</span>
-		<span id="lserr" style="color:red; display:none">&#9888; Could not access local storage. Make sure it is enabled in your browser.</span><hr>
-		</div>
-		<h2>Web Setup</h2>
-		Server description: <input type="text" name="DS" maxlength="32"><br>
-		<!-- Sync button toggles both send and receive: <input type="checkbox" name="ST"><br> -->
-		Enable simplified UI: <input type="checkbox" name="SU"><br>
-		<i>The following UI customization settings are unique both to the WLED device and this browser.<br>
-		You will need to set them again if using a different browser, device or WLED IP address.<br>
-		Refresh the main UI to apply changes.</i><br>
-		
-		<div id="gen">Loading settings...</div>
-		
-		<h3>UI Appearance</h3>
-		<span class="l"></span>: <input type="checkbox" id="comp_labels" class="agi cb"><br>
-		<span class="l"></span>: <input type="checkbox" id="comp_pcmbot" class="agi cb"><br>
-		<span class="l"></span>: <input type="checkbox" id="comp_pid" class="agi cb"><br>
-		<span class="l"></span>: <input type="checkbox" id="comp_seglen" class="agi cb"><br>
-		<span class="l"></span>: <input type="checkbox" id="comp_segpwr" class="agi cb"><br>
-		<span class="l"></span>: <input type="checkbox" id="comp_segexp" class="agi cb"><br>
-		<span class="l"></span>: <input type="checkbox" id="comp_fxdef" class="agi cb"><br>
-		<span class="l"></span>: <input type="number" min=0 max=250 step=1 id="comp_on" class="agi"><br>
-		<span class="l"></span>: <input type="number" min=0 max=250 step=1 id="comp_off" class="agi"><br>
-		<span class="l"></span>: <input type="checkbox" id="comp_idsort" class="agi cb"><br>
-		I hate dark mode: <input type="checkbox" id="dm" onchange="UI()"><br>
-		<span id="idonthateyou" style="display:none"><i>Why would you? </i>&#x1F97A;<br></span>
-		<span class="l"></span>: <input type="number" min=0.0 max=1.0 step=0.01 id="theme_alpha_tab" class="agi"><br>
-		<span class="l"></span>: <input type="number" min=0.0 max=1.0 step=0.01 id="theme_alpha_bg" class="agi"><br>
-		<span class="l"></span>: <input type="text" id="theme_color_bg" maxlength="9" class="agi"><br>
-		BG image: <input type="file" id="theme_bg_img" accept="image/*" onchange="ownBg(this)"> <input type="button" value="Remove" onclick="removeBgImg()"><br>
-		<span class="l"></span>: <input type="checkbox" id="theme_bg_rnd" class="agi cb" onchange="randomBg();toggle('Image');">
-		<div id="Image">
-			<div id="bg_url">
-				<span class="l"></span>: <input type="text" id="theme_bg_url" class="agi"><br>
-			</div>
-		</div>
-		<div id="NoImage" class="hide">
-			<h4>Random BG image settings</h4>
-			<span class="l"></span>: <input type="checkbox" id="theme_bg_rndGrayscale" class="agi cb" onchange="randomBg()"><br>
-			<span class="l"></span>: <input type="checkbox" id="theme_bg_rndBlur" class="agi cb" onchange="randomBg()"><br>
-		</div>
-		<input id="theme_base" class="agi" style="display:none">
-		<span class="l"></span>: <input type="checkbox" id="comp_css" class="agi cb"><br>
-		<div id="skin">Custom CSS: <input type="file" name="data" accept=".css"> <input type="button" value="Upload" onclick="uploadFile(d.Sf.data,'/skin.css');"><br></div>
-		<span class="l"></span>: <input type="checkbox" id="comp_hdays" class="agi cb"><br>
-		<div id="holidays">Holidays: <input type="file" name="data2" accept=".json"> <input type="button" value="Upload" onclick="uploadFile(d.Sf.data2,'/holidays.json');"><br></div>
-		<div id="toast"></div>
-		<hr><button type="button" onclick="cLS()">Clear local storage</button>
-		<hr><button type="button" onclick="B()">Back</button><button type="button" onclick="Save()">Save</button>
-	</form>
-</body>
+<form id="form_s" method="post" name="Sf">
+<div class="toprow">
+<div class="helpB"><button onclick="H('features/settings/#user-interface-settings')" type="button">?</button></div>
+<button onclick="B()" type="button">${b52b36b7269fbfc58ec24bb724691951a3decbe8:Back}</button><button onclick="Save()" type="button">${efc007a393f66cdb14d57d385822a3d9e36ef873:Save}</button><br/>
+<span id="lssuc" style="color:green; display:none">${555164d911bb981a2b75602449eb60dff37c6465:✔ Local UI settings saved!}</span>
+<span id="lserr" style="color:red; display:none">${b654da1ce33b6f90fbe48d9c6a5f55c79f3665c1:⚠ Could not access local storage. Make sure it is enabled in your browser.}</span><hr/>
+</div>
+<h2>${8e0f34141662fe218632e3be87d86f36dc5ac2df:Web Setup}</h2><span>${525c62fba41c7b205e5d3815c24ec1feeb167ff0:
+		Server description: }</span><input maxlength="32" name="DS" type="text"/><br/>
+<!-- Sync button toggles both send and receive: <input type="checkbox" name="ST"><br> --><span>${be556cd78713b7927c1e7e054cc3393afa90bfae:
+		Enable simplified UI: }</span><input name="SU" type="checkbox"/><br/>
+<i><span>${2592ef860bc8211b5246c7534d6462fd4a12ee72:The following UI customization settings are unique both to the WLED device and this browser.}</span><br/><span>${f38c4f5cba93a4a806cd0ce12eaf425a68303861:
+		You will need to set them again if using a different browser, device or WLED IP address.}</span><br/><span>${966ed2f427330c660a1619e1d62063b9e50d8f95:
+		Refresh the main UI to apply changes.}</span></i><br/>
+<div id="gen">${f88f6cffb1c2f18858c71ff22aae74a8f543f327:Loading settings...}</div>
+<h3>${6a77f4ee89ab4a2abb59ccdb1f6ae3c2d9350990:UI Appearance}</h3>
+<span class="l"></span>: <input class="agi cb" id="comp_labels" type="checkbox"/><br/>
+<span class="l"></span>: <input class="agi cb" id="comp_pcmbot" type="checkbox"/><br/>
+<span class="l"></span>: <input class="agi cb" id="comp_pid" type="checkbox"/><br/>
+<span class="l"></span>: <input class="agi cb" id="comp_seglen" type="checkbox"/><br/>
+<span class="l"></span>: <input class="agi cb" id="comp_segpwr" type="checkbox"/><br/>
+<span class="l"></span>: <input class="agi cb" id="comp_segexp" type="checkbox"/><br/>
+<span class="l"></span>: <input class="agi cb" id="comp_fxdef" type="checkbox"/><br/>
+<span class="l"></span>: <input class="agi" id="comp_on" max="250" min="0" step="1" type="number"/><br/>
+<span class="l"></span>: <input class="agi" id="comp_off" max="250" min="0" step="1" type="number"/><br/>
+<span class="l"></span>: <input class="agi cb" id="comp_idsort" type="checkbox"/><br/><span>${efd1f1104f028aeb3765cf7e4b79a6036a7b1b71:
+		I hate dark mode: }</span><input id="dm" onchange="UI()" type="checkbox"/><br/>
+<span id="idonthateyou" style="display:none"><i>${1d96ee62e7596df2acd1fafd3a854d3d7b0bc99d:Why would you? }</i>🥺<br/></span>
+<span class="l"></span>: <input class="agi" id="theme_alpha_tab" max="1.0" min="0.0" step="0.01" type="number"/><br/>
+<span class="l"></span>: <input class="agi" id="theme_alpha_bg" max="1.0" min="0.0" step="0.01" type="number"/><br/>
+<span class="l"></span>: <input class="agi" id="theme_color_bg" maxlength="9" type="text"/><br/><span>${6f16ef7125bbb03b86f358d7977a528f52c730db:
+		BG image: }</span><input accept="image/*" id="theme_bg_img" onchange="ownBg(this)" type="file"/> <input onclick="removeBgImg()" type="button" value="Remove"/><br/>
+<span class="l"></span>: <input class="agi cb" id="theme_bg_rnd" onchange="randomBg();toggle('Image');" type="checkbox"/>
+<div id="Image">
+<div id="bg_url">
+<span class="l"></span>: <input class="agi" id="theme_bg_url" type="text"/><br/>
+</div>
+</div>
+<div class="hide" id="NoImage">
+<h4>${788be0271ac83748bc8bb6449e969a7711d19e7b:Random BG image settings}</h4>
+<span class="l"></span>: <input class="agi cb" id="theme_bg_rndGrayscale" onchange="randomBg()" type="checkbox"/><br/>
+<span class="l"></span>: <input class="agi cb" id="theme_bg_rndBlur" onchange="randomBg()" type="checkbox"/><br/>
+</div>
+<input class="agi" id="theme_base" style="display:none"/>
+<span class="l"></span>: <input class="agi cb" id="comp_css" type="checkbox"/><br/>
+<div id="skin"><span>${1dadd769e810c0d8dbddd6e6201d868794061ddb:Custom CSS: }</span><input accept=".css" name="data" type="file"/> <input onclick="uploadFile(d.Sf.data,'/skin.css');" type="button" value="Upload"/><br/></div>
+<span class="l"></span>: <input class="agi cb" id="comp_hdays" type="checkbox"/><br/>
+<div id="holidays"><span>${4cf25a5dd632d7db029379b88997b0a4501f7676:Holidays: }</span><input accept=".json" name="data2" type="file"/> <input onclick="uploadFile(d.Sf.data2,'/holidays.json');" type="button" value="Upload"/><br/></div>
+<div id="toast"></div>
+<hr/><button onclick="cLS()" type="button">${155251bb4b933aa15838943604d78ca4dcd41544:Clear local storage}</button>
+<hr/><button onclick="B()" type="button">${b52b36b7269fbfc58ec24bb724691951a3decbe8:Back}</button><button onclick="Save()" type="button">${efc007a393f66cdb14d57d385822a3d9e36ef873:Save}</button>
+</form>
+<div id="I18N:template" style="display:none">wled00/data/settings_ui.htm</div></body>
 </html>

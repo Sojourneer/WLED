@@ -1,11 +1,12 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
-	<meta charset="utf-8">
-	<title>Misc Settings</title>
-	<script src="common.js" async type="text/javascript"></script>
-	<script>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<meta charset="utf-8"/>
+<title>${2e7bb8d4f3e22dc0d5ca81492dbeff6aee326207:Misc Settings}</title>
+<script async="" src="common.js" type="text/javascript"></script>
+<script>
 		function U() { window.open(getURL("/update"),"_self"); }
 		function checkNum(o) {
 			const specialkeys = ["Backspace", "Tab", "Enter", "Shift", "Control", "Alt", "Pause", "CapsLock", "Escape", "Space", "PageUp", "PageDown", "End", "Home", "ArrowLeft", "ArrowUp", "ArrowRight", "ArrowDown", "Insert", "Delete"];
@@ -30,52 +31,52 @@
 			if (loc) d.Sf.action = getURL('/settings/sec');
 		}
 	</script>
-	<style>
+<style>
 		@import url("style.css");
 	</style>
-</head>
+<script src="../scripts/localize.js"></script></head>
 <body onload="S()">
-	<form id="form_s" name="Sf" method="post">
-		<div class="toprow">
-		<div class="helpB"><button type="button" onclick="H('features/settings/#security-settings')">?</button></div>
-		<button type="button" onclick="B()">Back</button><button type="submit">Save</button><hr>
-		</div>
-		<h2>Security & Update setup</h2>
-		Settings PIN: <input type="password" id="PIN" name="PIN" size="4" maxlength="4" minlength="4" onkeydown="checkNum(this)" pattern="[0-9]*" inputmode="numeric" title="Please enter a 4 digit number"><br>
-		<div class="warn">&#9888; Unencrypted transmission. Be prudent when selecting PIN, do NOT use your banking, door, SIM, etc. pin!</div><br>
-		Lock wireless (OTA) software update: <input type="checkbox" name="NO"><br>
-		Passphrase: <input type="password" name="OP" maxlength="32"><br>
-		To enable OTA, for security reasons you need to also enter the correct password!<br>
-		The password should be changed when OTA is enabled.<br>
-		<b>Disable OTA when not in use, otherwise an attacker can reflash device software!</b><br>
-		<i>Settings on this page are only changable if OTA lock is disabled!</i><br>
-		Deny access to WiFi settings if locked: <input type="checkbox" name="OW"><br><br>
-		Factory reset: <input type="checkbox" name="RS"><br>
-		All settings and presets will be erased.<br><br>
-		<div class="warn">&#9888; Unencrypted transmission. An attacker on the same network can intercept form data!</div>
-		<hr>
-		<h3>Software Update</h3>
-		<button type="button" onclick="U()">Manual OTA Update</button><br>
-		Enable ArduinoOTA: <input type="checkbox" name="AO">
-		<hr>
-		<h3>Backup & Restore</h3>
-		<div class="warn">&#9888; Restoring presets/configuration will OVERWRITE your current presets/configuration.<br>
-		Incorrect upload or configuration may require a factory reset or re-flashing of your ESP.</div>
+<form id="form_s" method="post" name="Sf">
+<div class="toprow">
+<div class="helpB"><button onclick="H('features/settings/#security-settings')" type="button">?</button></div>
+<button onclick="B()" type="button">${b52b36b7269fbfc58ec24bb724691951a3decbe8:Back}</button><button type="submit">${efc007a393f66cdb14d57d385822a3d9e36ef873:Save}</button><hr/>
+</div>
+<h2>${cf0f86423b37882488d2ba4eb5092a5e4f49b01a:Security &amp; Update setup}</h2><span>${700b3099dbde83916dfe18d24f8898d12f251330:
+		Settings PIN: }</span><input data-I18N="title" id="PIN" inputmode="numeric" maxlength="4" minlength="4" name="PIN" onkeydown="checkNum(this)" pattern="[0-9]*" size="4" title="${15df9efad16a624957105e7e807a58154bcc37d9:Please enter a 4 digit number}" type="password"/><br/>
+<div class="warn">${83395ec989f2344bc79065db7dbb8bb66fe27141:⚠ Unencrypted transmission. Be prudent when selecting PIN, do NOT use your banking, door, SIM, etc. pin!}</div><br/><span>${2105dc15cc5d3ebcc3332ff4b6c3bb6b5c46066a:
+		Lock wireless (OTA) software update: }</span><input name="NO" type="checkbox"/><br/><span>${99e18cd30bccaf376998232f5202d877f132b2e0:
+		Passphrase: }</span><input maxlength="32" name="OP" type="password"/><br/><span>${d7391ff8158a7b7912f8c5dee29ba71eda92c7b5:
+		To enable OTA, for security reasons you need to also enter the correct password!}</span><br/><span>${9e230c72658d448523c0dc7fecba9881c16d6cc0:
+		The password should be changed when OTA is enabled.}</span><br/>
+<b>${64384d82fc61a422d7cc7a50e48335b7ac2f5d77:Disable OTA when not in use, otherwise an attacker can reflash device software!}</b><br/>
+<i>${2e128451fec65e9cf2c2347b551ddb141908cd76:Settings on this page are only changable if OTA lock is disabled!}</i><br/><span>${4ea88824be45e76e1fc027a08439495a7bfde728:
+		Deny access to WiFi settings if locked: }</span><input name="OW" type="checkbox"/><br/><br/><span>${b46f7aba62433eb7197120d73f3b8d7f086b879a:
+		Factory reset: }</span><input name="RS" type="checkbox"/><br/><span>${1d59c3316340522604d21085f1a9bab79bd48397:
+		All settings and presets will be erased.}</span><br/><br/>
+<div class="warn">${c83797ac186073f9801e6925d56e6a86d25b09ed:⚠ Unencrypted transmission. An attacker on the same network can intercept form data!}</div>
+<hr/>
+<h3>${452fd054601e358da7b9f31b863412e92bc679f2:Software Update}</h3>
+<button onclick="U()" type="button">${8745d860adb0de08ce0a9db1a7da4692eeffd8f2:Manual OTA Update}</button><br/><span>${0ee7a22dc86f9df3cc488a04f24c887df3bcbf58:
+		Enable ArduinoOTA: }</span><input name="AO" type="checkbox"/>
+<hr/>
+<h3>${3bdd40706d7f5322db2cafd49166f7795579e5c4:Backup &amp; Restore}</h3>
+<div class="warn"><span>${97b188b30243ab03a715b883478ee8218de11199:⚠ Restoring presets/configuration will OVERWRITE your current presets/configuration.}</span><br/><span>${1e2566328c1fb964cfbd460fb12bc461f2b393b1:
+		Incorrect upload or configuration may require a factory reset or re-flashing of your ESP.}</span></div><span>${6ac4b2825ec4b26b23b606d066f82603452e5549:
 		For security reasons, passwords are not backed up.
-		<a class="btn lnk" id="bckcfg" href="/presets.json" download="presets">Backup presets</a><br>
-		<div>Restore presets<br><input type="file" name="data" accept=".json"> <button type="button" onclick="uploadFile(d.Sf.data,'/presets.json');">Upload</button><br></div><br>
-		<a class="btn lnk" id="bckpresets" href="/cfg.json" download="cfg">Backup configuration</a><br>
-		<div>Restore configuration<br><input type="file" name="data2" accept=".json"> <button type="button" onclick="uploadFile(d.Sf.data2,'/cfg.json');">Upload</button><br></div>
-		<hr>
-		<h3>About</h3>
-		<a href="https://github.com/Aircoookie/WLED/" target="_blank">WLED</a>&#32;version ##VERSION##<!-- Autoreplaced from package.json --><br><br>
-		<a href="https://github.com/Aircoookie/WLED/wiki/Contributors-and-credits" target="_blank">Contributors, dependencies and special thanks</a><br>
-		A huge thank you to everyone who helped me create WLED!<br><br>
-		(c) 2016-2024 Christian Schwinne <br>
-		<i>Licensed under the <a href="https://github.com/Aircoookie/WLED/blob/master/LICENSE" target="_blank">EUPL v1.2 license</a></i><br><br>
-		Server message: <span class="sip"> Response error! </span><hr>
-		<div id="toast"></div>
-		<button type="button" onclick="B()">Back</button><button type="submit">Save</button>
-	</form>
-</body>
+		}</span><a class="btn lnk" download="presets" href="/presets.json" id="bckcfg">${07c61f9bef4b74b25ad4d753a39f824f2f1bf385:Backup presets}</a><br/>
+<div><span>${cc4c7cee8816cf2fc1ebd22a4daa40fb6c183c0c:Restore presets}</span><br/><input accept=".json" name="data" type="file"/> <button onclick="uploadFile(d.Sf.data,'/presets.json');" type="button">${8bdf057f91e76ae328b2a21d35f682daa08a0ec0:Upload}</button><br/></div><br/>
+<a class="btn lnk" download="cfg" href="/cfg.json" id="bckpresets">${5977e4b9f6978e5732fbe0df6ae559a2b6a90831:Backup configuration}</a><br/>
+<div><span>${d6dbe6dde8f2603507f8bdcc9b63a1e0a9b26186:Restore configuration}</span><br/><input accept=".json" name="data2" type="file"/> <button onclick="uploadFile(d.Sf.data2,'/cfg.json');" type="button">${8bdf057f91e76ae328b2a21d35f682daa08a0ec0:Upload}</button><br/></div>
+<hr/>
+<h3>${6b21fb791ac05170893860c248401cd24a59b732:About}</h3>
+<a href="https://github.com/Aircoookie/WLED/" target="_blank">${594b50096d0342573a7eca51b7e5d59ba3184969:WLED}</a><span>${2103ac66eda2d3be2a881464e40cb63f5d45a3f2: version ##VERSION##}</span><!-- Autoreplaced from package.json --><br/><br/>
+<a href="https://github.com/Aircoookie/WLED/wiki/Contributors-and-credits" target="_blank">${727393cee583b6e6727820e4c0f59c6e55bca7cc:Contributors, dependencies and special thanks}</a><br/><span>${b9b7489703829dff2488a53749e33dabbdec2b93:
+		A huge thank you to everyone who helped me create WLED!}</span><br/><br/><span>${9ebf47b3cc808cf2ecb43f8fa8c0054b29124949:
+		(c) 2016-2024 Christian Schwinne }</span><br/>
+<i><span>${b7f9203484e3ab7bd569d902e718128a6fb071d8:Licensed under the }</span><a href="https://github.com/Aircoookie/WLED/blob/master/LICENSE" target="_blank">${83745387b346808ac113b6116fce29bcf79a999b:EUPL v1.2 license}</a></i><br/><br/><span>${bd4f81a7ffe0164e8b309fdfd93313c7781efbfa:
+		Server message: }</span><span class="sip">${eec928982503ae6be8150182748991d5124d89a7: Response error! }</span><hr/>
+<div id="toast"></div>
+<button onclick="B()" type="button">${b52b36b7269fbfc58ec24bb724691951a3decbe8:Back}</button><button type="submit">${efc007a393f66cdb14d57d385822a3d9e36ef873:Save}</button>
+</form>
+<div id="I18N:template" style="display:none">wled00/data/settings_sec.htm</div></body>
 </html>

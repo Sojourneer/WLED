@@ -1,11 +1,12 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
-	<title>LED Settings</title>
-	<script src="common.js" async type="text/javascript"></script>
-	<script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>${ef67305f219a928b34a21e0cad5d7d2e2e05c68e:LED Settings}</title>
+<script async="" src="common.js" type="text/javascript"></script>
+<script>
 		var laprev=55,maxB=1,maxD=1,maxA=1,maxV=0,maxM=4000,maxPB=2048,maxL=1664,maxCO=5,maxLbquot=0; //maximum bytes for LED allocation: 4kB for 8266, 32kB for 32
 		var oMaxB=1;
 		var customStarts=false,startsDirty=[];
@@ -738,144 +739,144 @@ Swap: <select id="xw${s}" name="XW${s}">
 			return opt;
 		}
 	</script>
-	<style>@import url("style.css");</style>
-</head>
+<style>@import url("style.css");</style>
+<script src="../scripts/localize.js"></script></head>
 <body onload="S()">
-	<form id="form_s" name="Sf" method="post">
-		<div class="toprow">
-		<div class="helpB"><button type="button" onclick="H('features/settings/#led-settings')">?</button></div>
-		<button type="button" onclick="B()">Back</button><button type="submit">Save</button><hr>
-		</div>
-		<h2>LED &amp; Hardware setup</h2>
-		Total LEDs: <span id="lc">?</span> <span id="pc"></span><br>
-		<i>Recommended power supply for brightest white:</i><br>
-		<b><span id="psu">?</span></b><br>
-		<span id="psu2"><br></span>
-		<br>
-		Enable automatic brightness limiter: <input type="checkbox" name="ABL" onchange="enABL()"><br>
-		<div id="abl">
-			<i>Automatically limits brightness to stay close to the limit.<br>
-				Keep at &lt;1A if poweing LEDs directly from the ESP 5V pin!<br>
-				If using multiple outputs it is recommended to use per-output limiter.<br>
-				Analog (PWM) and virtual LEDs cannot use automatic brightness limiter.<br></i>
-			<div id="psuMA">Maximum PSU Current: <input name="MA" type="number" class="xl" min="250" max="65000" oninput="UI()" required> mA<br></div>
-			Use per-output limiter: <input type="checkbox" name="PPL" onchange="UI()"><br>
-			<div id="ppldis" style="display:none;">
-				<i>Make sure you enter correct value for each LED output.<br>
-				If using multiple outputs with only one PSU, distribute its power proportionally amongst outputs.</i><br>
-			</div>
-			<div id="ampwarning" class="warn" style="display: none;">
-				&#9888; Your power supply provides high current.<br>
-				To improve the safety of your setup,<br>
-				please use thick cables,<br>
-				multiple power injection points and a fuse!<br>
-			</div>
-		</div>
-		<h3>Hardware setup</h3>
-		<div id="mLC">LED outputs:</div>
-		<hr class="sml">
-		<button type="button" id="+" onclick="addLEDs(1,false)">+</button>
-		<button type="button" id="-" onclick="addLEDs(-1,false)">-</button><br>
-		LED memory usage: <span id="m0">0</span> / <span id="m1">?</span> B<br>
-		<div id="dbar" style="display:inline-block; width: 100px; height: 10px; border-radius: 20px;"></div><br>
-		<div id="ledwarning" class="warn" style="display: none;">
-			&#9888; You might run into stability or lag issues.<br>
-			Use less than <span id="wreason">800 LEDs per output</span> for the best experience!<br>
-		</div>
-		<hr class="sml">
-		Make a segment for each output: <input type="checkbox" name="MS"><br>
-		Custom bus start indices: <input type="checkbox" onchange="tglSi(this.checked)" id="si"><br>
-		Use global LED buffer: <input type="checkbox" name="LD" onchange="UI()"><br>
-		<hr class="sml">
-		<div id="color_order_mapping">
+<form id="form_s" method="post" name="Sf">
+<div class="toprow">
+<div class="helpB"><button onclick="H('features/settings/#led-settings')" type="button">?</button></div>
+<button onclick="B()" type="button">${b52b36b7269fbfc58ec24bb724691951a3decbe8:Back}</button><button type="submit">${efc007a393f66cdb14d57d385822a3d9e36ef873:Save}</button><hr/>
+</div>
+<h2>${94ef4b2e00939f32280b623e3d4a0228c2ea2957:LED &amp; Hardware setup}</h2><span>${4231e50377cc6c4a63c84ce20db6efaa27c9b9ec:
+		Total LEDs: }</span><span id="lc">?</span> <span id="pc"></span><br/>
+<i>${df6f1c4955172bca3d341bf1ab0a2efbc5b73bd7:Recommended power supply for brightest white:}</i><br/>
+<b><span id="psu">?</span></b><br/>
+<span id="psu2"><br/></span>
+<br/><span>${1f6c188166f989d0a83f824b29cb609ff0ef2655:
+		Enable automatic brightness limiter: }</span><input name="ABL" onchange="enABL()" type="checkbox"/><br/>
+<div id="abl">
+<i><span>${a9fc61a7b95669ff93c93b3e937296ddcdd00050:Automatically limits brightness to stay close to the limit.}</span><br/><span>${85b0106eaa2f114732b354141714fcce115033b3:
+				Keep at &lt;1A if poweing LEDs directly from the ESP 5V pin!}</span><br/><span>${545712d9bba96abc170ffe93449410a9587c3d1e:
+				If using multiple outputs it is recommended to use per-output limiter.}</span><br/><span>${3ff6d577a3dbf68bb7a695f124b57d351e53f937:
+				Analog (PWM) and virtual LEDs cannot use automatic brightness limiter.}</span><br/></i>
+<div id="psuMA"><span>${f111595b2aa0ffc8b86154bf0ced7a9aba3f4ff4:Maximum PSU Current: }</span><input class="xl" max="65000" min="250" name="MA" oninput="UI()" required="" type="number"/><span>${0534704493a32f7e8a7ae32813acae5ac5b8b076: mA}</span><br/></div><span>${a4bd307b849f3bc234e954c1892c632ab1f99730:
+			Use per-output limiter: }</span><input name="PPL" onchange="UI()" type="checkbox"/><br/>
+<div id="ppldis" style="display:none;">
+<i><span>${88efe069511bc74aea50acc125b6646d8b3091f0:Make sure you enter correct value for each LED output.}</span><br/><span>${c82a8dbf2807c35c4c422e8d9f6859bcb24e14dd:
+				If using multiple outputs with only one PSU, distribute its power proportionally amongst outputs.}</span></i><br/>
+</div>
+<div class="warn" id="ampwarning" style="display: none;"><span>${1a9e7cd4466ef59c322cec9ec10ea38ffa5921e4:
+				⚠ Your power supply provides high current.}</span><br/><span>${04a42b2f5ced176b1f349b5d825a9f853fa2a1b8:
+				To improve the safety of your setup,}</span><br/><span>${b5f9085c21c1335104bee789a1db818bab023ab5:
+				please use thick cables,}</span><br/><span>${9bb1082c606a30d1168b0b6a7d876f62cb623037:
+				multiple power injection points and a fuse!}</span><br/>
+</div>
+</div>
+<h3>${c185c18be2e1d6a7df737f142be54e6d7c1b0fb9:Hardware setup}</h3>
+<div id="mLC">${00247040dbdfb4be9128f6fb74c29351a8bcb474:LED outputs:}</div>
+<hr class="sml"/>
+<button id="+" onclick="addLEDs(1,false)" type="button">+</button>
+<button id="-" onclick="addLEDs(-1,false)" type="button">-</button><br/><span>${c83f81cf7bc95ff4002b829e9b16cb8bf841ebc3:
+		LED memory usage: }</span><span id="m0">0</span> / <span id="m1">?</span><span>${cf8ce7db2b900ab8c5bc00003ce24c721f427c1a: B}</span><br/>
+<div id="dbar" style="display:inline-block; width: 100px; height: 10px; border-radius: 20px;"></div><br/>
+<div class="warn" id="ledwarning" style="display: none;"><span>${aa5244a1331f1c0783095c25cb38956a57c3a56e:
+			⚠ You might run into stability or lag issues.}</span><br/><span>${f3935516094203136b1db12471ae78619e9a07ce:
+			Use less than }</span><span id="wreason">${3e29452bf89cfecfe9d76998eadc5ba6c85ac33b:800 LEDs per output}</span><span>${446c09ad30cd808865a6f1bcab0daeb85c0a1ca0: for the best experience!}</span><br/>
+</div>
+<hr class="sml"/><span>${d624cee0db4f4716f4837d8e2b5a516578711c70:
+		Make a segment for each output: }</span><input name="MS" type="checkbox"/><br/><span>${5242aff4fcdbc60bd2118662107ec1704503d49e:
+		Custom bus start indices: }</span><input id="si" onchange="tglSi(this.checked)" type="checkbox"/><br/><span>${38bd8ac3fc8d9a2df36d6d919725ae4702173cfe:
+		Use global LED buffer: }</span><input name="LD" onchange="UI()" type="checkbox"/><br/>
+<hr class="sml"/>
+<div id="color_order_mapping"><span>${b5c3914317e29693a39b7505ad64d5a9cdad8232:
 			Color Order Override:
-			<div id="com_entries"></div>
-			<hr class="sml">
-			<button type="button" id="com_add" onclick="addCOM()">+</button>
-			<button type="button" id="com_rem" onclick="remCOM()">-</button><br>
-		</div>
-		<hr class="sml">
-		<div id="btns"></div>
-		Disable internal pull-up/down: <input type="checkbox" name="IP"><br>
-		Touch threshold: <input type="number" class="s" min="0" max="100" name="TT" required><br>
-		<hr class="sml">
-		IR GPIO: <input type="number" min="-1" max="48" name="IR" onchange="UI()" class="xs"><select name="IT" onchange="UI()">
-		<option value=0>Remote disabled</option>
-		<option value=1>24-key RGB</option>
-		<option value=2>24-key with CT</option>
-		<option value=3>40-key blue</option>
-		<option value=4>44-key RGB</option>
-		<option value=5>21-key RGB</option>
-		<option value=6>6-key black</option>
-		<option value=7>9-key red</option>
-		<option value=8>JSON remote</option>
-		</select><span style="cursor: pointer;" onclick="off('IR')">&nbsp;&#x2715;</span><br>
-		Apply IR change to main segment only: <input type="checkbox" name="MSO"><br>
-		<div id="json" style="display:none;">JSON file: <input type="file" name="data" accept=".json"><button type="button" class="sml" onclick="uploadFile(d.Sf.data,'/ir.json')">Upload</button><br></div>
-		<a href="https://kno.wled.ge/interfaces/infrared/" target="_blank">IR info</a><br>
-		<hr class="sml">
-		Relay GPIO: <input type="number" min="-1" max="48" name="RL" onchange="UI()" class="xs"><span style="cursor: pointer;" onclick="off('RL')">&nbsp;&#x2715;</span><br>
-		Invert <input type="checkbox" name="RM"> Open drain <input type="checkbox" name="RO"><br>
-		<hr class="sml">
-		<h3>Defaults</h3>
-		Turn LEDs on after power up/reset: <input type="checkbox" name="BO"><br>
-		Default brightness: <input name="CA" type="number" class="m" min="1" max="255" required> (1-255)<br><br>
-		Apply preset <input name="BP" type="number" class="m" min="0" max="250" required> at boot (0 uses values from above)<br><br>
-		Use Gamma correction for color: <input type="checkbox" name="GC"> (strongly recommended)<br>
-		Use Gamma correction for brightness: <input type="checkbox" name="GB"> (not recommended)<br>
-		Use Gamma value: <input name="GV" type="number" class="m" placeholder="2.8" min="1" max="3" step="0.1" required><br><br>
-		Brightness factor: <input name="BF" type="number" class="m" min="1" max="255" required> %
-		<h3>Transitions</h3>
-		Enable transitions: <input type="checkbox" name="TF" onchange="gId('tran').style.display=this.checked?'inline':'none';"><br>
-		<span id="tran">
-			Effect blending: <input type="checkbox" name="EB"><br>
-			Default transition time: <input name="TD" type="number" class="xl" min="0" max="65500"> ms<br>
-			Palette transitions: <input type="checkbox" name="PF"><br>
-		</span>
-		<i>Random Cycle</i> Palette Time: <input name="TP" type="number" class="m" min="1" max="255"> s<br>
-		Use harmonic <i>Random Cycle</i> Palette: <input type="checkbox" name="TH"><br>
-		<h3>Timed light</h3>
-		Default duration: <input name="TL" type="number" class="m" min="1" max="255" required> min<br>
-		Default target brightness: <input name="TB" type="number" class="m" min="0" max="255" required><br>
+			}</span><div id="com_entries"></div>
+<hr class="sml"/>
+<button id="com_add" onclick="addCOM()" type="button">+</button>
+<button id="com_rem" onclick="remCOM()" type="button">-</button><br/>
+</div>
+<hr class="sml"/>
+<div id="btns"></div><span>${61444215dce6f711c38cac11fab38ece760114e7:
+		Disable internal pull-up/down: }</span><input name="IP" type="checkbox"/><br/><span>${0a383f76ae5d31ac6240160c6facf0e9faa5609d:
+		Touch threshold: }</span><input class="s" max="100" min="0" name="TT" required="" type="number"/><br/>
+<hr class="sml"/><span>${f9cb7f3c6dd9ed292f4906adadc22f281daa081a:
+		IR GPIO: }</span><input class="xs" max="48" min="-1" name="IR" onchange="UI()" type="number"/><select name="IT" onchange="UI()">
+<option value="0">${8f3eda69d33dfb8db0e3178c719a8d882575a4ac:Remote disabled}</option>
+<option value="1">${3be1533f15a6df19c981ef89d78d449017c93655:24-key RGB}</option>
+<option value="2">${5b8f9087270c5b961bcacddc8a2d8d537dc1a31c:24-key with CT}</option>
+<option value="3">${a5c5ffdad95705054e8248cb129f47fb3521cc46:40-key blue}</option>
+<option value="4">${d9683792f52eca5054885a65330e3934824b1c53:44-key RGB}</option>
+<option value="5">${ab21a688734a7cb22980c72143dd1ff1be20873b:21-key RGB}</option>
+<option value="6">${9a44851d02c35f682f9f59c67c8354863fb7d298:6-key black}</option>
+<option value="7">${27050cf220d839f6d512e0c170534c55ba6a1e27:9-key red}</option>
+<option value="8">${3e737c6a547c849cc4bb3acf289a9d752f5b4a59:JSON remote}</option>
+</select><span onclick="off('IR')" style="cursor: pointer;"> ✕</span><br/><span>${697c8abc94c694d31a87964eea05fe255c1d6ea0:
+		Apply IR change to main segment only: }</span><input name="MSO" type="checkbox"/><br/>
+<div id="json" style="display:none;"><span>${db4c4e7e796c96b9701bf3bf964665e04e579af4:JSON file: }</span><input accept=".json" name="data" type="file"/><button class="sml" onclick="uploadFile(d.Sf.data,'/ir.json')" type="button">${8bdf057f91e76ae328b2a21d35f682daa08a0ec0:Upload}</button><br/></div>
+<a href="https://kno.wled.ge/interfaces/infrared/" target="_blank">${2c0c6ccda9f9f10296d837620289cf686581cc27:IR info}</a><br/>
+<hr class="sml"/><span>${0fb7885a34f402c893e013d55b95ea63ad301e1e:
+		Relay GPIO: }</span><input class="xs" max="48" min="-1" name="RL" onchange="UI()" type="number"/><span onclick="off('RL')" style="cursor: pointer;"> ✕</span><br/><span>${52e181a63cb2aa139d4c6bb9992cde224bf3e64a:
+		Invert }</span><input name="RM" type="checkbox"/><span>${d2b7653ee5a8c6db90a12dad3d58544d6318c2f4: Open drain }</span><input name="RO" type="checkbox"/><br/>
+<hr class="sml"/>
+<h3>${428819bf9e83cebda50efafb08cd2534c1583949:Defaults}</h3><span>${2bf4a6ae6f26919a091860b389fb0281291c9cd2:
+		Turn LEDs on after power up/reset: }</span><input name="BO" type="checkbox"/><br/><span>${199de5337d9f195832412f9cfbc6e55fd4d8cf08:
+		Default brightness: }</span><input class="m" max="255" min="1" name="CA" required="" type="number"/><span>${dfc0d1b0e2224ab589f7294f60f30776da7bcf24: (1-255)}</span><br/><br/><span>${e9d7cc5f7b4be0559011dfc4ae84736277db9d16:
+		Apply preset }</span><input class="m" max="250" min="0" name="BP" required="" type="number"/><span>${e8ac640c93dcfeb1dd5c72d8a331f9813b20c924: at boot (0 uses values from above)}</span><br/><br/><span>${87dcc0668c6a7b39a3d46e17412c716a3dece4f3:
+		Use Gamma correction for color: }</span><input name="GC" type="checkbox"/><span>${cab4369ce75abc497c318cb8bf95b8043e2e28b5: (strongly recommended)}</span><br/><span>${a0c7cc38fcca5315253d297d3cd00069b00a47cd:
+		Use Gamma correction for brightness: }</span><input name="GB" type="checkbox"/><span>${a07ce14f8de6ca5a0850ce9eb418dd1a4e1446ea: (not recommended)}</span><br/><span>${a2598cfb580ac404e429298c373fa5ede6e1d4ae:
+		Use Gamma value: }</span><input class="m" data-I18N="placeholder" max="3" min="1" name="GV" placeholder="${368ca55f0f4c6b77876e8bfadc9f650f1c6d984f:2.8}" required="" step="0.1" type="number"/><br/><br/><span>${dad28342eb2f408035e944bbb7d3c1bf4f065923:
+		Brightness factor: }</span><input class="m" max="255" min="1" name="BF" required="" type="number"/> %
+		<h3>${ab39260fea78bd5cdfde4b98ccfd4bc7bd02a43c:Transitions}</h3><span>${7b11999892c5b58c976c6cdb90b95c96653f8964:
+		Enable transitions: }</span><input name="TF" onchange="gId('tran').style.display=this.checked?'inline':'none';" type="checkbox"/><br/>
+<span id="tran"><span>${feda12b88eb10e058a8b3f27ec36a53d34a7594f:
+			Effect blending: }</span><input name="EB" type="checkbox"/><br/><span>${df5238eebc59c4304cc7822de5d0ae9cd3909f3b:
+			Default transition time: }</span><input class="xl" max="65500" min="0" name="TD" type="number"/><span>${c980fc9bd8fa926dcc04be62e2546551fac0c216: ms}</span><br/><span>${7265463da5a3d2ba6bb6df6ad4924f8e7cb863ca:
+			Palette transitions: }</span><input name="PF" type="checkbox"/><br/>
+</span>
+<i>${c04a64d166eb683b928c418c18fbd6a6662eb2cd:Random Cycle}</i><span>${57823de649323799d434b69620ed7add27725c63: Palette Time: }</span><input class="m" max="255" min="1" name="TP" type="number"/><span>${06d1d860e2947128b9b52a760634ecefa34eb1a1: s}</span><br/><span>${0a5e38ba06ab44fd566cc9e753662bb441dc2609:
+		Use harmonic }</span><i>${c04a64d166eb683b928c418c18fbd6a6662eb2cd:Random Cycle}</i><span>${863509fd1d1e5b17f97142b0d4f3ad5832906c3b: Palette: }</span><input name="TH" type="checkbox"/><br/>
+<h3>${604a6a3a16d26e25ebf7863624044952ab3e8fd1:Timed light}</h3><span>${f0ba3fb6eadc91f747c055f5fc83411b35b33273:
+		Default duration: }</span><input class="m" max="255" min="1" name="TL" required="" type="number"/><span>${f4e8a8b4ab16a38c118b5db1c5bb264282f1e9d8: min}</span><br/><span>${96213d353f760474c72649ea380126e63c782177:
+		Default target brightness: }</span><input class="m" max="255" min="0" name="TB" required="" type="number"/><br/><span>${89d90f197972c8f01325fcce665a669593acb4ba:
 		Mode:
-		<select name="TW">
-			<option value="0">Wait and set</option>
-			<option value="1">Fade</option>
-			<option value="2">Fade Color</option>
-			<option value="3">Sunrise</option>
-		</select>
-		<h3>White management</h3>
-		White Balance correction: <input type="checkbox" name="CCT"><br>
-		<div id="wc">
-			Global override for Auto-calculate white:<br>
-			<select name="AW">
-				<option value=255>Disabled</option>
-				<option value=0>None</option>
-				<option value=1>Brighter</option>
-				<option value=2>Accurate</option>
-				<option value=3>Dual</option>
-				<option value=4>Max</option>
-			</select>
-			<br>
-			Calculate CCT from RGB: <input type="checkbox" name="CR"><br>
-			CCT IC used (Athom 15W): <input type="checkbox" name="IC"><br>
-			CCT additive blending: <input type="number" class="s" min="0" max="100" name="CB" onchange="UI()" required> %<br>
-			<i class="warn">WARNING: When using H-bridge for reverse polarity (2-wire) CCT LED strip<br><b>make sure this value is 0</b>.<br>(ESP32 variants only, ESP8266 does not support H-bridges)</i>
-		</div>
-		<h3>Advanced</h3>
+		}</span><select name="TW">
+<option value="0">${0a0245962f79b572eec92a646ae4421ce4ef513d:Wait and set}</option>
+<option value="1">${5298d08bb7ae7d01f4efcdbb94ff03fc487fd11c:Fade}</option>
+<option value="2">${c7d80197e1f40256bbd37dbcaa34c4200f21c7df:Fade Color}</option>
+<option value="3">${fadf71c7ea92e6416fd6d89969f8e78a115cd3c1:Sunrise}</option>
+</select>
+<h3>${2b3b9b88fe9e209aafadd6a99cad3c4f30796e30:White management}</h3><span>${ec478c2e288140c68797b0ee679afbc6b2bf0e56:
+		White Balance correction: }</span><input name="CCT" type="checkbox"/><br/>
+<div id="wc"><span>${1021c15baff63949035b67f7fdc9222ec837d258:
+			Global override for Auto-calculate white:}</span><br/>
+<select name="AW">
+<option value="255">${f4f4473df8cb59f0a369aebee3d1509adc0151c6:Disabled}</option>
+<option value="0">${6eef6648406c333a4035cd5e60d0bf2ecf2606d7:None}</option>
+<option value="1">${573fc704c06b13f4ecd91a92e340c723d32964b9:Brighter}</option>
+<option value="2">${5f0869a88eb923f4b7f11e7b7b552413465e5768:Accurate}</option>
+<option value="3">${89e4fa7c6e21bf128815cf184349592868a477ce:Dual}</option>
+<option value="4">${a95e85aed56318093b024674e217cae0bd30241d:Max}</option>
+</select>
+<br/><span>${dd6a3b05b2424621afce1773d052aa56ba6eae52:
+			Calculate CCT from RGB: }</span><input name="CR" type="checkbox"/><br/><span>${6de2323a871e2efdf647dfb1f0354f68bf091631:
+			CCT IC used (Athom 15W): }</span><input name="IC" type="checkbox"/><br/><span>${bd8ecce562bf25a31105b610de59b1599c0f7f87:
+			CCT additive blending: }</span><input class="s" max="100" min="0" name="CB" onchange="UI()" required="" type="number"/> %<br/>
+<i class="warn"><span>${66559e8368c82c9d1cbf7fe87e619bd300241423:WARNING: When using H-bridge for reverse polarity (2-wire) CCT LED strip}</span><br/><b>${ae1160832e0f749c059bd3062c4d6274f3152541:make sure this value is 0}</b>.<br/><span>${2328083368a5dcafb193e9fce6a78a2d74b05fba:(ESP32 variants only, ESP8266 does not support H-bridges)}</span></i>
+</div>
+<h3>${4d064726954a17487f94e931f5b157b733ec22ed:Advanced}</h3><span>${5bb4fb5db7de3e21b5139509fe4fe153fc8a93e7:
 		Palette wrapping:
-		<select name="PB">
-			<option value="0">Linear (wrap if moving)</option>
-			<option value="1">Linear (always wrap)</option>
-			<option value="2">Linear (never wrap)</option>
-			<option value="3">None (not recommended)</option>
-		</select><br>
-		Target refresh rate: <input type="number" class="s" min="1" max="120" name="FR" required> FPS
-		<hr class="sml">
-		<div id="cfg">Config template: <input type="file" name="data2" accept=".json"><button type="button" class="sml" onclick="loadCfg(d.Sf.data2)">Apply</button><br></div>
-		<hr>
-		<button type="button" onclick="B()">Back</button><button type="submit">Save</button>
-	</form>
-	<div id="toast"></div>
-</body>
+		}</span><select name="PB">
+<option value="0">${13beb7837f276f3ca23a245b2d56249271d1a0bf:Linear (wrap if moving)}</option>
+<option value="1">${f5865d1a582e8fba1dcb2e9502577bb54fe02eaf:Linear (always wrap)}</option>
+<option value="2">${e37f0d5010fd240f66e38faacba9b6c27ec49f36:Linear (never wrap)}</option>
+<option value="3">${7c1cb97223e37e4a0ec08bb65da946267d72577f:None (not recommended)}</option>
+</select><br/><span>${1961f92f491701475f54f08b4d789c55d0fe919c:
+		Target refresh rate: }</span><input class="s" max="120" min="1" name="FR" required="" type="number"/><span>${e9c5818c534757ad91d0c0345c5efc209908b75e: FPS
+		}</span><hr class="sml"/>
+<div id="cfg"><span>${e7a9ba08e965324513a12fcc6249222c84d3f210:Config template: }</span><input accept=".json" name="data2" type="file"/><button class="sml" onclick="loadCfg(d.Sf.data2)" type="button">${cfea419c3b4e8b02ee586e70a28bf846e44cdda4:Apply}</button><br/></div>
+<hr/>
+<button onclick="B()" type="button">${b52b36b7269fbfc58ec24bb724691951a3decbe8:Back}</button><button type="submit">${efc007a393f66cdb14d57d385822a3d9e36ef873:Save}</button>
+</form>
+<div id="toast"></div>
+<div id="I18N:template" style="display:none">wled00/data/settings_leds.htm</div></body>
 </html>

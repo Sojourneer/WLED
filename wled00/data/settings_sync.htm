@@ -1,11 +1,12 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
-	<meta charset="utf-8">
-	<title>Sync Settings</title>
-	<script src="common.js" async type="text/javascript"></script>
-	<script>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<meta charset="utf-8"/>
+<title>${0671e52446e4760076751bff9015eb1e9d6566c3:Sync Settings}</title>
+<script async="" src="common.js" type="text/javascript"></script>
+<script>
 	function adj(){if (d.Sf.DI.value == 6454) {if (d.Sf.EU.value == 1) d.Sf.EU.value = 0;}
 					else if (d.Sf.DI.value == 5568) {if (d.Sf.DA.value == 0) d.Sf.DA.value = 1; if (d.Sf.EU.value == 0) d.Sf.EU.value = 1;} }
 	function FC()
@@ -41,189 +42,189 @@
 		return (loc ? locproto + "//" + locip : "") + path;
 	}
 	</script>
-	<style>@import url("style.css");</style>
-</head>
+<style>@import url("style.css");</style>
+<script src="../scripts/localize.js"></script></head>
 <body onload="S()">
-<form id="form_s" name="Sf" method="post" onsubmit="GC()">
+<form id="form_s" method="post" name="Sf" onsubmit="GC()">
 <div class="toprow">
-<div class="helpB"><button type="button" onclick="H('interfaces/udp-notifier/')">?</button></div>
-<button type="button" onclick="B()">Back</button><button type="submit">Save</button><hr>
+<div class="helpB"><button onclick="H('interfaces/udp-notifier/')" type="button">?</button></div>
+<button onclick="B()" type="button">${b52b36b7269fbfc58ec24bb724691951a3decbe8:Back}</button><button type="submit">${efc007a393f66cdb14d57d385822a3d9e36ef873:Save}</button><hr/>
 </div>
-<h2>Sync setup</h2>
-<h3>WLED Broadcast</h3>
-UDP Port: <input name="UP" type="number" min="1" max="65535" class="d5" required><br>
-2nd Port: <input name="U2" type="number" min="1" max="65535" class="d5" required><br>
-<div id="NoESPNOW" class="hide">
-<i class="warn">ESP-NOW support is disabled.<br></i>
+<h2>${5f2950e5cb02327abe9c1e07945b93baaf5c48e1:Sync setup}</h2>
+<h3>${7f92338166392a7a668f8368af077d4047f2acc9:WLED Broadcast}</h3><span>${e039d7d94a2dc7b8b107cc1c43df1908d63ccf0d:
+UDP Port: }</span><input class="d5" max="65535" min="1" name="UP" required="" type="number"/><br/><span>${87dc7e0913b78b91932d96ea446ee6a7a4f12331:
+2nd Port: }</span><input class="d5" max="65535" min="1" name="U2" required="" type="number"/><br/>
+<div class="hide" id="NoESPNOW">
+<i class="warn"><span>${e433cbf43982fa91d491591df38b67e0b3302dd5:ESP-NOW support is disabled.}</span><br/></i>
 </div>
-<div id="ESPNOW">
-Use ESP-NOW sync: <input type="checkbox" name="EN"><br><i>(in AP mode or no WiFi)</i><br>
+<div id="ESPNOW"><span>${bd7d99bf2e414c5e71e5d3d02db450dce9fecd67:
+Use ESP-NOW sync: }</span><input name="EN" type="checkbox"/><br/><i>${059420a1ac9f7faca6311f7095b67b0b7e73ea9a:(in AP mode or no WiFi)}</i><br/>
 </div>
-<h3>Sync groups</h3>
-<input name="GS" id="GS" type="number" style="display: none;"><!-- hidden inputs for bitwise group checkboxes -->
-<input name="GR" id="GR" type="number" style="display: none;">
+<h3>${db1210b44fe8278d98c84f35299d62ec6a3c866e:Sync groups}</h3>
+<input id="GS" name="GS" style="display: none;" type="number"/><!-- hidden inputs for bitwise group checkboxes -->
+<input id="GR" name="GR" style="display: none;" type="number"/>
 <table style="margin: 0 auto;">
-	<tr>
-		<td></td>
-		<td>1</td>
-		<td>2</td>
-		<td>3</td>
-		<td>4</td>
-		<td>5</td>
-		<td>6</td>
-		<td>7</td>
-		<td>8</td>
-	</tr>
-	<tr>
-		<td>Send:</td>
-		<td><input type="checkbox" id="G1" name="G1"></td>
-		<td><input type="checkbox" id="G2" name="G2"></td>
-		<td><input type="checkbox" id="G3" name="G3"></td>
-		<td><input type="checkbox" id="G4" name="G4"></td>
-		<td><input type="checkbox" id="G5" name="G5"></td>
-		<td><input type="checkbox" id="G6" name="G6"></td>
-		<td><input type="checkbox" id="G7" name="G7"></td>
-		<td><input type="checkbox" id="G8" name="G8"></td>
-	</tr>
-	<tr>
-		<td>Receive:</td>
-		<td><input type="checkbox" id="R1" name="R1"></td>
-		<td><input type="checkbox" id="R2" name="R2"></td>
-		<td><input type="checkbox" id="R3" name="R3"></td>
-		<td><input type="checkbox" id="R4" name="R4"></td>
-		<td><input type="checkbox" id="R5" name="R5"></td>
-		<td><input type="checkbox" id="R6" name="R6"></td>
-		<td><input type="checkbox" id="R7" name="R7"></td>
-		<td><input type="checkbox" id="R8" name="R8"></td>
-	</tr>
+<tr>
+<td></td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+</tr>
+<tr>
+<td>${15784e643e9be417de60ab9fd8db52457e6906a1:Send:}</td>
+<td><input id="G1" name="G1" type="checkbox"/></td>
+<td><input id="G2" name="G2" type="checkbox"/></td>
+<td><input id="G3" name="G3" type="checkbox"/></td>
+<td><input id="G4" name="G4" type="checkbox"/></td>
+<td><input id="G5" name="G5" type="checkbox"/></td>
+<td><input id="G6" name="G6" type="checkbox"/></td>
+<td><input id="G7" name="G7" type="checkbox"/></td>
+<td><input id="G8" name="G8" type="checkbox"/></td>
+</tr>
+<tr>
+<td>${929e6bddcfb276a95a901fab9980b0c358326921:Receive:}</td>
+<td><input id="R1" name="R1" type="checkbox"/></td>
+<td><input id="R2" name="R2" type="checkbox"/></td>
+<td><input id="R3" name="R3" type="checkbox"/></td>
+<td><input id="R4" name="R4" type="checkbox"/></td>
+<td><input id="R5" name="R5" type="checkbox"/></td>
+<td><input id="R6" name="R6" type="checkbox"/></td>
+<td><input id="R7" name="R7" type="checkbox"/></td>
+<td><input id="R8" name="R8" type="checkbox"/></td>
+</tr>
 </table>
-<h3>Receive</h3>
-<nowrap><input type="checkbox" name="RB">Brightness,</nowrap> <nowrap><input type="checkbox" name="RC">Color,</nowrap> <nowrap><input type="checkbox" name="RX">Effects,</nowrap> <nowrap>and <input type="checkbox" name="RP">Palette</nowrap><br>
-<input type="checkbox" name="SO"> Segment options, <input type="checkbox" name="SG"> bounds
-<h3>Send</h3>
-Enable Sync on start: <input type="checkbox" name="SS"><br>
-Send notifications on direct change: <input type="checkbox" name="SD"><br>
-Send notifications on button press or IR: <input type="checkbox" name="SB"><br>
-Send Alexa notifications: <input type="checkbox" name="SA"><br>
-Send Philips Hue change notifications: <input type="checkbox" name="SH"><br>
-UDP packet retransmissions: <input name="UR" type="number" min="0" max="30" class="d5" required><br><br>
-<i>Reboot required to apply changes. </i>
-<hr class="sml">
-<h3>Instance List</h3>
-Enable instance list: <input type="checkbox" name="NL"><br>
-Make this instance discoverable: <input type="checkbox" name="NB">
-<hr class="sml">
-<h3>Realtime</h3>
-Receive UDP realtime: <input type="checkbox" name="RD"><br>
-Use main segment only: <input type="checkbox" name="MO"><br>
-Respect LED Maps: <input type="checkbox" name="RLM"><br><br>
-<i>Network DMX input</i><br>
+<h3>${965fb2ddf63d60f41c2b7d79cc2da9a78750f622:Receive}</h3>
+<nowrap><input name="RB" type="checkbox"/><span>${144c2a8fd9eb625c0ade6ee5c31b740149c6b4a7:Brightness,}</span></nowrap> <nowrap><input name="RC" type="checkbox"/><span>${1315c57252b3cbeb730e667e2a956d4961f63c60:Color,}</span></nowrap> <nowrap><input name="RX" type="checkbox"/><span>${36c657a0a5312ac63bce1838acad3d6a41195a2a:Effects,}</span></nowrap> <nowrap><span>${97e2118f062c0eef860e7af8cde4ca8fff0b10ce:and }</span><input name="RP" type="checkbox"/><span>${bd6f1035d2811f9773e2b776a6cdf55cb6d92b6e:Palette}</span></nowrap><br/>
+<input name="SO" type="checkbox"/><span>${155f6f650b8a2808938f6ddde7a72606dfdf11ad: Segment options, }</span><input name="SG" type="checkbox"/><span>${475a54949c6afa731b9d082277a7368876dd555c: bounds
+}</span><h3>${9bc2575c3930437e80555f78757b783c842e8e66:Send}</h3><span>${1a266f68e6b16220d17a002a9d6239514d0b5dfc:
+Enable Sync on start: }</span><input name="SS" type="checkbox"/><br/><span>${7ee3e95604fbeac67b7b641b55549349bff861e9:
+Send notifications on direct change: }</span><input name="SD" type="checkbox"/><br/><span>${0de91e75cc7a39b41343fe4fb6250efb38add234:
+Send notifications on button press or IR: }</span><input name="SB" type="checkbox"/><br/><span>${a13ceec6e59b9e4ce17d84826fc4395819a6ba19:
+Send Alexa notifications: }</span><input name="SA" type="checkbox"/><br/><span>${829848cab9e77346592f9646ec48d3813b774b1e:
+Send Philips Hue change notifications: }</span><input name="SH" type="checkbox"/><br/><span>${deba2059da84026799cb6ff5c4a34f82d0b48746:
+UDP packet retransmissions: }</span><input class="d5" max="30" min="0" name="UR" required="" type="number"/><br/><br/>
+<i>${4122379c1ba7d2a185b5fcd197c21a160c93ef17:Reboot required to apply changes. }</i>
+<hr class="sml"/>
+<h3>${637c2bf1425e8666dd14c689d9f765342d9572ab:Instance List}</h3><span>${e29e890c7fd09c67697620f7b8e05d8200dbc1f7:
+Enable instance list: }</span><input name="NL" type="checkbox"/><br/><span>${29757d8050530e24ecc92abf2df8339088c32b25:
+Make this instance discoverable: }</span><input name="NB" type="checkbox"/>
+<hr class="sml"/>
+<h3>${5973df6188ff92e7f42f95bd709a4f7fe97c7438:Realtime}</h3><span>${c6b67f6db8cda08b20d84ca47eb4230af59193a3:
+Receive UDP realtime: }</span><input name="RD" type="checkbox"/><br/><span>${abce4870995071b1d9d10f8146e8060c71c2651c:
+Use main segment only: }</span><input name="MO" type="checkbox"/><br/><span>${a222d3ded434da7721dc780d4e1a507599cfafa0:
+Respect LED Maps: }</span><input name="RLM" type="checkbox"/><br/><br/>
+<i>${75487378079488586b484b76b50d1cf622b1d02c:Network DMX input}</i><br/><span>${42eb61978a934e23b1b3de390d92883ae7b28f68:
 Type:
-<select name=DI onchange="SP(); adj();">
-<option value=5568>E1.31 (sACN)</option>
-<option value=6454>Art-Net</option>
-<option value=0 selected>Custom port</option>
-</select><br>
-<div id=xp>Port: <input name="EP" type="number" min="1" max="65535" value="5568" class="d5" required><br></div>
-Multicast: <input type="checkbox" name="EM"><br>
-Start universe: <input name="EU" type="number" min="0" max="63999" required><br>
-<i>Reboot required.</i> Check out <a href="https://github.com/LedFx/LedFx" target="_blank">LedFx</a>!<br>
-Skip out-of-sequence packets: <input type="checkbox" name="ES"><br>
-DMX start address: <input name="DA" type="number" min="1" max="510" required><br>
-DMX segment spacing: <input name="XX" type="number" min="0" max="150" required><br>
-E1.31 port priority: <input name="PY" type="number" min="0" max="200" required><br>
+}</span><select name="DI" onchange="SP(); adj();">
+<option value="5568">${6a293ec4f805faa962bfbae8d95568c1d9ed17b4:E1.31 (sACN)}</option>
+<option value="6454">${0e614bc7eb8741a955f5d638cf51f5ee82bf95af:Art-Net}</option>
+<option selected="" value="0">${fef61892e41ba54f7f3a0e79a253992e8b5642b7:Custom port}</option>
+</select><br/>
+<div id="xp"><span>${941bbed633b0884fdfc65e70a2938eecf432603b:Port: }</span><input class="d5" max="65535" min="1" name="EP" required="" type="number" value="5568"/><br/></div><span>${f33939deee5dac23f0496cbbb29a845614535192:
+Multicast: }</span><input name="EM" type="checkbox"/><br/><span>${5f23e60fb5fc1234575bc409f8beb404c10d3b79:
+Start universe: }</span><input max="63999" min="0" name="EU" required="" type="number"/><br/>
+<i>${e4416d55270f78e36073ae73efa104449bc10650:Reboot required.}</i><span>${35c5b8eccd6f8ab83b12be5b64e3c93053852a6a: Check out }</span><a href="https://github.com/LedFx/LedFx" target="_blank">${32c3cf42b2f9f9110a26317da683d64dbada2629:LedFx}</a>!<br/><span>${cd1b8390bcf0b93ae34386d9bc37e81b4c9ff5ec:
+Skip out-of-sequence packets: }</span><input name="ES" type="checkbox"/><br/><span>${a7ac38f93ed815fdaaa3e5863b88cab7e3ef8082:
+DMX start address: }</span><input max="510" min="1" name="DA" required="" type="number"/><br/><span>${084625afa2acf4d2afda960ecab9c1951479c298:
+DMX segment spacing: }</span><input max="150" min="0" name="XX" required="" type="number"/><br/><span>${7fd3e8d74d774aeb1bf34d5a0ac78b2fb01ad467:
+E1.31 port priority: }</span><input max="200" min="0" name="PY" required="" type="number"/><br/><span>${44f889d25a73f3bfbc6236d5477fa1ee3e6145cb:
 DMX mode:
-<select name=DM>
-<option value=0>Disabled</option>
-<option value=1>Single RGB</option>
-<option value=2>Single DRGB</option>
-<option value=3>Effect</option>
-<option value=7>Effect + White</option>
-<option value=8>Effect Segment</option>
-<option value=9>Effect Segment + White</option>
-<option value=4>Multi RGB</option>
-<option value=5>Dimmer + Multi RGB</option>
-<option value=6>Multi RGBW</option>
-<option value=10>Preset</option>
-</select><br>
-<a href="https://kno.wled.ge/interfaces/e1.31-dmx/" target="_blank">E1.31 info</a><br>
-Timeout: <input name="ET" type="number" min="1" max="65000" required> ms<br>
-Force max brightness: <input type="checkbox" name="FB"><br>
-Disable realtime gamma correction: <input type="checkbox" name="RG"><br>
-Realtime LED offset: <input name="WO" type="number" min="-255" max="255" required>
-<hr class="sml">
-<h3>Alexa Voice Assistant</h3>
-<div id="NoAlexa" class="hide">
-	<i class="warn">This firmware build does not include Alexa support.<br></i><br>
+}</span><select name="DM">
+<option value="0">${f4f4473df8cb59f0a369aebee3d1509adc0151c6:Disabled}</option>
+<option value="1">${2bee7b9a17735be8988fa3e85d31784df0cbde08:Single RGB}</option>
+<option value="2">${0f72663edf1fbeec261c8ab2152b6c268ee0f262:Single DRGB}</option>
+<option value="3">${720b5dbc53190f0e13902f7885ccaf43bb9991de:Effect}</option>
+<option value="7">${acb588b13e411ad2217075eba59a1bcd8484e6f2:Effect + White}</option>
+<option value="8">${3f1d7f70ea69ce4f7b714f0c0414717e754aeb40:Effect Segment}</option>
+<option value="9">${ef5883aafb6b8362fcca126d6cabecc7e14169b3:Effect Segment + White}</option>
+<option value="4">${a4b5afb4c602e1f6f182c3713fce93049192bad1:Multi RGB}</option>
+<option value="5">${b245e138bace0cd5a74b2ef399e6621e7f863341:Dimmer + Multi RGB}</option>
+<option value="6">${99d1b8699c85d84e43641a9b8f341170de7be2cc:Multi RGBW}</option>
+<option value="10">${bca788763dd46b6bb079756ca4b68a206414f9a1:Preset}</option>
+</select><br/>
+<a href="https://kno.wled.ge/interfaces/e1.31-dmx/" target="_blank">${66e4d7847e1ae9b61081415e057ea6b83ac4d576:E1.31 info}</a><br/><span>${c8dd7613dc1dc9c286df97cb23746b6a6c39841f:
+Timeout: }</span><input max="65000" min="1" name="ET" required="" type="number"/><span>${c980fc9bd8fa926dcc04be62e2546551fac0c216: ms}</span><br/><span>${deb03107bbe8cd968b6d812623840c38f0a7dc79:
+Force max brightness: }</span><input name="FB" type="checkbox"/><br/><span>${2dac66d8c0f594deac37f2456342bee7a643b64e:
+Disable realtime gamma correction: }</span><input name="RG" type="checkbox"/><br/><span>${bd0314bf28f4e181ffdca1ae1cc1e96c7576cdc1:
+Realtime LED offset: }</span><input max="255" min="-255" name="WO" required="" type="number"/>
+<hr class="sml"/>
+<h3>${70237f9d053422041c1ba67a10b0ddfac5c98ef5:Alexa Voice Assistant}</h3>
+<div class="hide" id="NoAlexa">
+<i class="warn"><span>${c8d10bbed3c2e84de3f3f10ee11ecaaef9574d2e:This firmware build does not include Alexa support.}</span><br/></i><br/>
 </div>
-<div id="Alexa">
-Emulate Alexa device: <input type="checkbox" name="AL"><br>
-Alexa invocation name: <input type="text" name="AI" maxlength="32"><br>
-Also emulate devices to call the first <input name="AP" type="number" class="s" min="0" max="9"> presets<br><br>
+<div id="Alexa"><span>${cdd46a4a926d4bc566f21802cfd2640b459bfd65:
+Emulate Alexa device: }</span><input name="AL" type="checkbox"/><br/><span>${c1b330acd76aa1fc35f4ded5f48aae69406597ff:
+Alexa invocation name: }</span><input maxlength="32" name="AI" type="text"/><br/><span>${fc9b8dca401ea55e2b3308ba8794d8072cb3dbfc:
+Also emulate devices to call the first }</span><input class="s" max="9" min="0" name="AP" type="number"/><span>${40d94234656d699c6d8090bc3830e5c267dfcae7: presets}</span><br/><br/>
 </div>
-<hr class="sml">
-<div class="warn">&#9888; <b>MQTT and Hue sync all connect to external hosts!<br>
-This may impact the responsiveness of WLED.</b><br>
-</div>
-For best results, only use one of these services at a time.<br>
+<hr class="sml"/>
+<div class="warn">⚠ <b><span>${7f6d64b48d9da3d5b4c2c43e8f6e0478790cf52a:MQTT and Hue sync all connect to external hosts!}</span><br/><span>${5e20bcdac00c59a5382b1f60277b5a511a39421d:
+This may impact the responsiveness of WLED.}</span></b><br/>
+</div><span>${0608cd203f83b01c61c77f3f91a35199d78e0474:
+For best results, only use one of these services at a time.}</span><br/><span>${261c61c5c4b26c15785a7e1c4001d538649f18b0:
 (alternatively, connect a second ESP to them and use the UDP sync)
-<hr class="sml">
-<h3>MQTT</h3>
-<div id="NoMQTT" class="hide">
-	<i class="warn">This firmware build does not include MQTT support.<br></i>
+}</span><hr class="sml"/>
+<h3>${c0dd2f70ab2500805dc3941c04bd93af1669bb8d:MQTT}</h3>
+<div class="hide" id="NoMQTT">
+<i class="warn"><span>${562d54435800ad1318c60a3ed75273da4fae7a9d:This firmware build does not include MQTT support.}</span><br/></i>
 </div>
-<div id="MQTT">
-Enable MQTT: <input type="checkbox" name="MQ"><br>
-Broker: <input type="text" name="MS" maxlength="32">
-Port: <input name="MQPORT" type="number" min="1" max="65535" class="d5"><br>
-<b>The MQTT credentials are sent over an unsecured connection.<br>
-Never use the MQTT password for another service!</b><br>
-Username: <input type="text" name="MQUSER" maxlength="40"><br>
-Password: <input type="password" name="MQPASS" maxlength="64"><br>
-Client ID: <input type="text" name="MQCID" maxlength="40"><br>
-Device Topic: <input type="text" name="MD" maxlength="32"><br>
-Group Topic: <input type="text" name="MG" maxlength="32"><br>
-Publish on button press: <input type="checkbox" name="BM"><br>
-Retain brightness & color messages: <input type="checkbox" name="RT"><br>
-<i>Reboot required to apply changes. </i><a href="https://kno.wled.ge/interfaces/mqtt/" target="_blank">MQTT info</a>
+<div id="MQTT"><span>${34808457757ad760bffe2b69c3a8e25c05e4068e:
+Enable MQTT: }</span><input name="MQ" type="checkbox"/><br/><span>${a76f48abbe49d348a6604d27d59deec22a4178f4:
+Broker: }</span><input maxlength="32" name="MS" type="text"/><span>${307d1fe1a32e240b2998d1fca4374ee1cf237619:
+Port: }</span><input class="d5" max="65535" min="1" name="MQPORT" type="number"/><br/>
+<b><span>${7d8cbe2339beb36ae6fe1d2d04988c53eef0c8de:The MQTT credentials are sent over an unsecured connection.}</span><br/><span>${e835c2e0e69141e258f7bcfce8c328388f353402:
+Never use the MQTT password for another service!}</span></b><br/><span>${065f9e1d9b1f27640dbf6c22c822e10a5e856718:
+Username: }</span><input maxlength="40" name="MQUSER" type="text"/><br/><span>${400d25025f19f128e590fc8c9cbc428921583168:
+Password: }</span><input maxlength="64" name="MQPASS" type="password"/><br/><span>${41780e8b49ca930b2ece21588165df7f87208e60:
+Client ID: }</span><input maxlength="40" name="MQCID" type="text"/><br/><span>${2bd445f5f1e9c668e938b7b31be275cde79170a2:
+Device Topic: }</span><input maxlength="32" name="MD" type="text"/><br/><span>${2efbfe73f7490d426707a81c400bffb410b9aecb:
+Group Topic: }</span><input maxlength="32" name="MG" type="text"/><br/><span>${e99dc6bb39e34eaf49626a303de0ee6bece5fbcb:
+Publish on button press: }</span><input name="BM" type="checkbox"/><br/><span>${8296e15412d227ab2930867098761e9fa3ae377a:
+Retain brightness &amp; color messages: }</span><input name="RT" type="checkbox"/><br/>
+<i>${4122379c1ba7d2a185b5fcd197c21a160c93ef17:Reboot required to apply changes. }</i><a href="https://kno.wled.ge/interfaces/mqtt/" target="_blank">${8cffed506acc26615706ce6573fce91710fef0ca:MQTT info}</a>
 </div>
-<h3>Philips Hue</h3>
-<div id="NoHue" class="hide">
-	<em class="warn">This firmware build does not include Philips Hue support.<br></em>
+<h3>${41774eb842a465f0638d70f089bfe4f802839461:Philips Hue}</h3>
+<div class="hide" id="NoHue">
+<em class="warn"><span>${3cc09529fa756e6bf6ec280bd922913a1bba33b1:This firmware build does not include Philips Hue support.}</span><br/></em>
 </div>
 <div id="Hue">
-<i>You can find the bridge IP and the light number in the 'About' section of the hue app.</i><br>
-Poll Hue light <input name="HL" type="number" min="1" max="99" > every <input name="HI" type="number" min="100" max="65000"> ms: <input type="checkbox" name="HP"><br>
-Then, receive <input type="checkbox" name="HO"> On/Off, <input type="checkbox" name="HB"> Brightness, and <input type="checkbox" name="HC"> Color<br>
-Hue Bridge IP:<br>
-<input name="H0" type="number" class="s" min="0" max="255" > .
-<input name="H1" type="number" class="s" min="0" max="255" > .
-<input name="H2" type="number" class="s" min="0" max="255" > .
-<input name="H3" type="number" class="s" min="0" max="255" ><br>
-<b>Press the pushlink button on the bridge, after that save this page!</b><br>
-(when first connecting)<br>
-Hue status: <span class="sip"> Disabled in this build </span>
+<i>${d09b4b9fbf551db9308b316c185c14e9b56fe4e4:You can find the bridge IP and the light number in the 'About' section of the hue app.}</i><br/><span>${c35997d9c10fd7febe061633cd4db0ddd7eb5a96:
+Poll Hue light }</span><input max="99" min="1" name="HL" type="number"/><span>${8cdea4dc864eab7dcbbe49478284918940d0eed4: every }</span><input max="65000" min="100" name="HI" type="number"/><span>${2936c785f0071e444096f8bd0398f60d41441d06: ms: }</span><input name="HP" type="checkbox"/><br/><span>${37561e55f1572caaa6ad8d25f1c58faa1c8a1274:
+Then, receive }</span><input name="HO" type="checkbox"/><span>${b0c7d59653e395f2524247a786c7e1d5d42942d6: On/Off, }</span><input name="HB" type="checkbox"/><span>${de62fe9213974c08ef92af2718da523960125057: Brightness, and }</span><input name="HC" type="checkbox"/><span>${859ffd541ade1e649baae8eabe7d9a30896c6fc6: Color}</span><br/><span>${eb5f0fa7afd72b2a147c0089eb0301c548b961e1:
+Hue Bridge IP:}</span><br/>
+<input class="s" max="255" min="0" name="H0" type="number"/> .
+<input class="s" max="255" min="0" name="H1" type="number"/> .
+<input class="s" max="255" min="0" name="H2" type="number"/> .
+<input class="s" max="255" min="0" name="H3" type="number"/><br/>
+<b>${596b434208c92efa5859a28afc7af8cdf40b4dc9:Press the pushlink button on the bridge, after that save this page!}</b><br/><span>${2a6b1999e1c1b8b1692059f32d4c0cfb053f7d6f:
+(when first connecting)}</span><br/><span>${43ff9bc8095764b8d11647e9ff445c8a3024df48:
+Hue status: }</span><span class="sip">${250bebe3129ad2cb113b52ef8df9bca88696cbff: Disabled in this build }</span>
 </div>
-<h3>Serial</h3>
-<div id="NoSerial" class="hide">
-	<em class="warn">This firmware build does not support Serial interface.<br></em>
+<h3>${83f8c31a333d64148e70eba194553a6e0c2f9907:Serial}</h3>
+<div class="hide" id="NoSerial">
+<em class="warn"><span>${6728501dadb03006a970fbc95ec3ce8b4124b107:This firmware build does not support Serial interface.}</span><br/></em>
 </div>
-<div id="Serial">
+<div id="Serial"><span>${57f511aa9f449a556223418a9839d9219d442ce4:
 Baud rate:
-<select name=BD>
-<option value=1152>115200</option>
-<option value=2304>230400</option>
-<option value=4608>460800</option>
-<option value=5000>500000</option>
-<option value=5760>576000</option>
-<option value=9216>921600</option>
-<option value=10000>1000000</option>
-<option value=15000>1500000</option>
-</select><br>
-<i>Keep at 115200 to use Improv. Some boards may not support high rates.</i>
+}</span><select name="BD">
+<option value="1152">115200</option>
+<option value="2304">230400</option>
+<option value="4608">460800</option>
+<option value="5000">500000</option>
+<option value="5760">576000</option>
+<option value="9216">921600</option>
+<option value="10000">1000000</option>
+<option value="15000">1500000</option>
+</select><br/>
+<i>${d45d5865bdfbf739c5d277f034cd7f63e17a9351:Keep at 115200 to use Improv. Some boards may not support high rates.}</i>
 </div>
-<hr>
-<button type="button" onclick="B()">Back</button><button type="submit">Save</button>
+<hr/>
+<button onclick="B()" type="button">${b52b36b7269fbfc58ec24bb724691951a3decbe8:Back}</button><button type="submit">${efc007a393f66cdb14d57d385822a3d9e36ef873:Save}</button>
 </form>
-</body>
+<div id="I18N:template" style="display:none">wled00/data/settings_sync.htm</div></body>
 </html>

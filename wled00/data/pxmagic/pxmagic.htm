@@ -1,13 +1,12 @@
 <!DOCTYPE html>
+
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="@ajotanc" />
-
-    <title>Pixel Magic Tool</title>
-
-    <style>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="@ajotanc" name="author"/>
+<title>${565bf8534b47a2475204297cecfe362a33129319:Pixel Magic Tool}</title>
+<style>
       :root {
         --s-thumb: #0006;
         --s-background: #0003;
@@ -563,288 +562,227 @@
         }
       }
     </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="content">
-        <form id="formGenerate" novalidate>
-          <div class="header">
-            <span class="title"
-              >PIXEL <span class="rainbow">MAGIC</span> TOOL</span
-            >
-            <span class="subtitle"
-              >It is a tool that converts any image into code in
-              <strong>JSON WLED</strong> format for
-              <strong>2D Matrix</strong> panels</span
-            >
-          </div>
-          <div class="row">
-            <div class="col" validate>
-              <label for="hostname">Hostname</label>
-              <input type="text" name="hostname" id="hostname" required />
-            </div>
-            <div class="col" validate>
-              <label for="name">Preset Name</label>
-              <input
-                type="text"
-                name="name"
-                id="name"
-                value="New Preset"
-                required />
-            </div>
-          </div>
-          <div class="row">
-            <div class="col" validate>
-              <div class="custom-select">
-                <label for="pattern">Pattern</label>
-                <select name="pattern" id="pattern" required>
-                  <option value="1" title="['ffffff']">Individual</option>
-                  <option value="2" title="[0, 'ffffff']">Index</option>
-                  <option value="3" title="[0, 5, 'ffffff']" selected>
+<script src="../scripts/localize.js"></script></head>
+<body>
+<div class="container">
+<div class="content">
+<form id="formGenerate" novalidate="">
+<div class="header">
+<span class="title"><span>${ee2e6f8cdc3f4bea53b5c9bd668519b962e3e388:PIXEL }</span><span class="rainbow">${c716084845f60944f0ccfd3046e9665113c093b0:MAGIC}</span><span>${2bd371a8252281046dbbdf542799da49bbf77b75: TOOL}</span></span>
+<span class="subtitle"><span>${7b853d9331b1930618a4407cf22d843b0a45546f:It is a tool that converts any image into code in
+              }</span><strong>${fd6089be10abbd25c2fcbad462c71bd91e42c3d4:JSON WLED}</strong><span>${129227ba2a89b486a2a2e46864d0081b5114d7a3: format for
+              }</span><strong>${d75c78acb1cf9db31344da6cd218a672cd06ab13:2D Matrix}</strong><span>${941c7df9302dad44e8640b8462fc1d327c15688d: panels}</span></span>
+</div>
+<div class="row">
+<div class="col" validate="">
+<label for="hostname">${c983a1551dcbdb6f0ce43637e89a8726577d4f4b:Hostname}</label>
+<input id="hostname" name="hostname" required="" type="text"/>
+</div>
+<div class="col" validate="">
+<label for="name">${582715b343e52a56855bd4878d81d3f55c54e661:Preset Name}</label>
+<input id="name" name="name" required="" type="text" value="New Preset"/>
+</div>
+</div>
+<div class="row">
+<div class="col" validate="">
+<div class="custom-select">
+<label for="pattern">${1fff6a31661b491fc40cc9c1ad7fe5e479cb7500:Pattern}</label>
+<select id="pattern" name="pattern" required="">
+<option data-I18N="title" title="${532f35e91f965ff26974e7cd3104d73dd4b29a64:['ffffff']}" value="1">${a7abed83ed9e0e08059cee9d3fe5f141eb7b209a:Individual}</option>
+<option data-I18N="title" title="${7842a9173a63e501ccb76d79d8c66514d6e6c215:[0, 'ffffff']}" value="2">${c2df9b932637fe9d32a0f16da1c11873398f873d:Index}</option>
+<option data-I18N="title" selected="" title="${4d6aaba0ba3f897c2eb13f0e282b8e73d0a5969c:[0, 5, 'ffffff']}" value="3">${d34523d073f65dbc8059e1f11ba6847c9df44ee7:
                     Range
-                  </option>
-                </select>
-              </div>
-            </div>
-            <div class="col" validate>
-              <div class="custom-select">
-                <label for="output">Output</label>
-                <select name="output" id="output" required>
-                  <option value="json" selected>WLED JSON</option>
-                  <option value="ha">Home Assistant</option>
-                  <option value="curl">CURL</option>
-                </select>
-              </div>
-            </div>
-          </div>
-          <div class="row output" style="display: none">
-            <div class="col" validate>
-              <label for="device">Device</label>
-              <input type="text" name="device" id="device" required />
-            </div>
-            <div class="col" validate>
-              <label for="uniqueId">Unique Id</label>
-              <input type="text" name="uniqueId" id="uniqueId" required />
-            </div>
-            <div class="col" validate>
-              <label for="friendlyName">Friendly Name</label>
-              <input
-                type="text"
-                name="friendlyName"
-                id="friendlyName"
-                required />
-            </div>
-          </div>
-          <div class="row">
-            <div class="col" validate>
-              <div class="custom-select">
-                <label for="segments">Segment Id</label>
-                <select name="segments" id="segments">
-                  <option value="0" data-width="16" data-height="16">
+                  }</option>
+</select>
+</div>
+</div>
+<div class="col" validate="">
+<div class="custom-select">
+<label for="output">${4bed336194a9a5c86b6a734f03b3570d2aae1a68:Output}</label>
+<select id="output" name="output" required="">
+<option selected="" value="json">${2600306a5b61e23caebd155d3d4e680f23a02ee8:WLED JSON}</option>
+<option value="ha">${c8fd3bb19b94312664faa619af7729bdbf6e9f8a:Home Assistant}</option>
+<option value="curl">${dfc1a36d88c16fcfdfb21022b35a7ec43a8b5e18:CURL}</option>
+</select>
+</div>
+</div>
+</div>
+<div class="row output" style="display: none">
+<div class="col" validate="">
+<label for="device">${a5a74a6df09278b88cb6ea23b7d7f2570c33babf:Device}</label>
+<input id="device" name="device" required="" type="text"/>
+</div>
+<div class="col" validate="">
+<label for="uniqueId">${d702ae844434a52d5d86f18cec368a8ce4c8d41c:Unique Id}</label>
+<input id="uniqueId" name="uniqueId" required="" type="text"/>
+</div>
+<div class="col" validate="">
+<label for="friendlyName">${e2e8368623942977968a6d770c711a157e71b24d:Friendly Name}</label>
+<input id="friendlyName" name="friendlyName" required="" type="text"/>
+</div>
+</div>
+<div class="row">
+<div class="col" validate="">
+<div class="custom-select">
+<label for="segments">${1704f0fe321c717ee191511e233d6eddfe412b2c:Segment Id}</label>
+<select id="segments" name="segments">
+<option data-height="16" data-width="16" value="0">${b5b5759af0d4c98b6bbd17ff356a38723b01e9a0:
                     Segment 0
-                  </option>
-                </select>
-              </div>
-            </div>
-            <div class="col" validate>
-              <label for="brightness">Brightness</label>
-              <div class="input-group">
-                <input
-                  type="range"
-                  name="brightness"
-                  id="brightness"
-                  min="0"
-                  max="255"
-                  value="128"
-                  class="range-slider" />
-                <div class="input-description square">
-                  <input
-                    type="text"
-                    name="brightnessValue"
-                    id="brightnessValue"
-                    value="128" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col" validate>
-              <label for="animation">Animation</label>
-              <label class="switch">
-                <input
-                  type="checkbox"
-                  name="animation"
-                  id="animation"
-                  data-parent="animation" />
-                <span class="switch-slider"></span>
-              </label>
-            </div>
-            <div class="col" validate>
-              <label for="transparentImage">Transparent Image</label>
-              <label class="switch">
-                <input
-                  type="checkbox"
-                  name="transparentImage"
-                  id="transparentImage"
-                  data-parent="transparentImage" />
-                <span class="switch-slider"></span>
-              </label>
-            </div>
-            <div class="col" validate>
-              <label for="resizeImage">Resize Image</label>
-              <label class="switch">
-                <input
-                  type="checkbox"
-                  name="resizeImage"
-                  id="resizeImage"
-                  data-parent="resizeImage"
-                  checked />
-                <span class="switch-slider"></span>
-              </label>
-            </div>
-          </div>
-          <div class="row resizeImage">
-            <div class="col" validate>
-              <label for="width">Width</label>
-              <input type="number" name="width" id="width" value="16" />
-            </div>
-            <div class="col" validate>
-              <label for="height">Height</label>
-              <input type="number" name="height" id="height" value="16" />
-            </div>
-          </div>
-          <div class="row animation" style="display: none">
-            <div class="col" validate>
-              <label for="frames">Frames</label>
-              <input type="number" name="frames" id="frames" value="4" />
-            </div>
-            <div class="col" validate>
-              <label for="duration">Duration</label>
-              <div class="input-group">
-                <input
-                  type="number"
-                  name="duration"
-                  id="duration"
-                  value="0.5"
-                  required="required"
-                  min="0"
-                  step="0.1"
-                  inputmode="numeric" />
-                <div class="input-description">
-                  <span>sec</span>
-                </div>
-              </div>
-            </div>
-            <div class="col" validate>
-              <label for="transition">Transition</label>
-              <div class="input-group">
-                <input
-                  type="number"
-                  name="transition"
-                  id="transition"
-                  value="0.2"
-                  required="required"
-                  min="0"
-                  step="0.1"
-                  inputmode="numeric" />
-                <div class="input-description">
-                  <span>sec</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row transparentImage" style="display: none">
-            <div class="col-full" validate>
-              <label for="color">Choose a color</label>
-              <small>
+                  }</option>
+</select>
+</div>
+</div>
+<div class="col" validate="">
+<label for="brightness">${e1a2b65df8ed2838f913f965758b2f3fb76bcc19:Brightness}</label>
+<div class="input-group">
+<input class="range-slider" id="brightness" max="255" min="0" name="brightness" type="range" value="128"/>
+<div class="input-description square">
+<input id="brightnessValue" name="brightnessValue" type="text" value="128"/>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col" validate="">
+<label for="animation">${62afd21e88769f01ba1c9330803baad57564d6e9:Animation}</label>
+<label class="switch">
+<input data-parent="animation" id="animation" name="animation" type="checkbox"/>
+<span class="switch-slider"></span>
+</label>
+</div>
+<div class="col" validate="">
+<label for="transparentImage">${8a79c5688e14599f148fb3ffe11c6c066dca8f81:Transparent Image}</label>
+<label class="switch">
+<input data-parent="transparentImage" id="transparentImage" name="transparentImage" type="checkbox"/>
+<span class="switch-slider"></span>
+</label>
+</div>
+<div class="col" validate="">
+<label for="resizeImage">${25c21b642de54e5dac0dfec25b2a9d242a1e6c92:Resize Image}</label>
+<label class="switch">
+<input checked="" data-parent="resizeImage" id="resizeImage" name="resizeImage" type="checkbox"/>
+<span class="switch-slider"></span>
+</label>
+</div>
+</div>
+<div class="row resizeImage">
+<div class="col" validate="">
+<label for="width">${a58ddf50c5ea5c03802da919dd5953bbf82ebd74:Width}</label>
+<input id="width" name="width" type="number" value="16"/>
+</div>
+<div class="col" validate="">
+<label for="height">${3f608b4935ead643d43b2642dc4ec863d170aa1d:Height}</label>
+<input id="height" name="height" type="number" value="16"/>
+</div>
+</div>
+<div class="row animation" style="display: none">
+<div class="col" validate="">
+<label for="frames">${e3e7a3833d19706ebf33b2c3baf8e05deeed7bca:Frames}</label>
+<input id="frames" name="frames" type="number" value="4"/>
+</div>
+<div class="col" validate="">
+<label for="duration">${1370004da76fa4f3b7a5180fd5436065ef4c7d5b:Duration}</label>
+<div class="input-group">
+<input id="duration" inputmode="numeric" min="0" name="duration" required="required" step="0.1" type="number" value="0.5"/>
+<div class="input-description">
+<span>${920a25ef686c4f7ca6ad23dd109d3ad653161832:sec}</span>
+</div>
+</div>
+</div>
+<div class="col" validate="">
+<label for="transition">${4ead496f48fa5f6d2d96f52143b2d7c60b4140d3:Transition}</label>
+<div class="input-group">
+<input id="transition" inputmode="numeric" min="0" name="transition" required="required" step="0.1" type="number" value="0.2"/>
+<div class="input-description">
+<span>${920a25ef686c4f7ca6ad23dd109d3ad653161832:sec}</span>
+</div>
+</div>
+</div>
+</div>
+<div class="row transparentImage" style="display: none">
+<div class="col-full" validate="">
+<label for="color">${b7fc97b8879815f2a0de69f0238d5f6d669ae8cb:Choose a color}</label>
+<small><span>${b9e54282e5ae4f8f766cb3e552645f6cfc75301d:
                 Color that will replace the
-                <strong>transparent pixels</strong> in the image
-              </small>
-              <input type="color" name="color" id="color" value="#00BFFF" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-full" validate>
-              <div class="custom-select">
-                <label for="images">
-                  <span>Images upload to WLED</span>
-                  <a id="wledEdit" href="http://[wled-ip]/edit" target="_blank">
+                }</span><strong>${2435458305c3ded4954a5a0e7902da4203f3118d:transparent pixels}</strong><span>${92d41ca5b8718aeeb2a758c1af15ce39836251c9: in the image
+              }</span></small>
+<input id="color" name="color" type="color" value="#00BFFF"/>
+</div>
+</div>
+<div class="row">
+<div class="col-full" validate="">
+<div class="custom-select">
+<label for="images">
+<span>${02991c883bbdac9f0b8c2d14c16c42c04c8bb79d:Images upload to WLED}</span>
+<a href="http://[wled-ip]/edit" id="wledEdit" target="_blank">${656e294e2d86a2084429b96e4d9a880690b7ec2e:
                     upload
-                  </a>
-                </label>
-                <select name="images" id="images">
-                  <option value="">Select image</option>
-                </select>
-              </div>
-            </div>
-          </div>
-          <div id="dropzone" class="dropzone" validate>
-            <p id="dropzoneLabel">
+                  }</a>
+</label>
+<select id="images" name="images">
+<option value="">${52c6d0a352cc563251733af9cb233544036ccc74:Select image}</option>
+</select>
+</div>
+</div>
+</div>
+<div class="dropzone" id="dropzone" validate="">
+<p id="dropzoneLabel">${7afeb160cc8353534720e933cbc40947a2e6b9aa:
               Drag and drop a file here or click to select a local file
-            </p>
-            <input
-              type="file"
-              name="source"
-              id="source"
-              accept="image/*"
-              style="display: none" />
-          </div>
-          <div class="row">
-            <div class="col-full">
-              <button type="button" class="button" id="btnGenerate">
+            }</p>
+<input accept="image/*" id="source" name="source" style="display: none" type="file"/>
+</div>
+<div class="row">
+<div class="col-full">
+<button class="button" id="btnGenerate" type="button">${ab060b435719ab96c2ee8027c4d7fb407baebac6:
                 Generate
-              </button>
-            </div>
-            <div class="col-small" id="gbth" style="display: none">
-              <button
-                type="button"
-                class="button"
-                onclick="window.location.href = WLED_URL;">
+              }</button>
+</div>
+<div class="col-small" id="gbth" style="display: none">
+<button class="button" onclick="window.location.href = WLED_URL;" type="button">${5f4252eeed9fda4de27e82f661c5281456e3a94b:
                 Back
-              </button>
-            </div>
-          </div>
-        </form>
-        <div id="preview" style="display: none">
-          <div id="recreatedImage"></div>
-          <textarea name="response" id="response" rows="8" readonly="readonly">
+              }</button>
+</div>
+</div>
+</form>
+<div id="preview" style="display: none">
+<div id="recreatedImage"></div>
+<textarea id="response" name="response" readonly="readonly" rows="8">
           </textarea>
-          <div class="buttons">
-            <div class="row">
-              <div class="col">
-                <button type="button" class="button" id="btnCopyToClipboard">
+<div class="buttons">
+<div class="row">
+<div class="col">
+<button class="button" id="btnCopyToClipboard" type="button">${b2ffd3421ae1bf8d24a7c8247008b7a95de48594:
                   Copy to Clipboard
-                </button>
-              </div>
-              <div class="col">
-                <button type="button" class="button" id="btnSave">Save</button>
-              </div>
-              <div class="col">
-                <button type="button" class="button" id="btnDownloadPreset">
+                }</button>
+</div>
+<div class="col">
+<button class="button" id="btnSave" type="button">${efc007a393f66cdb14d57d385822a3d9e36ef873:Save}</button>
+</div>
+<div class="col">
+<button class="button" id="btnDownloadPreset" type="button">${adaf2f166cbac6fc1bf5ebcf1df44b20a758757d:
                   Download
-                </button>
-              </div>
-            </div>
-            <div class="row" id="simulate" style="display: none">
-              <div class="col-full">
-                <button type="button" class="button" id="btnSimulatePreset">
+                }</button>
+</div>
+</div>
+<div class="row" id="simulate" style="display: none">
+<div class="col-full">
+<button class="button" id="btnSimulatePreset" type="button">${59b0060b0e6d69970b721744b2734d22ad1ca540:
                   Simulate
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <footer>
-        <a href="https://github.com/ajotanc/PixelMagicTool" target="_blank">
-          Github &copy; Pixel Magic Tool
-        </a>
-      </footer>
-    </div>
-    <div id="toast-container"></div>
-    <div id="overlay"></div>
-  </body>
-  <script>
+                }</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer>
+<a href="https://github.com/ajotanc/PixelMagicTool" target="_blank">${7e207debe4cc72abca67070f34e9742eb1e257a4:
+          Github © Pixel Magic Tool
+        }</a>
+</footer>
+</div>
+<div id="toast-container"></div>
+<div id="overlay"></div>
+<div id="I18N:template" style="display:none">wled00/data/pxmagic/pxmagic.htm</div></body>
+<script>
     const d = document;
     const params = new URLSearchParams(window.location.search);
     const host = params.get("hn")

@@ -1,11 +1,12 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
-	<title>WiFi Settings</title>
-	<script src="common.js" async type="text/javascript"></script>
-	<script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>${29bfa125e5109decbf58c663c44078ce7fc8dd8e:WiFi Settings}</title>
+<script async="" src="common.js" type="text/javascript"></script>
+<script>
 		var scanLoops = 0, preScanSSID = "";
 		var maxNetworks = 3;
 		function N() {
@@ -137,97 +138,95 @@ Static subnet mask:<br>
 			if (loc) d.Sf.action = getURL('/settings/wifi');
 		}
 	</script>
-	<style>@import url("style.css");</style>
-</head>
+<style>@import url("style.css");</style>
+<script src="../scripts/localize.js"></script></head>
 <body onload="S()">
-	<form id="form_s" name="Sf" method="post">
-		<div class="toprow">
-		<div class="helpB"><button type="button" onclick="H('features/settings/#wifi-settings')">?</button></div>
-		<button type="button" onclick="B()">Back</button><button type="submit">Save & Connect</button><hr>
-		</div>
-		<h2>WiFi setup</h2>
-		<h3>Connect to existing network</h3>
-		<button type="button" id="scan" onclick="N()">Scan</button><br>
-		<div id="wifi">
+<form id="form_s" method="post" name="Sf">
+<div class="toprow">
+<div class="helpB"><button onclick="H('features/settings/#wifi-settings')" type="button">?</button></div>
+<button onclick="B()" type="button">${b52b36b7269fbfc58ec24bb724691951a3decbe8:Back}</button><button type="submit">${b5c5191096be330c8fe8957e17c3c9391f4f0240:Save &amp; Connect}</button><hr/>
+</div>
+<h2>${cc842de2150d60723334f637a1c1c7532e0d1a0e:WiFi setup}</h2>
+<h3>${2dd853b46dd81e89fbf29ea7c592e185a03950bb:Connect to existing network}</h3>
+<button id="scan" onclick="N()" type="button">${28cba55d2aadf568463a9e7e645f8c7b1eed5e8b:Scan}</button><br/>
+<div id="wifi"><span>${f8d9752ea29588716cfaf9addb907ee5d22c2c79:
 			Wireless networks
-			<div id="wifi_entries"></div>
-			<hr class="sml">
-			<button type="button" id="wifi_add" onclick="addWiFi()">+</button>
-			<button type="button" id="wifi_rem" onclick="remWiFi()">-</button><br>
-		</div>
-		DNS server address:<br>
-		<input name="D0" type="number" class="s" min="0" max="255" required>.<input name="D1" type="number" class="s" min="0" max="255" required>.<input name="D2" type="number" class="s" min="0" max="255" required>.<input name="D3" type="number" class="s" min="0" max="255" required><br>
-		<br>
-		mDNS address (leave empty for no mDNS):<br>
-		http:// <input type="text" name="CM" maxlength="32"> .local<br>
-		Client IP: <span class="sip"> Not connected </span> <br>
-		<h3>Configure Access Point</h3>
-		AP SSID (leave empty for no AP):<br> <input type="text" name="AS" maxlength="32"><br>
-		Hide AP name: <input type="checkbox" name="AH"><br>
-		AP password (leave empty for open):<br> <input type="password" name="AP" maxlength="63" pattern="(.{8,63})|()" title="Empty or min. 8 characters"><br>
-		Access Point WiFi channel: <input name="AC" type="number" class="xs" min="1" max="13" required><br>
+			}</span><div id="wifi_entries"></div>
+<hr class="sml"/>
+<button id="wifi_add" onclick="addWiFi()" type="button">+</button>
+<button id="wifi_rem" onclick="remWiFi()" type="button">-</button><br/>
+</div><span>${90cb34fbda245cc71d813800b259215af3a0de29:
+		DNS server address:}</span><br/>
+<input class="s" max="255" min="0" name="D0" required="" type="number"/>.<input class="s" max="255" min="0" name="D1" required="" type="number"/>.<input class="s" max="255" min="0" name="D2" required="" type="number"/>.<input class="s" max="255" min="0" name="D3" required="" type="number"/><br/>
+<br/><span>${9ff22db1c750735b838c51fb61ca469a36f9f618:
+		mDNS address (leave empty for no mDNS):}</span><br/><span>${bb1c2a196ceb137fb9e1fcdc79340e84e5fa939d:
+		http:// }</span><input maxlength="32" name="CM" type="text"/><span>${a53fa52a248d60f17d8861836c70f3ce7eb516ea: .local}</span><br/><span>${0c5437387c8a68da8db12e7ad9dcb7d51f42da40:
+		Client IP: }</span><span class="sip">${28347577ad43957851d2212dcd218137cc2ec023: Not connected }</span> <br/>
+<h3>${b2e2cbb500bd55cd3806d43fa80cfc441eca361a:Configure Access Point}</h3><span>${311572bed7c9ab97bf56fdf5019ba063e0edaa77:
+		AP SSID (leave empty for no AP):}</span><br/> <input maxlength="32" name="AS" type="text"/><br/><span>${531b581078b4ed769366393eab34facba5849c5c:
+		Hide AP name: }</span><input name="AH" type="checkbox"/><br/><span>${007d7720e3ffacb597e1c0a30dc7f3858f1bd8f3:
+		AP password (leave empty for open):}</span><br/> <input data-I18N="title" maxlength="63" name="AP" pattern="(.{8,63})|()" title="${cdee879ada2a21e3f9510713cb15b55d2906624f:Empty or min. 8 characters}" type="password"/><br/><span>${95bda0050153fb20095c4064f2fec56db4ecce40:
+		Access Point WiFi channel: }</span><input class="xs" max="13" min="1" name="AC" required="" type="number"/><br/><span>${05c4eca108cefb70bda07bc6795f1ec4c78f0659:
 		AP opens:
-		<select name="AB">
-			<option value="0">No connection after boot</option>
-			<option value="1">Disconnected</option>
-			<option value="2">Always</option>
-			<option value="3">Never (not recommended)</option>
-			<option value="4">Temporary (no connection after boot)</option>
-		</select><br>
-		AP IP: <span class="sip"> Not active </span><br>
-		<h3>Experimental</h3>
-		Force 802.11g mode (ESP8266 only): <input type="checkbox" name="FG"><br>
-		Disable WiFi sleep: <input type="checkbox" name="WS"><br>
-		<i>Can help with connectivity issues and Audioreactive sync.<br>
-		Disabling WiFi sleep increases power consumption.</i><br>
-		<div id="tx">TX power: <select name="TX">
-			<option value="78">19.5 dBm</option>
-			<option value="76">19 dBm</option>
-			<option value="74">18.5 dBm</option>
-			<option value="68">17 dBm</option>
-			<option value="60">15 dBm</option>
-			<option value="52">13 dBm</option>
-			<option value="44">11 dBm</option>
-			<option value="34">8.5 dBm</option>
-			<option value="28">7 dBm</option>
-			<option value="20">5 dBm</option>
-			<option value="8">2 dBm</option>
-		</select><br>
-		<i class="warn">WARNING: Modifying TX power may render device unreachable.</i>
-		</div>
-
-		<h3>ESP-NOW Wireless</h3>
-		<div id="NoESPNOW" class="hide">
-			<i class="warn">This firmware build does not include ESP-NOW support.<br></i>
-		</div>
-		<div id="ESPNOW">
-			Enable ESP-NOW: <input type="checkbox" name="RE"><br>
-			<i>Listen for events over ESP-NOW<br>
-			Keep disabled if not using a remote or wireless sync, increases power consumption.<br></i>
-			Paired Remote MAC: <input type="text" name="RMAC" minlength="12" maxlength="12"><br>
-			Last device seen: <span class="rlid" onclick="d.Sf.RMAC.value=this.textContent;" style="cursor:pointer;">None</span> <br>
-		</div>
-
-		<div id="ethd">
-			<h3>Ethernet Type</h3>
-			<select name="ETH">
-				<option value="0">None</option>
-				<option value="9">ABC! WLED V43 & compatible</option>
-				<option value="2">ESP32-POE</option>
-				<option value="11">ESP32-POE-WROVER</option>
-				<option value="6">ESP32Deux/RGB2Go Tetra</option>
-				<option value="7">KIT-VE</option>
-				<option value="12">LILYGO T-POE Pro</option>
-				<option value="8">QuinLED-Dig-Octa & T-ETH-POE</option>
-				<option value="4">QuinLED-ESP32</option>
-				<option value="10">Serg74-ETH32</option>
-				<option value="5">TwilightLord-ESP32</option>
-				<option value="3">WESP32</option>
-				<option value="1">WT32-ETH01</option>
-			</select><br><br>
-		</div>
-		<hr>
-		<button type="button" onclick="B()">Back</button><button type="submit">Save & Connect</button>
-	</form>
-</body>
+		}</span><select name="AB">
+<option value="0">${7a85c49987fdffb9fe27c9e3de891805f3768d2a:No connection after boot}</option>
+<option value="1">${771e05f27b99fd59f638f41a7a4e977b1d4691fe:Disconnected}</option>
+<option value="2">${a91bcce893b5de905ecbd22a99a03889cdcc2544:Always}</option>
+<option value="3">${a295d076416e87c7a1f48e2c8a051e5db155d129:Never (not recommended)}</option>
+<option value="4">${f58e458bca7cfb6a94c79b5383f26ac4124bb37e:Temporary (no connection after boot)}</option>
+</select><br/><span>${7c5ba7f09fd05f2c806a26f2e5488d02b161099e:
+		AP IP: }</span><span class="sip">${1332af4fd47cf4b9af39d6940cbd59cbf242d61e: Not active }</span><br/>
+<h3>${b718f8c3a83788b1b360cc38380401a994fb4892:Experimental}</h3><span>${3b57bb7058e03bd84ace0c1ab185680196489e7b:
+		Force 802.11g mode (ESP8266 only): }</span><input name="FG" type="checkbox"/><br/><span>${44075e108122ac225984f572f4f9def51f98897d:
+		Disable WiFi sleep: }</span><input name="WS" type="checkbox"/><br/>
+<i><span>${80e827ec9e0e1318740eff39c9e8b94d460aa007:Can help with connectivity issues and Audioreactive sync.}</span><br/><span>${b9be9fbe9393415c5a747da47bfdfbb15139a80e:
+		Disabling WiFi sleep increases power consumption.}</span></i><br/>
+<div id="tx"><span>${e424ca602454952621400931b7c4ca8f85f52269:TX power: }</span><select name="TX">
+<option value="78">${6741377a1151750440eedf6fe150f18d77c136af:19.5 dBm}</option>
+<option value="76">${dcb097ca882432bbb8052e08ee0e7200d4592040:19 dBm}</option>
+<option value="74">${17be79ff55f04a073fd2b9bd791db16e4aa67ddc:18.5 dBm}</option>
+<option value="68">${2c6387b5c4c910c9d1c3245530f16e57c07fd9b1:17 dBm}</option>
+<option value="60">${b7c45bc9072ec4ed7858f8361d48913623a2381b:15 dBm}</option>
+<option value="52">${cc7320855dbe138c088e52324c7f961332e1f701:13 dBm}</option>
+<option value="44">${eee31682042d2c3edb20e95c1604394e97b8bc76:11 dBm}</option>
+<option value="34">${6b5e07be2e4c9c755e3bd49fe5ab076297c42d7e:8.5 dBm}</option>
+<option value="28">${51ebe6460a54c2bc0d87976780a41029c45f0acb:7 dBm}</option>
+<option value="20">${a995b33fcdfa340adef0ae5857747f073c27a1b6:5 dBm}</option>
+<option value="8">${a77a9d1899f13285e5e93239f336c9fc5dfd0d7c:2 dBm}</option>
+</select><br/>
+<i class="warn">${4dc44dff00aea95faaaf8c7f60220a21723b0191:WARNING: Modifying TX power may render device unreachable.}</i>
+</div>
+<h3>${1d8644ba366783d34f0ea7629dcba0080ef4e225:ESP-NOW Wireless}</h3>
+<div class="hide" id="NoESPNOW">
+<i class="warn"><span>${8cf0dec55c64cdcb33b4ce29a838653dfd34ecae:This firmware build does not include ESP-NOW support.}</span><br/></i>
+</div>
+<div id="ESPNOW"><span>${87a431acdcd22c45b177109df277d42c3c4a56dd:
+			Enable ESP-NOW: }</span><input name="RE" type="checkbox"/><br/>
+<i><span>${3cbabd8e1a2ea47c4a254195614280a6f96e88fe:Listen for events over ESP-NOW}</span><br/><span>${0565fbd263a70bf4a3027d5a1c56b5be26a13973:
+			Keep disabled if not using a remote or wireless sync, increases power consumption.}</span><br/></i><span>${ba873a52649f2078be69fdb547d30ea73cc31543:
+			Paired Remote MAC: }</span><input maxlength="12" minlength="12" name="RMAC" type="text"/><br/><span>${a0b020f1bb69b552ce5e397a350c9365f3103991:
+			Last device seen: }</span><span class="rlid" onclick="d.Sf.RMAC.value=this.textContent;" style="cursor:pointer;">${6eef6648406c333a4035cd5e60d0bf2ecf2606d7:None}</span> <br/>
+</div>
+<div id="ethd">
+<h3>${b66eae9d07c46245f16b3abc8cd96827e754f4a1:Ethernet Type}</h3>
+<select name="ETH">
+<option value="0">${6eef6648406c333a4035cd5e60d0bf2ecf2606d7:None}</option>
+<option value="9">${251a0955680e4cd65775fb4b30f4df71e99839cf:ABC! WLED V43 &amp; compatible}</option>
+<option value="2">${9cb4228090b8773d7e5e80b03c55d5b7a59d5c9f:ESP32-POE}</option>
+<option value="11">${8792924ff42f38306665b2ee9d31042db9b2072c:ESP32-POE-WROVER}</option>
+<option value="6">${70c1022a337477deba7be8e4ab7e72107af43925:ESP32Deux/RGB2Go Tetra}</option>
+<option value="7">${f6860243d31063585994259ce0fe7f02020af085:KIT-VE}</option>
+<option value="12">${e3548b8a8cc3752641e281f9f0612a93a2876367:LILYGO T-POE Pro}</option>
+<option value="8">${58702cfd3a427c4bcef87c8ffda1ef1d4edf756b:QuinLED-Dig-Octa &amp; T-ETH-POE}</option>
+<option value="4">${564a153cbdded4895361e62cade84d7d0da6957f:QuinLED-ESP32}</option>
+<option value="10">${d05f77cd9c0609e58ce5277eef44b7cc34d40200:Serg74-ETH32}</option>
+<option value="5">${028ad1ff93b2a88ef881a6d5e7663eff770ecaff:TwilightLord-ESP32}</option>
+<option value="3">${48256bee272b1af4194886f3b945e46bd18bbdea:WESP32}</option>
+<option value="1">${196de86ead8990a97758f305a57ceed0ec35119d:WT32-ETH01}</option>
+</select><br/><br/>
+</div>
+<hr/>
+<button onclick="B()" type="button">${b52b36b7269fbfc58ec24bb724691951a3decbe8:Back}</button><button type="submit">${b5c5191096be330c8fe8957e17c3c9391f4f0240:Save &amp; Connect}</button>
+</form>
+<div id="I18N:template" style="display:none">wled00/data/settings_wifi.htm</div></body>
 </html>

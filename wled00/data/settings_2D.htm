@@ -1,11 +1,12 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
-	<title>2D Set-up</title>
-	<script src="common.js" async type="text/javascript"></script>
-	<script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>${d90884f4ec475af65b0fe32aed21e92b31e1ce73:2D Set-up}</title>
+<script async="" src="common.js" type="text/javascript"></script>
+<script>
 	var maxPanels=64;
 	var ctx = null;
 	function fS(){d.Sf.submit();} // <button type=submit> sometimes didn't work
@@ -237,61 +238,61 @@ Y:<input name="P${i}Y" type="number" min="0" max="255" value="0" oninput="UI()">
 		gId("MD").innerHTML = "Matrix Dimensions (W*H=LC): " + maxWidth + " x " + maxHeight + " = " + maxWidth * maxHeight;
 	}
 	</script>
-	<style>@import url("style.css");</style>
-</head>
+<style>@import url("style.css");</style>
+<script src="../scripts/localize.js"></script></head>
 <body onload="S()">
-	<form id="form_s" name="Sf" method="post">
-	<div class="toprow">
-		<div class="helpB"><button type="button" onclick="H('features/2D')">?</button></div>
-		<button type="button" onclick="B()">Back</button><button type="button" onclick="fS()">Save</button><hr>
-	</div>
-	<h2>2D setup</h2>
+<form id="form_s" method="post" name="Sf">
+<div class="toprow">
+<div class="helpB"><button onclick="H('features/2D')" type="button">?</button></div>
+<button onclick="B()" type="button">${b52b36b7269fbfc58ec24bb724691951a3decbe8:Back}</button><button onclick="fS()" type="button">${efc007a393f66cdb14d57d385822a3d9e36ef873:Save}</button><hr/>
+</div>
+<h2>${049ca7d653bb59d22aa3cd48ccbb9790aa34bfa9:2D setup}</h2><span>${c33393947ffcf0715e2cf71314b549c94474420e:
 	Strip or panel:
-	<select id="somp" name="SOMP" onchange="resetPanels();addPanels();UI();" >
-		<option value="0">1D Strip</option>
-		<option value="1">2D Matrix</option>
-	</select><br>
-	<div id="mpdiv" style="display:none;">
-		<hr class="sml">
-		<h3>Matrix Generator <button type="button" id="expGen" onclick="expand(this,gId('mxGen'));">&gt;</button></h3>
-		<div id="mxGen" style="display:none;">
-			Panel dimensions (WxH): <input name="PW" type="number" min="1" max="128" value="8"> x <input name="PH" type="number" min="1" max="128" value="8"><br>
-			Horizontal panels: <input name="MPH" type="number" min="1" max="8" value="1">
-			Vertical panels: <input name="MPV" type="number" min="1" max="8" value="1"><br>
-			1<sup>st</sup> panel: <select name="PB">
-				<option value="0">Top</option>
-				<option value="1">Bottom</option>
-			</select><select name="PR">
-				<option value="0">Left</option>
-				<option value="1">Right</option>
-			</select><br>
-			Orientation: <select name="PV">
-				<option value="0">Horizontal</option>
-				<option value="1">Vertical</option>
-			</select><br>
-			Serpentine: <input type="checkbox" name="PS"><br>
-			<i  class="warn">Pressing Populate will create LED panel layout with pre-arranged matrix.<br>Values above <i>will not</i> affect final layout.<br>
-				WARNING: You may need to update each panel parameters after they are generated.</i><br>
-			<button type="button" onclick="gen();expand(gId('expGen'),gId('mxGen'));">Populate</button>
-		</div>
-		<hr class="sml">
-		<h3>Panel set-up</h3>
-		Number of panels: <input name="MPC" type="number" min="1" max="64" value="1" oninput="addPanels();UI();"><br>
-		<i>A matrix is made of 1 or more physical LED panels.<br>
-		Each panel can be of different size and/or have different LED orientation and/or starting point and/or layout.</i><br>
-		<h3>LED panel layout</h3>
-		<div id="panels">
-		</div>
-		<hr class="sml">
-		<div id="MD"></div>
-		<canvas id="canvas"></canvas>
-		<div id="json" >Gap file: <input type="file" name="data" accept=".json"><button type="button" class="sml" onclick="uploadFile(d.Sf.data,'/2d-gaps.json')">Upload</button></div>
-		<i>Note: Gap file is a <b>.json</b> file containing an array with number of elements equal to the matrix size.<br>
-			A value of -1 means that pixel at that position is missing, a value of 0 means never paint that pixel, and 1 means regular pixel.</i>
-	</div>
-	<hr>
-	<button type="button" onclick="B()">Back</button><button type="button" onclick="fS()">Save</button>
-	</form>
-	<div id="toast"></div>
-</body>
+	}</span><select id="somp" name="SOMP" onchange="resetPanels();addPanels();UI();">
+<option value="0">${2a5cb2baad41b0b7c671992f3de196e8d0861f96:1D Strip}</option>
+<option value="1">${d75c78acb1cf9db31344da6cd218a672cd06ab13:2D Matrix}</option>
+</select><br/>
+<div id="mpdiv" style="display:none;">
+<hr class="sml"/>
+<h3><span>${fc9a7a46a1fa3c5c4ab212e3230056eb5ef0a8e5:Matrix Generator }</span><button id="expGen" onclick="expand(this,gId('mxGen'));" type="button">&gt;</button></h3>
+<div id="mxGen" style="display:none;"><span>${9a1a1501b1b235bcc8be24a4467be7592bf42405:
+			Panel dimensions (WxH): }</span><input max="128" min="1" name="PW" type="number" value="8"/><span>${ea31e8b43909a0c94f7c19f0833c16d86dd95aa7: x }</span><input max="128" min="1" name="PH" type="number" value="8"/><br/><span>${3bd8119c408b9d7d865e3308bf7134e34e73638c:
+			Horizontal panels: }</span><input max="8" min="1" name="MPH" type="number" value="1"/><span>${8133fa39aeb98f8b8b1084a47b0f9383d96ef464:
+			Vertical panels: }</span><input max="8" min="1" name="MPV" type="number" value="1"/><br/><span>${594492eaf969fdb998dc51a8c28a1d6feab6d925:
+			1}</span><sup>${9b02d9974c14e623c9ffbed7360beacbf0dcb95f:st}</sup><span>${03804134e84618ec11461cd24813c4bc1a4d9db8: panel: }</span><select name="PB">
+<option value="0">${cae0435c41e816c24f0838fdf4e76c044c8b4e00:Top}</option>
+<option value="1">${cce7f2f2f0dc525117a70d581d9c335212145e5b:Bottom}</option>
+</select><select name="PR">
+<option value="0">${8ae1c34bd37fad49cc5f8e02da648a78e89c3ed8:Left}</option>
+<option value="1">${954daa8b00335c66e262106e01f7dc22b19a4372:Right}</option>
+</select><br/><span>${27ba40eeca074a44d3efd974f6247ca96dc8b4a8:
+			Orientation: }</span><select name="PV">
+<option value="0">${4f57a1ce99e68a7b05c42d0a7ea0070eafabd31c:Horizontal}</option>
+<option value="1">${4b937cc841d82f8936cef1efb88708ab5b0f1ee5:Vertical}</option>
+</select><br/><span>${50ee3432239410abf21c7505f0d2129e8349cae1:
+			Serpentine: }</span><input name="PS" type="checkbox"/><br/>
+<i class="warn"><span>${52064ea54e3b2415f237e9053791f5e883711412:Pressing Populate will create LED panel layout with pre-arranged matrix.}</span><br/><span>${cb064d2fa55f543d5948e593c5d8511aef530d96:Values above }</span><i>${1df91714444bb64cf37aff9300609af7c90f5590:will not}</i><span>${ccaa551f515102208559597e878105bb58b066d5: affect final layout.}</span><br/><span>${16ed55b1d5fb8dbe0a6d990b4dc748d3c760a176:
+				WARNING: You may need to update each panel parameters after they are generated.}</span></i><br/>
+<button onclick="gen();expand(gId('expGen'),gId('mxGen'));" type="button">${4a8227177d3aeba652ecd28ed5cb2423de649c8d:Populate}</button>
+</div>
+<hr class="sml"/>
+<h3>${ca40bc8a2bf09de70fd1177a3f7bf862aeab0de4:Panel set-up}</h3><span>${ba5bc78944d1f76c8e79e8a7af3553e8248621e3:
+		Number of panels: }</span><input max="64" min="1" name="MPC" oninput="addPanels();UI();" type="number" value="1"/><br/>
+<i><span>${556aa8da89f318581d6f2e6526d3975dd337dd43:A matrix is made of 1 or more physical LED panels.}</span><br/><span>${f4777b588dd8a2b3f2f1a756be2080c3d1f90bf3:
+		Each panel can be of different size and/or have different LED orientation and/or starting point and/or layout.}</span></i><br/>
+<h3>${55098c2439b6cde6ddaf1a771211c987b808da16:LED panel layout}</h3>
+<div id="panels">
+</div>
+<hr class="sml"/>
+<div id="MD"></div>
+<canvas id="canvas"></canvas>
+<div id="json"><span>${9e9f6cf2cba9ff33f351bf22d06e8f589a3861ed:Gap file: }</span><input accept=".json" name="data" type="file"/><button class="sml" onclick="uploadFile(d.Sf.data,'/2d-gaps.json')" type="button">${8bdf057f91e76ae328b2a21d35f682daa08a0ec0:Upload}</button></div>
+<i><span>${3987b615202f265be51c75e359aab5e544d3380d:Note: Gap file is a }</span><b>${25688845860b85616a3fabdeb2e53d4408f6dea8:.json}</b><span>${a19e5079fda45cb7475f268036f1a44d4f1075b4: file containing an array with number of elements equal to the matrix size.}</span><br/><span>${d50c89509268f09e716705d6ebb4d069e354f75c:
+			A value of -1 means that pixel at that position is missing, a value of 0 means never paint that pixel, and 1 means regular pixel.}</span></i>
+</div>
+<hr/>
+<button onclick="B()" type="button">${b52b36b7269fbfc58ec24bb724691951a3decbe8:Back}</button><button onclick="fS()" type="button">${efc007a393f66cdb14d57d385822a3d9e36ef873:Save}</button>
+</form>
+<div id="toast"></div>
+<div id="I18N:template" style="display:none">wled00/data/settings_2D.htm</div></body>
 </html>

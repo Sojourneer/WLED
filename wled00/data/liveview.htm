@@ -1,11 +1,12 @@
 <!DOCTYPE html>
+
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <meta charset="utf-8">
-  <meta name="theme-color" content="#222222">
-  <title>WLED Live Preview</title>
-  <style>
+<meta content="width=device-width, initial-scale=1, minimum-scale=1" name="viewport"/>
+<meta charset="utf-8"/>
+<meta content="#222222" name="theme-color"/>
+<title>${8a37e3c3f8460985093ab49528256293f25c6def:WLED Live Preview}</title>
+<style>
     body {
       margin: 0;
     }
@@ -17,7 +18,7 @@
       position: absolute;
     }
   </style>
-  <script>
+<script>
     var d = document;
     var ws;
     var tmout = null;
@@ -98,8 +99,8 @@
       });
     }
   </script>
-</head>
+<script src="../scripts/localize.js"></script></head>
 <body onload="S()">
-  <canvas id="canv"></canvas>
-</body>
+<canvas id="canv"></canvas>
+<div id="I18N:template" style="display:none">wled00/data/liveview.htm</div></body>
 </html>

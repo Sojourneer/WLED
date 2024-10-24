@@ -55,7 +55,7 @@ var cpick = new iro.ColorPicker("#picker", {
 
 function handleVisibilityChange() {if (!d.hidden && new Date () - lastUpdate > 3000) requestJson();}
 function sCol(na, col) {d.documentElement.style.setProperty(na, col);}
-function gId(c) {return d.getElementById(c);}
+function gId(c) { x = d.getElementById(c); /*if(d==null)*/ console.log("gId",c,x); return x;}
 function gEBCN(c) {return d.getElementsByClassName(c);}
 function isEmpty(o) {return Object.keys(o).length === 0;}
 function isObj(i) {return (i && typeof i === 'object' && !Array.isArray(i));}
@@ -506,6 +506,7 @@ function loadPresets(callback = null)
 		populatePresets();
 	})
 	.catch((e)=>{
+		console.log("catch 509")
 		//showToast(e, true);
 		presetError(false);
 	})
@@ -529,6 +530,7 @@ function loadPalettes(callback = null)
 		retry = false;
 	})
 	.catch((e)=>{
+		console.log("catch 533")
 		if (!retry) {
 			retry = true;
 			setTimeout(loadPalettes, 500); // retry
@@ -556,6 +558,7 @@ function loadFX(callback = null)
 		retry = false;
 	})
 	.catch((e)=>{
+		console.log("catch 561")
 		if (!retry) {
 			retry = true;
 			setTimeout(loadFX, 500); // retry
@@ -585,6 +588,7 @@ function loadFXData(callback = null)
 		retry = false;
 	})
 	.catch((e)=>{
+		console.log("catch 591")
 		fxdata = [];
 		if (!retry) {
 			retry = true;
@@ -1119,6 +1123,7 @@ function loadNodes()
 		populateNodes(lastinfo, json);
 	})
 	.catch((e)=>{
+		console.log("catch 1126")
 		showToast(e, true);
 	});
 }
@@ -1684,6 +1689,7 @@ var reqsLegal = false;
 
 function requestJson(command=null)
 {
+	console.log("toast", document.getElementById("toast"))
 	gId('connind').style.backgroundColor = "var(--c-y)";
 	if (command && !reqsLegal) return; // stop post requests from chrome onchange event on page restore
 	if (!jsonTimeout) jsonTimeout = setTimeout(()=>{if (ws) ws.close(); ws=null; showErrorToast()}, 3000);
@@ -1746,6 +1752,7 @@ function requestJson(command=null)
 		retry = false;
 	})
 	.catch((e)=>{
+		console.log("catch 1753")
 		if (!retry) {
 			retry = true;
 			setTimeout(requestJson,500);
@@ -2445,6 +2452,7 @@ function saveP(i,pl)
 		try {
 			obj = JSON.parse(raw);
 		} catch (e) {
+			console.log("catch 2454")
 			obj.win = raw;
 			if (raw.length < 2) {
 				gId(`p${i}warn`).innerHTML = "&#9888; Please enter your API command first";
@@ -2608,6 +2616,7 @@ function fromHex()
 	try {
 		setPicker("#" + str.substring(0,6));
 	} catch (e) {
+		console.log("catch 2618")
 		setPicker("#ffaa00");
 	}
 	gId("csl").children[csel].dataset.w = isNaN(w) ? 0 : w;
@@ -2800,6 +2809,7 @@ function getPalettesData(page, callback)
 		else callback();
 	})
 	.catch((error)=>{
+		console.log("catch 2811")
 		if (!retry) {
 			retry = true;
 			setTimeout(()=>{getPalettesData(page,callback);}, 500); // retry

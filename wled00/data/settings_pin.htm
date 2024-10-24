@@ -1,23 +1,24 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
-	<meta charset="utf-8">
-	<title>PIN required</title>
-	<script>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<meta charset="utf-8"/>
+<title>${6eda851f0cfc6872e57ca8ebb6592caadafd5e97:PIN required}</title>
+<script>
 		var d = document;
 		function B() { window.open("../settings","_self"); }
 	</script>
-	<style>
+<style>
 		@import url("style.css");
 	</style>
-</head>
+<script src="../scripts/localize.js"></script></head>
 <body onload="d.getElementsByName('PIN')[0].focus()">
-	<form id="form_s" name="Sf" method="post">
-		<h2>Please enter settings PIN code</h2>
-		<input type="password" name="PIN" size="4" maxlength="4" minlength="4" pattern="[0-9]*" inputmode="numeric" autofocus>
-		<hr>
-		<button type="button" onclick="B()">Back</button><button type="submit">Submit</button>
-	</form>
-</body>
+<form id="form_s" method="post" name="Sf">
+<h2>${462696fda477440f71d1e96767a38ee07e7ec1d9:Please enter settings PIN code}</h2>
+<input autofocus="" inputmode="numeric" maxlength="4" minlength="4" name="PIN" pattern="[0-9]*" size="4" type="password"/>
+<hr/>
+<button onclick="B()" type="button">${b52b36b7269fbfc58ec24bb724691951a3decbe8:Back}</button><button type="submit">${2dacf65959849884a011f36f76a04eebea94c5ea:Submit}</button>
+</form>
+<div id="I18N:template" style="display:none">wled00/data/settings_pin.htm</div></body>
 </html>

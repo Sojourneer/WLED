@@ -1,10 +1,10 @@
-alert("loaded")
+console.log("localized.js loaded")
 var templateName;
 
 var translation;
 function getTranslation(callback)
 {
-    fetch("../I18N/langs/ja.json")
+    fetch("/langs/ja.json")
     .then((res) => res.text())
     .then((text) => {
         // do something with "text"
@@ -17,7 +17,7 @@ function getTranslation(callback)
 
 function DoIt() {
     Localize();
-    alert("Ready to do other initialization");
+    console.log("Ready to do other initialization");
 }
 
 function TranslateText(placeholder) {
@@ -26,8 +26,10 @@ function TranslateText(placeholder) {
     if(m) {
         key = m[1]
         entry = translation[key]
+        console.log("translate",key,placeholder,entry)
         return entry;
-    }
+    } else
+        return null;
 }
 
 function Localize()
@@ -44,15 +46,17 @@ function Localize()
     const allElements = document.querySelectorAll("*");
     let textElements = [];
     allElements.forEach((ele) => (
-        ((ele.textContent != undefined && ele.textContent.startsWith("${"))
+        ((ele.textContent != undefined && ele.textContent != "" && ele.textContent.startsWith("${"))
         || ele.hasAttribute('data-I18N')
         )    && textElements.push(ele) )); 
 
     // Now do the translation
     for(i=0; i < textElements.length; ++i) {
         e = textElements[i];
+        console.log("candidate",e, e.textContent)
         if(e.textContent.startsWith("${")) {
-            e.textContent = TranslateText(e.textContent);
+            if((subst = TranslateText(e.textContent)) != null)
+                e.firstChild.nodeValue = subst;
         }
         if(e.hasAttribute('data-I18N')) {
             attrNames = e.attributes['data-I18N'].value.split(",")
@@ -60,7 +64,8 @@ function Localize()
             for(ia=0; ia < attrNames.length; ++ia)
                 attrName = attrNames[ia];
                 attr = e.attributes[attrName];
-                attr.value = TranslateText(attr.value)
+                if((subst = TranslateText(attr.value)) != null)
+                    attr.value = subst;
                 console.log(attr, attrName, attr.value);
         }
         console.log(e,e.textContent, e.hasAttribute("data-I18N"));
