@@ -2,7 +2,7 @@
  * Writes compressed C arrays of data files (web interface)
  * How to use it?
  *
- * 1) Install Node 11+ and npm
+ * 1) Install Node 20+ and npm
  * 2) npm install
  * 3) npm run build
  *
@@ -116,7 +116,8 @@ async function minify(str, type = "plain") {
   } else if (type == "css-minify") {
     return new CleanCSS({}).minify(str).styles;
   } else if (type == "js-minify") {
-    return await minifyHtml('<script>' + str + '</script>', options).replace(/<[\/]*script>/g, '');
+    let js = await minifyHtml('<script>' + str + '</script>', options);
+    return js.replace(/<[\/]*script>/g, '');
   } else if (type == "html-minify") {
     return await minifyHtml(str, options);
   }
@@ -207,7 +208,7 @@ function isAnyFileInFolderNewerThan(folderPath, time) {
 }
 
 // Check if the web UI is already built
-function isAlreadyBuilt(folderPath) {
+function isAlreadyBuilt(webUIPath, packageJsonPath = "package.json") {
   let lastBuildTime = Infinity;
 
   for (const file of output) {
@@ -220,7 +221,7 @@ function isAlreadyBuilt(folderPath) {
     }
   }
 
-  return !isAnyFileInFolderNewerThan(folderPath, lastBuildTime) && !isFileNewerThan("tools/cdata.js", lastBuildTime);
+  return !isAnyFileInFolderNewerThan(webUIPath, lastBuildTime) && !isFileNewerThan(packageJsonPath, lastBuildTime) && !isFileNewerThan(__filename, lastBuildTime);
 }
 
 // Don't run this script if we're in a test environment
@@ -251,6 +252,12 @@ writeChunks(
       mangle: (str) =>
         str
           .replace("%%", "%")
+    },
+    {
+      file: "common.js",
+      name: "JS_common",
+      method: "gzip",
+      filter: "js-minify",
     },
     {
       file: "settings.htm",
